@@ -7,3 +7,4 @@
 - [AP 化学首批范围说明](../papers/AP-Chemistry/README.md)
 - [贡献指南（CONTRIBUTING）](../CONTRIBUTING.md)
 - [题目校验脚本（scripts/check.mjs）](../scripts/check.mjs)
+- [📤 项目交接卡（经理承接分工）](./交接卡.md)
