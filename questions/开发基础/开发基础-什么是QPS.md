@@ -1,7 +1,11 @@
 # 题目：什么是 QPS（Queries Per Second）？
+- 题目ID：DEV-BASE-0001
 - 难度：简单
 - 分类：开发基础
 - 题型：简答
+- 范围：
+- owner：zhongguoliandanshidongdong
+- 录入时间：2026-09-03
 
 ## 题目
 请用自己的话解释 QPS 的含义，并给出一个直观示例。
