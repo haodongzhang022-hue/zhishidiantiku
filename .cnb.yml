@@ -1,0 +1,23 @@
+# 知识点题库 · 题目格式校验流水线（CNB 云原生构建，声明式）
+# 骨架依据 CNB 官方示例：https://cnb.cool/examples/ecosystem/
+# push 事件 → node:20 环境 → scripts/check.mjs 校验；全绿 = 题目格式合规。
+# 声明式缓存：/root/.npm 使用 copy-on-write，并发安全、跨节点复用。
+main:
+  push:
+    - docker:
+        image: node:20
+      volumes:
+        - /root/.npm:copy-on-write
+      stages:
+        - node scripts/check.mjs
+      runner:
+        cpus: 2
+# 云原生开发环境（同文件声明，branch-as-environment）
+$:
+  vscode:
+    - docker:
+        image: node:20
+      services:
+        - vscode
+      stages:
+        - node --version
