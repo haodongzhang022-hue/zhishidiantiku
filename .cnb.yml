@@ -10,6 +10,7 @@ main:
         - /root/.npm:copy-on-write
       stages:
         - node scripts/check.mjs
+        - node --test scripts/__tests__/check.test.mjs
       runner:
         cpus: 2
 # 云原生开发环境（同文件声明，branch-as-environment）
