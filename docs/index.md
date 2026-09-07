@@ -14,3 +14,6 @@
 - [分数换算引擎扩展架构·全球大学/质量/LanceDB 多表](score-engine-extend.md)
 - [🎓 个人学习进度系统（做题/出题/进度库）](./学习系统.md)
 - [🔧 本地测试清单（跨会话统一承接）](./本地测试清单.md)
+- [🔌 跨库能力注册与索引机制（capabilities）](../capabilities/README.md)
+- [🧩 能力注册表（registry）](../capabilities/registry.md)
+- [🧭 能力缺口清单（gaps · 应有无缺 + 增强引导）](../capabilities/gaps.md)
