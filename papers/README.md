@@ -31,7 +31,7 @@
 
 | scope_id | 名称 | 类型 | 年份 | 出处/地址 | 学科 | 题目量 | owner | 登记时间 |
 |----------|------|------|------|-----------|------|--------|-------|----------|
-| AP-CHEM-CB-2024 | AP 化学 2024 真题卷（Course&Exam Description 考纲锚定） | exam+syllabus | 2024 | [CB 官方大纲 apcentral.collegeboard.org](https://apcentral.collegeboard.org/courses/ap-chemistry) | AP化学 | 首批目标 3000 | 待分工 | 2026-09-06 |
+| AP-CHEM-CB-2024 | AP 化学 2024 真题卷（Course&Exam Description 考纲锚定） | exam+syllabus | 2024 | [CB 官方大纲 apcentral.collegeboard.org](https://apcentral.collegeboard.org/courses/ap-chemistry) | AP化学 | 首批目标 3000 | 架构·开发 | 2026-09-06 |
 
 > 首批优先从 **AP 化学** 出，锚定 College Board 官方《AP Chemistry Course and Exam Description》，
 > 见 [AP-Chemistry 范围说明](./AP-Chemistry/README.md)。
