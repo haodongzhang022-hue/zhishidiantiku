@@ -22,6 +22,7 @@
 | scripts/check.mjs | 题目格式校验（CI 门禁，强校验） |
 | scripts/__tests__/ | 校验脚本自测用例 |
 | docs/ | 文档索引 |
+| score-engine/ | **跨体系分数换算引擎**（识别/换算/深度学习/门槛洼地寻优），见 [score-engine/README.md](score-engine/README.md) |
 | .github/PULL_REQUEST_TEMPLATE.md | PR 模板 |
 | CONTRIBUTING.md | 贡献协作流程 |
 
@@ -61,3 +62,4 @@ node --test scripts/__tests__     # 校验脚本自测（改脚本时跑）
 - 2026-09-03 初始化：README + .cnb.yml + 格式规范 + 示例题。
 - 2026-09-06 升级：锁定 4 类题型、白名单机制化（owner+时间）、范围登记（试卷年份/出处/唯一编号）、校验脚本重构+自测、首批 AP 化学范围落定（目标 3000）。
 - 2026-09-07 体系维度：每道题新增 `体系` 字段（AP/AL/IB/国内/其他），区分并显示所属教育体系；分类/范围均绑定所属体系。
+- 2026-09-07 新增 **score-engine/**：跨体系分数换算引擎（识别、历史数据驱动模糊换算、深度学习训练与后训练、门槛洼地低分路径寻优）。

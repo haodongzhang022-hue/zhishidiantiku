@@ -8,3 +8,4 @@
 - [贡献指南（CONTRIBUTING）](../CONTRIBUTING.md)
 - [题目校验脚本（scripts/check.mjs）](../scripts/check.mjs)
 - [📤 项目交接卡（经理承接分工）](./交接卡.md)
+- [分数换算引擎使用文档](score-engine.md)

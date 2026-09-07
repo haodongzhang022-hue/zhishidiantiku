@@ -1,22 +1,31 @@
-# 知识点题库 · 题目格式校验流水线（CNB 云原生构建，声明式）
+# 知识点题库 · 题目格式校验 + 分数换算引擎自测 流水线（CNB 云原生构建）
 # 骨架依据 CNB 官方示例：https://cnb.cool/examples/ecosystem/
-# push 事件 → node:20 环境 → scripts/check.mjs 校验；全绿 = 题目格式合规。
+# push 事件：node:20 校验题目格式；python:3 跑 score-engine 自测。
 # 声明式缓存：/root/.npm 使用 copy-on-write，并发安全、跨节点复用。
 main:
   push:
-    - docker:
+    - name: check-questions
+      docker:
         image: node:20
-      volumes:
-        - /root/.npm:copy-on-write
+        volumes:
+          - /root/.npm:copy-on-write
       stages:
         - node scripts/check.mjs
         - node --test scripts/__tests__/check.test.mjs
       runner:
         cpus: 2
+    - name: check-score-engine
+      docker:
+        image: python:3.11
+      stages:
+        - python -m unittest discover -s score-engine/tests -v
+      runner:
+        cpus: 2
 # 云原生开发环境（同文件声明，branch-as-environment）
 $:
   vscode:
-    - docker:
+    - name: vscode-env
+      docker:
         image: node:20
       services:
         - vscode
