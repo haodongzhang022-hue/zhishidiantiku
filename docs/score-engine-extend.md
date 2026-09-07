@@ -4,6 +4,23 @@
 
 ## 已完成（最新状态）
 
+### ✅ 声明式数据管道（真实数据入库的复用机制 · issue #8 最新诉求）
+把"如何接入真实数据"从**人肉单次驱动**升级为**声明 + 复用命令**：
+- `score_engine/pipeline/MANIFEST.json` —— **声明文件**：每个数据源声明
+  「原始文件 → 字段映射 → 目标表位 → 清洗/校验/分类规则 → 溯源」。
+- `score_engine/pipeline/rules.py` —— **规则引擎**：清洗/去重/类型规整/自动分类，
+  规则登记后即可被声明引用，**加新数据源不改管道主流程**。
+- `score_engine/pipeline/ingest.py` + `cli ingest` —— 读声明 + `data_sources/` 原始数据
+  自动分类落库，产出质检报告。
+- 落库位置由声明约束，目标表不属于对应库会**直接报错**（防放错库/表）。
+- `data_sources/` 为真实数据源目录（大学档案 / QS 排名等 + 管理说明），
+  每类数据标注 `source` 出处与采集年份，**不把示意数据冒充真实**。
+
+### ✅ 真实数据种子接入（首批）
+- `universities.csv`（20 所真实大学公开稳定档案）+ `qs_rankings.csv`
+  （QS 2019-2024 官方发布历史）通过 `cli ingest` 落到换算库
+  `university` / `university_ranking` 正确表位，`rank→band` 自动分类。
+
 ### ✅ 大学与排名分离（核心改进）
 - 新增 `score_engine/university.py`：`University`（静态档案）+ `UniversityRanking`（动态排名）。
 - 训练样本不再使用 "QS10~QS1000" 排名桶名伪装学校，而是引用真实大学。

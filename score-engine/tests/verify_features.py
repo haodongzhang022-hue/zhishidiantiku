@@ -223,6 +223,50 @@ check("缺失部分维度不把质量判极低", 0.0<=qa.quality_index("mit")<=1
 
 print()
 print("="*66)
+print("[11] ★声明式数据管道：真实数据自动分类落库 + 表位守护")
+print("="*66)
+from score_engine import db as db_mod
+from score_engine.pipeline import ingest as pmod
+_tmp = tempfile.mkdtemp()
+_dbh = db_mod.ScoreDB(root=os.path.join(_tmp, "db"), backend="json")
+try:
+    _rep_p = pmod.run(_dbh)
+    check("管道按 MANIFEST 落库 university 表", _dbh.count_score("university")==20,
+          f"got {_dbh.count_score('university')}")
+    check("管道落库 university_ranking 表(20校×6年)", _dbh.count_score("university_ranking")==120,
+          f"got {_dbh.count_score('university_ranking')}")
+    _mit = _dbh.query_score("university", {"id": "mit"})
+    check("字段映射+类型正确(established=int, is_public=bool, tuition=float)",
+          isinstance(_mit[0]["established"], int)
+          and isinstance(_mit[0]["is_public"], bool)
+          and isinstance(_mit[0]["tuition_intl_usd"], float))
+    _top = _dbh.query_score("university_ranking", {"university_id": "mit", "rank": 1})
+    check("排名→band 自动分类(top1→top10)", _top and _top[0]["band"]=="top10",
+          f"got {_top and _top[0].get('band')}")
+    check("管道溯源 source 已标注", bool(_rep_p["per_source"][0]["provenance"]))
+    # 表位守护：声明错位(quality库写score表)必须报错
+    _bad_mf = os.path.join(_tmp, "MANIFEST_bad.json")
+    import json
+    with open(os.path.join(os.path.dirname(pmod.__file__), "MANIFEST.json"),
+              encoding="utf-8") as _f:
+        _m = json.load(_f)
+    _m["sources"] = [{"source_id": "bad", "file": "universities/universities.csv",
+                      "format": "csv", "target": {"db": "quality", "table": "university"},
+                      "field_map": {"id": "id"}, "rules": []}]
+    with open(_bad_mf, "w", encoding="utf-8") as _f:
+        json.dump(_m, _f, ensure_ascii=False)
+    try:
+        pmod.run(_dbh, manifest_path=_bad_mf)
+        check("表位守护拒绝『quality库写score表』", False, "未抛错，放错位置没拦住")
+    except ValueError:
+        check("表位守护拒绝『quality库写score表』", True)
+finally:
+    _dbh.close()
+    shutil.rmtree(_tmp, True)
+
+
+print()
+print("="*66)
 print(f"结果：PASS {len(PASS)} / {len(PASS)+len(FAIL)}")
 print("="*66)
 if FAIL:

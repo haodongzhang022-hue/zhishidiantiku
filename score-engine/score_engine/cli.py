@@ -110,6 +110,17 @@ def main(argv=None):
     sp.add_argument("--year", type=int, default=2024)
     sp.add_argument("--source", default="QS")
 
+    # ingest — 声明式数据管道：按 MANIFEST 把 data_sources 真实数据自动分类落库
+    sp = sub.add_parser("ingest", help="声明式数据管道：按 MANIFEST 把真实数据自动落库")
+    sp.add_argument("--manifest", default=None,
+                    help="声明文件路径(默认 pipeline/MANIFEST.json)")
+    sp.add_argument("--root", default="data_lancedb")
+    sp.add_argument("--backend", choices=["auto", "lancedb", "json"], default="auto")
+    sp.add_argument("--dry-run", action="store_true",
+                    help="只打印会写进哪些库/表、不真正落库")
+    sp.add_argument("--list", action="store_true", dest="list_sources",
+                    help="只列出声明文件里的数据源一览，不落库")
+
     args = p.parse_args(argv)
 
     if args.cmd == "train":
@@ -207,6 +218,8 @@ def main(argv=None):
         _cmd_db(args)
     elif args.cmd == "quality":
         _cmd_quality(args)
+    elif args.cmd == "ingest":
+        _cmd_ingest(args)
 
     return 0
 
@@ -334,5 +347,43 @@ def _cmd_quality(args):
             print(f"  {r['university_id']} (rank {r['rank']}, 质量 {r['quality_index']})")
 
 
+def _cmd_ingest(args):
+    """声明式数据管道：按 MANIFEST.json 把 data_sources 真实数据自动落库。"""
+    from . import db as db_mod
+    from .pipeline import ingest
+
+    if args.list_sources:
+        print(ingest.describe(args.manifest))
+        return
+    dbh = db_mod.ScoreDB(root=args.root, backend=args.backend)
+    try:
+        print(ingest.describe(args.manifest))
+        print()
+        if args.dry_run:
+            print("dry-run：将按以上声明把 data_sources 数据接入双库，未落库。")
+            return
+        report = ingest.run(dbh, manifest_path=args.manifest)
+        print(f"后端: {dbh.backend_kind()}  root: {args.root}")
+        print(f"数据源: {report['sources']} 个，共写入 "
+              f"{sum(report['by_table'].values())} 行，丢弃 {report['dropped_total']} 行")
+        print()
+        for s in report["per_source"]:
+            tag = "OK" if not s["warnings"] else "!"
+            print(f"[{tag}] {s['source_id']:<26} → {s['db']}.{s['table']:<20} "
+                  f"读{s['read']:<4} 写入{s['inserted']:<4} 丢{s['dropped']}")
+            for w in s["warnings"]:
+                print(f"        ⚠ {w}")
+            if s["provenance"]:
+                print(f"        溯源: {s['provenance']}")
+        print()
+        print("当前双库各表行数：")
+        for t in dbh.score_tables():
+            print(f"  score_db.{t}: {dbh.count_score(t)} 行")
+        for t in dbh.quality_tables():
+            print(f"  quality_db.{t}: {dbh.count_quality(t)} 行")
+    finally:
+        dbh.close()
+
 if __name__ == "__main__":
     sys.exit(main())
+
