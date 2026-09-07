@@ -90,6 +90,26 @@ def main(argv=None):
     sp.add_argument("--year", type=int, default=2024, help="查看某年排名")
     sp.add_argument("--source", default="QS")
 
+
+    # db — LanceDB 双库
+    sp = sub.add_parser("db", help="LanceDB 双库：seed/tables/query")
+    sp.add_argument("--root", default="data_lancedb")
+    sp.add_argument("--backend", choices=["auto", "lancedb", "json"], default="auto")
+    dbsub = sp.add_subparsers(dest="dbcmd", required=True)
+    sp_seed = dbsub.add_parser("seed", help="把内存数据(大学/排名/样本/漂移/质量)灌入双库")
+    sp_seed.add_argument("--data", default=os.path.join("data", "sample_admissions.csv"))
+    sp_tables = dbsub.add_parser("tables", help="列出双库各表与行数")
+    sp_q = dbsub.add_parser("query", help="查询一张表")
+    sp_q.add_argument("--table", required=True)
+    sp_q.add_argument("--db", choices=["score", "quality"], default="score")
+    sp_q.add_argument("--school_id", default="")
+
+    # quality — 质量鉴定：排名 vs 真实水平
+    sp = sub.add_parser("quality", help="质量鉴定：名不副实报告 / 单校档案")
+    sp.add_argument("--school", default="", help="查单校质量档案(school_id)")
+    sp.add_argument("--year", type=int, default=2024)
+    sp.add_argument("--source", default="QS")
+
     args = p.parse_args(argv)
 
     if args.cmd == "train":
@@ -182,6 +202,12 @@ def main(argv=None):
             print(f"{u.id:<12} {u.name_en:<50} {u.country:<10} {rk}")
         print(f"\n→ 大学实体（静态）与排名（按年份/来源动态）分离。")
         print(f"→ 查历年排名趋势用 cnb pulls / UniversityRanking 数据结构。")
+
+    elif args.cmd == "db":
+        _cmd_db(args)
+    elif args.cmd == "quality":
+        _cmd_quality(args)
+
     return 0
 
 
@@ -215,6 +241,97 @@ def _print_valley(r):
               f"→ {row['equivalent']['kind']}{mark}")
     print(f"\n推荐路径: {r['recommended_valley']['system']}")
     print(f"理由: {r['reason']}")
+
+
+
+def _cmd_db(args):
+    from . import db, university as univ_mod
+    from . import drift as drift_mod
+    import scripts.gen_quality_data as gq
+    backend = None if args.backend == "auto" else args.backend
+    dbh = db.ScoreDB(root=args.root, backend=backend)
+    try:
+        if args.dbcmd == "seed":
+            recs = _load_csv(args.data)
+            drift = drift_mod.YearDrift.from_records(recs)
+            unis = univ_mod.default_universities()
+            stats = dbh.seed_from_engine(
+                records=recs, drift=drift,
+                profiles=gq.build_profiles(unis),
+                faculties=gq.build_faculties(unis),
+                outcomes=gq.build_outcomes(unis))
+            print(f"后端: {dbh.backend_kind()}  root: {args.root}")
+            for tbl, n in stats.items():
+                print(f"  {tbl}: {n} 行")
+        elif args.dbcmd == "tables":
+            print(f"后端: {dbh.backend_kind()}")
+            print("\n[换算库 score_db]")
+            for t in dbh.score_tables():
+                print(f"  {t}: {dbh.count_score(t)} 行")
+            print("\n[分析库 quality_db]")
+            for t in dbh.quality_tables():
+                print(f"  {t}: {dbh.count_quality(t)} 行")
+        elif args.dbcmd == "query":
+            # 各表的"学校主键"字段不同：换算库的 university_ranking 用 university_id
+            if args.db == "score" and args.table == "university_ranking":
+                pk = "university_id"
+            elif args.db == "score" and args.table == "university":
+                pk = "id"
+            else:
+                pk = "school_id"
+            filt = {pk: args.school_id} if args.school_id else None
+            rows = (dbh.query_score(args.table, filt)
+                    if args.db == "score" else dbh.query_quality(args.table, filt))
+            if not rows:
+                print("无记录")
+            for r in rows[:20]:
+                print(json.dumps(r, ensure_ascii=False))
+    finally:
+        dbh.close()
+
+
+def _cmd_quality(args):
+    from . import university as univ_mod
+    from . import quality as qmod
+    import scripts.gen_quality_data as gq
+    unis = univ_mod.default_universities()
+    profiles = gq.build_profiles(unis)
+    faculties = gq.build_faculties(unis)
+    outcomes = gq.build_outcomes(unis)
+    rankings = [r.to_dict() for r in univ_mod.default_rankings()]
+    qa = qmod.QualityAnalyzer(profiles, faculties, outcomes, rankings)
+
+    if args.school:
+        prof = qa.school_profile(args.school)
+        if not any(k in prof for k in ("scale_students", "tier_high", "papers_yearly")):
+            print(f"无 {args.school} 的质量数据")
+            return
+        print(f"\n学校 {args.school} 质量档案 + 指数：")
+        print(json.dumps(prof, ensure_ascii=False, indent=1))
+        for r in rankings:
+            if r["university_id"] == args.school and r["year"] == args.year:
+                print(f"\n{args.year} {r['source']} 排名: {r['rank']}")
+        return
+
+    rep = qa.mismatch_report(year=args.year, source=args.source)
+    print(f"\n『排名 vs 真实质量』对照（{args.year} · {args.source}，按质量指数降序）：")
+    print(f"{'school_id':<12} {'rank':<6} {'质量':<8} {'gap':<8} 判定")
+    print("-" * 62)
+    for r in rep:
+        print(f"{r['school_id']:<12} {str(r['rank']):<6} {r['quality_index']:<8} "
+              f"{r['gap']:<8} {r['verdict']}")
+    print("\n摘要：")
+    s = qa.summary(args.year, args.source)
+    for v, n in s["verdict_counts"].items():
+        print(f"  {v}: {n} 所")
+    if s["overrated"]:
+        print("\n⚠ 名不副实/高排名低质量（用户点名关注）：")
+        for r in s["overrated"]:
+            print(f"  {r['school_id']} (rank {r['rank']}, 质量 {r['quality_index']})")
+    if s["undervalued_leaders"]:
+        print("\n✓ 被低估/高性价比（价值洼地）：")
+        for r in s["undervalued_leaders"]:
+            print(f"  {r['school_id']} (rank {r['rank']}, 质量 {r['quality_index']})")
 
 
 if __name__ == "__main__":

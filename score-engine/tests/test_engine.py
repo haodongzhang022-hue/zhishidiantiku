@@ -4,6 +4,7 @@ import sys, os, unittest
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
 from score_engine import registry, models, recognizer, converter, trainer, valley, nn, drift
+from score_engine import quality as qmod
 from score_engine import university as univ_mod
 
 
@@ -182,3 +183,102 @@ class TestYearDrift(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestLanceDBDualDB(unittest.TestCase):
+    """双库数据层：换算库 + 分析库 分表管理（LanceDB 可选，JSON 兜底）。"""
+    def setUp(self):
+        import tempfile, shutil
+        self.tmp = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmp, True)
+
+    def test_seed_and_query_dual_db(self):
+        import os
+        from score_engine import db, university as u, models, drift as dmod
+        root = os.path.join(self.tmp, "ldb")
+        dbh = db.ScoreDB(root=root, backend="json")
+        unis = u.default_universities()
+        ranks = u.default_rankings()
+        recs = models.make_mock_admissions(universities=unis, rankings=ranks)
+        yd = dmod.YearDrift.from_records(recs)
+        import scripts.gen_quality_data as gq
+        stats = dbh.seed_from_engine(
+            universities=unis, rankings=ranks, records=recs, drift=yd,
+            profiles=gq.build_profiles(unis),
+            faculties=gq.build_faculties(unis),
+            outcomes=gq.build_outcomes(unis))
+        self.assertEqual(stats["university"], 20)
+        self.assertEqual(stats["university_ranking"], 20 * 6)
+        self.assertEqual(stats["school_profile"], 20)
+        self.assertEqual(stats["school_faculty"], 20)
+        self.assertEqual(stats["school_outcome"], 20)
+        # 换算库：大学实体与排名分离，可查
+        mit_uni = dbh.query_score("university", {"id": "mit"})
+        self.assertEqual(len(mit_uni), 1)
+        mit_ranks = dbh.query_score("university_ranking", {"university_id": "mit"})
+        self.assertEqual(len(mit_ranks), 6)  # 2019-2024
+        # 排名逐年变化
+        self.assertNotEqual(mit_ranks[0]["rank"], mit_ranks[-1]["rank"])
+        # 大学静态档案不含排名字段
+        self.assertNotIn("rank", mit_uni[0])
+        # 分析库：质量档案可查
+        prof = dbh.query_quality("school_profile", {"school_id": "mit"})
+        self.assertEqual(len(prof), 1)
+        self.assertIn("scale_students", prof[0])
+        dbh.close()
+
+    def test_lancedb_fallback_when_unavailable(self):
+        # 即使无 lancedb，也应退化到 json 后端且 API 一致
+        import os
+        from score_engine import db
+        root = os.path.join(self.tmp, "ldb2")
+        dbh = db.ScoreDB(root=root)  # 自动探测：本环境无 lancedb → json
+        dbh.upsert_quality("school_profile", [{"school_id": "mit", "name": "MIT",
+                                                "scale_students": 11500}])
+        rows = dbh.query_quality("school_profile", {"school_id": "mit"})
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["name"], "MIT")
+        dbh.close()
+
+
+class TestQualityAnalysis(unittest.TestCase):
+    """质量鉴定：排名 ≠ 真实水平，识别名不副实 / 被低估。"""
+    def _analyzer(self):
+        from score_engine import university as u
+        import scripts.gen_quality_data as gq
+        unis = u.default_universities()
+        return qmod.QualityAnalyzer(
+            gq.build_profiles(unis), gq.build_faculties(unis),
+            gq.build_outcomes(unis),
+            [r.to_dict() for r in u.default_rankings()])
+
+    def test_quality_index_range(self):
+        qa = self._analyzer()
+        for sid in ["mit", "eth", "umich", "toronto"]:
+            qi = qa.quality_index(sid)
+            self.assertGreaterEqual(qi, 0.0)
+            self.assertLessEqual(qi, 1.0)
+
+    def test_mismatch_report_categories(self):
+        qa = self._analyzer()
+        rep = qa.mismatch_report(year=2024, source="QS")
+        verdicts = {r["verdict"] for r in rep}
+        # 三种判定都应出现（能识别"名不副实"与"被低估"）
+        self.assertIn("名不副实/高排名低质量", verdicts)
+        self.assertIn("被低估/高性价比", verdicts)
+        self.assertIn("实至名归", verdicts)
+        # ETH 因质量明显低于其高排名 → 名不副实
+        eth = next(r for r in rep if r["school_id"] == "eth")
+        self.assertEqual(eth["verdict"], "名不副实/高排名低质量")
+        self.assertIsNotNone(eth["rank"])
+
+    def test_quality_index_available_even_if_some_missing(self):
+        # 缺失部分维度不应把质量判为极低
+        qa = self._analyzer()
+        qi_full = qa.quality_index("mit")
+        # 只给部分维度，质量指数仍应在合理范围
+        qa2 = qmod.QualityAnalyzer(
+            [{"school_id": "mit", "ratio_student_faculty": 9.7}], [], [], [])
+        qi_part = qa2.quality_index("mit")
+        self.assertGreaterEqual(qi_part, 0.0)
+        self.assertLessEqual(qi_part, 1.0)

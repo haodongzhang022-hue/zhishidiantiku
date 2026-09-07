@@ -170,6 +170,59 @@ print("  （上述为扩展计划项，见 docs/score-engine-extend.md）")
 
 print()
 print("="*66)
+print("[9] ★LanceDB 双库落地：换算库(score) + 分析库(quality) 分表管理")
+print("="*66)
+import tempfile, shutil
+from score_engine import db as dbmod
+from score_engine import university as univ_mod
+import scripts.gen_quality_data as gq
+_tmp = tempfile.mkdtemp()
+_db = dbmod.ScoreDB(root=os.path.join(_tmp, "ldb"), backend="json")
+_unis = univ_mod.default_universities()
+_stats = _db.seed_from_engine(
+    universities=_unis,
+    rankings=univ_mod.default_rankings(),
+    profiles=gq.build_profiles(_unis),
+    faculties=gq.build_faculties(_unis),
+    outcomes=gq.build_outcomes(_unis))
+check("双库建好(score_db: university/ranking/threshold/calendar)",
+      _db.count_score("university")==20 and _db.count_score("university_ranking")==120,
+      f"uni={_db.count_score('university')} rank={_db.count_score('university_ranking')}")
+check("分析库建好(quality_db: profile/faculty/outcome 各20)",
+      _db.count_quality("school_profile")==20 and _db.count_quality("school_faculty")==20
+      and _db.count_quality("school_outcome")==20)
+_check1 = _db.query_score("university", {"id": "mit"})
+check("换算库可查大学静态档案", len(_check1)==1 and "rank" not in _check1[0])
+_check2 = _db.query_score("university_ranking", {"university_id": "mit"})
+check("换算库可查逐年排名(2019-2024=6条)", len(_check2)==6)
+check("排名逐年不同", len({r["rank"] for r in _check2})>=2)
+_check3 = _db.query_quality("school_profile", {"school_id": "mit"})
+check("分析库可查质量档案", len(_check3)==1 and "scale_students" in _check3[0])
+check("无 LanceDB 时退化为可用后端", _db.backend_kind()=="json")
+_db.close(); shutil.rmtree(_tmp, True)
+
+print()
+print("="*66)
+print("[10] ★质量鉴定：排名≠真实水平（名不副实 / 被低估识别）")
+print("="*66)
+from score_engine import quality as qmod
+qa = qmod.QualityAnalyzer(gq.build_profiles(_unis), gq.build_faculties(_unis),
+                          gq.build_outcomes(_unis),
+                          [r.to_dict() for r in univ_mod.default_rankings()])
+_rep = qa.mismatch_report(year=2024, source="QS")
+check("质量报告含真实大学", len(_rep)>=10)
+_verdicts = {r["verdict"] for r in _rep}
+check("能识别『名不副实/高排名低质量』", "名不副实/高排名低质量" in _verdicts,
+      f"verdicts={_verdicts}")
+check("能识别『被低估/高性价比』", "被低估/高性价比" in _verdicts, f"verdicts={_verdicts}")
+_eth = next(r for r in _rep if r["school_id"]=="eth")
+check("ETH 被判定名不副实(高排名#7低质量)", _eth["verdict"]=="名不副实/高排名低质量")
+check("质量档案可合并三表出单校报告",
+      "quality_index" in qa.school_profile("mit"))
+check("缺失部分维度不把质量判极低", 0.0<=qa.quality_index("mit")<=1.0)
+
+print()
+print("="*66)
 print(f"结果：PASS {len(PASS)} / {len(PASS)+len(FAIL)}")
 print("="*66)
 if FAIL:

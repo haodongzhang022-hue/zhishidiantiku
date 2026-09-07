@@ -11,6 +11,8 @@
 5. **门槛洼地（Valley）**：同一所真实大学的多条体系路径中，找相对录取门槛最低（最省力）的一条。
 6. **大学与排名分离**：大学档案是静态实体，QS 排名是动态属性（按年份单独记录）。
 7. **mask 缺失机制**：缺失信息（如未提供 SAT）不被当作"弱"——缺失维度不参与训练。
+8. **LanceDB 双库**：换算库 score_db（大学/排名/门槛/年度）+ 分析库 quality_db（档案/师资含负面/成果）分表管理；无 lancedb 环境自动退化 JSON 存储。
+9. **质量鉴定**：排名 ≠ 真实水平。从分析库聚合规模/师生/论文/就业/师资分层得质量指数，识别"名不副实/高排名低质量"与"被低估/高性价比"价值洼地。
 
 ## 快速使用（详见 score-engine/README.md）
 ```bash
@@ -23,6 +25,9 @@ python -m score_engine.cli find-valley --school "University of Toronto"
 python -m score_engine.cli universities --year 2024          # 查看大学档案与排名
 python -m score_engine.cli drift --data data/sample_admissions.csv "高考 652 分"  # 年度漂移
 python -m score_engine.cli convert "高考 652 分" --year 2024 --data data/sample_admissions.csv
+python -m score_engine.cli db --backend json seed        # LanceDB 双库灌库（json 兜底免装包）
+python -m score_engine.cli quality --year 2024          # 名不副实/被低估 质量报告
+python -m score_engine.cli quality --school eth          # 单校质量档案
 python3 ../score-engine/tests/verify_features.py      # 功能达成度核验
 ```
 

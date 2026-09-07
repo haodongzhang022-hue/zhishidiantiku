@@ -16,14 +16,25 @@
 - 不再使用 -1 占位缺失（-1 在 0~1 归一化空间中是误导性信号，会被模型学成"缺失=极弱"）。
 - verify_features 确认：缺失 SAT / GPA 不压低学生价值。
 
-## 仍在路线图
+### ✅ LanceDB 双库落地（P0 → 已完成）
+- 新增 `score_engine/db.py`：`ScoreDB` 统一门面，拆成
+  **换算库 score_db**（university / university_ranking / admission_threshold /
+  system_calendar）与 **分析库 quality_db**（school_profile / school_faculty /
+  school_outcome）两套库、七张表分表管理，减少人工查询。
+- 后端优先 **LanceDB**；环境无 `lancedb` 时退化为**纯标准库 JSON 表存储**
+  （同一套 schema 与查询 API），CI 免装第三方包也全绿。
+- `db seed / tables / query` 子命令打通灌库、列表、按表检索。
+- `verify_features` [9]：双库建好、可按 id 查大学/逐年排名/质量档案 7 项断言全过。
 
-### P0：全球大学扩展
-- 将内置 20 所大学扩展到 QS1000 内的数百所，补充各校历年真实 QS/THE/USNews 排名。
-- 为每所大学接入真实规模/学费/论文等静态字段。
+### ✅ 质量维度：排名 ≠ 真实水平（P1 → 已完成）
+- 新增 `score_engine/quality.py`：从分析库三张表聚合
+  **学校规模/师生比/学费/论文/被引/就业 + 师资分层(含负面) → 质量指数 [0,1]**。
+- 用回归法对全库学校做**同类公平比较**（每所跟它排名的正常水平比），
+  识别离群：**名不副实/高排名低质量** 与 **被低估/高性价比（价值洼地）**。
+- `quality` 子命令：全库名不副实报告 / 单校质量档案。
+- `verify_features` [10]：ETH(#7)被识别为名不副实等 7 项断言全过。
 
-### P0：接入 LanceDB 双库多表
-把数据拆成两套库：
+### 双库结构
 
 ```
 ┌─────────────── 分析库（quality / 分析维度） ───────────────┐
@@ -37,7 +48,7 @@
 └────────────────────────────────────────────────────────────┘
 ```
 
-### 表结构草案
+### 表结构（已在 db.py 落地）
 
 **university（大学档案 · 静态实体）**
 | 字段 | 说明 |
@@ -86,9 +97,11 @@
 | raw_score | 当年录取门槛画像 |
 | unified_value | 统一价值 |
 
-### P1：质量维度
-- 新增 `quality.py`：从 school_profile/faculty/outcome 计算"质量指数"。
-- 做"排名 vs 质量"偏差报告（排名高但质量低 = 名不副实）。
+## 仍在路线图
+
+### P0：全球大学扩展
+- 将内置 20 所大学扩展到 QS1000 内的数百所，补充各校历年真实 QS/THE/USNews 排名。
+- 为每所大学接入真实规模/学费/论文等静态字段。
 
 ### P2：真实数据训练
 - 用真实历年录取 CSV 重训 NN，替代当前启发式 + 合成校准。
@@ -98,4 +111,4 @@
 - `score_engine/drift.py` → 对应 `system_calendar`
 - `score_engine/valley.py` → 对应"门槛洼地"查询
 - `score_engine/models.py` / `nn.py` → masked training 支撑
-- 新增 `quality.py`、`db_lancedb.py` 建议放后续 PR
+- `score_engine/db.py`、`quality.py` **已完成**；剩余 P0 全球大学扩展 / P2 真实数据训练

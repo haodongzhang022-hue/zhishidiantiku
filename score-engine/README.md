@@ -24,6 +24,19 @@ QS 排名是**动态属性**（每年变化），大学本身是**静态实体**
   模型不会学到"缺失=弱"。
 - 非官方/不确定数据可标注 source 标记，不混入高可信训练样本。
 
+### ③ 排名 ≠ 真实水平（质量鉴定）
+QS 排名代表"名气"，不代表真实水平——可能"排名高但质量低"。引擎把质量鉴定做成
+独立维度（`quality.py`）：从分析库多张表聚合**学校规模 / 师生比 / 学费 / 论文 / 被引 /
+就业 / 师资分层(含负面)**，得质量指数 [0,1]，再与排名做同类回归比较：
+- **被低估/高性价比**：真实质量远超其排名名气；
+- **名不副实/高排名低质量**：名气远超真实水平（用户点名要识别）。
+
+### ④ 双库入库管理（LanceDB 可选）
+数据落地为**两套库分表**，减少人工查询：
+- **换算库 score_db**：university / university_ranking / admission_threshold / system_calendar
+- **分析库 quality_db**：school_profile / school_faculty / school_outcome
+- 后端优先 LanceDB；环境无 `lancedb` 时退化为**纯标准库 JSON 表**（API 一致，CI 免装包）。
+
 ## 快速开始
 
 ```bash
@@ -51,6 +64,15 @@ python -m score_engine.cli universities --year 2024
 
 # 7) 功能达成度核验
 python3 tests/verify_features.py
+
+# 8) LanceDB 双库灌库 / 列表 / 查询（可选 --backend json 走免装包兜底）
+python -m score_engine.cli db --backend json seed
+python -m score_engine.cli db --backend json tables
+python -m score_engine.cli db --backend json query --db score --table university_ranking --school_id mit
+
+# 9) 质量鉴定：名不副实 / 被低估 报告（排名 ≠ 真实水平）
+python -m score_engine.cli quality --year 2024
+python -m score_engine.cli quality --school eth
 ```
 
 ## 目录结构
@@ -66,8 +88,11 @@ python3 tests/verify_features.py
 | `score_engine/trainer.py` | **训练 / 后训练 / 效果跟踪** |
 | `score_engine/drift.py` | **年度漂移识别** |
 | `score_engine/valley.py` | **门槛洼地寻优** |
+| `score_engine/db.py` | **LanceDB 双库**（score 换算库 + quality 分析库，可选后端+JSON兜底） |
+| `score_engine/quality.py` | **质量鉴定**（规模/师资含负面/论文/就业 → 名不副实报告） |
 | `score_engine/cli.py` | 命令行入口 |
 | `score_engine/demo.py` | 端到端演示 |
+| `scripts/gen_quality_data.py` | 质量示例数据生成（P2 由真实数据替换） |
 | `data/sample_admissions.csv` | 示例历年录取样本（真实大学） |
 | `models/` | 训练产物输出目录（gitignore） |
 
@@ -76,4 +101,6 @@ python3 tests/verify_features.py
 - **门槛洼地（valley）**：同一所大学的多条体系路径中，换算成本最低/最容易达成的路径。
 - **年度漂移（drift）**：录取门槛随年份浮动，`YearDrift` 从历年样本估计难度水位。
 - **mask 缺失机制**：缺失特征不参与训练，避免"缺失=弱"的误判。
+- **双库**：score_db（大学/排名/门槛/年度）+ quality_db（档案/师资/成果），LanceDB 或 JSON 兜底。
+- **质量指数**：排名 ≠ 真实水平；离群报告识别"名不副实"与"被低估"。
 - **功能核验**：`tests/verify_features.py` 逐项验证全部核心功能。
