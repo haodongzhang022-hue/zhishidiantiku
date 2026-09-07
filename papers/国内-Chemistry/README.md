@@ -1,3 +1,4 @@
+
 # 国内化学（人教版·中高考）· 体系铺题范围说明
 
 > 范围编号：**CN-CHEM-RJ-2022**　类型：syllabus + exam
@@ -31,3 +32,4 @@
 示例：`CN-CHEM-RJ-2022-MC-0001`
 
 > 本目录为国内化学铺题范围说明；题目按主题落 `questions/国内化学/` 子目录。
+ origin/auto/system-difficulty-5de9
