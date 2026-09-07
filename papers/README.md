@@ -37,7 +37,7 @@
 | AL-CHEM-CIE-2024 | A-Level 化学 CIE(Cambridge) 考纲 2024 | syllabus | 2024 | [CIE 考纲](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels-chemistry-9701/) | AL化学 | AL | 17 题在库（含质谱演示 1 + 扩铺 16） | 架构·开发 | 2026-09-07 |
 | IB-CHEM-IBO-2025 | IB DP Chemistry 大纲（2025 首考） | syllabus | 2025 | [IB 官方大纲](https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/chemistry/) | IB化学 | IB | 12 题在库（代表口径题） | 架构·开发 | 2026-09-07 |
 | CN-CHEM-RJ-2022 | 国内初中化学 人教版 2022 课标口径（中考） | syllabus+exam | 2022 | 人教版义务教育化学课程标准(2022年版) | 国内化学 | 国内 | 10 题在库（代表口径题） | 架构·开发 | 2026-09-07 |
-| DEV-BASE-GEN-2026 | 开发基础通用知识（工程化/性能/方法论，无单一考纲） | textbook | 2026 | 软件工程/研发通用知识集合 | 开发基础 | 其他 | 12 题在库（扩铺 12） | 架构·开发 | 2026-09-07 |
+| DEV-BASE-GEN-2026 | 开发基础通用知识（工程化/性能/方法论，无单一考纲） | textbook | 2026 | 软件工程/研发通用知识集合 | 开发基础 | 其他 | 13 题在库（扩铺 13） | 架构·开发 | 2026-09-07 |
 | AL-CHEM-EDEXCEL-2024 | A-Level 化学 Edexcel(培生) 2024 | syllabus | 2024 | Edexcel A-Level Chemistry(9CH0) 大纲 | AL化学 | AL | 待铺（通道登记） | 待分工 | 2026-09-07 |
 
 > 首批优先从 **AP 化学** 出，锚定 College Board 官方《AP Chemistry Course and Exam Description》，
