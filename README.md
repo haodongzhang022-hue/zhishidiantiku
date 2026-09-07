@@ -25,7 +25,7 @@
 | scripts/__tests__/ | 校验脚本自测用例 |
 | docs/ | 文档索引 |
 | capabilities/ | **跨库能力注册与索引机制**（解耦登记可调用的跨库能力契约 + 缺口引导），见 [capabilities/README.md](capabilities/README.md) |
-| scripts/cap.mjs | 🧩 能力索引查询（node scripts/cap.mjs available/gaps/find…） |
+| scripts/cap.mjs | 🧩 能力索引查询 + 可执行调用（node scripts/cap.mjs available/gaps/find/run…） |
 | score-engine/ | **跨体系分数换算引擎**（识别/换算/深度学习/门槛洼地寻优），见 [score-engine/README.md](score-engine/README.md) |
 | .github/PULL_REQUEST_TEMPLATE.md | PR 模板 |
 | CONTRIBUTING.md | 贡献协作流程 |
@@ -62,6 +62,7 @@ node scripts/learn.mjs list       # 查看题库知识点
 node scripts/learn.mjs progress   # 查看个人进度（会/不会/未学）
 node scripts/cap.mjs available     # 列出可调用的跨库能力
 node scripts/cap.mjs gaps          # 列出应有无缺的能力（可去增强）
+node scripts/cap.mjs run cap.arch.dev   # 生成可执行调用语句（可用→召唤/命令；缺口→获取引导）
 node scripts/learn.mjs quiz       # 从还没会的知识点里随机刷题
 ```
 
@@ -71,7 +72,8 @@ node scripts/learn.mjs quiz       # 从还没会的知识点里随机刷题
 - **有源即用**：能力源存在 → 按「来源库+入口」自动匹配调用；
 - **无源即缺**：应有无缺的能力 → 记入 `capabilities/gaps.md`（缺口清单）并给出**获取/增强引导**，
   让玩家/系统知道"有这个机制、可以去增强"，而非"静默缺失 / 不知道有"。
-- 查询：`node scripts/cap.mjs find <能力> / available / gaps`。
+- 查询：`node scripts/cap.mjs find <能力> / available / gaps / all`。
+- 执行落地：`node scripts/cap.mjs run <能力>` —— 把「可用能力」直接生成**可复制调用的召唤语句/命令**（跨库 NPC 输出完整 `@仓库(角色) [触发:角色]`，本地能力输出可执行命令）；对「缺口能力」输出获取/增强引导。真正做到"有源即用、无源即引导"，不只停在索引查询。
 
 > 解耦原则：本目录只登记能力契约，不内嵌实现（实现留在各自能力库）→ 换库/跨库不再"机制丢失"。
 

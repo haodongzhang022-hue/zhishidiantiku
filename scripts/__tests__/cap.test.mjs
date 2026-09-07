@@ -90,3 +90,43 @@ test('gaps.md 章节号唯一性（不重复出现二/三）', () => {
     seen.add(n);
   }
 });
+
+// ---------- run 子命令（执行落地）----------
+test('run: 跨库 NPC 生成完整召唤语句（含组织前缀 + 触发段）', () => {
+  const out = run(['run', 'cap.arch.dev']);
+  assert.match(out, /@dongdongxiaozu\/dongjiagoushi\(架构·开发\) \[触发:架构·开发\]/);
+  assert.doesNotMatch(out, /召唤语句\s+\s+@dongjiagoushi/); // 不应缺组织前缀
+});
+
+test('run: 经理角色召唤语句带完整路径', () => {
+  const out = run(['run', 'cap.arch.manager']);
+  assert.match(out, /@dongdongxiaozu\/dongjiagoushi\(架构·经理\) \[触发:架构·经理\]/);
+});
+
+test('run: 本地命令能力直接输出可执行命令', () => {
+  const out = run(['run', 'cap.learn.quiz']);
+  assert.match(out, /node scripts\/learn\.mjs quiz/);
+  const out2 = run(['run', 'cap.check.questions']);
+  assert.match(out2, /node scripts\/check\.mjs/);
+});
+
+test('run: 缺口能力给出获取/增强引导', () => {
+  const out = run(['run', 'cap.mishu.route']);
+  assert.match(out, /\[缺口\]/);
+  assert.match(out, /获取\/增强引导/);
+  assert.match(out, /@dongdongxiaozu\/zhuanyemishutuan\(秘书·接待\)/);
+});
+
+test('run: 未登记能力给出提示', () => {
+  const out = run(['run', 'cap.nonexist']);
+  assert.match(out, /未登记能力/);
+});
+
+test('registry.md: 跨库 NPC 调用入口均带组织前缀 dongdongxiaozu/', () => {
+  const text = readFileSync(resolve(repoRoot, 'capabilities', 'registry.md'), 'utf8');
+  // 架构 7 角色 + 秘书 3 角色的调用入口都应指向 @dongdongxiaozu/
+  for (const role of ['架构·总师','架构·经理','架构·开发','架构·评审','架构·测试','架构·对齐','架构·监控哨兵']) {
+    assert.ok(text.includes(`@dongdongxiaozu/dongjiagoushi(${role})`), `缺组织前缀: ${role}`);
+  }
+  assert.ok(text.includes('@dongdongxiaozu/zhuanyemishutuan(秘书·接待)'));
+});
