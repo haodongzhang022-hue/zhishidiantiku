@@ -30,7 +30,7 @@
 | 关系类型 | from | to | 语义 |
 |----------|------|----|------|
 | `covered_by` | L0 知识点 | L1 题目 | 该知识点被这题考察 |
-| `used_in` | L1 题目 | L2 场景 | 这题用于该场景 |
+| `used_in` | L1 题目 | L2 场景 | 这题用于该场景（预留，随向量软通道接入） |
 | `requires` | L2 场景 | L0 知识点 | 该场景需要掌握此知识点 |
 
 ## 数据存储
@@ -49,7 +49,7 @@
 ```bash
 node scripts/graph.mjs layers                    # 列出各层节点
 node scripts/graph.mjs node k.electron-config    # 查单个节点详情
-node scripts/graph.mjs by-scene s.ap-chem-unit1  # 场景→题目（used_in + covered_by 回溯）
+node scripts/graph.mjs by-scene s.ap-chem-unit1  # 场景→题目（requires + covered_by 回溯）
 node scripts/graph.mjs by-kp k.electron-config   # 知识点→题目（covered_by）
 node scripts/graph.mjs scene-from-kp <场景关键字> # 输入现实需求→命中场景→出题（精准刷题链路）
 node scripts/graph.mjs jump <知识点>             # 知识点→题目→场景 函数跳转全链路
