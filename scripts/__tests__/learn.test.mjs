@@ -5,7 +5,7 @@ import assert from 'node:assert';
 import { mkdtempSync, writeFileSync, mkdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
-import { grade, normalizeAnswer, applyAnswer, isMastered, loadBank } from '../learn.mjs';
+import { grade, normalizeAnswer, applyAnswer, isMastered, loadBank, parseArgs, checkAnswerCount, AnswerShortageError } from '../learn.mjs';
 
 // ---------- normalize / grade ----------
 test('normalizeAnswer 归一化字母并排序去重', () => {
@@ -112,4 +112,24 @@ test('loadBank 按目录归知识点，并按知识点聚合题目', () => {
   assert.ok(bank.kpMap.has('AP化学/Unit1'));
   assert.equal(bank.kpMap.get('开发基础').length, 2);
   assert.equal(bank.kpMap.get('AP化学/Unit1').length, 2);
+});
+
+// ---------- --answer 参数健壮性（评审 P2① 收口） ----------
+test('parseArgs：--answer / --progress-file 缺值(置于末位)抛错而非 undefined 越界', () => {
+  assert.throws(() => parseArgs(['--answer']), /缺少答案值/);
+  assert.throws(() => parseArgs(['--progress-file']), /缺少文件路径/);
+});
+test('parseArgs：正常多选答案解析为去空数组', () => {
+  const a = parseArgs(['test', '开发基础', '--answer', 'A, ,AC', '--progress-file', 'x.json']);
+  assert.deepEqual(a.answers, ['A', 'AC']);
+  assert.equal(a.progressFile, 'x.json');
+  assert.deepEqual(a._, ['test', '开发基础']);
+});
+test('checkAnswerCount：--answer 数量不足即抛 AnswerShortageError（拒绝静默末位顶替）', () => {
+  assert.throws(() => checkAnswerCount(['A'], 2), AnswerShortageError); // 2 题仅给 1 答 -> 不足
+  assert.doesNotThrow(() => checkAnswerCount(['A'], 1));                    // 1 题 1 答充足
+  assert.throws(() => checkAnswerCount(['A', 'B'], 3), AnswerShortageError);
+  assert.throws(() => checkAnswerCount([], 1), AnswerShortageError);
+  assert.doesNotThrow(() => checkAnswerCount(['A', 'B'], 2));
+  assert.doesNotThrow(() => checkAnswerCount(undefined, 2)); // 交互模式跳过校验
 });

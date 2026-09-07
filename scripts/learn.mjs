@@ -43,14 +43,22 @@ function parseArgs(argv) {
   const a = { _: [], answers: undefined, progressFile: undefined };
   for (let i = 0; i < argv.length; i++) {
     const t = argv[i];
-    if (t === '--answer') a.answers = argv[++i].split(',').map((s) => s.trim()).filter(Boolean);
-    else if (t === '--progress-file') a.progressFile = argv[++i];
-    else if (t === '--no-color') { /* skip */ }
+    if (t === '--answer') {
+      const v = argv[++i];
+      if (v == null) throw new Error('--answer 缺少答案值（示例：--answer A,B,y）');
+      a.answers = v.split(',').map((s) => s.trim()).filter(Boolean);
+    } else if (t === '--progress-file') {
+      const v = argv[++i];
+      if (v == null) throw new Error('--progress-file 缺少文件路径');
+      a.progressFile = v;
+    } else if (t === '--no-color') { /* skip */ }
     else a._.push(t);
   }
   return a;
 }
-const A = parseArgs(process.argv.slice(2));
+let A;
+try { A = parseArgs(process.argv.slice(2)); }
+catch (e) { console.error('\x1b[31m[参数错误] ' + e.message + '\x1b[0m'); process.exit(1); }
 const cmd = A._[0];
 const kpArg = A._[1];
 
@@ -115,6 +123,17 @@ function grade(q, userAns) {
   return correct === user;
 }
 
+// ---- --answer 数量校验：不足即报错（杜绝用末位答案静默顶替后续题） ----
+class AnswerShortageError extends Error {
+  constructor(message) { super(message); this.name = 'AnswerShortageError'; }
+}
+// 非交互(--answer)模式下，校验答案数能覆盖 needCount 道题；不足即抛错。未用 --answer(undefined) 时跳过。
+function checkAnswerCount(answers, needCount) {
+  if (answers && answers.length < needCount) {
+    throw new AnswerShortageError('--answer 提供的答案不足：本次需 ' + needCount + ' 个，实际仅提供 ' + answers.length + ' 个。请补足或去掉 --answer 走交互。');
+  }
+}
+
 // ---- 进度库 ----
 function progressPath() {
   if (A.progressFile) return A.progressFile;
@@ -166,7 +185,7 @@ function printQuestion(q) {
 
 // 取答案：优先用 --answer 的第 seq 项；否则交互输入。返回 boolean|null|undefined(退出)
 async function takeAnswer(rl, q, seq) {
-  const fixed = A.answers && A.answers.length ? A.answers[Math.min(seq, A.answers.length - 1)] : null;
+  const fixed = (A.answers && A.answers.length) ? A.answers[seq] : null; // 数量已在命令入口由 checkAnswerCount 校验，越界即报错不静默顶替
   if (q.options) {
     const input = fixed != null ? fixed : await rl.question('  你的答案（字母，如 A / AC；q 退出）：');
     if (!fixed && input.trim().toLowerCase() === 'q') return undefined;
@@ -214,6 +233,7 @@ async function cmdTest(bank, prog, kp) {
   }
   if (isMastered(prog, kp)) console.log(c.green(`  [${kp} 已判定「会了」，可先 reset 再重测]`));
   console.log(c.bold(`掌握测试 · ${kp}`) + c.dim(`（共 ${qs.length} 题，随机抽 2 道不同题，全对才算会）`));
+  checkAnswerCount(A.answers, 2); // --answer 非交互：需 ≥2 个答案
   // 随机抽 2 道不同题
   const picks = [];
   while (picks.length < 2) {
@@ -258,6 +278,7 @@ async function cmdQuiz(bank, prog) {
     return;
   }
   const kp = unmastered[randomInt(unmastered.length)];
+  checkAnswerCount(A.answers, 1); // --answer 非交互：至少需 1 个答案
   const qs = bank.kpMap.get(kp);
   const correctSet = new Set(prog.points[kp]?.correct || []);
   const cand = qs.filter((q) => !correctSet.has(q.id));
@@ -305,31 +326,36 @@ function help() {
   console.log(c.dim('  --progress-file PATH  自定义进度库路径'));
 }
 
-function main() {
-  const bank = loadBank();
-  const prog = loadProgress();
-  switch (cmd) {
-    case 'list': return cmdList(bank);
-    case 'progress': return cmdProgress(bank, prog);
-    case 'test':
-      return kpArg ? cmdTest(bank, prog, kpArg) : (console.log(c.red('缺少知识点名，示例：node scripts/learn.mjs test 开发基础')), help());
-    case 'quiz': return cmdQuiz(bank, prog);
-    case 'reset': return cmdReset(prog, kpArg);
-    case 'help': case '-h': case '--help': return help();
-    default:
-      console.log(c.red('未知命令：') + (cmd || '(空)'));
-      help();
+async function main() {
+  try {
+    const bank = loadBank();
+    const prog = loadProgress();
+    switch (cmd) {
+      case 'list': return cmdList(bank);
+      case 'progress': return cmdProgress(bank, prog);
+      case 'test':
+        return kpArg ? await cmdTest(bank, prog, kpArg) : (console.log(c.red('缺少知识点名，示例：node scripts/learn.mjs test 开发基础')), help());
+      case 'quiz': return await cmdQuiz(bank, prog);
+      case 'reset': return cmdReset(prog, kpArg);
+      case 'help': case '-h': case '--help': return help();
+      default:
+        console.log(c.red('未知命令：') + (cmd || '(空)'));
+        help();
+    }
+  } catch (e) {
+    if (e instanceof AnswerShortageError) { console.error(c.red('✗ ') + e.message); process.exit(1); }
+    throw e;
   }
 }
 const isMainEntry =
   process.argv[1] &&
   fileURLToPath(import.meta.url) ===
     (process.argv[1].startsWith('file://') ? fileURLToPath(process.argv[1]) : process.argv[1]);
-if (isMainEntry) main();
+if (isMainEntry) main().catch((e) => { console.error(c.red('执行出错：') + (e && e.stack || e)); process.exit(1); });
 
 // 导出供其它模块/测试复用的核心函数
 export {
   loadBank, grade, normalizeAnswer, applyAnswer, isMastered,
   field, section, progressPath, loadProgress, saveProgress,
-  parseArgs,
+  parseArgs, checkAnswerCount, AnswerShortageError,
 };
