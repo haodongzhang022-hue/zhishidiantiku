@@ -39,8 +39,8 @@
 3. **跑管道落库**：
    ```bash
    cd score-engine
-   python -m score_engine.cli ingest --backend json seed      # 全量
-   python -m score_engine.cli ingest --backend json dry-run   # 先看会写进哪、不落库
+   python -m score_engine.cli ingest --backend json            # 全量落库
+   python -m score_engine.cli ingest --backend json --dry-run  # 先看会写进哪、不落库
    ```
 
 ## 规则如何复用（规则引擎在 score_engine/pipeline/rules.py）

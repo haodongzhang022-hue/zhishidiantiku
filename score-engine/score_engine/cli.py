@@ -256,7 +256,6 @@ def _print_valley(r):
     print(f"理由: {r['reason']}")
 
 
-
 def _cmd_db(args):
     from . import db, university as univ_mod
     from . import drift as drift_mod
@@ -364,13 +363,13 @@ def _cmd_ingest(args):
             return
         report = ingest.run(dbh, manifest_path=args.manifest)
         print(f"后端: {dbh.backend_kind()}  root: {args.root}")
-        print(f"数据源: {report['sources']} 个，共写入 "
+        print(f"数据源: {report['sources']} 个，净新增 "
               f"{sum(report['by_table'].values())} 行，丢弃 {report['dropped_total']} 行")
         print()
         for s in report["per_source"]:
             tag = "OK" if not s["warnings"] else "!"
             print(f"[{tag}] {s['source_id']:<26} → {s['db']}.{s['table']:<20} "
-                  f"读{s['read']:<4} 写入{s['inserted']:<4} 丢{s['dropped']}")
+                  f"读{s['read']:<4} 新增{s['inserted']:<4} 丢{s['dropped']}")
             for w in s["warnings"]:
                 print(f"        ⚠ {w}")
             if s["provenance"]:
@@ -386,4 +385,3 @@ def _cmd_ingest(args):
 
 if __name__ == "__main__":
     sys.exit(main())
-

@@ -108,8 +108,10 @@ def set_band_from_rank(row: dict, ctx: dict) -> dict:
         row["band"] = "top100"
     elif rk <= 500:
         row["band"] = "top500"
+    elif rk <= 1000:
+        row["band"] = "top1000"
     else:
-        row["band"] = "500-1000"
+        row["band"] = "1000+"
     return row
 
 

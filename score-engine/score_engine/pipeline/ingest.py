@@ -127,10 +127,7 @@ def run(db: ScoreDB, manifest_path: Optional[str] = None,
         batch = []
         for raw in raw_rows:
             mapped = _map_row(raw, src.field_map)
-            try:
-                out = rules_mod.apply_rules(mapped, src.rule_names, src.ctx)
-            except KeyError as e:     # 未登记规则名
-                raise e
+            out = rules_mod.apply_rules(mapped, src.rule_names, src.ctx)
             if out is None:
                 dropped += 1
                 continue
@@ -145,9 +142,9 @@ def run(db: ScoreDB, manifest_path: Optional[str] = None,
                 n = db.upsert_quality(src.table, batch)
             inserted = n
             ok_tables.add(src.table)
-        # 校验问题：声明必填/源文件是否有空等
+        # 校验问题：upsert 返回净新增数，重复同主键(数据更新或未变化)不计入
         if inserted < len(batch):
-            warnings.append(f"{len(batch)-inserted} 行未实际写入(可能主键重复)")
+            warnings.append(f"{len(batch)-inserted} 行命中已有主键（已按逻辑主键更新/去重）")
         if dropped:
             warnings.append(f"{dropped} 行因规则被丢弃(缺必填等)")
 
@@ -156,7 +153,7 @@ def run(db: ScoreDB, manifest_path: Optional[str] = None,
             "db": src.db,
             "table": src.table,
             "read": len(raw_rows),
-            "inserted": inserted,
+            "inserted": inserted,      # 净新增行数（命中已有主键的不计）
             "dropped": dropped,
             "warnings": warnings,
             "provenance": src.ctx.get("provenance", ""),

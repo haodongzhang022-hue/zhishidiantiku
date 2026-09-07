@@ -60,7 +60,6 @@ class TestRecognizer(unittest.TestCase):
         self.assertEqual(r.features.get("sat"), 1520.0)
 
 
-
 class TestRegistry(unittest.TestCase):
     def test_normalize(self):
         self.assertEqual(registry.normalize_system("A-Level"), "AL")
@@ -206,10 +205,6 @@ class TestYearDrift(unittest.TestCase):
     def test_scale_for_none_is_one(self):
         yd = drift.YearDrift()
         self.assertEqual(yd.scale_for(None), 1.0)
-
-
-if __name__ == "__main__":
-    unittest.main()
 
 
 class TestLanceDBDualDB(unittest.TestCase):
@@ -374,3 +369,82 @@ class TestDataPipeline(unittest.TestCase):
                 ingest.run(dbh, manifest_path=mf)
         finally:
             dbh.close()
+
+    def test_upsert_merges_by_logical_primary_key(self):
+        """P1 修复：upsert 按逻辑主键合并——数据更新命中更新而非追加重复。"""
+        import os
+        from score_engine import db
+        root = os.path.join(self.tmp, "db_pk")
+        dbh = db.ScoreDB(root=root, backend="json")
+        try:
+            # 首次写入
+            n1 = dbh.upsert_score("university", [
+                {"id": "mit", "name_en": "MIT", "note": "v1"}
+            ])
+            n2 = dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2019, "rank": 2}
+            ])
+            self.assertEqual(n1, 1)
+            self.assertEqual(n2, 1)
+            self.assertEqual(dbh.count_score("university"), 1)
+            self.assertEqual(dbh.count_score("university_ranking"), 1)
+
+            # 同主键数据更新 → 应覆盖更新而非追加重复
+            n3 = dbh.upsert_score("university", [
+                {"id": "mit", "name_en": "MIT", "note": "v2"}
+            ])
+            n4 = dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2019, "rank": 99}
+            ])
+            # 净新增 0（主键已存在，为更新）
+            self.assertEqual(n3, 0)
+            self.assertEqual(n4, 0)
+            # 行数不变（未产生重复）
+            self.assertEqual(dbh.count_score("university"), 1)
+            self.assertEqual(dbh.count_score("university_ranking"), 1)
+            # 数据确已更新
+            mit = dbh.query_score("university", {"id": "mit"})
+            self.assertEqual(mit[0]["note"], "v2")
+            rk = dbh.query_score("university_ranking",
+                                 {"university_id": "mit", "source": "QS", "year": 2019})
+            self.assertEqual(rk[0]["rank"], 99)
+
+            # 字节级相同重复 ingest → 净新增 0
+            n5 = dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2019, "rank": 99}
+            ])
+            self.assertEqual(n5, 0)
+            self.assertEqual(dbh.count_score("university_ranking"), 1)
+        finally:
+            dbh.close()
+
+    def test_upsert_new_pk_appends_without_dup(self):
+        """upsert 新增不同主键记录应追加，且同主键已存在的不产生重复。"""
+        import os
+        from score_engine import db
+        root = os.path.join(self.tmp, "db_append")
+        dbh = db.ScoreDB(root=root, backend="json")
+        try:
+            # 先写 mit 2019
+            dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2019, "rank": 2}
+            ])
+            # 新增 mit 2020（不同主键）
+            n = dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2020, "rank": 3}
+            ])
+            self.assertEqual(n, 1)
+            self.assertEqual(dbh.count_score("university_ranking"), 2)
+            # 再混合提交：1 新 + 1 旧 → 净新增 1
+            n2 = dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2019, "rank": 4},   # 已存在→更新
+                {"university_id": "stanford", "source": "QS", "year": 2020, "rank": 5},  # 新
+            ])
+            self.assertEqual(n2, 1)  # 只有 stanford 是新的
+            self.assertEqual(dbh.count_score("university_ranking"), 3)
+        finally:
+            dbh.close()
+
+
+if __name__ == "__main__":
+    unittest.main()
