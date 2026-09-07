@@ -66,7 +66,7 @@ def main():
     # 4) 洼地寻优（对真实大学）
     print("\n[4] 找 MIT 的低分路径")
     vf = valley.ValleyFinder(model=t.model)
-    v = vf.find_valley("mit", recs)   # 用 school_id 查询
+    v = vf.find_valley("mit", recs)   # 用 university_id 查询
     for i, row in enumerate(v["systems_ranked"], 1):
         mark = "  << 洼地" if i == 1 else ""
         print(f"  {i}. {row['system']:<8} 成本={row['competition_cost']:.3f} "

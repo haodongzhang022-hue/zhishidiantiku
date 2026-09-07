@@ -67,14 +67,16 @@ SYSTEM_PROFILES: Dict[str, Dict] = {
 }
 
 # 体系 → 内部字段名（标准化）
+# ⚠️ 字段名必须与 score_engine/models.py 的 FEATURE_SCHEMA 键一致，
+#    避免同一内容出现两个近似名字的量。
 SYSTEM_FIELDS: Dict[str, List[str]] = {
-    "AP": ["ap_exams", "gpa", "sat", "toefl", "ielts"],
-    "AL": ["al_grades", "ielts", "toefl"],
+    "AP": ["ap_avg", "ap_subjects", "ap_top_ratio", "gpa", "sat", "toefl", "ielts"],
+    "AL": ["al_avg", "al_subjects", "al_top_ratio", "ielts", "toefl"],
     "IB": ["ib_total", "toefl", "ielts"],
-    "GAOKAO": ["gk_total", "gk_rank", "province"],
-    "SAT": ["sat_total"],
-    "TOEFL": ["toefl_total"],
-    "IELTS": ["ielts_total"],
+    "GAOKAO": ["gk_total", "gk_rank", "province_enc"],
+    "SAT": ["sat"],
+    "TOEFL": ["toefl"],
+    "IELTS": ["ielts"],
 }
 
 # 语言成绩同效范围（用于去重/合并）
@@ -87,7 +89,7 @@ class AdmissionRecord:
 
     设计要点：
     - `school`：学校显示名（可能是真实大学英文名）。
-    - `school_id`：大学唯一 ID（关联 University.id）。
+    - `university_id`：大学唯一 ID（关联 University.id）。
       **不再把 "QS100" 这类排名桶名当作 school**，排名与大学分离。
     - `features`：**缺失字段不放入 dict**（等价于 None），
       由特征向量化时用 mask 标记，而不是 -1 占位。
@@ -95,7 +97,7 @@ class AdmissionRecord:
     Attributes
     ----------
     school: 学校显示名（如 "Massachusetts Institute of Technology"）
-    school_id: 大学唯一 ID（如 "mit"），用于关联大学静态档案与排名
+    university_id: 大学唯一 ID（如 "mit"），用于关联大学静态档案与排名
     year: 年份
     system: 体系代码（AP/AL/IB/GAOKAO...）
     admitted: 是否录取（label）
@@ -109,7 +111,7 @@ class AdmissionRecord:
     admitted: bool
     features: Dict[str, float] = field(default_factory=dict)
     source: str = ""
-    school_id: str = ""     # 关联 University.id（新增）
+    university_id: str = ""     # 关联 University.id（新增）
 
     def to_dict(self):
         return asdict(self)

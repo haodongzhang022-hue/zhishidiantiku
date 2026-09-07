@@ -141,10 +141,12 @@ class MLP:
         n = len(X)
         if masks is None:
             masks = [[1] * len(X[i]) for i in range(n)]
+        # 固定 RNG：seed 可复现，避免每次训练 shuffle 结果不同
+        rng = random.Random(self.seed) if self.seed is not None else random.Random(0)
         losses = []
         for ep in range(epochs):
             idx = list(range(n))
-            random.shuffle(idx)
+            rng.shuffle(idx)
             total = 0.0
             for i in idx:
                 p = self.predict(X[i], masks[i])

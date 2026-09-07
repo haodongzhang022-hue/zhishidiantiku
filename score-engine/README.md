@@ -14,7 +14,7 @@ QS 排名是**动态属性**（每年变化），大学本身是**静态实体**
 - `UniversityRanking` —— (university, source, year) → rank，动态按年记录。
 
 训练样本的 `school` 存**真实大学名**（如 "Massachusetts Institute of Technology"），
-`school_id` 存唯一 ID（如 "mit"），不再用 "QS100" 这种排名桶名伪装成学校。
+`university_id` 存唯一 ID（如 "mit"），不再用 "QS100" 这种排名桶名伪装成学校。
 
 ### ② 缺失信息 ≠ 弱（NaN/mask 机制）
 缺失成绩（如未提供 SAT/托福）**不应被模型当"学生弱"**。
@@ -52,7 +52,7 @@ python -m score_engine.cli train --data data/sample_admissions.csv --epochs 200
 # 3) 换算一条分数
 python -m score_engine.cli convert "AP: Calc BC 5, Physics 4, Chem 5, GPA 3.9"
 
-# 4) 找某所真实大学的低分路径（用 school_id 或全名）
+# 4) 找某所真实大学的低分路径（用 university_id 或全名）
 python -m score_engine.cli find-valley --school "mit"
 python -m score_engine.cli find-valley --school "University of Toronto"
 
@@ -68,7 +68,7 @@ python3 tests/verify_features.py
 # 8) LanceDB 双库灌库 / 列表 / 查询（可选 --backend json 走免装包兜底）
 python -m score_engine.cli db --backend json seed
 python -m score_engine.cli db --backend json tables
-python -m score_engine.cli db --backend json query --db score --table university_ranking --school_id mit
+python -m score_engine.cli db --backend json query --db score --table university_ranking --university_id mit
 
 # 9) 质量鉴定：名不副实 / 被低估 报告（排名 ≠ 真实水平）
 python -m score_engine.cli quality --year 2024

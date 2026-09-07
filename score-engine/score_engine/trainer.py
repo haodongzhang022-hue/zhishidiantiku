@@ -160,7 +160,7 @@ class Trainer:
     @staticmethod
     def _data_hash(records: List[registry.AdmissionRecord]) -> str:
         raw = "|".join(
-            f"{r.school}|{r.school_id}|{r.year}|{r.system}|{int(r.admitted)}|{sorted(r.features.items())}"
+            f"{r.school}|{r.university_id}|{r.year}|{r.system}|{int(r.admitted)}|{sorted(r.features.items())}"
             for r in records)
         return hashlib.md5(raw.encode()).hexdigest()[:8]
 

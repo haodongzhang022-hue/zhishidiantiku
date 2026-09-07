@@ -142,7 +142,7 @@ def make_mock_admissions(seed: int = 42,
                     feat = synthesize_feature(sys_, t, rng, year)
                     rec = registry.AdmissionRecord(
                         school=univ.name_en,      # 存真实大学英文名
-                        school_id=uid,            # 存大学唯一 ID
+                        university_id=uid,            # 存大学唯一 ID
                         year=year, system=sys_,
                         admitted=True, features=feat,
                         source="synthetic-demo")

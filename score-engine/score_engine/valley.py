@@ -60,11 +60,11 @@ class ValleyFinder:
         """针对某学校，返回各体系达成度排序，找出"洼地"。
 
         学校定位支持两种方式：
-        - `school` 填大学名（如 "Massachusetts Institute of Technology"）或 school_id（如 "mit"）
+        - `school` 填大学名（如 "Massachusetts Institute of Technology"）或 university_id（如 "mit"）
         """
-        # 过滤该校记录（用 school 名或 school_id 匹配）
+        # 过滤该校记录（用 school 名或 university_id 匹配）
         recs = [r for r in historical
-                if r.school == school or r.school_id == school]
+                if r.school == school or r.university_id == school]
         if year:
             recs = [r for r in recs if r.year == year]
         if not recs:
@@ -86,7 +86,7 @@ class ValleyFinder:
         compare = self.compare_systems(thr)
         return {
             "school": school,
-            "school_id": recs[0].school_id if recs else "",
+            "university_id": recs[0].university_id if recs else "",
             "year": year,
             "estimated_threshold_value": round(thr, 3),
             "n_admitted": len(vals),

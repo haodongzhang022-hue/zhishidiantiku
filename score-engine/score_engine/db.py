@@ -40,16 +40,16 @@ from typing import Dict, List, Optional, Any, Iterable
 QUALITY_TABLES: Dict[str, List[str]] = {
     # 分析库：质量鉴定维度
     "school_profile": [
-        "school_id", "name", "scale_students", "scale_faculty",
+        "university_id", "name", "scale_students", "scale_faculty",
         "ratio_student_faculty", "tuition_intl_usd", "papers_yearly",
         "citations", "employment_rate", "accreditation", "source", "year",
     ],
     "school_faculty": [
-        "school_id", "name", "tier_high", "tier_mid", "tier_low",
+        "university_id", "name", "tier_high", "tier_mid", "tier_low",
         "star_count", "negative_ratio", "note", "source", "year",
     ],
     "school_outcome": [
-        "school_id", "name", "papers_yearly", "citations", "h_index",
+        "university_id", "name", "papers_yearly", "citations", "h_index",
         "patents", "employment_rate", "salary_outcome", "source", "year",
     ],
 }
@@ -64,7 +64,7 @@ SCORE_TABLES: Dict[str, List[str]] = {
         "university_id", "source", "year", "rank", "band",
     ],
     "admission_threshold": [
-        "school_id", "year", "system", "raw_score", "unified_value",
+        "university_id", "year", "system", "raw_score", "unified_value",
         "source", "admitted",
     ],
     "system_calendar": [
@@ -321,9 +321,9 @@ class ScoreDB:
         if records is not None:
             thr_rows = []
             for rec in records:
-                uid = getattr(rec, "school_id", "") or rec.school
+                uid = getattr(rec, "university_id", "") or rec.school
                 thr_rows.append({
-                    "school_id": uid, "year": rec.year, "system": rec.system,
+                    "university_id": uid, "year": rec.year, "system": rec.system,
                     "raw_score": json.dumps(rec.features, ensure_ascii=False),
                     "unified_value": getattr(rec, "school_value", None),
                     "source": rec.source, "admitted": bool(getattr(rec, "admitted", True)),

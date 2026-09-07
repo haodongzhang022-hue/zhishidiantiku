@@ -13,8 +13,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 def _load_csv(path: str):
     """从 CSV 加载 AdmissionRecord。
 
-    期望列：school, school_id, year, system, [admitted|school_value],
-            features(json)。school_id 可选（缺失则用 school 兜底）。
+    期望列：school, university_id, year, system, [admitted|school_value],
+            features(json)。university_id 可选（缺失则用 school 兜底）。
     """
     from . import registry
     recs = []
@@ -25,7 +25,7 @@ def _load_csv(path: str):
             feat = json.loads(features_raw) if features_raw else {}
             rec = registry.AdmissionRecord(
                 school=row.get("school", ""),
-                school_id=row.get("school_id", row.get("school", "")),
+                university_id=row.get("university_id", row.get("school", "")),
                 year=int(row.get("year", "0")),
                 system=registry.normalize_system(row.get("system", "")),
                 admitted=row.get("admitted", "1").lower() in ("1", "true", "yes", "admitted"),
@@ -67,7 +67,7 @@ def main(argv=None):
 
     # valley
     sp = sub.add_parser("find-valley", help="查某学校低分路径")
-    sp.add_argument("--school", help="大学名或 school_id，如 MIT/mit")
+    sp.add_argument("--school", help="大学名或 university_id，如 MIT/mit")
     sp.add_argument("--data", default=os.path.join("data", "sample_admissions.csv"))
     sp.add_argument("--year", type=int)
     sp.add_argument("--model", default="models/current.json")
@@ -102,11 +102,11 @@ def main(argv=None):
     sp_q = dbsub.add_parser("query", help="查询一张表")
     sp_q.add_argument("--table", required=True)
     sp_q.add_argument("--db", choices=["score", "quality"], default="score")
-    sp_q.add_argument("--school_id", default="")
+    sp_q.add_argument("--university_id", default="")
 
     # quality — 质量鉴定：排名 vs 真实水平
     sp = sub.add_parser("quality", help="质量鉴定：名不副实报告 / 单校档案")
-    sp.add_argument("--school", default="", help="查单校质量档案(school_id)")
+    sp.add_argument("--school", default="", help="查单校质量档案(university_id)")
     sp.add_argument("--year", type=int, default=2024)
     sp.add_argument("--source", default="QS")
 
@@ -231,7 +231,7 @@ def _print_valley(r):
     if "error" in r:
         print(r["error"])
         return
-    print(f"\n学校: {r['school']}  (id={r['school_id']})  year={r['year']}  "
+    print(f"\n学校: {r['school']}  (id={r['university_id']})  year={r['year']}  "
           f"统一门槛价值≈{r['estimated_threshold_value']}")
     print(f"样本数: {r['n_admitted']}")
     print("\n各体系路径（成本升序，最省力在前 = 洼地）：")
@@ -278,8 +278,8 @@ def _cmd_db(args):
             elif args.db == "score" and args.table == "university":
                 pk = "id"
             else:
-                pk = "school_id"
-            filt = {pk: args.school_id} if args.school_id else None
+                pk = "university_id"
+            filt = {pk: args.university_id} if args.university_id else None
             rows = (dbh.query_score(args.table, filt)
                     if args.db == "score" else dbh.query_quality(args.table, filt))
             if not rows:
@@ -315,10 +315,10 @@ def _cmd_quality(args):
 
     rep = qa.mismatch_report(year=args.year, source=args.source)
     print(f"\n『排名 vs 真实质量』对照（{args.year} · {args.source}，按质量指数降序）：")
-    print(f"{'school_id':<12} {'rank':<6} {'质量':<8} {'gap':<8} 判定")
+    print(f"{'university_id':<12} {'rank':<6} {'质量':<8} {'gap':<8} 判定")
     print("-" * 62)
     for r in rep:
-        print(f"{r['school_id']:<12} {str(r['rank']):<6} {r['quality_index']:<8} "
+        print(f"{r['university_id']:<12} {str(r['rank']):<6} {r['quality_index']:<8} "
               f"{r['gap']:<8} {r['verdict']}")
     print("\n摘要：")
     s = qa.summary(args.year, args.source)
@@ -327,11 +327,11 @@ def _cmd_quality(args):
     if s["overrated"]:
         print("\n⚠ 名不副实/高排名低质量（用户点名关注）：")
         for r in s["overrated"]:
-            print(f"  {r['school_id']} (rank {r['rank']}, 质量 {r['quality_index']})")
+            print(f"  {r['university_id']} (rank {r['rank']}, 质量 {r['quality_index']})")
     if s["undervalued_leaders"]:
         print("\n✓ 被低估/高性价比（价值洼地）：")
         for r in s["undervalued_leaders"]:
-            print(f"  {r['school_id']} (rank {r['rank']}, 质量 {r['quality_index']})")
+            print(f"  {r['university_id']} (rank {r['rank']}, 质量 {r['quality_index']})")
 
 
 if __name__ == "__main__":

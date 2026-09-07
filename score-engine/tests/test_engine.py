@@ -33,6 +33,33 @@ class TestRecognizer(unittest.TestCase):
         r = recognizer.recognize("")
         self.assertEqual(r.system, "OTHER")
 
+    def test_recognize_ap_with_sat_not_overridden(self):
+        """AP 申请者带 SAT 不应被误判成 SAT 体系。"""
+        r = recognizer.recognize("AP 5门全5，GPA 3.9，SAT 1520")
+        self.assertEqual(r.system, "AP")
+        self.assertIn("sat", r.features)  # SAT 作为附属分保留
+
+    def test_recognize_ap_chinese_subjects(self):
+        """AP 中文科目名应能正确识别并提取特征。"""
+        r = recognizer.recognize("AP微积分5 AP化学5 AP物理4")
+        self.assertEqual(r.system, "AP")
+        self.assertEqual(r.features.get("ap_subjects"), 3.0)
+        self.assertAlmostEqual(r.features.get("ap_avg", 0), 4.667, places=2)
+
+    def test_recognize_ap_chinese_with_grade_letters(self):
+        """AP 中文科目+等级字母（如物理C）不应误判成 A-Level。"""
+        r = recognizer.recognize("AP 微积分BC 5 化学5 物理C 4")
+        self.assertEqual(r.system, "AP")
+        self.assertEqual(r.features.get("ap_subjects"), 3.0)
+        self.assertNotEqual(r.system, "AL")
+
+    def test_recognize_sat_only_still_sat(self):
+        """纯 SAT 申请者（无主体学科体系）仍应识别为 SAT。"""
+        r = recognizer.recognize("SAT 1520")
+        self.assertEqual(r.system, "SAT")
+        self.assertEqual(r.features.get("sat"), 1520.0)
+
+
 
 class TestRegistry(unittest.TestCase):
     def test_normalize(self):
@@ -64,7 +91,7 @@ class TestModels(unittest.TestCase):
         unis = univ_mod.default_universities()
         real_ids = {u.id for u in unis}
         for r in recs[:10]:
-            self.assertIn(r.school_id, real_ids)
+            self.assertIn(r.university_id, real_ids)
             self.assertTrue(r.school)
             self.assertTrue(0 <= getattr(r, "school_value", -1) <= 1)
 
@@ -116,8 +143,8 @@ class TestTrainer(unittest.TestCase):
 
 
 class TestValley(unittest.TestCase):
-    def test_find_valley_by_school_id(self):
-        """用 school_id 查询低分路径。"""
+    def test_find_valley_by_university_id(self):
+        """用 university_id 查询低分路径。"""
         recs = models.make_mock_admissions()
         vf = valley.ValleyFinder()
         r = vf.find_valley("mit", recs)
@@ -131,7 +158,7 @@ class TestValley(unittest.TestCase):
         vf = valley.ValleyFinder()
         r = vf.find_valley("Massachusetts Institute of Technology", recs)
         self.assertNotIn("error", r)
-        self.assertEqual(r["school_id"], "mit")
+        self.assertEqual(r["university_id"], "mit")
 
 
 class TestConversion(unittest.TestCase):
@@ -222,7 +249,7 @@ class TestLanceDBDualDB(unittest.TestCase):
         # 大学静态档案不含排名字段
         self.assertNotIn("rank", mit_uni[0])
         # 分析库：质量档案可查
-        prof = dbh.query_quality("school_profile", {"school_id": "mit"})
+        prof = dbh.query_quality("school_profile", {"university_id": "mit"})
         self.assertEqual(len(prof), 1)
         self.assertIn("scale_students", prof[0])
         dbh.close()
@@ -233,9 +260,9 @@ class TestLanceDBDualDB(unittest.TestCase):
         from score_engine import db
         root = os.path.join(self.tmp, "ldb2")
         dbh = db.ScoreDB(root=root)  # 自动探测：本环境无 lancedb → json
-        dbh.upsert_quality("school_profile", [{"school_id": "mit", "name": "MIT",
+        dbh.upsert_quality("school_profile", [{"university_id": "mit", "name": "MIT",
                                                 "scale_students": 11500}])
-        rows = dbh.query_quality("school_profile", {"school_id": "mit"})
+        rows = dbh.query_quality("school_profile", {"university_id": "mit"})
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["name"], "MIT")
         dbh.close()
@@ -268,7 +295,7 @@ class TestQualityAnalysis(unittest.TestCase):
         self.assertIn("被低估/高性价比", verdicts)
         self.assertIn("实至名归", verdicts)
         # ETH 因质量明显低于其高排名 → 名不副实
-        eth = next(r for r in rep if r["school_id"] == "eth")
+        eth = next(r for r in rep if r["university_id"] == "eth")
         self.assertEqual(eth["verdict"], "名不副实/高排名低质量")
         self.assertIsNotNone(eth["rank"])
 
@@ -278,7 +305,7 @@ class TestQualityAnalysis(unittest.TestCase):
         qi_full = qa.quality_index("mit")
         # 只给部分维度，质量指数仍应在合理范围
         qa2 = qmod.QualityAnalyzer(
-            [{"school_id": "mit", "ratio_student_faculty": 9.7}], [], [], [])
+            [{"university_id": "mit", "ratio_student_faculty": 9.7}], [], [], [])
         qi_part = qa2.quality_index("mit")
         self.assertGreaterEqual(qi_part, 0.0)
         self.assertLessEqual(qi_part, 1.0)

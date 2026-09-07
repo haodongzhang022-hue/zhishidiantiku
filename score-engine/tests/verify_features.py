@@ -117,9 +117,9 @@ real_names = {u.name_en for u in unis}
 check("样本 school 是真实大学名", sample_schools <= real_names,
       f"非真实大学名: {sample_schools - real_names}")
 
-# 有 school_id 字段关联大学
-check("样本有 school_id 关联大学", all(hasattr(r, "school_id") and r.school_id for r in recs[:10]))
-check("school_id 能解析到大学", all(r.school_id in univ_mod.university_lookup(unis) for r in recs[:10]))
+# 有 university_id 字段关联大学
+check("样本有 university_id 关联大学", all(hasattr(r, "university_id") and r.university_id for r in recs[:10]))
+check("university_id 能解析到大学", all(r.university_id in univ_mod.university_lookup(unis) for r in recs[:10]))
 
 # 排名按年份动态：同一大学不同年份排名不同
 mit_ranks = sorted({(r.year, r.rank) for r in ranks if r.university_id == "mit"})
@@ -196,7 +196,7 @@ check("换算库可查大学静态档案", len(_check1)==1 and "rank" not in _ch
 _check2 = _db.query_score("university_ranking", {"university_id": "mit"})
 check("换算库可查逐年排名(2019-2024=6条)", len(_check2)==6)
 check("排名逐年不同", len({r["rank"] for r in _check2})>=2)
-_check3 = _db.query_quality("school_profile", {"school_id": "mit"})
+_check3 = _db.query_quality("school_profile", {"university_id": "mit"})
 check("分析库可查质量档案", len(_check3)==1 and "scale_students" in _check3[0])
 check("无 LanceDB 时退化为可用后端", _db.backend_kind()=="json")
 _db.close(); shutil.rmtree(_tmp, True)
@@ -215,7 +215,7 @@ _verdicts = {r["verdict"] for r in _rep}
 check("能识别『名不副实/高排名低质量』", "名不副实/高排名低质量" in _verdicts,
       f"verdicts={_verdicts}")
 check("能识别『被低估/高性价比』", "被低估/高性价比" in _verdicts, f"verdicts={_verdicts}")
-_eth = next(r for r in _rep if r["school_id"]=="eth")
+_eth = next(r for r in _rep if r["university_id"]=="eth")
 check("ETH 被判定名不副实(高排名#7低质量)", _eth["verdict"]=="名不副实/高排名低质量")
 check("质量档案可合并三表出单校报告",
       "quality_index" in qa.school_profile("mit"))

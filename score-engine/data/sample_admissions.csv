@@ -1,4 +1,4 @@
-school,school_id,year,system,school_value,features,source
+school,university_id,year,system,school_value,features,source
 Massachusetts Institute of Technology,mit,2019,AP,0.956,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8}",synthetic-demo
 Massachusetts Institute of Technology,mit,2019,AP,0.956,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84, ""sat"": 1588.0, ""toefl"": 120.0}",synthetic-demo
 Massachusetts Institute of Technology,mit,2019,AP,0.956,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.88, ""toefl"": 120.0}",synthetic-demo

@@ -54,10 +54,10 @@ class QualityAnalyzer:
                  faculties: Optional[List[Dict[str, Any]]] = None,
                  outcomes: Optional[List[Dict[str, Any]]] = None,
                  rankings: Optional[List[Dict[str, Any]]] = None):
-        # 按 school_id 建索引，方便查询
-        self.profiles = {r["school_id"]: r for r in (profiles or [])}
-        self.faculties = {r["school_id"]: r for r in (faculties or [])}
-        self.outcomes = {r["school_id"]: r for r in (outcomes or [])}
+        # 按 university_id 建索引，方便查询
+        self.profiles = {r["university_id"]: r for r in (profiles or [])}
+        self.faculties = {r["university_id"]: r for r in (faculties or [])}
+        self.outcomes = {r["university_id"]: r for r in (outcomes or [])}
         self.rankings = rankings or []
         # 取每所学校的最近年份记录
         self.profiles = self._latest(self.profiles)
@@ -78,15 +78,15 @@ class QualityAnalyzer:
         return out
 
     # ---- 质量指数 ----
-    def quality_index(self, school_id: str) -> float:
+    def quality_index(self, university_id: str) -> float:
         """计算单校质量指数 [0,1]，可缺失部分维度（缺失不判低）。
 
         设计原则同引擎主体：**缺失 ≠ 差**。只有存在的数据才参与加权，
         这样没提供论文数据的学校不会被误判为"没水平"。
         """
-        p = self.profiles.get(school_id) or {}
-        f = self.faculties.get(school_id) or {}
-        o = self.outcomes.get(school_id) or {}
+        p = self.profiles.get(university_id) or {}
+        f = self.faculties.get(university_id) or {}
+        o = self.outcomes.get(university_id) or {}
 
         comps = []
 
@@ -127,11 +127,11 @@ class QualityAnalyzer:
         return round(sum(comps) / len(comps), 3)
 
     # ---- 排名→名气档位（0~1，越小 rank 越高）----
-    def _rank_value(self, school_id: str, year: int = 2024,
+    def _rank_value(self, university_id: str, year: int = 2024,
                     source: str = "QS") -> Optional[float]:
         """把某年某来源排名映射为 0~1 名气档位（rank=1 → ~1.0）。"""
         for r in self.rankings:
-            if (r.get("university_id") == school_id and r.get("year") == year
+            if (r.get("university_id") == university_id and r.get("year") == year
                     and r.get("source") == source):
                 rk = float(r["rank"])
                 # rank 1 → ~1.0；rank 1000 → 接近 0；对数压缩
@@ -139,13 +139,13 @@ class QualityAnalyzer:
         return None
 
     # ---- 学校档案（把分析库三表合并成便于展示的 profile）----
-    def school_profile(self, school_id: str) -> Dict[str, Any]:
-        p = self.profiles.get(school_id) or {}
-        f = self.faculties.get(school_id) or {}
-        o = self.outcomes.get(school_id) or {}
+    def school_profile(self, university_id: str) -> Dict[str, Any]:
+        p = self.profiles.get(university_id) or {}
+        f = self.faculties.get(university_id) or {}
+        o = self.outcomes.get(university_id) or {}
         merged = {**p, **f, **o}
-        merged["quality_index"] = self.quality_index(school_id)
-        merged["school_id"] = school_id
+        merged["quality_index"] = self.quality_index(university_id)
+        merged["university_id"] = university_id
         return merged
 
     # ---- 偏差 / 名不副实 报告 ----
@@ -159,11 +159,11 @@ class QualityAnalyzer:
           gap < -σ  → 名不副实/高排名低质量（名气远超真实水平）
         避免"rank=1 质量永远到不了 1.0"的偏差——把每所学校跟**它排名的正常水平**比。
         """
-        school_ids = set(self.profiles) | set(self.faculties) | set(self.outcomes)
-        if not school_ids:
+        university_ids = set(self.profiles) | set(self.faculties) | set(self.outcomes)
+        if not university_ids:
             return []
         rows = []
-        for sid in school_ids:
+        for sid in university_ids:
             qi = self.quality_index(sid)
             rank = None
             for r in self.rankings:
@@ -171,7 +171,7 @@ class QualityAnalyzer:
                         and r.get("source") == source):
                     rank = r.get("rank")
                     break
-            rows.append({"school_id": sid, "rank": rank,
+            rows.append({"university_id": sid, "rank": rank,
                          "quality_index": qi, "logrank": math.log(rank) if rank else None})
         # 用可得的 (logrank, quality) 拟合参考线 quality ≈ a + b*logrank
         pts = [(r["logrank"], r["quality_index"]) for r in rows

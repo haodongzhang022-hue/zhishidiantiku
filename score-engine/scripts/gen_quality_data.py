@@ -8,7 +8,7 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from score_engine import university as univ_mod
 
-# school_id -> (在校生, 师资, 师生比, 学费USD, 年论文, 被引, 就业率, 
+# university_id -> (在校生, 师资, 师生比, 学费USD, 年论文, 被引, 就业率, 
 #               顶尖师资占比tier_high, star_count, 负面占比negative_ratio)
 # 注：故意让"排名"与"质量"错位，演示名不副实 / 被低估。
 QUAL = {
@@ -43,7 +43,7 @@ def build_profiles(unis):
         (students, fac, rsr, tuition, papers, cit, emp,
          tier_high, star, neg) = QUAL[u.id]
         rows.append({
-            "school_id": u.id, "name": u.name_en,
+            "university_id": u.id, "name": u.name_en,
             "scale_students": students, "scale_faculty": fac,
             "ratio_student_faculty": rsr, "tuition_intl_usd": tuition,
             "papers_yearly": papers, "citations": cit,
@@ -60,7 +60,7 @@ def build_faculties(unis):
             continue
         (_, _, _, _, _, _, _, tier_high, star, neg) = QUAL[u.id]
         rows.append({
-            "school_id": u.id, "name": u.name_en,
+            "university_id": u.id, "name": u.name_en,
             "tier_high": tier_high, "tier_mid": round(1.0 - tier_high - neg, 3),
             "tier_low": round(neg * 0.5, 3),
             "star_count": star, "negative_ratio": neg,
@@ -76,7 +76,7 @@ def build_outcomes(unis):
             continue
         (_, _, _, _, papers, cit, emp, _, _, _) = QUAL[u.id]
         rows.append({
-            "school_id": u.id, "name": u.name_en,
+            "university_id": u.id, "name": u.name_en,
             "papers_yearly": papers, "citations": cit,
             "h_index": round(cit ** 0.45), "patents": round(papers * 0.08),
             "employment_rate": emp, "salary_outcome": 0.8 + (emp - 0.9) * 2,
