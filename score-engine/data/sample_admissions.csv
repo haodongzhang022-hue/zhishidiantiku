@@ -1,577 +1,577 @@
 school,year,system,school_value,features,source
-QS10 名校,2019,AP,0.923,"{""ap_avg"": 4.94, ""ap_subjects"": 6, ""ap_top_ratio"": 0.857, ""gpa"": 3.84, ""sat"": 1565.0, ""toefl"": 109.0}",synthetic-demo
-QS10 名校,2019,AP,0.923,"{""ap_avg"": 4.81, ""ap_subjects"": 6, ""ap_top_ratio"": 0.83, ""gpa"": 3.86, ""sat"": 1572.0, ""toefl"": 116.0}",synthetic-demo
-QS10 名校,2019,AP,0.923,"{""ap_avg"": 4.9, ""ap_subjects"": 6, ""ap_top_ratio"": 0.834, ""gpa"": 3.9, ""sat"": 1575.0, ""toefl"": 120.0}",synthetic-demo
-QS10 名校,2019,AP,0.923,"{""ap_avg"": 4.83, ""ap_subjects"": 6, ""ap_top_ratio"": 0.997, ""gpa"": 3.82, ""sat"": 1547.0, ""toefl"": 120.0}",synthetic-demo
-QS10 名校,2019,AL,0.923,"{""al_avg"": 4.75, ""al_subjects"": 5, ""al_top_ratio"": 0.99, ""ielts"": 8.8}",synthetic-demo
-QS10 名校,2019,AL,0.923,"{""al_avg"": 4.95, ""al_subjects"": 5, ""al_top_ratio"": 0.72, ""ielts"": 8.5}",synthetic-demo
-QS10 名校,2019,AL,0.923,"{""al_avg"": 4.76, ""al_subjects"": 5, ""al_top_ratio"": 0.926, ""ielts"": 8.5}",synthetic-demo
-QS10 名校,2019,AL,0.923,"{""al_avg"": 4.76, ""al_subjects"": 5, ""al_top_ratio"": 0.77, ""ielts"": 8.4}",synthetic-demo
-QS10 名校,2019,IB,0.923,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2019,IB,0.923,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2019,IB,0.923,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2019,IB,0.923,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2019,GAOKAO,0.923,"{""gk_total"": 729.0}",synthetic-demo
-QS10 名校,2019,GAOKAO,0.923,"{""gk_total"": 722.0}",synthetic-demo
-QS10 名校,2019,GAOKAO,0.923,"{""gk_total"": 717.0}",synthetic-demo
-QS10 名校,2019,GAOKAO,0.923,"{""gk_total"": 724.0}",synthetic-demo
-QS10 名校,2020,AP,0.915,"{""ap_avg"": 4.91, ""ap_subjects"": 6, ""ap_top_ratio"": 0.839, ""gpa"": 3.85, ""sat"": 1550.0, ""toefl"": 120.0}",synthetic-demo
-QS10 名校,2020,AP,0.915,"{""ap_avg"": 4.92, ""ap_subjects"": 6, ""ap_top_ratio"": 0.937, ""gpa"": 3.78, ""sat"": 1538.0, ""toefl"": 120.0}",synthetic-demo
-QS10 名校,2020,AP,0.915,"{""ap_avg"": 4.89, ""ap_subjects"": 6, ""ap_top_ratio"": 0.762, ""gpa"": 3.87, ""sat"": 1545.0, ""toefl"": 112.0}",synthetic-demo
-QS10 名校,2020,AP,0.915,"{""ap_avg"": 4.62, ""ap_subjects"": 6, ""ap_top_ratio"": 0.881, ""gpa"": 3.83, ""sat"": 1572.0, ""toefl"": 115.0}",synthetic-demo
-QS10 名校,2020,AL,0.915,"{""al_avg"": 4.85, ""al_subjects"": 5, ""al_top_ratio"": 0.886, ""ielts"": 9.0}",synthetic-demo
-QS10 名校,2020,AL,0.915,"{""al_avg"": 4.67, ""al_subjects"": 5, ""al_top_ratio"": 0.74, ""ielts"": 8.6}",synthetic-demo
-QS10 名校,2020,AL,0.915,"{""al_avg"": 4.91, ""al_subjects"": 5, ""al_top_ratio"": 0.817, ""ielts"": 8.6}",synthetic-demo
-QS10 名校,2020,AL,0.915,"{""al_avg"": 4.87, ""al_subjects"": 5, ""al_top_ratio"": 0.794, ""ielts"": 8.6}",synthetic-demo
-QS10 名校,2020,IB,0.915,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2020,IB,0.915,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2020,IB,0.915,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2020,IB,0.915,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2020,GAOKAO,0.915,"{""gk_total"": 733.0}",synthetic-demo
-QS10 名校,2020,GAOKAO,0.915,"{""gk_total"": 715.0}",synthetic-demo
-QS10 名校,2020,GAOKAO,0.915,"{""gk_total"": 719.0}",synthetic-demo
-QS10 名校,2020,GAOKAO,0.915,"{""gk_total"": 718.0}",synthetic-demo
-QS10 名校,2021,AP,0.913,"{""ap_avg"": 4.68, ""ap_subjects"": 6, ""ap_top_ratio"": 0.92, ""gpa"": 3.76, ""sat"": 1587.0, ""toefl"": 118.0}",synthetic-demo
-QS10 名校,2021,AP,0.913,"{""ap_avg"": 4.82, ""ap_subjects"": 6, ""ap_top_ratio"": 0.703, ""gpa"": 3.83, ""sat"": 1562.0, ""toefl"": 115.0}",synthetic-demo
-QS10 名校,2021,AP,0.913,"{""ap_avg"": 4.73, ""ap_subjects"": 6, ""ap_top_ratio"": 0.631, ""gpa"": 3.81, ""sat"": 1585.0, ""toefl"": 120.0}",synthetic-demo
-QS10 名校,2021,AP,0.913,"{""ap_avg"": 4.91, ""ap_subjects"": 6, ""ap_top_ratio"": 0.981, ""gpa"": 3.82, ""sat"": 1594.0, ""toefl"": 120.0}",synthetic-demo
-QS10 名校,2021,AL,0.913,"{""al_avg"": 4.84, ""al_subjects"": 5, ""al_top_ratio"": 0.733, ""ielts"": 8.6}",synthetic-demo
-QS10 名校,2021,AL,0.913,"{""al_avg"": 4.6, ""al_subjects"": 5, ""al_top_ratio"": 0.96, ""ielts"": 8.9}",synthetic-demo
-QS10 名校,2021,AL,0.913,"{""al_avg"": 4.5, ""al_subjects"": 5, ""al_top_ratio"": 0.818, ""ielts"": 8.7}",synthetic-demo
-QS10 名校,2021,AL,0.913,"{""al_avg"": 4.75, ""al_subjects"": 5, ""al_top_ratio"": 0.839, ""ielts"": 8.7}",synthetic-demo
-QS10 名校,2021,IB,0.913,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
-QS10 名校,2021,IB,0.913,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
-QS10 名校,2021,IB,0.913,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
-QS10 名校,2021,IB,0.913,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
-QS10 名校,2021,GAOKAO,0.913,"{""gk_total"": 743.0}",synthetic-demo
-QS10 名校,2021,GAOKAO,0.913,"{""gk_total"": 726.0}",synthetic-demo
-QS10 名校,2021,GAOKAO,0.913,"{""gk_total"": 721.0}",synthetic-demo
-QS10 名校,2021,GAOKAO,0.913,"{""gk_total"": 713.0}",synthetic-demo
-QS10 名校,2022,AP,0.92,"{""ap_avg"": 5.0, ""ap_subjects"": 6, ""ap_top_ratio"": 0.768, ""gpa"": 3.86, ""sat"": 1587.0, ""toefl"": 120.0}",synthetic-demo
-QS10 名校,2022,AP,0.92,"{""ap_avg"": 4.81, ""ap_subjects"": 6, ""ap_top_ratio"": 0.796, ""gpa"": 3.8, ""sat"": 1575.0, ""toefl"": 109.0}",synthetic-demo
-QS10 名校,2022,AP,0.92,"{""ap_avg"": 4.87, ""ap_subjects"": 6, ""ap_top_ratio"": 0.787, ""gpa"": 3.87, ""sat"": 1552.0, ""toefl"": 112.0}",synthetic-demo
-QS10 名校,2022,AP,0.92,"{""ap_avg"": 4.83, ""ap_subjects"": 6, ""ap_top_ratio"": 0.884, ""gpa"": 3.79, ""sat"": 1596.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2022,AL,0.92,"{""al_avg"": 4.97, ""al_subjects"": 5, ""al_top_ratio"": 0.856, ""ielts"": 8.9}",synthetic-demo
-QS10 名校,2022,AL,0.92,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.798, ""ielts"": 8.8}",synthetic-demo
-QS10 名校,2022,AL,0.92,"{""al_avg"": 4.79, ""al_subjects"": 5, ""al_top_ratio"": 0.84, ""ielts"": 9.0}",synthetic-demo
-QS10 名校,2022,AL,0.92,"{""al_avg"": 4.85, ""al_subjects"": 5, ""al_top_ratio"": 0.776, ""ielts"": 9.0}",synthetic-demo
-QS10 名校,2022,IB,0.92,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2022,IB,0.92,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2022,IB,0.92,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2022,IB,0.92,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2022,GAOKAO,0.92,"{""gk_total"": 730.0}",synthetic-demo
-QS10 名校,2022,GAOKAO,0.92,"{""gk_total"": 727.0}",synthetic-demo
-QS10 名校,2022,GAOKAO,0.92,"{""gk_total"": 702.0}",synthetic-demo
-QS10 名校,2022,GAOKAO,0.92,"{""gk_total"": 725.0}",synthetic-demo
-QS10 名校,2023,AP,0.924,"{""ap_avg"": 4.69, ""ap_subjects"": 6, ""ap_top_ratio"": 0.871, ""gpa"": 3.7, ""sat"": 1551.0, ""toefl"": 119.0}",synthetic-demo
-QS10 名校,2023,AP,0.924,"{""ap_avg"": 4.78, ""ap_subjects"": 6, ""ap_top_ratio"": 0.891, ""gpa"": 3.78, ""sat"": 1577.0, ""toefl"": 116.0}",synthetic-demo
-QS10 名校,2023,AP,0.924,"{""ap_avg"": 4.96, ""ap_subjects"": 6, ""ap_top_ratio"": 0.984, ""gpa"": 3.81, ""sat"": 1562.0, ""toefl"": 116.0}",synthetic-demo
-QS10 名校,2023,AP,0.924,"{""ap_avg"": 4.85, ""ap_subjects"": 6, ""ap_top_ratio"": 0.912, ""gpa"": 3.92, ""sat"": 1548.0, ""toefl"": 120.0}",synthetic-demo
-QS10 名校,2023,AL,0.924,"{""al_avg"": 4.82, ""al_subjects"": 5, ""al_top_ratio"": 0.923, ""ielts"": 9.0}",synthetic-demo
-QS10 名校,2023,AL,0.924,"{""al_avg"": 4.84, ""al_subjects"": 5, ""al_top_ratio"": 0.825, ""ielts"": 8.9}",synthetic-demo
-QS10 名校,2023,AL,0.924,"{""al_avg"": 4.82, ""al_subjects"": 5, ""al_top_ratio"": 0.609, ""ielts"": 8.6}",synthetic-demo
-QS10 名校,2023,AL,0.924,"{""al_avg"": 4.96, ""al_subjects"": 5, ""al_top_ratio"": 0.828, ""ielts"": 9.0}",synthetic-demo
-QS10 名校,2023,IB,0.924,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2023,IB,0.924,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2023,IB,0.924,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2023,IB,0.924,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2023,GAOKAO,0.924,"{""gk_total"": 703.0}",synthetic-demo
-QS10 名校,2023,GAOKAO,0.924,"{""gk_total"": 710.0}",synthetic-demo
-QS10 名校,2023,GAOKAO,0.924,"{""gk_total"": 719.0}",synthetic-demo
-QS10 名校,2023,GAOKAO,0.924,"{""gk_total"": 714.0}",synthetic-demo
-QS10 名校,2024,AP,0.922,"{""ap_avg"": 4.61, ""ap_subjects"": 6, ""ap_top_ratio"": 0.872, ""gpa"": 3.83, ""sat"": 1578.0, ""toefl"": 116.0}",synthetic-demo
-QS10 名校,2024,AP,0.922,"{""ap_avg"": 4.99, ""ap_subjects"": 6, ""ap_top_ratio"": 0.791, ""gpa"": 3.83, ""sat"": 1581.0, ""toefl"": 120.0}",synthetic-demo
-QS10 名校,2024,AP,0.922,"{""ap_avg"": 4.7, ""ap_subjects"": 6, ""ap_top_ratio"": 0.879, ""gpa"": 3.79, ""sat"": 1542.0, ""toefl"": 114.0}",synthetic-demo
-QS10 名校,2024,AP,0.922,"{""ap_avg"": 4.81, ""ap_subjects"": 6, ""ap_top_ratio"": 0.77, ""gpa"": 3.83, ""sat"": 1593.0, ""toefl"": 115.0}",synthetic-demo
-QS10 名校,2024,AL,0.922,"{""al_avg"": 4.68, ""al_subjects"": 5, ""al_top_ratio"": 0.929, ""ielts"": 9.0}",synthetic-demo
-QS10 名校,2024,AL,0.922,"{""al_avg"": 4.85, ""al_subjects"": 5, ""al_top_ratio"": 0.826, ""ielts"": 9.0}",synthetic-demo
-QS10 名校,2024,AL,0.922,"{""al_avg"": 4.87, ""al_subjects"": 5, ""al_top_ratio"": 0.807, ""ielts"": 8.8}",synthetic-demo
-QS10 名校,2024,AL,0.922,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.689, ""ielts"": 9.0}",synthetic-demo
-QS10 名校,2024,IB,0.922,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2024,IB,0.922,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2024,IB,0.922,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2024,IB,0.922,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
-QS10 名校,2024,GAOKAO,0.922,"{""gk_total"": 684.0}",synthetic-demo
-QS10 名校,2024,GAOKAO,0.922,"{""gk_total"": 690.0}",synthetic-demo
-QS10 名校,2024,GAOKAO,0.922,"{""gk_total"": 717.0}",synthetic-demo
-QS10 名校,2024,GAOKAO,0.922,"{""gk_total"": 717.0}",synthetic-demo
-QS50,2019,AP,0.785,"{""ap_avg"": 4.52, ""ap_subjects"": 6, ""ap_top_ratio"": 0.786, ""gpa"": 3.78, ""sat"": 1522.0, ""toefl"": 114.0}",synthetic-demo
-QS50,2019,AP,0.785,"{""ap_avg"": 4.66, ""ap_subjects"": 5, ""ap_top_ratio"": 0.815, ""gpa"": 3.64, ""sat"": 1489.0, ""toefl"": 114.0}",synthetic-demo
-QS50,2019,AP,0.785,"{""ap_avg"": 4.56, ""ap_subjects"": 6, ""ap_top_ratio"": 0.649, ""gpa"": 3.76, ""sat"": 1520.0, ""toefl"": 110.0}",synthetic-demo
-QS50,2019,AP,0.785,"{""ap_avg"": 4.61, ""ap_subjects"": 5, ""ap_top_ratio"": 0.838, ""gpa"": 3.72, ""sat"": 1478.0, ""toefl"": 111.0}",synthetic-demo
-QS50,2019,AL,0.785,"{""al_avg"": 4.25, ""al_subjects"": 4, ""al_top_ratio"": 0.746, ""ielts"": 8.3}",synthetic-demo
-QS50,2019,AL,0.785,"{""al_avg"": 4.4, ""al_subjects"": 4, ""al_top_ratio"": 0.561, ""ielts"": 8.7}",synthetic-demo
-QS50,2019,AL,0.785,"{""al_avg"": 4.12, ""al_subjects"": 4, ""al_top_ratio"": 0.657, ""ielts"": 8.2}",synthetic-demo
-QS50,2019,AL,0.785,"{""al_avg"": 4.36, ""al_subjects"": 4, ""al_top_ratio"": 0.768, ""ielts"": 8.5}",synthetic-demo
-QS50,2019,IB,0.785,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2019,IB,0.785,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2019,IB,0.785,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2019,IB,0.785,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2019,GAOKAO,0.785,"{""gk_total"": 666.0}",synthetic-demo
-QS50,2019,GAOKAO,0.785,"{""gk_total"": 674.0}",synthetic-demo
-QS50,2019,GAOKAO,0.785,"{""gk_total"": 684.0}",synthetic-demo
-QS50,2019,GAOKAO,0.785,"{""gk_total"": 679.0}",synthetic-demo
-QS50,2020,AP,0.786,"{""ap_avg"": 4.43, ""ap_subjects"": 5, ""ap_top_ratio"": 0.852, ""gpa"": 3.75, ""sat"": 1559.0, ""toefl"": 108.0}",synthetic-demo
-QS50,2020,AP,0.786,"{""ap_avg"": 4.54, ""ap_subjects"": 6, ""ap_top_ratio"": 0.868, ""gpa"": 3.79, ""sat"": 1520.0, ""toefl"": 106.0}",synthetic-demo
-QS50,2020,AP,0.786,"{""ap_avg"": 4.65, ""ap_subjects"": 6, ""ap_top_ratio"": 0.834, ""gpa"": 3.61, ""sat"": 1509.0, ""toefl"": 120.0}",synthetic-demo
-QS50,2020,AP,0.786,"{""ap_avg"": 4.72, ""ap_subjects"": 6, ""ap_top_ratio"": 0.724, ""gpa"": 3.72, ""sat"": 1559.0, ""toefl"": 108.0}",synthetic-demo
-QS50,2020,AL,0.786,"{""al_avg"": 4.43, ""al_subjects"": 4, ""al_top_ratio"": 0.772, ""ielts"": 8.2}",synthetic-demo
-QS50,2020,AL,0.786,"{""al_avg"": 4.42, ""al_subjects"": 4, ""al_top_ratio"": 0.884, ""ielts"": 8.2}",synthetic-demo
-QS50,2020,AL,0.786,"{""al_avg"": 4.52, ""al_subjects"": 4, ""al_top_ratio"": 0.644, ""ielts"": 8.3}",synthetic-demo
-QS50,2020,AL,0.786,"{""al_avg"": 4.28, ""al_subjects"": 4, ""al_top_ratio"": 0.693, ""ielts"": 8.6}",synthetic-demo
-QS50,2020,IB,0.786,"{""ib_total"": 42.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2020,IB,0.786,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2020,IB,0.786,"{""ib_total"": 42.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2020,IB,0.786,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2020,GAOKAO,0.786,"{""gk_total"": 675.0}",synthetic-demo
-QS50,2020,GAOKAO,0.786,"{""gk_total"": 661.0}",synthetic-demo
-QS50,2020,GAOKAO,0.786,"{""gk_total"": 676.0}",synthetic-demo
-QS50,2020,GAOKAO,0.786,"{""gk_total"": 674.0}",synthetic-demo
-QS50,2021,AP,0.784,"{""ap_avg"": 4.5, ""ap_subjects"": 6, ""ap_top_ratio"": 0.701, ""gpa"": 3.77, ""sat"": 1488.0, ""toefl"": 116.0}",synthetic-demo
-QS50,2021,AP,0.784,"{""ap_avg"": 4.76, ""ap_subjects"": 5, ""ap_top_ratio"": 0.576, ""gpa"": 3.76, ""sat"": 1499.0, ""toefl"": 110.0}",synthetic-demo
-QS50,2021,AP,0.784,"{""ap_avg"": 4.51, ""ap_subjects"": 5, ""ap_top_ratio"": 0.645, ""gpa"": 3.66, ""sat"": 1501.0, ""toefl"": 108.0}",synthetic-demo
-QS50,2021,AP,0.784,"{""ap_avg"": 4.78, ""ap_subjects"": 6, ""ap_top_ratio"": 0.749, ""gpa"": 3.69, ""sat"": 1533.0, ""toefl"": 108.0}",synthetic-demo
-QS50,2021,AL,0.784,"{""al_avg"": 4.37, ""al_subjects"": 4, ""al_top_ratio"": 0.497, ""ielts"": 8.5}",synthetic-demo
-QS50,2021,AL,0.784,"{""al_avg"": 4.56, ""al_subjects"": 4, ""al_top_ratio"": 0.511, ""ielts"": 8.2}",synthetic-demo
-QS50,2021,AL,0.784,"{""al_avg"": 4.3, ""al_subjects"": 4, ""al_top_ratio"": 0.702, ""ielts"": 8.2}",synthetic-demo
-QS50,2021,AL,0.784,"{""al_avg"": 4.39, ""al_subjects"": 4, ""al_top_ratio"": 0.808, ""ielts"": 8.3}",synthetic-demo
-QS50,2021,IB,0.784,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2021,IB,0.784,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2021,IB,0.784,"{""ib_total"": 40.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2021,IB,0.784,"{""ib_total"": 40.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2021,GAOKAO,0.784,"{""gk_total"": 667.0}",synthetic-demo
-QS50,2021,GAOKAO,0.784,"{""gk_total"": 679.0}",synthetic-demo
-QS50,2021,GAOKAO,0.784,"{""gk_total"": 685.0}",synthetic-demo
-QS50,2021,GAOKAO,0.784,"{""gk_total"": 647.0}",synthetic-demo
-QS50,2022,AP,0.775,"{""ap_avg"": 4.67, ""ap_subjects"": 6, ""ap_top_ratio"": 0.698, ""gpa"": 3.73, ""sat"": 1486.0, ""toefl"": 120.0}",synthetic-demo
-QS50,2022,AP,0.775,"{""ap_avg"": 4.37, ""ap_subjects"": 5, ""ap_top_ratio"": 0.788, ""gpa"": 3.7, ""sat"": 1515.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2022,AP,0.775,"{""ap_avg"": 4.58, ""ap_subjects"": 5, ""ap_top_ratio"": 0.666, ""gpa"": 3.68, ""sat"": 1498.0, ""toefl"": 109.0}",synthetic-demo
-QS50,2022,AP,0.775,"{""ap_avg"": 4.42, ""ap_subjects"": 5, ""ap_top_ratio"": 0.56, ""gpa"": 3.69, ""sat"": 1507.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2022,AL,0.775,"{""al_avg"": 4.49, ""al_subjects"": 4, ""al_top_ratio"": 0.81, ""ielts"": 8.5}",synthetic-demo
-QS50,2022,AL,0.775,"{""al_avg"": 4.71, ""al_subjects"": 4, ""al_top_ratio"": 0.694, ""ielts"": 8.3}",synthetic-demo
-QS50,2022,AL,0.775,"{""al_avg"": 4.37, ""al_subjects"": 4, ""al_top_ratio"": 0.524, ""ielts"": 8.7}",synthetic-demo
-QS50,2022,AL,0.775,"{""al_avg"": 4.44, ""al_subjects"": 4, ""al_top_ratio"": 0.439, ""ielts"": 8.0}",synthetic-demo
-QS50,2022,IB,0.775,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2022,IB,0.775,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2022,IB,0.775,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2022,IB,0.775,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2022,GAOKAO,0.775,"{""gk_total"": 656.0}",synthetic-demo
-QS50,2022,GAOKAO,0.775,"{""gk_total"": 642.0}",synthetic-demo
-QS50,2022,GAOKAO,0.775,"{""gk_total"": 669.0}",synthetic-demo
-QS50,2022,GAOKAO,0.775,"{""gk_total"": 643.0}",synthetic-demo
-QS50,2023,AP,0.786,"{""ap_avg"": 4.57, ""ap_subjects"": 5, ""ap_top_ratio"": 0.717, ""gpa"": 3.65, ""sat"": 1515.0, ""toefl"": 119.0}",synthetic-demo
-QS50,2023,AP,0.786,"{""ap_avg"": 4.43, ""ap_subjects"": 6, ""ap_top_ratio"": 0.77, ""gpa"": 3.7, ""sat"": 1524.0, ""toefl"": 111.0}",synthetic-demo
-QS50,2023,AP,0.786,"{""ap_avg"": 4.51, ""ap_subjects"": 5, ""ap_top_ratio"": 0.7, ""gpa"": 3.76, ""sat"": 1518.0, ""toefl"": 120.0}",synthetic-demo
-QS50,2023,AP,0.786,"{""ap_avg"": 4.53, ""ap_subjects"": 5, ""ap_top_ratio"": 0.788, ""gpa"": 3.66, ""sat"": 1507.0, ""toefl"": 113.0}",synthetic-demo
-QS50,2023,AL,0.786,"{""al_avg"": 4.57, ""al_subjects"": 4, ""al_top_ratio"": 0.641, ""ielts"": 8.2}",synthetic-demo
-QS50,2023,AL,0.786,"{""al_avg"": 4.12, ""al_subjects"": 4, ""al_top_ratio"": 0.61, ""ielts"": 8.4}",synthetic-demo
-QS50,2023,AL,0.786,"{""al_avg"": 4.54, ""al_subjects"": 4, ""al_top_ratio"": 0.712, ""ielts"": 8.4}",synthetic-demo
-QS50,2023,AL,0.786,"{""al_avg"": 4.11, ""al_subjects"": 4, ""al_top_ratio"": 0.678, ""ielts"": 8.6}",synthetic-demo
-QS50,2023,IB,0.786,"{""ib_total"": 42.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2023,IB,0.786,"{""ib_total"": 42.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2023,IB,0.786,"{""ib_total"": 42.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2023,IB,0.786,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2023,GAOKAO,0.786,"{""gk_total"": 667.0}",synthetic-demo
-QS50,2023,GAOKAO,0.786,"{""gk_total"": 680.0}",synthetic-demo
-QS50,2023,GAOKAO,0.786,"{""gk_total"": 677.0}",synthetic-demo
-QS50,2023,GAOKAO,0.786,"{""gk_total"": 666.0}",synthetic-demo
-QS50,2024,AP,0.783,"{""ap_avg"": 4.51, ""ap_subjects"": 5, ""ap_top_ratio"": 0.783, ""gpa"": 3.72, ""sat"": 1537.0, ""toefl"": 117.0}",synthetic-demo
-QS50,2024,AP,0.783,"{""ap_avg"": 4.59, ""ap_subjects"": 6, ""ap_top_ratio"": 0.772, ""gpa"": 3.78, ""sat"": 1519.0, ""toefl"": 116.0}",synthetic-demo
-QS50,2024,AP,0.783,"{""ap_avg"": 4.68, ""ap_subjects"": 5, ""ap_top_ratio"": 0.608, ""gpa"": 3.72, ""sat"": 1493.0, ""toefl"": 119.0}",synthetic-demo
-QS50,2024,AP,0.783,"{""ap_avg"": 4.7, ""ap_subjects"": 6, ""ap_top_ratio"": 0.717, ""gpa"": 3.7, ""sat"": 1523.0, ""toefl"": 118.0}",synthetic-demo
-QS50,2024,AL,0.783,"{""al_avg"": 4.53, ""al_subjects"": 4, ""al_top_ratio"": 0.602, ""ielts"": 8.3}",synthetic-demo
-QS50,2024,AL,0.783,"{""al_avg"": 4.18, ""al_subjects"": 4, ""al_top_ratio"": 0.568, ""ielts"": 8.2}",synthetic-demo
-QS50,2024,AL,0.783,"{""al_avg"": 4.49, ""al_subjects"": 4, ""al_top_ratio"": 0.762, ""ielts"": 8.3}",synthetic-demo
-QS50,2024,AL,0.783,"{""al_avg"": 4.4, ""al_subjects"": 4, ""al_top_ratio"": 0.811, ""ielts"": 8.6}",synthetic-demo
-QS50,2024,IB,0.783,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2024,IB,0.783,"{""ib_total"": 40.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2024,IB,0.783,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2024,IB,0.783,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
-QS50,2024,GAOKAO,0.783,"{""gk_total"": 673.0}",synthetic-demo
-QS50,2024,GAOKAO,0.783,"{""gk_total"": 680.0}",synthetic-demo
-QS50,2024,GAOKAO,0.783,"{""gk_total"": 663.0}",synthetic-demo
-QS50,2024,GAOKAO,0.783,"{""gk_total"": 655.0}",synthetic-demo
-QS100,2019,AP,0.664,"{""ap_avg"": 4.38, ""ap_subjects"": 4, ""ap_top_ratio"": 0.675, ""gpa"": 3.59, ""sat"": 1451.0, ""toefl"": 115.0}",synthetic-demo
-QS100,2019,AP,0.664,"{""ap_avg"": 4.3, ""ap_subjects"": 5, ""ap_top_ratio"": 0.571, ""gpa"": 3.67, ""sat"": 1483.0, ""toefl"": 106.0}",synthetic-demo
-QS100,2019,AP,0.664,"{""ap_avg"": 4.36, ""ap_subjects"": 5, ""ap_top_ratio"": 0.613, ""gpa"": 3.5, ""sat"": 1517.0, ""toefl"": 118.0}",synthetic-demo
-QS100,2019,AP,0.664,"{""ap_avg"": 4.22, ""ap_subjects"": 4, ""ap_top_ratio"": 0.729, ""gpa"": 3.56, ""sat"": 1487.0, ""toefl"": 102.0}",synthetic-demo
-QS100,2019,AL,0.664,"{""al_avg"": 4.09, ""al_subjects"": 4, ""al_top_ratio"": 0.736, ""ielts"": 7.9}",synthetic-demo
-QS100,2019,AL,0.664,"{""al_avg"": 4.01, ""al_subjects"": 4, ""al_top_ratio"": 0.46, ""ielts"": 8.1}",synthetic-demo
-QS100,2019,AL,0.664,"{""al_avg"": 3.84, ""al_subjects"": 4, ""al_top_ratio"": 0.675, ""ielts"": 8.1}",synthetic-demo
-QS100,2019,AL,0.664,"{""al_avg"": 4.03, ""al_subjects"": 4, ""al_top_ratio"": 0.482, ""ielts"": 8.1}",synthetic-demo
-QS100,2019,IB,0.664,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2019,IB,0.664,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2019,IB,0.664,"{""ib_total"": 39.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2019,IB,0.664,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2019,GAOKAO,0.664,"{""gk_total"": 632.0}",synthetic-demo
-QS100,2019,GAOKAO,0.664,"{""gk_total"": 592.0}",synthetic-demo
-QS100,2019,GAOKAO,0.664,"{""gk_total"": 642.0}",synthetic-demo
-QS100,2019,GAOKAO,0.664,"{""gk_total"": 631.0}",synthetic-demo
-QS100,2020,AP,0.657,"{""ap_avg"": 4.15, ""ap_subjects"": 4, ""ap_top_ratio"": 0.614, ""gpa"": 3.61, ""sat"": 1510.0, ""toefl"": 109.0}",synthetic-demo
-QS100,2020,AP,0.657,"{""ap_avg"": 4.39, ""ap_subjects"": 5, ""ap_top_ratio"": 0.53, ""gpa"": 3.54, ""sat"": 1506.0, ""toefl"": 106.0}",synthetic-demo
-QS100,2020,AP,0.657,"{""ap_avg"": 4.6, ""ap_subjects"": 4, ""ap_top_ratio"": 0.597, ""gpa"": 3.6, ""sat"": 1457.0, ""toefl"": 102.0}",synthetic-demo
-QS100,2020,AP,0.657,"{""ap_avg"": 4.13, ""ap_subjects"": 5, ""ap_top_ratio"": 0.622, ""gpa"": 3.5, ""sat"": 1465.0, ""toefl"": 110.0}",synthetic-demo
-QS100,2020,AL,0.657,"{""al_avg"": 3.99, ""al_subjects"": 4, ""al_top_ratio"": 0.492, ""ielts"": 7.8}",synthetic-demo
-QS100,2020,AL,0.657,"{""al_avg"": 3.96, ""al_subjects"": 4, ""al_top_ratio"": 0.571, ""ielts"": 7.8}",synthetic-demo
-QS100,2020,AL,0.657,"{""al_avg"": 4.04, ""al_subjects"": 4, ""al_top_ratio"": 0.568, ""ielts"": 7.8}",synthetic-demo
-QS100,2020,AL,0.657,"{""al_avg"": 3.92, ""al_subjects"": 4, ""al_top_ratio"": 0.642, ""ielts"": 8.0}",synthetic-demo
-QS100,2020,IB,0.657,"{""ib_total"": 38.0, ""toefl"": 107.0}",synthetic-demo
-QS100,2020,IB,0.657,"{""ib_total"": 38.0, ""toefl"": 107.0}",synthetic-demo
-QS100,2020,IB,0.657,"{""ib_total"": 39.0, ""toefl"": 107.0}",synthetic-demo
-QS100,2020,IB,0.657,"{""ib_total"": 39.0, ""toefl"": 107.0}",synthetic-demo
-QS100,2020,GAOKAO,0.657,"{""gk_total"": 616.0}",synthetic-demo
-QS100,2020,GAOKAO,0.657,"{""gk_total"": 622.0}",synthetic-demo
-QS100,2020,GAOKAO,0.657,"{""gk_total"": 588.0}",synthetic-demo
-QS100,2020,GAOKAO,0.657,"{""gk_total"": 615.0}",synthetic-demo
-QS100,2021,AP,0.666,"{""ap_avg"": 4.24, ""ap_subjects"": 4, ""ap_top_ratio"": 0.605, ""gpa"": 3.59, ""sat"": 1472.0, ""toefl"": 111.0}",synthetic-demo
-QS100,2021,AP,0.666,"{""ap_avg"": 4.35, ""ap_subjects"": 5, ""ap_top_ratio"": 0.559, ""gpa"": 3.58, ""sat"": 1533.0, ""toefl"": 101.0}",synthetic-demo
-QS100,2021,AP,0.666,"{""ap_avg"": 4.5, ""ap_subjects"": 4, ""ap_top_ratio"": 0.515, ""gpa"": 3.67, ""sat"": 1489.0, ""toefl"": 103.0}",synthetic-demo
-QS100,2021,AP,0.666,"{""ap_avg"": 4.36, ""ap_subjects"": 4, ""ap_top_ratio"": 0.62, ""gpa"": 3.71, ""sat"": 1485.0, ""toefl"": 99.0}",synthetic-demo
-QS100,2021,AL,0.666,"{""al_avg"": 4.02, ""al_subjects"": 4, ""al_top_ratio"": 0.577, ""ielts"": 8.0}",synthetic-demo
-QS100,2021,AL,0.666,"{""al_avg"": 4.03, ""al_subjects"": 4, ""al_top_ratio"": 0.703, ""ielts"": 8.2}",synthetic-demo
-QS100,2021,AL,0.666,"{""al_avg"": 3.91, ""al_subjects"": 4, ""al_top_ratio"": 0.725, ""ielts"": 8.6}",synthetic-demo
-QS100,2021,AL,0.666,"{""al_avg"": 4.24, ""al_subjects"": 4, ""al_top_ratio"": 0.49, ""ielts"": 7.7}",synthetic-demo
-QS100,2021,IB,0.666,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2021,IB,0.666,"{""ib_total"": 39.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2021,IB,0.666,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2021,IB,0.666,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2021,GAOKAO,0.666,"{""gk_total"": 645.0}",synthetic-demo
-QS100,2021,GAOKAO,0.666,"{""gk_total"": 581.0}",synthetic-demo
-QS100,2021,GAOKAO,0.666,"{""gk_total"": 609.0}",synthetic-demo
-QS100,2021,GAOKAO,0.666,"{""gk_total"": 636.0}",synthetic-demo
-QS100,2022,AP,0.661,"{""ap_avg"": 4.3, ""ap_subjects"": 4, ""ap_top_ratio"": 0.623, ""gpa"": 3.47, ""sat"": 1473.0, ""toefl"": 115.0}",synthetic-demo
-QS100,2022,AP,0.661,"{""ap_avg"": 4.38, ""ap_subjects"": 4, ""ap_top_ratio"": 0.558, ""gpa"": 3.65, ""sat"": 1465.0, ""toefl"": 104.0}",synthetic-demo
-QS100,2022,AP,0.661,"{""ap_avg"": 4.34, ""ap_subjects"": 5, ""ap_top_ratio"": 0.72, ""gpa"": 3.67, ""sat"": 1428.0, ""toefl"": 110.0}",synthetic-demo
-QS100,2022,AP,0.661,"{""ap_avg"": 4.23, ""ap_subjects"": 5, ""ap_top_ratio"": 0.641, ""gpa"": 3.53, ""sat"": 1415.0, ""toefl"": 102.0}",synthetic-demo
-QS100,2022,AL,0.661,"{""al_avg"": 3.86, ""al_subjects"": 4, ""al_top_ratio"": 0.613, ""ielts"": 7.6}",synthetic-demo
-QS100,2022,AL,0.661,"{""al_avg"": 4.0, ""al_subjects"": 4, ""al_top_ratio"": 0.669, ""ielts"": 8.1}",synthetic-demo
-QS100,2022,AL,0.661,"{""al_avg"": 4.05, ""al_subjects"": 4, ""al_top_ratio"": 0.583, ""ielts"": 7.7}",synthetic-demo
-QS100,2022,AL,0.661,"{""al_avg"": 4.13, ""al_subjects"": 4, ""al_top_ratio"": 0.452, ""ielts"": 7.9}",synthetic-demo
-QS100,2022,IB,0.661,"{""ib_total"": 39.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2022,IB,0.661,"{""ib_total"": 39.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2022,IB,0.661,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2022,IB,0.661,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2022,GAOKAO,0.661,"{""gk_total"": 630.0}",synthetic-demo
-QS100,2022,GAOKAO,0.661,"{""gk_total"": 618.0}",synthetic-demo
-QS100,2022,GAOKAO,0.661,"{""gk_total"": 609.0}",synthetic-demo
-QS100,2022,GAOKAO,0.661,"{""gk_total"": 624.0}",synthetic-demo
-QS100,2023,AP,0.655,"{""ap_avg"": 4.53, ""ap_subjects"": 5, ""ap_top_ratio"": 0.559, ""gpa"": 3.57, ""sat"": 1555.0, ""toefl"": 101.0}",synthetic-demo
-QS100,2023,AP,0.655,"{""ap_avg"": 4.23, ""ap_subjects"": 4, ""ap_top_ratio"": 0.444, ""gpa"": 3.59, ""sat"": 1433.0, ""toefl"": 101.0}",synthetic-demo
-QS100,2023,AP,0.655,"{""ap_avg"": 4.38, ""ap_subjects"": 5, ""ap_top_ratio"": 0.548, ""gpa"": 3.65, ""sat"": 1450.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2023,AP,0.655,"{""ap_avg"": 4.4, ""ap_subjects"": 5, ""ap_top_ratio"": 0.527, ""gpa"": 3.62, ""sat"": 1444.0, ""toefl"": 106.0}",synthetic-demo
-QS100,2023,AL,0.655,"{""al_avg"": 4.29, ""al_subjects"": 4, ""al_top_ratio"": 0.484, ""ielts"": 7.8}",synthetic-demo
-QS100,2023,AL,0.655,"{""al_avg"": 3.98, ""al_subjects"": 4, ""al_top_ratio"": 0.67, ""ielts"": 7.9}",synthetic-demo
-QS100,2023,AL,0.655,"{""al_avg"": 4.18, ""al_subjects"": 4, ""al_top_ratio"": 0.293, ""ielts"": 7.9}",synthetic-demo
-QS100,2023,AL,0.655,"{""al_avg"": 3.99, ""al_subjects"": 4, ""al_top_ratio"": 0.485, ""ielts"": 7.8}",synthetic-demo
-QS100,2023,IB,0.655,"{""ib_total"": 38.0, ""toefl"": 107.0}",synthetic-demo
-QS100,2023,IB,0.655,"{""ib_total"": 38.0, ""toefl"": 107.0}",synthetic-demo
-QS100,2023,IB,0.655,"{""ib_total"": 38.0, ""toefl"": 107.0}",synthetic-demo
-QS100,2023,IB,0.655,"{""ib_total"": 39.0, ""toefl"": 107.0}",synthetic-demo
-QS100,2023,GAOKAO,0.655,"{""gk_total"": 593.0}",synthetic-demo
-QS100,2023,GAOKAO,0.655,"{""gk_total"": 593.0}",synthetic-demo
-QS100,2023,GAOKAO,0.655,"{""gk_total"": 617.0}",synthetic-demo
-QS100,2023,GAOKAO,0.655,"{""gk_total"": 629.0}",synthetic-demo
-QS100,2024,AP,0.666,"{""ap_avg"": 4.16, ""ap_subjects"": 4, ""ap_top_ratio"": 0.602, ""gpa"": 3.63, ""sat"": 1500.0, ""toefl"": 107.0}",synthetic-demo
-QS100,2024,AP,0.666,"{""ap_avg"": 4.4, ""ap_subjects"": 5, ""ap_top_ratio"": 0.59, ""gpa"": 3.58, ""sat"": 1462.0, ""toefl"": 119.0}",synthetic-demo
-QS100,2024,AP,0.666,"{""ap_avg"": 4.27, ""ap_subjects"": 5, ""ap_top_ratio"": 0.535, ""gpa"": 3.61, ""sat"": 1426.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2024,AP,0.666,"{""ap_avg"": 4.33, ""ap_subjects"": 5, ""ap_top_ratio"": 0.574, ""gpa"": 3.64, ""sat"": 1463.0, ""toefl"": 103.0}",synthetic-demo
-QS100,2024,AL,0.666,"{""al_avg"": 4.22, ""al_subjects"": 4, ""al_top_ratio"": 0.744, ""ielts"": 7.9}",synthetic-demo
-QS100,2024,AL,0.666,"{""al_avg"": 3.86, ""al_subjects"": 4, ""al_top_ratio"": 0.773, ""ielts"": 7.9}",synthetic-demo
-QS100,2024,AL,0.666,"{""al_avg"": 3.76, ""al_subjects"": 4, ""al_top_ratio"": 0.414, ""ielts"": 8.2}",synthetic-demo
-QS100,2024,AL,0.666,"{""al_avg"": 4.05, ""al_subjects"": 4, ""al_top_ratio"": 0.682, ""ielts"": 8.0}",synthetic-demo
-QS100,2024,IB,0.666,"{""ib_total"": 39.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2024,IB,0.666,"{""ib_total"": 39.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2024,IB,0.666,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2024,IB,0.666,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
-QS100,2024,GAOKAO,0.666,"{""gk_total"": 602.0}",synthetic-demo
-QS100,2024,GAOKAO,0.666,"{""gk_total"": 612.0}",synthetic-demo
-QS100,2024,GAOKAO,0.666,"{""gk_total"": 598.0}",synthetic-demo
-QS100,2024,GAOKAO,0.666,"{""gk_total"": 610.0}",synthetic-demo
-QS200,2019,AP,0.55,"{""ap_avg"": 4.07, ""ap_subjects"": 5, ""ap_top_ratio"": 0.498, ""gpa"": 3.52, ""sat"": 1403.0, ""toefl"": 102.0}",synthetic-demo
-QS200,2019,AP,0.55,"{""ap_avg"": 4.06, ""ap_subjects"": 5, ""ap_top_ratio"": 0.572, ""gpa"": 3.47, ""sat"": 1375.0, ""toefl"": 98.0}",synthetic-demo
-QS200,2019,AP,0.55,"{""ap_avg"": 4.24, ""ap_subjects"": 4, ""ap_top_ratio"": 0.358, ""gpa"": 3.37, ""sat"": 1448.0, ""toefl"": 105.0}",synthetic-demo
-QS200,2019,AP,0.55,"{""ap_avg"": 3.97, ""ap_subjects"": 5, ""ap_top_ratio"": 0.529, ""gpa"": 3.44, ""sat"": 1430.0, ""toefl"": 96.0}",synthetic-demo
-QS200,2019,AL,0.55,"{""al_avg"": 3.55, ""al_subjects"": 3, ""al_top_ratio"": 0.558, ""ielts"": 7.8}",synthetic-demo
-QS200,2019,AL,0.55,"{""al_avg"": 3.88, ""al_subjects"": 3, ""al_top_ratio"": 0.477, ""ielts"": 7.8}",synthetic-demo
-QS200,2019,AL,0.55,"{""al_avg"": 3.66, ""al_subjects"": 3, ""al_top_ratio"": 0.611, ""ielts"": 7.4}",synthetic-demo
-QS200,2019,AL,0.55,"{""al_avg"": 3.5, ""al_subjects"": 3, ""al_top_ratio"": 0.419, ""ielts"": 7.8}",synthetic-demo
-QS200,2019,IB,0.55,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2019,IB,0.55,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2019,IB,0.55,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2019,IB,0.55,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2019,GAOKAO,0.55,"{""gk_total"": 575.0}",synthetic-demo
-QS200,2019,GAOKAO,0.55,"{""gk_total"": 571.0}",synthetic-demo
-QS200,2019,GAOKAO,0.55,"{""gk_total"": 546.0}",synthetic-demo
-QS200,2019,GAOKAO,0.55,"{""gk_total"": 545.0}",synthetic-demo
-QS200,2020,AP,0.555,"{""ap_avg"": 4.11, ""ap_subjects"": 4, ""ap_top_ratio"": 0.384, ""gpa"": 3.45, ""sat"": 1388.0, ""toefl"": 96.0}",synthetic-demo
-QS200,2020,AP,0.555,"{""ap_avg"": 4.17, ""ap_subjects"": 5, ""ap_top_ratio"": 0.575, ""gpa"": 3.59, ""sat"": 1434.0, ""toefl"": 103.0}",synthetic-demo
-QS200,2020,AP,0.555,"{""ap_avg"": 4.2, ""ap_subjects"": 5, ""ap_top_ratio"": 0.642, ""gpa"": 3.55, ""sat"": 1426.0, ""toefl"": 101.0}",synthetic-demo
-QS200,2020,AP,0.555,"{""ap_avg"": 4.23, ""ap_subjects"": 5, ""ap_top_ratio"": 0.57, ""gpa"": 3.51, ""sat"": 1477.0, ""toefl"": 107.0}",synthetic-demo
-QS200,2020,AL,0.555,"{""al_avg"": 3.75, ""al_subjects"": 3, ""al_top_ratio"": 0.68, ""ielts"": 7.8}",synthetic-demo
-QS200,2020,AL,0.555,"{""al_avg"": 3.77, ""al_subjects"": 3, ""al_top_ratio"": 0.412, ""ielts"": 7.9}",synthetic-demo
-QS200,2020,AL,0.555,"{""al_avg"": 3.84, ""al_subjects"": 3, ""al_top_ratio"": 0.425, ""ielts"": 7.8}",synthetic-demo
-QS200,2020,AL,0.555,"{""al_avg"": 3.92, ""al_subjects"": 3, ""al_top_ratio"": 0.419, ""ielts"": 7.5}",synthetic-demo
-QS200,2020,IB,0.555,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2020,IB,0.555,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2020,IB,0.555,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2020,IB,0.555,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2020,GAOKAO,0.555,"{""gk_total"": 561.0}",synthetic-demo
-QS200,2020,GAOKAO,0.555,"{""gk_total"": 573.0}",synthetic-demo
-QS200,2020,GAOKAO,0.555,"{""gk_total"": 554.0}",synthetic-demo
-QS200,2020,GAOKAO,0.555,"{""gk_total"": 563.0}",synthetic-demo
-QS200,2021,AP,0.555,"{""ap_avg"": 4.02, ""ap_subjects"": 5, ""ap_top_ratio"": 0.448, ""gpa"": 3.63, ""sat"": 1417.0, ""toefl"": 110.0}",synthetic-demo
-QS200,2021,AP,0.555,"{""ap_avg"": 3.93, ""ap_subjects"": 4, ""ap_top_ratio"": 0.463, ""gpa"": 3.45, ""sat"": 1404.0, ""toefl"": 107.0}",synthetic-demo
-QS200,2021,AP,0.555,"{""ap_avg"": 4.16, ""ap_subjects"": 4, ""ap_top_ratio"": 0.444, ""gpa"": 3.43, ""sat"": 1399.0, ""toefl"": 99.0}",synthetic-demo
-QS200,2021,AP,0.555,"{""ap_avg"": 3.94, ""ap_subjects"": 5, ""ap_top_ratio"": 0.434, ""gpa"": 3.54, ""sat"": 1392.0, ""toefl"": 110.0}",synthetic-demo
-QS200,2021,AL,0.555,"{""al_avg"": 3.7, ""al_subjects"": 3, ""al_top_ratio"": 0.357, ""ielts"": 7.9}",synthetic-demo
-QS200,2021,AL,0.555,"{""al_avg"": 3.64, ""al_subjects"": 3, ""al_top_ratio"": 0.545, ""ielts"": 7.8}",synthetic-demo
-QS200,2021,AL,0.555,"{""al_avg"": 3.75, ""al_subjects"": 3, ""al_top_ratio"": 0.584, ""ielts"": 7.5}",synthetic-demo
-QS200,2021,AL,0.555,"{""al_avg"": 3.89, ""al_subjects"": 3, ""al_top_ratio"": 0.478, ""ielts"": 7.9}",synthetic-demo
-QS200,2021,IB,0.555,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2021,IB,0.555,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2021,IB,0.555,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2021,IB,0.555,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2021,GAOKAO,0.555,"{""gk_total"": 545.0}",synthetic-demo
-QS200,2021,GAOKAO,0.555,"{""gk_total"": 575.0}",synthetic-demo
-QS200,2021,GAOKAO,0.555,"{""gk_total"": 571.0}",synthetic-demo
-QS200,2021,GAOKAO,0.555,"{""gk_total"": 558.0}",synthetic-demo
-QS200,2022,AP,0.546,"{""ap_avg"": 4.16, ""ap_subjects"": 5, ""ap_top_ratio"": 0.699, ""gpa"": 3.48, ""sat"": 1443.0, ""toefl"": 97.0}",synthetic-demo
-QS200,2022,AP,0.546,"{""ap_avg"": 4.05, ""ap_subjects"": 5, ""ap_top_ratio"": 0.5, ""gpa"": 3.43, ""sat"": 1451.0, ""toefl"": 110.0}",synthetic-demo
-QS200,2022,AP,0.546,"{""ap_avg"": 3.92, ""ap_subjects"": 5, ""ap_top_ratio"": 0.527, ""gpa"": 3.51, ""sat"": 1378.0, ""toefl"": 99.0}",synthetic-demo
-QS200,2022,AP,0.546,"{""ap_avg"": 4.07, ""ap_subjects"": 4, ""ap_top_ratio"": 0.424, ""gpa"": 3.59, ""sat"": 1426.0, ""toefl"": 93.0}",synthetic-demo
-QS200,2022,AL,0.546,"{""al_avg"": 3.74, ""al_subjects"": 3, ""al_top_ratio"": 0.589, ""ielts"": 7.7}",synthetic-demo
-QS200,2022,AL,0.546,"{""al_avg"": 3.43, ""al_subjects"": 3, ""al_top_ratio"": 0.588, ""ielts"": 7.6}",synthetic-demo
-QS200,2022,AL,0.546,"{""al_avg"": 3.96, ""al_subjects"": 3, ""al_top_ratio"": 0.452, ""ielts"": 8.0}",synthetic-demo
-QS200,2022,AL,0.546,"{""al_avg"": 3.89, ""al_subjects"": 3, ""al_top_ratio"": 0.611, ""ielts"": 8.0}",synthetic-demo
-QS200,2022,IB,0.546,"{""ib_total"": 35.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2022,IB,0.546,"{""ib_total"": 35.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2022,IB,0.546,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2022,IB,0.546,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2022,GAOKAO,0.546,"{""gk_total"": 583.0}",synthetic-demo
-QS200,2022,GAOKAO,0.546,"{""gk_total"": 563.0}",synthetic-demo
-QS200,2022,GAOKAO,0.546,"{""gk_total"": 567.0}",synthetic-demo
-QS200,2022,GAOKAO,0.546,"{""gk_total"": 559.0}",synthetic-demo
-QS200,2023,AP,0.549,"{""ap_avg"": 4.21, ""ap_subjects"": 4, ""ap_top_ratio"": 0.435, ""gpa"": 3.53, ""sat"": 1425.0, ""toefl"": 103.0}",synthetic-demo
-QS200,2023,AP,0.549,"{""ap_avg"": 4.19, ""ap_subjects"": 5, ""ap_top_ratio"": 0.402, ""gpa"": 3.51, ""sat"": 1410.0, ""toefl"": 101.0}",synthetic-demo
-QS200,2023,AP,0.549,"{""ap_avg"": 4.21, ""ap_subjects"": 4, ""ap_top_ratio"": 0.545, ""gpa"": 3.49, ""sat"": 1424.0, ""toefl"": 106.0}",synthetic-demo
-QS200,2023,AP,0.549,"{""ap_avg"": 3.99, ""ap_subjects"": 5, ""ap_top_ratio"": 0.513, ""gpa"": 3.45, ""sat"": 1393.0, ""toefl"": 112.0}",synthetic-demo
-QS200,2023,AL,0.549,"{""al_avg"": 3.74, ""al_subjects"": 3, ""al_top_ratio"": 0.46, ""ielts"": 7.8}",synthetic-demo
-QS200,2023,AL,0.549,"{""al_avg"": 3.72, ""al_subjects"": 3, ""al_top_ratio"": 0.426, ""ielts"": 7.7}",synthetic-demo
-QS200,2023,AL,0.549,"{""al_avg"": 3.8, ""al_subjects"": 3, ""al_top_ratio"": 0.467, ""ielts"": 8.0}",synthetic-demo
-QS200,2023,AL,0.549,"{""al_avg"": 3.81, ""al_subjects"": 3, ""al_top_ratio"": 0.49, ""ielts"": 7.7}",synthetic-demo
-QS200,2023,IB,0.549,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2023,IB,0.549,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2023,IB,0.549,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2023,IB,0.549,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2023,GAOKAO,0.549,"{""gk_total"": 579.0}",synthetic-demo
-QS200,2023,GAOKAO,0.549,"{""gk_total"": 589.0}",synthetic-demo
-QS200,2023,GAOKAO,0.549,"{""gk_total"": 572.0}",synthetic-demo
-QS200,2023,GAOKAO,0.549,"{""gk_total"": 570.0}",synthetic-demo
-QS200,2024,AP,0.553,"{""ap_avg"": 4.11, ""ap_subjects"": 4, ""ap_top_ratio"": 0.367, ""gpa"": 3.54, ""sat"": 1460.0, ""toefl"": 107.0}",synthetic-demo
-QS200,2024,AP,0.553,"{""ap_avg"": 4.07, ""ap_subjects"": 4, ""ap_top_ratio"": 0.558, ""gpa"": 3.51, ""sat"": 1391.0, ""toefl"": 108.0}",synthetic-demo
-QS200,2024,AP,0.553,"{""ap_avg"": 4.14, ""ap_subjects"": 5, ""ap_top_ratio"": 0.299, ""gpa"": 3.49, ""sat"": 1441.0, ""toefl"": 99.0}",synthetic-demo
-QS200,2024,AP,0.553,"{""ap_avg"": 4.19, ""ap_subjects"": 4, ""ap_top_ratio"": 0.412, ""gpa"": 3.45, ""sat"": 1424.0, ""toefl"": 102.0}",synthetic-demo
-QS200,2024,AL,0.553,"{""al_avg"": 3.8, ""al_subjects"": 3, ""al_top_ratio"": 0.618, ""ielts"": 7.6}",synthetic-demo
-QS200,2024,AL,0.553,"{""al_avg"": 3.85, ""al_subjects"": 3, ""al_top_ratio"": 0.53, ""ielts"": 7.8}",synthetic-demo
-QS200,2024,AL,0.553,"{""al_avg"": 3.62, ""al_subjects"": 3, ""al_top_ratio"": 0.351, ""ielts"": 7.5}",synthetic-demo
-QS200,2024,AL,0.553,"{""al_avg"": 4.18, ""al_subjects"": 3, ""al_top_ratio"": 0.477, ""ielts"": 7.4}",synthetic-demo
-QS200,2024,IB,0.553,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2024,IB,0.553,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2024,IB,0.553,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2024,IB,0.553,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
-QS200,2024,GAOKAO,0.553,"{""gk_total"": 556.0}",synthetic-demo
-QS200,2024,GAOKAO,0.553,"{""gk_total"": 550.0}",synthetic-demo
-QS200,2024,GAOKAO,0.553,"{""gk_total"": 569.0}",synthetic-demo
-QS200,2024,GAOKAO,0.553,"{""gk_total"": 561.0}",synthetic-demo
-QS500,2019,AP,0.42,"{""ap_avg"": 3.85, ""ap_subjects"": 3, ""ap_top_ratio"": 0.272, ""gpa"": 3.42, ""sat"": 1358.0, ""toefl"": 100.0}",synthetic-demo
-QS500,2019,AP,0.42,"{""ap_avg"": 3.92, ""ap_subjects"": 3, ""ap_top_ratio"": 0.439, ""gpa"": 3.44, ""sat"": 1414.0, ""toefl"": 108.0}",synthetic-demo
-QS500,2019,AP,0.42,"{""ap_avg"": 3.88, ""ap_subjects"": 4, ""ap_top_ratio"": 0.29, ""gpa"": 3.39, ""sat"": 1379.0, ""toefl"": 93.0}",synthetic-demo
-QS500,2019,AP,0.42,"{""ap_avg"": 3.76, ""ap_subjects"": 3, ""ap_top_ratio"": 0.263, ""gpa"": 3.41, ""sat"": 1384.0, ""toefl"": 95.0}",synthetic-demo
-QS500,2019,AL,0.42,"{""al_avg"": 3.54, ""al_subjects"": 3, ""al_top_ratio"": 0.51, ""ielts"": 7.0}",synthetic-demo
-QS500,2019,AL,0.42,"{""al_avg"": 3.33, ""al_subjects"": 3, ""al_top_ratio"": 0.483, ""ielts"": 7.1}",synthetic-demo
-QS500,2019,AL,0.42,"{""al_avg"": 3.43, ""al_subjects"": 3, ""al_top_ratio"": 0.385, ""ielts"": 7.5}",synthetic-demo
-QS500,2019,AL,0.42,"{""al_avg"": 3.45, ""al_subjects"": 3, ""al_top_ratio"": 0.299, ""ielts"": 7.4}",synthetic-demo
-QS500,2019,IB,0.42,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2019,IB,0.42,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2019,IB,0.42,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2019,IB,0.42,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2019,GAOKAO,0.42,"{""gk_total"": 545.0}",synthetic-demo
-QS500,2019,GAOKAO,0.42,"{""gk_total"": 513.0}",synthetic-demo
-QS500,2019,GAOKAO,0.42,"{""gk_total"": 501.0}",synthetic-demo
-QS500,2019,GAOKAO,0.42,"{""gk_total"": 503.0}",synthetic-demo
-QS500,2020,AP,0.416,"{""ap_avg"": 4.04, ""ap_subjects"": 3, ""ap_top_ratio"": 0.348, ""gpa"": 3.33, ""sat"": 1382.0, ""toefl"": 106.0}",synthetic-demo
-QS500,2020,AP,0.416,"{""ap_avg"": 3.93, ""ap_subjects"": 3, ""ap_top_ratio"": 0.4, ""gpa"": 3.42, ""sat"": 1342.0, ""toefl"": 97.0}",synthetic-demo
-QS500,2020,AP,0.416,"{""ap_avg"": 3.81, ""ap_subjects"": 4, ""ap_top_ratio"": 0.333, ""gpa"": 3.37, ""sat"": 1372.0, ""toefl"": 104.0}",synthetic-demo
-QS500,2020,AP,0.416,"{""ap_avg"": 3.93, ""ap_subjects"": 4, ""ap_top_ratio"": 0.388, ""gpa"": 3.39, ""sat"": 1334.0, ""toefl"": 100.0}",synthetic-demo
-QS500,2020,AL,0.416,"{""al_avg"": 3.48, ""al_subjects"": 3, ""al_top_ratio"": 0.338, ""ielts"": 7.5}",synthetic-demo
-QS500,2020,AL,0.416,"{""al_avg"": 3.26, ""al_subjects"": 3, ""al_top_ratio"": 0.276, ""ielts"": 7.1}",synthetic-demo
-QS500,2020,AL,0.416,"{""al_avg"": 3.25, ""al_subjects"": 3, ""al_top_ratio"": 0.376, ""ielts"": 7.3}",synthetic-demo
-QS500,2020,AL,0.416,"{""al_avg"": 3.29, ""al_subjects"": 3, ""al_top_ratio"": 0.409, ""ielts"": 7.1}",synthetic-demo
-QS500,2020,IB,0.416,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2020,IB,0.416,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2020,IB,0.416,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2020,IB,0.416,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2020,GAOKAO,0.416,"{""gk_total"": 500.0}",synthetic-demo
-QS500,2020,GAOKAO,0.416,"{""gk_total"": 528.0}",synthetic-demo
-QS500,2020,GAOKAO,0.416,"{""gk_total"": 529.0}",synthetic-demo
-QS500,2020,GAOKAO,0.416,"{""gk_total"": 517.0}",synthetic-demo
-QS500,2021,AP,0.418,"{""ap_avg"": 3.9, ""ap_subjects"": 3, ""ap_top_ratio"": 0.411, ""gpa"": 3.4, ""sat"": 1408.0, ""toefl"": 100.0}",synthetic-demo
-QS500,2021,AP,0.418,"{""ap_avg"": 3.94, ""ap_subjects"": 4, ""ap_top_ratio"": 0.347, ""gpa"": 3.28, ""sat"": 1366.0, ""toefl"": 100.0}",synthetic-demo
-QS500,2021,AP,0.418,"{""ap_avg"": 3.86, ""ap_subjects"": 3, ""ap_top_ratio"": 0.283, ""gpa"": 3.36, ""sat"": 1410.0, ""toefl"": 94.0}",synthetic-demo
-QS500,2021,AP,0.418,"{""ap_avg"": 3.76, ""ap_subjects"": 4, ""ap_top_ratio"": 0.385, ""gpa"": 3.35, ""sat"": 1373.0, ""toefl"": 104.0}",synthetic-demo
-QS500,2021,AL,0.418,"{""al_avg"": 3.44, ""al_subjects"": 3, ""al_top_ratio"": 0.487, ""ielts"": 7.0}",synthetic-demo
-QS500,2021,AL,0.418,"{""al_avg"": 3.08, ""al_subjects"": 3, ""al_top_ratio"": 0.477, ""ielts"": 7.6}",synthetic-demo
-QS500,2021,AL,0.418,"{""al_avg"": 3.38, ""al_subjects"": 3, ""al_top_ratio"": 0.277, ""ielts"": 7.5}",synthetic-demo
-QS500,2021,AL,0.418,"{""al_avg"": 3.35, ""al_subjects"": 3, ""al_top_ratio"": 0.46, ""ielts"": 7.2}",synthetic-demo
-QS500,2021,IB,0.418,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2021,IB,0.418,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2021,IB,0.418,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2021,IB,0.418,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2021,GAOKAO,0.418,"{""gk_total"": 484.0}",synthetic-demo
-QS500,2021,GAOKAO,0.418,"{""gk_total"": 514.0}",synthetic-demo
-QS500,2021,GAOKAO,0.418,"{""gk_total"": 502.0}",synthetic-demo
-QS500,2021,GAOKAO,0.418,"{""gk_total"": 536.0}",synthetic-demo
-QS500,2022,AP,0.423,"{""ap_avg"": 3.88, ""ap_subjects"": 3, ""ap_top_ratio"": 0.388, ""gpa"": 3.35, ""sat"": 1380.0, ""toefl"": 106.0}",synthetic-demo
-QS500,2022,AP,0.423,"{""ap_avg"": 3.67, ""ap_subjects"": 3, ""ap_top_ratio"": 0.245, ""gpa"": 3.39, ""sat"": 1340.0, ""toefl"": 100.0}",synthetic-demo
-QS500,2022,AP,0.423,"{""ap_avg"": 3.59, ""ap_subjects"": 4, ""ap_top_ratio"": 0.454, ""gpa"": 3.42, ""sat"": 1345.0, ""toefl"": 94.0}",synthetic-demo
-QS500,2022,AP,0.423,"{""ap_avg"": 3.72, ""ap_subjects"": 3, ""ap_top_ratio"": 0.441, ""gpa"": 3.43, ""sat"": 1380.0, ""toefl"": 98.0}",synthetic-demo
-QS500,2022,AL,0.423,"{""al_avg"": 3.55, ""al_subjects"": 3, ""al_top_ratio"": 0.34, ""ielts"": 7.4}",synthetic-demo
-QS500,2022,AL,0.423,"{""al_avg"": 3.54, ""al_subjects"": 3, ""al_top_ratio"": 0.446, ""ielts"": 7.6}",synthetic-demo
-QS500,2022,AL,0.423,"{""al_avg"": 3.65, ""al_subjects"": 3, ""al_top_ratio"": 0.465, ""ielts"": 7.5}",synthetic-demo
-QS500,2022,AL,0.423,"{""al_avg"": 3.22, ""al_subjects"": 3, ""al_top_ratio"": 0.375, ""ielts"": 7.0}",synthetic-demo
-QS500,2022,IB,0.423,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2022,IB,0.423,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2022,IB,0.423,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2022,IB,0.423,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2022,GAOKAO,0.423,"{""gk_total"": 527.0}",synthetic-demo
-QS500,2022,GAOKAO,0.423,"{""gk_total"": 498.0}",synthetic-demo
-QS500,2022,GAOKAO,0.423,"{""gk_total"": 511.0}",synthetic-demo
-QS500,2022,GAOKAO,0.423,"{""gk_total"": 534.0}",synthetic-demo
-QS500,2023,AP,0.417,"{""ap_avg"": 3.89, ""ap_subjects"": 4, ""ap_top_ratio"": 0.326, ""gpa"": 3.38, ""sat"": 1344.0, ""toefl"": 106.0}",synthetic-demo
-QS500,2023,AP,0.417,"{""ap_avg"": 3.83, ""ap_subjects"": 3, ""ap_top_ratio"": 0.369, ""gpa"": 3.33, ""sat"": 1377.0, ""toefl"": 96.0}",synthetic-demo
-QS500,2023,AP,0.417,"{""ap_avg"": 3.77, ""ap_subjects"": 3, ""ap_top_ratio"": 0.404, ""gpa"": 3.4, ""sat"": 1349.0, ""toefl"": 105.0}",synthetic-demo
-QS500,2023,AP,0.417,"{""ap_avg"": 3.67, ""ap_subjects"": 3, ""ap_top_ratio"": 0.501, ""gpa"": 3.44, ""sat"": 1387.0, ""toefl"": 97.0}",synthetic-demo
-QS500,2023,AL,0.417,"{""al_avg"": 3.19, ""al_subjects"": 3, ""al_top_ratio"": 0.438, ""ielts"": 6.9}",synthetic-demo
-QS500,2023,AL,0.417,"{""al_avg"": 3.27, ""al_subjects"": 3, ""al_top_ratio"": 0.348, ""ielts"": 7.2}",synthetic-demo
-QS500,2023,AL,0.417,"{""al_avg"": 3.14, ""al_subjects"": 3, ""al_top_ratio"": 0.344, ""ielts"": 7.7}",synthetic-demo
-QS500,2023,AL,0.417,"{""al_avg"": 3.23, ""al_subjects"": 3, ""al_top_ratio"": 0.243, ""ielts"": 6.9}",synthetic-demo
-QS500,2023,IB,0.417,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2023,IB,0.417,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2023,IB,0.417,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2023,IB,0.417,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2023,GAOKAO,0.417,"{""gk_total"": 503.0}",synthetic-demo
-QS500,2023,GAOKAO,0.417,"{""gk_total"": 492.0}",synthetic-demo
-QS500,2023,GAOKAO,0.417,"{""gk_total"": 515.0}",synthetic-demo
-QS500,2023,GAOKAO,0.417,"{""gk_total"": 494.0}",synthetic-demo
-QS500,2024,AP,0.42,"{""ap_avg"": 3.76, ""ap_subjects"": 3, ""ap_top_ratio"": 0.422, ""gpa"": 3.34, ""sat"": 1357.0, ""toefl"": 102.0}",synthetic-demo
-QS500,2024,AP,0.42,"{""ap_avg"": 4.12, ""ap_subjects"": 3, ""ap_top_ratio"": 0.45, ""gpa"": 3.38, ""sat"": 1381.0, ""toefl"": 108.0}",synthetic-demo
-QS500,2024,AP,0.42,"{""ap_avg"": 4.01, ""ap_subjects"": 4, ""ap_top_ratio"": 0.307, ""gpa"": 3.43, ""sat"": 1373.0, ""toefl"": 98.0}",synthetic-demo
-QS500,2024,AP,0.42,"{""ap_avg"": 4.02, ""ap_subjects"": 3, ""ap_top_ratio"": 0.258, ""gpa"": 3.36, ""sat"": 1378.0, ""toefl"": 103.0}",synthetic-demo
-QS500,2024,AL,0.42,"{""al_avg"": 3.41, ""al_subjects"": 3, ""al_top_ratio"": 0.283, ""ielts"": 7.1}",synthetic-demo
-QS500,2024,AL,0.42,"{""al_avg"": 3.44, ""al_subjects"": 3, ""al_top_ratio"": 0.312, ""ielts"": 7.2}",synthetic-demo
-QS500,2024,AL,0.42,"{""al_avg"": 3.26, ""al_subjects"": 3, ""al_top_ratio"": 0.377, ""ielts"": 7.3}",synthetic-demo
-QS500,2024,AL,0.42,"{""al_avg"": 3.21, ""al_subjects"": 3, ""al_top_ratio"": 0.36, ""ielts"": 7.1}",synthetic-demo
-QS500,2024,IB,0.42,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2024,IB,0.42,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2024,IB,0.42,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2024,IB,0.42,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
-QS500,2024,GAOKAO,0.42,"{""gk_total"": 559.0}",synthetic-demo
-QS500,2024,GAOKAO,0.42,"{""gk_total"": 503.0}",synthetic-demo
-QS500,2024,GAOKAO,0.42,"{""gk_total"": 506.0}",synthetic-demo
-QS500,2024,GAOKAO,0.42,"{""gk_total"": 520.0}",synthetic-demo
-QS1000,2019,AP,0.299,"{""ap_avg"": 3.29, ""ap_subjects"": 3, ""ap_top_ratio"": 0.269, ""gpa"": 3.25, ""sat"": 1324.0, ""toefl"": 92.0}",synthetic-demo
-QS1000,2019,AP,0.299,"{""ap_avg"": 3.77, ""ap_subjects"": 3, ""ap_top_ratio"": 0.141, ""gpa"": 3.25, ""sat"": 1315.0, ""toefl"": 101.0}",synthetic-demo
-QS1000,2019,AP,0.299,"{""ap_avg"": 3.55, ""ap_subjects"": 2, ""ap_top_ratio"": 0.091, ""gpa"": 3.35, ""sat"": 1331.0, ""toefl"": 93.0}",synthetic-demo
-QS1000,2019,AP,0.299,"{""ap_avg"": 3.71, ""ap_subjects"": 2, ""ap_top_ratio"": 0.274, ""gpa"": 3.23, ""sat"": 1326.0, ""toefl"": 97.0}",synthetic-demo
-QS1000,2019,AL,0.299,"{""al_avg"": 2.93, ""al_subjects"": 2, ""al_top_ratio"": 0.366, ""ielts"": 6.9}",synthetic-demo
-QS1000,2019,AL,0.299,"{""al_avg"": 3.03, ""al_subjects"": 2, ""al_top_ratio"": 0.31, ""ielts"": 7.4}",synthetic-demo
-QS1000,2019,AL,0.299,"{""al_avg"": 3.15, ""al_subjects"": 2, ""al_top_ratio"": 0.283, ""ielts"": 6.7}",synthetic-demo
-QS1000,2019,AL,0.299,"{""al_avg"": 2.96, ""al_subjects"": 2, ""al_top_ratio"": 0.453, ""ielts"": 6.8}",synthetic-demo
-QS1000,2019,IB,0.299,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2019,IB,0.299,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2019,IB,0.299,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2019,IB,0.299,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2019,GAOKAO,0.299,"{""gk_total"": 475.0}",synthetic-demo
-QS1000,2019,GAOKAO,0.299,"{""gk_total"": 469.0}",synthetic-demo
-QS1000,2019,GAOKAO,0.299,"{""gk_total"": 468.0}",synthetic-demo
-QS1000,2019,GAOKAO,0.299,"{""gk_total"": 498.0}",synthetic-demo
-QS1000,2020,AP,0.3,"{""ap_avg"": 3.58, ""ap_subjects"": 3, ""ap_top_ratio"": 0.35, ""gpa"": 3.21, ""sat"": 1315.0, ""toefl"": 99.0}",synthetic-demo
-QS1000,2020,AP,0.3,"{""ap_avg"": 3.64, ""ap_subjects"": 4, ""ap_top_ratio"": 0.21, ""gpa"": 3.25, ""sat"": 1323.0, ""toefl"": 101.0}",synthetic-demo
-QS1000,2020,AP,0.3,"{""ap_avg"": 3.74, ""ap_subjects"": 3, ""ap_top_ratio"": 0.226, ""gpa"": 3.28, ""sat"": 1336.0, ""toefl"": 99.0}",synthetic-demo
-QS1000,2020,AP,0.3,"{""ap_avg"": 3.54, ""ap_subjects"": 3, ""ap_top_ratio"": 0.266, ""gpa"": 3.26, ""sat"": 1311.0, ""toefl"": 97.0}",synthetic-demo
-QS1000,2020,AL,0.3,"{""al_avg"": 2.86, ""al_subjects"": 2, ""al_top_ratio"": 0.397, ""ielts"": 6.9}",synthetic-demo
-QS1000,2020,AL,0.3,"{""al_avg"": 3.03, ""al_subjects"": 2, ""al_top_ratio"": 0.342, ""ielts"": 6.7}",synthetic-demo
-QS1000,2020,AL,0.3,"{""al_avg"": 2.76, ""al_subjects"": 2, ""al_top_ratio"": 0.27, ""ielts"": 6.5}",synthetic-demo
-QS1000,2020,AL,0.3,"{""al_avg"": 3.07, ""al_subjects"": 2, ""al_top_ratio"": 0.181, ""ielts"": 6.9}",synthetic-demo
-QS1000,2020,IB,0.3,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2020,IB,0.3,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2020,IB,0.3,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2020,IB,0.3,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2020,GAOKAO,0.3,"{""gk_total"": 467.0}",synthetic-demo
-QS1000,2020,GAOKAO,0.3,"{""gk_total"": 474.0}",synthetic-demo
-QS1000,2020,GAOKAO,0.3,"{""gk_total"": 443.0}",synthetic-demo
-QS1000,2020,GAOKAO,0.3,"{""gk_total"": 462.0}",synthetic-demo
-QS1000,2021,AP,0.298,"{""ap_avg"": 3.62, ""ap_subjects"": 3, ""ap_top_ratio"": 0.396, ""gpa"": 3.21, ""sat"": 1288.0, ""toefl"": 88.0}",synthetic-demo
-QS1000,2021,AP,0.298,"{""ap_avg"": 3.68, ""ap_subjects"": 2, ""ap_top_ratio"": 0.29, ""gpa"": 3.26, ""sat"": 1326.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2021,AP,0.298,"{""ap_avg"": 3.73, ""ap_subjects"": 3, ""ap_top_ratio"": 0.269, ""gpa"": 3.24, ""sat"": 1300.0, ""toefl"": 94.0}",synthetic-demo
-QS1000,2021,AP,0.298,"{""ap_avg"": 3.52, ""ap_subjects"": 2, ""ap_top_ratio"": 0.304, ""gpa"": 3.29, ""sat"": 1270.0, ""toefl"": 94.0}",synthetic-demo
-QS1000,2021,AL,0.298,"{""al_avg"": 2.82, ""al_subjects"": 2, ""al_top_ratio"": 0.259, ""ielts"": 7.2}",synthetic-demo
-QS1000,2021,AL,0.298,"{""al_avg"": 2.72, ""al_subjects"": 2, ""al_top_ratio"": 0.445, ""ielts"": 6.5}",synthetic-demo
-QS1000,2021,AL,0.298,"{""al_avg"": 2.86, ""al_subjects"": 2, ""al_top_ratio"": 0.376, ""ielts"": 6.9}",synthetic-demo
-QS1000,2021,AL,0.298,"{""al_avg"": 2.95, ""al_subjects"": 2, ""al_top_ratio"": 0.115, ""ielts"": 7.0}",synthetic-demo
-QS1000,2021,IB,0.298,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2021,IB,0.298,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2021,IB,0.298,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2021,IB,0.298,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2021,GAOKAO,0.298,"{""gk_total"": 466.0}",synthetic-demo
-QS1000,2021,GAOKAO,0.298,"{""gk_total"": 474.0}",synthetic-demo
-QS1000,2021,GAOKAO,0.298,"{""gk_total"": 462.0}",synthetic-demo
-QS1000,2021,GAOKAO,0.298,"{""gk_total"": 458.0}",synthetic-demo
-QS1000,2022,AP,0.301,"{""ap_avg"": 3.44, ""ap_subjects"": 3, ""ap_top_ratio"": 0.1, ""gpa"": 3.3, ""sat"": 1368.0, ""toefl"": 98.0}",synthetic-demo
-QS1000,2022,AP,0.301,"{""ap_avg"": 3.94, ""ap_subjects"": 3, ""ap_top_ratio"": 0.322, ""gpa"": 3.39, ""sat"": 1312.0, ""toefl"": 101.0}",synthetic-demo
-QS1000,2022,AP,0.301,"{""ap_avg"": 3.46, ""ap_subjects"": 4, ""ap_top_ratio"": 0.162, ""gpa"": 3.34, ""sat"": 1333.0, ""toefl"": 94.0}",synthetic-demo
-QS1000,2022,AP,0.301,"{""ap_avg"": 3.47, ""ap_subjects"": 3, ""ap_top_ratio"": 0.329, ""gpa"": 3.35, ""sat"": 1338.0, ""toefl"": 92.0}",synthetic-demo
-QS1000,2022,AL,0.301,"{""al_avg"": 2.86, ""al_subjects"": 2, ""al_top_ratio"": 0.165, ""ielts"": 6.8}",synthetic-demo
-QS1000,2022,AL,0.301,"{""al_avg"": 2.71, ""al_subjects"": 2, ""al_top_ratio"": 0.393, ""ielts"": 6.7}",synthetic-demo
-QS1000,2022,AL,0.301,"{""al_avg"": 2.88, ""al_subjects"": 2, ""al_top_ratio"": 0.154, ""ielts"": 6.8}",synthetic-demo
-QS1000,2022,AL,0.301,"{""al_avg"": 3.17, ""al_subjects"": 2, ""al_top_ratio"": 0.32, ""ielts"": 6.9}",synthetic-demo
-QS1000,2022,IB,0.301,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2022,IB,0.301,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2022,IB,0.301,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2022,IB,0.301,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2022,GAOKAO,0.301,"{""gk_total"": 469.0}",synthetic-demo
-QS1000,2022,GAOKAO,0.301,"{""gk_total"": 481.0}",synthetic-demo
-QS1000,2022,GAOKAO,0.301,"{""gk_total"": 422.0}",synthetic-demo
-QS1000,2022,GAOKAO,0.301,"{""gk_total"": 486.0}",synthetic-demo
-QS1000,2023,AP,0.299,"{""ap_avg"": 3.72, ""ap_subjects"": 2, ""ap_top_ratio"": 0.339, ""gpa"": 3.24, ""sat"": 1335.0, ""toefl"": 91.0}",synthetic-demo
-QS1000,2023,AP,0.299,"{""ap_avg"": 3.52, ""ap_subjects"": 2, ""ap_top_ratio"": 0.336, ""gpa"": 3.23, ""sat"": 1275.0, ""toefl"": 93.0}",synthetic-demo
-QS1000,2023,AP,0.299,"{""ap_avg"": 3.74, ""ap_subjects"": 3, ""ap_top_ratio"": 0.371, ""gpa"": 3.29, ""sat"": 1342.0, ""toefl"": 89.0}",synthetic-demo
-QS1000,2023,AP,0.299,"{""ap_avg"": 3.52, ""ap_subjects"": 3, ""ap_top_ratio"": 0.311, ""gpa"": 3.24, ""sat"": 1318.0, ""toefl"": 96.0}",synthetic-demo
-QS1000,2023,AL,0.299,"{""al_avg"": 3.05, ""al_subjects"": 2, ""al_top_ratio"": 0.178, ""ielts"": 6.9}",synthetic-demo
-QS1000,2023,AL,0.299,"{""al_avg"": 2.99, ""al_subjects"": 2, ""al_top_ratio"": 0.149, ""ielts"": 7.0}",synthetic-demo
-QS1000,2023,AL,0.299,"{""al_avg"": 2.99, ""al_subjects"": 2, ""al_top_ratio"": 0.125, ""ielts"": 6.8}",synthetic-demo
-QS1000,2023,AL,0.299,"{""al_avg"": 3.59, ""al_subjects"": 2, ""al_top_ratio"": 0.149, ""ielts"": 6.8}",synthetic-demo
-QS1000,2023,IB,0.299,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2023,IB,0.299,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2023,IB,0.299,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2023,IB,0.299,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2023,GAOKAO,0.299,"{""gk_total"": 459.0}",synthetic-demo
-QS1000,2023,GAOKAO,0.299,"{""gk_total"": 456.0}",synthetic-demo
-QS1000,2023,GAOKAO,0.299,"{""gk_total"": 463.0}",synthetic-demo
-QS1000,2023,GAOKAO,0.299,"{""gk_total"": 457.0}",synthetic-demo
-QS1000,2024,AP,0.302,"{""ap_avg"": 3.64, ""ap_subjects"": 3, ""ap_top_ratio"": 0.295, ""gpa"": 3.2, ""sat"": 1346.0, ""toefl"": 94.0}",synthetic-demo
-QS1000,2024,AP,0.302,"{""ap_avg"": 3.58, ""ap_subjects"": 3, ""ap_top_ratio"": 0.385, ""gpa"": 3.29, ""sat"": 1333.0, ""toefl"": 92.0}",synthetic-demo
-QS1000,2024,AP,0.302,"{""ap_avg"": 3.44, ""ap_subjects"": 4, ""ap_top_ratio"": 0.205, ""gpa"": 3.37, ""sat"": 1331.0, ""toefl"": 92.0}",synthetic-demo
-QS1000,2024,AP,0.302,"{""ap_avg"": 3.49, ""ap_subjects"": 3, ""ap_top_ratio"": 0.271, ""gpa"": 3.25, ""sat"": 1350.0, ""toefl"": 92.0}",synthetic-demo
-QS1000,2024,AL,0.302,"{""al_avg"": 3.13, ""al_subjects"": 2, ""al_top_ratio"": 0.185, ""ielts"": 6.9}",synthetic-demo
-QS1000,2024,AL,0.302,"{""al_avg"": 2.85, ""al_subjects"": 2, ""al_top_ratio"": 0.154, ""ielts"": 6.6}",synthetic-demo
-QS1000,2024,AL,0.302,"{""al_avg"": 2.79, ""al_subjects"": 2, ""al_top_ratio"": 0.302, ""ielts"": 6.8}",synthetic-demo
-QS1000,2024,AL,0.302,"{""al_avg"": 3.05, ""al_subjects"": 2, ""al_top_ratio"": 0.17, ""ielts"": 6.7}",synthetic-demo
-QS1000,2024,IB,0.302,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2024,IB,0.302,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2024,IB,0.302,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2024,IB,0.302,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
-QS1000,2024,GAOKAO,0.302,"{""gk_total"": 449.0}",synthetic-demo
-QS1000,2024,GAOKAO,0.302,"{""gk_total"": 471.0}",synthetic-demo
-QS1000,2024,GAOKAO,0.302,"{""gk_total"": 461.0}",synthetic-demo
-QS1000,2024,GAOKAO,0.302,"{""gk_total"": 507.0}",synthetic-demo
+QS10 名校,2019,AP,0.87,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1516.0}",synthetic-demo
+QS10 名校,2019,AP,0.87,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1538.0, ""toefl"": 116.0}",synthetic-demo
+QS10 名校,2019,AP,0.87,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""sat"": 1580.0, ""toefl"": 113.0}",synthetic-demo
+QS10 名校,2019,AP,0.87,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.82, ""sat"": 1569.0, ""toefl"": 110.0}",synthetic-demo
+QS10 名校,2019,AL,0.87,"{""al_avg"": 4.74, ""al_subjects"": 4, ""al_top_ratio"": 0.804}",synthetic-demo
+QS10 名校,2019,AL,0.87,"{""al_avg"": 4.73, ""al_subjects"": 4, ""al_top_ratio"": 0.818}",synthetic-demo
+QS10 名校,2019,AL,0.87,"{""al_avg"": 4.6, ""al_subjects"": 4, ""al_top_ratio"": 0.923, ""ielts"": 8.5}",synthetic-demo
+QS10 名校,2019,AL,0.87,"{""al_avg"": 4.71, ""al_subjects"": 4, ""al_top_ratio"": 0.758, ""ielts"": 9.0}",synthetic-demo
+QS10 名校,2019,IB,0.87,"{""ib_total"": 43.0}",synthetic-demo
+QS10 名校,2019,IB,0.87,"{""ib_total"": 43.0}",synthetic-demo
+QS10 名校,2019,IB,0.87,"{""ib_total"": 42.0, ""toefl"": 115.0}",synthetic-demo
+QS10 名校,2019,IB,0.87,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+QS10 名校,2019,GAOKAO,0.87,"{""gk_total"": 686.0}",synthetic-demo
+QS10 名校,2019,GAOKAO,0.87,"{""gk_total"": 671.0}",synthetic-demo
+QS10 名校,2019,GAOKAO,0.87,"{""gk_total"": 699.0}",synthetic-demo
+QS10 名校,2019,GAOKAO,0.87,"{""gk_total"": 687.0}",synthetic-demo
+QS10 名校,2020,AP,0.887,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""sat"": 1581.0}",synthetic-demo
+QS10 名校,2020,AP,0.887,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.75, ""sat"": 1540.0, ""toefl"": 118.0}",synthetic-demo
+QS10 名校,2020,AP,0.887,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""sat"": 1585.0, ""toefl"": 115.0}",synthetic-demo
+QS10 名校,2020,AP,0.887,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""toefl"": 113.0}",synthetic-demo
+QS10 名校,2020,AL,0.887,"{""al_avg"": 4.29, ""al_subjects"": 5, ""al_top_ratio"": 0.807}",synthetic-demo
+QS10 名校,2020,AL,0.887,"{""al_avg"": 4.51, ""al_subjects"": 5, ""al_top_ratio"": 0.663, ""ielts"": 8.4}",synthetic-demo
+QS10 名校,2020,AL,0.887,"{""al_avg"": 4.73, ""al_subjects"": 5, ""al_top_ratio"": 0.89}",synthetic-demo
+QS10 名校,2020,AL,0.887,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.733, ""ielts"": 8.5}",synthetic-demo
+QS10 名校,2020,IB,0.887,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+QS10 名校,2020,IB,0.887,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+QS10 名校,2020,IB,0.887,"{""ib_total"": 43.0}",synthetic-demo
+QS10 名校,2020,IB,0.887,"{""ib_total"": 44.0}",synthetic-demo
+QS10 名校,2020,GAOKAO,0.887,"{""gk_total"": 694.0}",synthetic-demo
+QS10 名校,2020,GAOKAO,0.887,"{""gk_total"": 701.0}",synthetic-demo
+QS10 名校,2020,GAOKAO,0.887,"{""gk_total"": 677.0}",synthetic-demo
+QS10 名校,2020,GAOKAO,0.887,"{""gk_total"": 723.0}",synthetic-demo
+QS10 名校,2021,AP,0.91,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""sat"": 1559.0, ""toefl"": 118.0}",synthetic-demo
+QS10 名校,2021,AP,0.91,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.86, ""sat"": 1566.0}",synthetic-demo
+QS10 名校,2021,AP,0.91,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.85, ""sat"": 1525.0, ""toefl"": 114.0}",synthetic-demo
+QS10 名校,2021,AP,0.91,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.77, ""sat"": 1576.0, ""toefl"": 119.0}",synthetic-demo
+QS10 名校,2021,AL,0.91,"{""al_avg"": 4.74, ""al_subjects"": 5, ""al_top_ratio"": 0.745, ""ielts"": 8.8}",synthetic-demo
+QS10 名校,2021,AL,0.91,"{""al_avg"": 4.75, ""al_subjects"": 5, ""al_top_ratio"": 0.884, ""ielts"": 8.6}",synthetic-demo
+QS10 名校,2021,AL,0.91,"{""al_avg"": 4.81, ""al_subjects"": 5, ""al_top_ratio"": 0.819, ""ielts"": 9.0}",synthetic-demo
+QS10 名校,2021,AL,0.91,"{""al_avg"": 4.87, ""al_subjects"": 5, ""al_top_ratio"": 0.722}",synthetic-demo
+QS10 名校,2021,IB,0.91,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+QS10 名校,2021,IB,0.91,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+QS10 名校,2021,IB,0.91,"{""ib_total"": 44.0}",synthetic-demo
+QS10 名校,2021,IB,0.91,"{""ib_total"": 43.0}",synthetic-demo
+QS10 名校,2021,GAOKAO,0.91,"{""gk_total"": 709.0}",synthetic-demo
+QS10 名校,2021,GAOKAO,0.91,"{""gk_total"": 717.0}",synthetic-demo
+QS10 名校,2021,GAOKAO,0.91,"{""gk_total"": 682.0}",synthetic-demo
+QS10 名校,2021,GAOKAO,0.91,"{""gk_total"": 744.0}",synthetic-demo
+QS10 名校,2022,AP,0.934,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.85, ""toefl"": 120.0}",synthetic-demo
+QS10 名校,2022,AP,0.934,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.86, ""sat"": 1561.0}",synthetic-demo
+QS10 名校,2022,AP,0.934,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.9, ""sat"": 1561.0}",synthetic-demo
+QS10 名校,2022,AP,0.934,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.86, ""toefl"": 120.0}",synthetic-demo
+QS10 名校,2022,AL,0.934,"{""al_avg"": 4.75, ""al_subjects"": 5, ""al_top_ratio"": 0.766, ""ielts"": 8.8}",synthetic-demo
+QS10 名校,2022,AL,0.934,"{""al_avg"": 4.76, ""al_subjects"": 5, ""al_top_ratio"": 0.493, ""ielts"": 9.0}",synthetic-demo
+QS10 名校,2022,AL,0.934,"{""al_avg"": 4.91, ""al_subjects"": 5, ""al_top_ratio"": 0.871}",synthetic-demo
+QS10 名校,2022,AL,0.934,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.756, ""ielts"": 8.7}",synthetic-demo
+QS10 名校,2022,IB,0.934,"{""ib_total"": 45.0, ""toefl"": 117.0}",synthetic-demo
+QS10 名校,2022,IB,0.934,"{""ib_total"": 45.0, ""toefl"": 117.0}",synthetic-demo
+QS10 名校,2022,IB,0.934,"{""ib_total"": 45.0}",synthetic-demo
+QS10 名校,2022,IB,0.934,"{""ib_total"": 45.0}",synthetic-demo
+QS10 名校,2022,GAOKAO,0.934,"{""gk_total"": 729.0}",synthetic-demo
+QS10 名校,2022,GAOKAO,0.934,"{""gk_total"": 705.0}",synthetic-demo
+QS10 名校,2022,GAOKAO,0.934,"{""gk_total"": 693.0}",synthetic-demo
+QS10 名校,2022,GAOKAO,0.934,"{""gk_total"": 728.0}",synthetic-demo
+QS10 名校,2023,AP,0.954,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.88, ""sat"": 1581.0}",synthetic-demo
+QS10 名校,2023,AP,0.954,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.97, ""sat"": 1556.0}",synthetic-demo
+QS10 名校,2023,AP,0.954,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.84, ""sat"": 1575.0, ""toefl"": 119.0}",synthetic-demo
+QS10 名校,2023,AP,0.954,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.84, ""sat"": 1571.0, ""toefl"": 120.0}",synthetic-demo
+QS10 名校,2023,AL,0.954,"{""al_avg"": 4.83, ""al_subjects"": 5, ""al_top_ratio"": 0.875, ""ielts"": 8.8}",synthetic-demo
+QS10 名校,2023,AL,0.954,"{""al_avg"": 4.7, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 9.0}",synthetic-demo
+QS10 名校,2023,AL,0.954,"{""al_avg"": 4.67, ""al_subjects"": 5, ""al_top_ratio"": 0.84}",synthetic-demo
+QS10 名校,2023,AL,0.954,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.996}",synthetic-demo
+QS10 名校,2023,IB,0.954,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+QS10 名校,2023,IB,0.954,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+QS10 名校,2023,IB,0.954,"{""ib_total"": 44.0}",synthetic-demo
+QS10 名校,2023,IB,0.954,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+QS10 名校,2023,GAOKAO,0.954,"{""gk_total"": 710.0}",synthetic-demo
+QS10 名校,2023,GAOKAO,0.954,"{""gk_total"": 750.0}",synthetic-demo
+QS10 名校,2023,GAOKAO,0.954,"{""gk_total"": 702.0}",synthetic-demo
+QS10 名校,2023,GAOKAO,0.954,"{""gk_total"": 727.0}",synthetic-demo
+QS10 名校,2024,AP,0.979,"{""ap_avg"": 4.5, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.95, ""sat"": 1600.0, ""toefl"": 119.0}",synthetic-demo
+QS10 名校,2024,AP,0.979,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""sat"": 1582.0, ""toefl"": 118.0}",synthetic-demo
+QS10 名校,2024,AP,0.979,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.9, ""sat"": 1573.0, ""toefl"": 120.0}",synthetic-demo
+QS10 名校,2024,AP,0.979,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.86}",synthetic-demo
+QS10 名校,2024,AL,0.979,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.762, ""ielts"": 9.0}",synthetic-demo
+QS10 名校,2024,AL,0.979,"{""al_avg"": 4.78, ""al_subjects"": 5, ""al_top_ratio"": 0.905}",synthetic-demo
+QS10 名校,2024,AL,0.979,"{""al_avg"": 4.62, ""al_subjects"": 5, ""al_top_ratio"": 0.917, ""ielts"": 9.0}",synthetic-demo
+QS10 名校,2024,AL,0.979,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.74, ""ielts"": 8.9}",synthetic-demo
+QS10 名校,2024,IB,0.979,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+QS10 名校,2024,IB,0.979,"{""ib_total"": 45.0}",synthetic-demo
+QS10 名校,2024,IB,0.979,"{""ib_total"": 45.0}",synthetic-demo
+QS10 名校,2024,IB,0.979,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+QS10 名校,2024,GAOKAO,0.979,"{""gk_total"": 745.0}",synthetic-demo
+QS10 名校,2024,GAOKAO,0.979,"{""gk_total"": 736.0}",synthetic-demo
+QS10 名校,2024,GAOKAO,0.979,"{""gk_total"": 723.0}",synthetic-demo
+QS10 名校,2024,GAOKAO,0.979,"{""gk_total"": 750.0}",synthetic-demo
+QS50,2019,AP,0.735,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.67, ""sat"": 1476.0, ""toefl"": 104.0}",synthetic-demo
+QS50,2019,AP,0.735,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.68, ""sat"": 1514.0, ""toefl"": 101.0}",synthetic-demo
+QS50,2019,AP,0.735,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.7}",synthetic-demo
+QS50,2019,AP,0.735,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.68, ""toefl"": 119.0}",synthetic-demo
+QS50,2019,AL,0.735,"{""al_avg"": 4.37, ""al_subjects"": 4, ""al_top_ratio"": 0.529, ""ielts"": 8.4}",synthetic-demo
+QS50,2019,AL,0.735,"{""al_avg"": 4.56, ""al_subjects"": 4, ""al_top_ratio"": 0.686, ""ielts"": 7.7}",synthetic-demo
+QS50,2019,AL,0.735,"{""al_avg"": 4.31, ""al_subjects"": 4, ""al_top_ratio"": 0.631, ""ielts"": 8.4}",synthetic-demo
+QS50,2019,AL,0.735,"{""al_avg"": 4.35, ""al_subjects"": 4, ""al_top_ratio"": 0.554, ""ielts"": 8.3}",synthetic-demo
+QS50,2019,IB,0.735,"{""ib_total"": 39.0}",synthetic-demo
+QS50,2019,IB,0.735,"{""ib_total"": 39.0, ""toefl"": 110.0}",synthetic-demo
+QS50,2019,IB,0.735,"{""ib_total"": 40.0, ""toefl"": 110.0}",synthetic-demo
+QS50,2019,IB,0.735,"{""ib_total"": 40.0, ""toefl"": 110.0}",synthetic-demo
+QS50,2019,GAOKAO,0.735,"{""gk_total"": 613.0}",synthetic-demo
+QS50,2019,GAOKAO,0.735,"{""gk_total"": 680.0}",synthetic-demo
+QS50,2019,GAOKAO,0.735,"{""gk_total"": 623.0}",synthetic-demo
+QS50,2019,GAOKAO,0.735,"{""gk_total"": 611.0}",synthetic-demo
+QS50,2020,AP,0.756,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.66}",synthetic-demo
+QS50,2020,AP,0.756,"{""ap_avg"": 4.5, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.63, ""sat"": 1468.0}",synthetic-demo
+QS50,2020,AP,0.756,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1483.0, ""toefl"": 112.0}",synthetic-demo
+QS50,2020,AP,0.756,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""toefl"": 116.0}",synthetic-demo
+QS50,2020,AL,0.756,"{""al_avg"": 4.28, ""al_subjects"": 4, ""al_top_ratio"": 0.672, ""ielts"": 8.2}",synthetic-demo
+QS50,2020,AL,0.756,"{""al_avg"": 4.27, ""al_subjects"": 4, ""al_top_ratio"": 0.647, ""ielts"": 8.4}",synthetic-demo
+QS50,2020,AL,0.756,"{""al_avg"": 4.15, ""al_subjects"": 4, ""al_top_ratio"": 0.889, ""ielts"": 8.7}",synthetic-demo
+QS50,2020,AL,0.756,"{""al_avg"": 4.23, ""al_subjects"": 4, ""al_top_ratio"": 0.767, ""ielts"": 8.1}",synthetic-demo
+QS50,2020,IB,0.756,"{""ib_total"": 41.0, ""toefl"": 111.0}",synthetic-demo
+QS50,2020,IB,0.756,"{""ib_total"": 40.0, ""toefl"": 111.0}",synthetic-demo
+QS50,2020,IB,0.756,"{""ib_total"": 41.0, ""toefl"": 111.0}",synthetic-demo
+QS50,2020,IB,0.756,"{""ib_total"": 41.0, ""toefl"": 111.0}",synthetic-demo
+QS50,2020,GAOKAO,0.756,"{""gk_total"": 652.0}",synthetic-demo
+QS50,2020,GAOKAO,0.756,"{""gk_total"": 648.0}",synthetic-demo
+QS50,2020,GAOKAO,0.756,"{""gk_total"": 613.0}",synthetic-demo
+QS50,2020,GAOKAO,0.756,"{""gk_total"": 649.0}",synthetic-demo
+QS50,2021,AP,0.775,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.79, ""toefl"": 112.0}",synthetic-demo
+QS50,2021,AP,0.775,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.63, ""sat"": 1533.0, ""toefl"": 107.0}",synthetic-demo
+QS50,2021,AP,0.775,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.67, ""sat"": 1476.0, ""toefl"": 115.0}",synthetic-demo
+QS50,2021,AP,0.775,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.72, ""sat"": 1493.0}",synthetic-demo
+QS50,2021,AL,0.775,"{""al_avg"": 4.5, ""al_subjects"": 4, ""al_top_ratio"": 0.717, ""ielts"": 8.6}",synthetic-demo
+QS50,2021,AL,0.775,"{""al_avg"": 4.35, ""al_subjects"": 4, ""al_top_ratio"": 0.452, ""ielts"": 8.4}",synthetic-demo
+QS50,2021,AL,0.775,"{""al_avg"": 4.6, ""al_subjects"": 4, ""al_top_ratio"": 0.675, ""ielts"": 8.6}",synthetic-demo
+QS50,2021,AL,0.775,"{""al_avg"": 4.02, ""al_subjects"": 4, ""al_top_ratio"": 0.537, ""ielts"": 8.3}",synthetic-demo
+QS50,2021,IB,0.775,"{""ib_total"": 40.0, ""toefl"": 112.0}",synthetic-demo
+QS50,2021,IB,0.775,"{""ib_total"": 40.0}",synthetic-demo
+QS50,2021,IB,0.775,"{""ib_total"": 40.0}",synthetic-demo
+QS50,2021,IB,0.775,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
+QS50,2021,GAOKAO,0.775,"{""gk_total"": 673.0}",synthetic-demo
+QS50,2021,GAOKAO,0.775,"{""gk_total"": 660.0}",synthetic-demo
+QS50,2021,GAOKAO,0.775,"{""gk_total"": 652.0}",synthetic-demo
+QS50,2021,GAOKAO,0.775,"{""gk_total"": 672.0}",synthetic-demo
+QS50,2022,AP,0.793,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""sat"": 1518.0}",synthetic-demo
+QS50,2022,AP,0.793,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.66, ""sat"": 1534.0, ""toefl"": 104.0}",synthetic-demo
+QS50,2022,AP,0.793,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.79, ""sat"": 1521.0, ""toefl"": 116.0}",synthetic-demo
+QS50,2022,AP,0.793,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.69}",synthetic-demo
+QS50,2022,AL,0.793,"{""al_avg"": 4.26, ""al_subjects"": 4, ""al_top_ratio"": 0.673}",synthetic-demo
+QS50,2022,AL,0.793,"{""al_avg"": 4.71, ""al_subjects"": 4, ""al_top_ratio"": 0.722, ""ielts"": 8.5}",synthetic-demo
+QS50,2022,AL,0.793,"{""al_avg"": 4.19, ""al_subjects"": 4, ""al_top_ratio"": 0.617}",synthetic-demo
+QS50,2022,AL,0.793,"{""al_avg"": 4.5, ""al_subjects"": 4, ""al_top_ratio"": 0.761}",synthetic-demo
+QS50,2022,IB,0.793,"{""ib_total"": 41.0}",synthetic-demo
+QS50,2022,IB,0.793,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
+QS50,2022,IB,0.793,"{""ib_total"": 42.0, ""toefl"": 112.0}",synthetic-demo
+QS50,2022,IB,0.793,"{""ib_total"": 42.0, ""toefl"": 112.0}",synthetic-demo
+QS50,2022,GAOKAO,0.793,"{""gk_total"": 654.0}",synthetic-demo
+QS50,2022,GAOKAO,0.793,"{""gk_total"": 669.0}",synthetic-demo
+QS50,2022,GAOKAO,0.793,"{""gk_total"": 657.0}",synthetic-demo
+QS50,2022,GAOKAO,0.793,"{""gk_total"": 674.0}",synthetic-demo
+QS50,2023,AP,0.812,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84, ""sat"": 1559.0, ""toefl"": 120.0}",synthetic-demo
+QS50,2023,AP,0.812,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.67, ""sat"": 1482.0, ""toefl"": 117.0}",synthetic-demo
+QS50,2023,AP,0.812,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.82, ""sat"": 1509.0, ""toefl"": 111.0}",synthetic-demo
+QS50,2023,AP,0.812,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.77, ""sat"": 1495.0}",synthetic-demo
+QS50,2023,AL,0.812,"{""al_avg"": 4.3, ""al_subjects"": 4, ""al_top_ratio"": 0.513, ""ielts"": 8.3}",synthetic-demo
+QS50,2023,AL,0.812,"{""al_avg"": 4.45, ""al_subjects"": 4, ""al_top_ratio"": 0.683, ""ielts"": 8.3}",synthetic-demo
+QS50,2023,AL,0.812,"{""al_avg"": 4.4, ""al_subjects"": 4, ""al_top_ratio"": 0.8, ""ielts"": 8.6}",synthetic-demo
+QS50,2023,AL,0.812,"{""al_avg"": 4.86, ""al_subjects"": 4, ""al_top_ratio"": 0.904, ""ielts"": 8.3}",synthetic-demo
+QS50,2023,IB,0.812,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+QS50,2023,IB,0.812,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+QS50,2023,IB,0.812,"{""ib_total"": 41.0, ""toefl"": 113.0}",synthetic-demo
+QS50,2023,IB,0.812,"{""ib_total"": 42.0}",synthetic-demo
+QS50,2023,GAOKAO,0.812,"{""gk_total"": 676.0}",synthetic-demo
+QS50,2023,GAOKAO,0.812,"{""gk_total"": 660.0}",synthetic-demo
+QS50,2023,GAOKAO,0.812,"{""gk_total"": 670.0}",synthetic-demo
+QS50,2023,GAOKAO,0.812,"{""gk_total"": 690.0}",synthetic-demo
+QS50,2024,AP,0.834,"{""ap_avg"": 4.5, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.72, ""sat"": 1511.0, ""toefl"": 114.0}",synthetic-demo
+QS50,2024,AP,0.834,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.76, ""toefl"": 120.0}",synthetic-demo
+QS50,2024,AP,0.834,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.79, ""sat"": 1514.0, ""toefl"": 113.0}",synthetic-demo
+QS50,2024,AP,0.834,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.7, ""sat"": 1517.0, ""toefl"": 120.0}",synthetic-demo
+QS50,2024,AL,0.834,"{""al_avg"": 4.56, ""al_subjects"": 4, ""al_top_ratio"": 0.731}",synthetic-demo
+QS50,2024,AL,0.834,"{""al_avg"": 4.31, ""al_subjects"": 4, ""al_top_ratio"": 0.585, ""ielts"": 8.5}",synthetic-demo
+QS50,2024,AL,0.834,"{""al_avg"": 4.38, ""al_subjects"": 4, ""al_top_ratio"": 0.866, ""ielts"": 8.7}",synthetic-demo
+QS50,2024,AL,0.834,"{""al_avg"": 4.32, ""al_subjects"": 4, ""al_top_ratio"": 0.804, ""ielts"": 8.8}",synthetic-demo
+QS50,2024,IB,0.834,"{""ib_total"": 42.0, ""toefl"": 114.0}",synthetic-demo
+QS50,2024,IB,0.834,"{""ib_total"": 42.0, ""toefl"": 114.0}",synthetic-demo
+QS50,2024,IB,0.834,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+QS50,2024,IB,0.834,"{""ib_total"": 42.0}",synthetic-demo
+QS50,2024,GAOKAO,0.834,"{""gk_total"": 691.0}",synthetic-demo
+QS50,2024,GAOKAO,0.834,"{""gk_total"": 697.0}",synthetic-demo
+QS50,2024,GAOKAO,0.834,"{""gk_total"": 668.0}",synthetic-demo
+QS50,2024,GAOKAO,0.834,"{""gk_total"": 685.0}",synthetic-demo
+QS100,2019,AP,0.621,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.67, ""sat"": 1502.0, ""toefl"": 112.0}",synthetic-demo
+QS100,2019,AP,0.621,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.6, ""sat"": 1463.0}",synthetic-demo
+QS100,2019,AP,0.621,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""sat"": 1394.0}",synthetic-demo
+QS100,2019,AP,0.621,"{""ap_avg"": 4.33, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.56, ""sat"": 1438.0, ""toefl"": 111.0}",synthetic-demo
+QS100,2019,AL,0.621,"{""al_avg"": 3.93, ""al_subjects"": 3, ""al_top_ratio"": 0.516}",synthetic-demo
+QS100,2019,AL,0.621,"{""al_avg"": 3.94, ""al_subjects"": 3, ""al_top_ratio"": 0.497}",synthetic-demo
+QS100,2019,AL,0.621,"{""al_avg"": 3.55, ""al_subjects"": 3, ""al_top_ratio"": 0.494, ""ielts"": 8.2}",synthetic-demo
+QS100,2019,AL,0.621,"{""al_avg"": 3.79, ""al_subjects"": 3, ""al_top_ratio"": 0.551, ""ielts"": 8.2}",synthetic-demo
+QS100,2019,IB,0.621,"{""ib_total"": 38.0, ""toefl"": 106.0}",synthetic-demo
+QS100,2019,IB,0.621,"{""ib_total"": 37.0}",synthetic-demo
+QS100,2019,IB,0.621,"{""ib_total"": 38.0}",synthetic-demo
+QS100,2019,IB,0.621,"{""ib_total"": 38.0, ""toefl"": 106.0}",synthetic-demo
+QS100,2019,GAOKAO,0.621,"{""gk_total"": 591.0}",synthetic-demo
+QS100,2019,GAOKAO,0.621,"{""gk_total"": 557.0}",synthetic-demo
+QS100,2019,GAOKAO,0.621,"{""gk_total"": 625.0}",synthetic-demo
+QS100,2019,GAOKAO,0.621,"{""gk_total"": 592.0}",synthetic-demo
+QS100,2020,AP,0.639,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667}",synthetic-demo
+QS100,2020,AP,0.639,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.56}",synthetic-demo
+QS100,2020,AP,0.639,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.55, ""sat"": 1445.0, ""toefl"": 101.0}",synthetic-demo
+QS100,2020,AP,0.639,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.62, ""sat"": 1460.0, ""toefl"": 108.0}",synthetic-demo
+QS100,2020,AL,0.639,"{""al_avg"": 3.93, ""al_subjects"": 4, ""al_top_ratio"": 0.525, ""ielts"": 7.7}",synthetic-demo
+QS100,2020,AL,0.639,"{""al_avg"": 3.89, ""al_subjects"": 4, ""al_top_ratio"": 0.653}",synthetic-demo
+QS100,2020,AL,0.639,"{""al_avg"": 4.2, ""al_subjects"": 4, ""al_top_ratio"": 0.71, ""ielts"": 7.8}",synthetic-demo
+QS100,2020,AL,0.639,"{""al_avg"": 3.8, ""al_subjects"": 4, ""al_top_ratio"": 0.558, ""ielts"": 7.9}",synthetic-demo
+QS100,2020,IB,0.639,"{""ib_total"": 37.0}",synthetic-demo
+QS100,2020,IB,0.639,"{""ib_total"": 38.0}",synthetic-demo
+QS100,2020,IB,0.639,"{""ib_total"": 38.0}",synthetic-demo
+QS100,2020,IB,0.639,"{""ib_total"": 37.0, ""toefl"": 107.0}",synthetic-demo
+QS100,2020,GAOKAO,0.639,"{""gk_total"": 601.0}",synthetic-demo
+QS100,2020,GAOKAO,0.639,"{""gk_total"": 612.0}",synthetic-demo
+QS100,2020,GAOKAO,0.639,"{""gk_total"": 606.0}",synthetic-demo
+QS100,2020,GAOKAO,0.639,"{""gk_total"": 604.0}",synthetic-demo
+QS100,2021,AP,0.658,"{""ap_avg"": 4.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""gpa"": 3.61}",synthetic-demo
+QS100,2021,AP,0.658,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""sat"": 1430.0, ""toefl"": 116.0}",synthetic-demo
+QS100,2021,AP,0.658,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""sat"": 1474.0, ""toefl"": 111.0}",synthetic-demo
+QS100,2021,AP,0.658,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.57, ""toefl"": 102.0}",synthetic-demo
+QS100,2021,AL,0.658,"{""al_avg"": 4.01, ""al_subjects"": 4, ""al_top_ratio"": 0.556, ""ielts"": 7.9}",synthetic-demo
+QS100,2021,AL,0.658,"{""al_avg"": 4.17, ""al_subjects"": 4, ""al_top_ratio"": 0.476, ""ielts"": 7.9}",synthetic-demo
+QS100,2021,AL,0.658,"{""al_avg"": 3.94, ""al_subjects"": 4, ""al_top_ratio"": 0.523, ""ielts"": 8.0}",synthetic-demo
+QS100,2021,AL,0.658,"{""al_avg"": 3.89, ""al_subjects"": 4, ""al_top_ratio"": 0.622}",synthetic-demo
+QS100,2021,IB,0.658,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
+QS100,2021,IB,0.658,"{""ib_total"": 38.0}",synthetic-demo
+QS100,2021,IB,0.658,"{""ib_total"": 39.0}",synthetic-demo
+QS100,2021,IB,0.658,"{""ib_total"": 39.0}",synthetic-demo
+QS100,2021,GAOKAO,0.658,"{""gk_total"": 633.0}",synthetic-demo
+QS100,2021,GAOKAO,0.658,"{""gk_total"": 627.0}",synthetic-demo
+QS100,2021,GAOKAO,0.658,"{""gk_total"": 620.0}",synthetic-demo
+QS100,2021,GAOKAO,0.658,"{""gk_total"": 595.0}",synthetic-demo
+QS100,2022,AP,0.672,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.64}",synthetic-demo
+QS100,2022,AP,0.672,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.62, ""sat"": 1506.0, ""toefl"": 97.0}",synthetic-demo
+QS100,2022,AP,0.672,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.59, ""toefl"": 112.0}",synthetic-demo
+QS100,2022,AP,0.672,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.58}",synthetic-demo
+QS100,2022,AL,0.672,"{""al_avg"": 4.11, ""al_subjects"": 4, ""al_top_ratio"": 0.73, ""ielts"": 7.9}",synthetic-demo
+QS100,2022,AL,0.672,"{""al_avg"": 4.22, ""al_subjects"": 4, ""al_top_ratio"": 0.744}",synthetic-demo
+QS100,2022,AL,0.672,"{""al_avg"": 4.22, ""al_subjects"": 4, ""al_top_ratio"": 0.658, ""ielts"": 7.9}",synthetic-demo
+QS100,2022,AL,0.672,"{""al_avg"": 3.98, ""al_subjects"": 4, ""al_top_ratio"": 0.63, ""ielts"": 8.2}",synthetic-demo
+QS100,2022,IB,0.672,"{""ib_total"": 38.0, ""toefl"": 108.0}",synthetic-demo
+QS100,2022,IB,0.672,"{""ib_total"": 39.0, ""toefl"": 108.0}",synthetic-demo
+QS100,2022,IB,0.672,"{""ib_total"": 38.0}",synthetic-demo
+QS100,2022,IB,0.672,"{""ib_total"": 39.0}",synthetic-demo
+QS100,2022,GAOKAO,0.672,"{""gk_total"": 628.0}",synthetic-demo
+QS100,2022,GAOKAO,0.672,"{""gk_total"": 653.0}",synthetic-demo
+QS100,2022,GAOKAO,0.672,"{""gk_total"": 621.0}",synthetic-demo
+QS100,2022,GAOKAO,0.672,"{""gk_total"": 593.0}",synthetic-demo
+QS100,2023,AP,0.686,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""sat"": 1462.0, ""toefl"": 104.0}",synthetic-demo
+QS100,2023,AP,0.686,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.6}",synthetic-demo
+QS100,2023,AP,0.686,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.63}",synthetic-demo
+QS100,2023,AP,0.686,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""toefl"": 109.0}",synthetic-demo
+QS100,2023,AL,0.686,"{""al_avg"": 3.9, ""al_subjects"": 4, ""al_top_ratio"": 0.693, ""ielts"": 8.4}",synthetic-demo
+QS100,2023,AL,0.686,"{""al_avg"": 4.13, ""al_subjects"": 4, ""al_top_ratio"": 0.448, ""ielts"": 8.3}",synthetic-demo
+QS100,2023,AL,0.686,"{""al_avg"": 4.03, ""al_subjects"": 4, ""al_top_ratio"": 0.525, ""ielts"": 7.8}",synthetic-demo
+QS100,2023,AL,0.686,"{""al_avg"": 4.06, ""al_subjects"": 4, ""al_top_ratio"": 0.576}",synthetic-demo
+QS100,2023,IB,0.686,"{""ib_total"": 38.0, ""toefl"": 109.0}",synthetic-demo
+QS100,2023,IB,0.686,"{""ib_total"": 38.0}",synthetic-demo
+QS100,2023,IB,0.686,"{""ib_total"": 39.0, ""toefl"": 109.0}",synthetic-demo
+QS100,2023,IB,0.686,"{""ib_total"": 38.0}",synthetic-demo
+QS100,2023,GAOKAO,0.686,"{""gk_total"": 627.0}",synthetic-demo
+QS100,2023,GAOKAO,0.686,"{""gk_total"": 619.0}",synthetic-demo
+QS100,2023,GAOKAO,0.686,"{""gk_total"": 643.0}",synthetic-demo
+QS100,2023,GAOKAO,0.686,"{""gk_total"": 602.0}",synthetic-demo
+QS100,2024,AP,0.704,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""sat"": 1418.0, ""toefl"": 109.0}",synthetic-demo
+QS100,2024,AP,0.704,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.66, ""toefl"": 113.0}",synthetic-demo
+QS100,2024,AP,0.704,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.59, ""toefl"": 107.0}",synthetic-demo
+QS100,2024,AP,0.704,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.61, ""toefl"": 106.0}",synthetic-demo
+QS100,2024,AL,0.704,"{""al_avg"": 4.66, ""al_subjects"": 4, ""al_top_ratio"": 0.522, ""ielts"": 8.4}",synthetic-demo
+QS100,2024,AL,0.704,"{""al_avg"": 4.29, ""al_subjects"": 4, ""al_top_ratio"": 0.614, ""ielts"": 8.1}",synthetic-demo
+QS100,2024,AL,0.704,"{""al_avg"": 4.3, ""al_subjects"": 4, ""al_top_ratio"": 0.606, ""ielts"": 8.4}",synthetic-demo
+QS100,2024,AL,0.704,"{""al_avg"": 4.82, ""al_subjects"": 4, ""al_top_ratio"": 0.681, ""ielts"": 8.3}",synthetic-demo
+QS100,2024,IB,0.704,"{""ib_total"": 40.0, ""toefl"": 109.0}",synthetic-demo
+QS100,2024,IB,0.704,"{""ib_total"": 40.0, ""toefl"": 109.0}",synthetic-demo
+QS100,2024,IB,0.704,"{""ib_total"": 40.0, ""toefl"": 109.0}",synthetic-demo
+QS100,2024,IB,0.704,"{""ib_total"": 40.0, ""toefl"": 109.0}",synthetic-demo
+QS100,2024,GAOKAO,0.704,"{""gk_total"": 636.0}",synthetic-demo
+QS100,2024,GAOKAO,0.704,"{""gk_total"": 639.0}",synthetic-demo
+QS100,2024,GAOKAO,0.704,"{""gk_total"": 624.0}",synthetic-demo
+QS100,2024,GAOKAO,0.704,"{""gk_total"": 611.0}",synthetic-demo
+QS200,2019,AP,0.522,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.49, ""sat"": 1382.0, ""toefl"": 116.0}",synthetic-demo
+QS200,2019,AP,0.522,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""sat"": 1385.0, ""toefl"": 108.0}",synthetic-demo
+QS200,2019,AP,0.522,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.49, ""toefl"": 106.0}",synthetic-demo
+QS200,2019,AP,0.522,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""sat"": 1430.0, ""toefl"": 114.0}",synthetic-demo
+QS200,2019,AL,0.522,"{""al_avg"": 3.72, ""al_subjects"": 3, ""al_top_ratio"": 0.547, ""ielts"": 7.3}",synthetic-demo
+QS200,2019,AL,0.522,"{""al_avg"": 3.74, ""al_subjects"": 3, ""al_top_ratio"": 0.532, ""ielts"": 7.5}",synthetic-demo
+QS200,2019,AL,0.522,"{""al_avg"": 3.58, ""al_subjects"": 3, ""al_top_ratio"": 0.439}",synthetic-demo
+QS200,2019,AL,0.522,"{""al_avg"": 3.5, ""al_subjects"": 3, ""al_top_ratio"": 0.537, ""ielts"": 7.6}",synthetic-demo
+QS200,2019,IB,0.522,"{""ib_total"": 36.0, ""toefl"": 103.0}",synthetic-demo
+QS200,2019,IB,0.522,"{""ib_total"": 36.0}",synthetic-demo
+QS200,2019,IB,0.522,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+QS200,2019,IB,0.522,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+QS200,2019,GAOKAO,0.522,"{""gk_total"": 563.0}",synthetic-demo
+QS200,2019,GAOKAO,0.522,"{""gk_total"": 542.0}",synthetic-demo
+QS200,2019,GAOKAO,0.522,"{""gk_total"": 583.0}",synthetic-demo
+QS200,2019,GAOKAO,0.522,"{""gk_total"": 579.0}",synthetic-demo
+QS200,2020,AP,0.533,"{""ap_avg"": 3.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.0, ""sat"": 1389.0, ""toefl"": 102.0}",synthetic-demo
+QS200,2020,AP,0.533,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.57, ""toefl"": 104.0}",synthetic-demo
+QS200,2020,AP,0.533,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.52, ""sat"": 1380.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2020,AP,0.533,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.5, ""sat"": 1406.0, ""toefl"": 103.0}",synthetic-demo
+QS200,2020,AL,0.533,"{""al_avg"": 3.63, ""al_subjects"": 3, ""al_top_ratio"": 0.674}",synthetic-demo
+QS200,2020,AL,0.533,"{""al_avg"": 3.63, ""al_subjects"": 3, ""al_top_ratio"": 0.414, ""ielts"": 7.4}",synthetic-demo
+QS200,2020,AL,0.533,"{""al_avg"": 3.75, ""al_subjects"": 3, ""al_top_ratio"": 0.247, ""ielts"": 7.8}",synthetic-demo
+QS200,2020,AL,0.533,"{""al_avg"": 3.78, ""al_subjects"": 3, ""al_top_ratio"": 0.622, ""ielts"": 7.6}",synthetic-demo
+QS200,2020,IB,0.533,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+QS200,2020,IB,0.533,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+QS200,2020,IB,0.533,"{""ib_total"": 35.0}",synthetic-demo
+QS200,2020,IB,0.533,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+QS200,2020,GAOKAO,0.533,"{""gk_total"": 552.0}",synthetic-demo
+QS200,2020,GAOKAO,0.533,"{""gk_total"": 558.0}",synthetic-demo
+QS200,2020,GAOKAO,0.533,"{""gk_total"": 578.0}",synthetic-demo
+QS200,2020,GAOKAO,0.533,"{""gk_total"": 561.0}",synthetic-demo
+QS200,2021,AP,0.546,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""sat"": 1403.0, ""toefl"": 106.0}",synthetic-demo
+QS200,2021,AP,0.546,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""sat"": 1382.0, ""toefl"": 99.0}",synthetic-demo
+QS200,2021,AP,0.546,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""sat"": 1440.0}",synthetic-demo
+QS200,2021,AP,0.546,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.51, ""sat"": 1451.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2021,AL,0.546,"{""al_avg"": 3.81, ""al_subjects"": 3, ""al_top_ratio"": 0.546, ""ielts"": 7.7}",synthetic-demo
+QS200,2021,AL,0.546,"{""al_avg"": 4.0, ""al_subjects"": 3, ""al_top_ratio"": 0.488, ""ielts"": 7.9}",synthetic-demo
+QS200,2021,AL,0.546,"{""al_avg"": 3.71, ""al_subjects"": 3, ""al_top_ratio"": 0.459}",synthetic-demo
+QS200,2021,AL,0.546,"{""al_avg"": 3.54, ""al_subjects"": 3, ""al_top_ratio"": 0.473, ""ielts"": 7.7}",synthetic-demo
+QS200,2021,IB,0.546,"{""ib_total"": 36.0}",synthetic-demo
+QS200,2021,IB,0.546,"{""ib_total"": 35.0}",synthetic-demo
+QS200,2021,IB,0.546,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2021,IB,0.546,"{""ib_total"": 35.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2021,GAOKAO,0.546,"{""gk_total"": 555.0}",synthetic-demo
+QS200,2021,GAOKAO,0.546,"{""gk_total"": 583.0}",synthetic-demo
+QS200,2021,GAOKAO,0.546,"{""gk_total"": 526.0}",synthetic-demo
+QS200,2021,GAOKAO,0.546,"{""gk_total"": 577.0}",synthetic-demo
+QS200,2022,AP,0.557,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.51, ""sat"": 1414.0, ""toefl"": 97.0}",synthetic-demo
+QS200,2022,AP,0.557,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.52, ""sat"": 1417.0, ""toefl"": 107.0}",synthetic-demo
+QS200,2022,AP,0.557,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""toefl"": 101.0}",synthetic-demo
+QS200,2022,AP,0.557,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.5, ""sat"": 1421.0, ""toefl"": 107.0}",synthetic-demo
+QS200,2022,AL,0.557,"{""al_avg"": 3.73, ""al_subjects"": 3, ""al_top_ratio"": 0.485, ""ielts"": 7.4}",synthetic-demo
+QS200,2022,AL,0.557,"{""al_avg"": 3.7, ""al_subjects"": 3, ""al_top_ratio"": 0.477, ""ielts"": 7.8}",synthetic-demo
+QS200,2022,AL,0.557,"{""al_avg"": 3.62, ""al_subjects"": 3, ""al_top_ratio"": 0.563, ""ielts"": 7.8}",synthetic-demo
+QS200,2022,AL,0.557,"{""al_avg"": 3.89, ""al_subjects"": 3, ""al_top_ratio"": 0.413}",synthetic-demo
+QS200,2022,IB,0.557,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2022,IB,0.557,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2022,IB,0.557,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2022,IB,0.557,"{""ib_total"": 37.0}",synthetic-demo
+QS200,2022,GAOKAO,0.557,"{""gk_total"": 575.0}",synthetic-demo
+QS200,2022,GAOKAO,0.557,"{""gk_total"": 573.0}",synthetic-demo
+QS200,2022,GAOKAO,0.557,"{""gk_total"": 580.0}",synthetic-demo
+QS200,2022,GAOKAO,0.557,"{""gk_total"": 565.0}",synthetic-demo
+QS200,2023,AP,0.57,"{""ap_avg"": 3.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""gpa"": 3.52, ""sat"": 1426.0, ""toefl"": 105.0}",synthetic-demo
+QS200,2023,AP,0.57,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.55}",synthetic-demo
+QS200,2023,AP,0.57,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""sat"": 1396.0, ""toefl"": 103.0}",synthetic-demo
+QS200,2023,AP,0.57,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.56, ""sat"": 1418.0, ""toefl"": 107.0}",synthetic-demo
+QS200,2023,AL,0.57,"{""al_avg"": 3.76, ""al_subjects"": 3, ""al_top_ratio"": 0.53}",synthetic-demo
+QS200,2023,AL,0.57,"{""al_avg"": 3.73, ""al_subjects"": 3, ""al_top_ratio"": 0.337, ""ielts"": 8.0}",synthetic-demo
+QS200,2023,AL,0.57,"{""al_avg"": 4.05, ""al_subjects"": 3, ""al_top_ratio"": 0.661, ""ielts"": 8.1}",synthetic-demo
+QS200,2023,AL,0.57,"{""al_avg"": 3.63, ""al_subjects"": 3, ""al_top_ratio"": 0.599, ""ielts"": 7.5}",synthetic-demo
+QS200,2023,IB,0.57,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2023,IB,0.57,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2023,IB,0.57,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2023,IB,0.57,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
+QS200,2023,GAOKAO,0.57,"{""gk_total"": 568.0}",synthetic-demo
+QS200,2023,GAOKAO,0.57,"{""gk_total"": 566.0}",synthetic-demo
+QS200,2023,GAOKAO,0.57,"{""gk_total"": 608.0}",synthetic-demo
+QS200,2023,GAOKAO,0.57,"{""gk_total"": 592.0}",synthetic-demo
+QS200,2024,AP,0.586,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""gpa"": 3.48, ""sat"": 1442.0, ""toefl"": 103.0}",synthetic-demo
+QS200,2024,AP,0.586,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""sat"": 1398.0, ""toefl"": 110.0}",synthetic-demo
+QS200,2024,AP,0.586,"{""ap_avg"": 4.5, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.5, ""sat"": 1454.0, ""toefl"": 100.0}",synthetic-demo
+QS200,2024,AP,0.586,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.47, ""sat"": 1380.0, ""toefl"": 101.0}",synthetic-demo
+QS200,2024,AL,0.586,"{""al_avg"": 3.8, ""al_subjects"": 3, ""al_top_ratio"": 0.655, ""ielts"": 7.9}",synthetic-demo
+QS200,2024,AL,0.586,"{""al_avg"": 3.75, ""al_subjects"": 3, ""al_top_ratio"": 0.431}",synthetic-demo
+QS200,2024,AL,0.586,"{""al_avg"": 4.06, ""al_subjects"": 3, ""al_top_ratio"": 0.768}",synthetic-demo
+QS200,2024,AL,0.586,"{""al_avg"": 3.94, ""al_subjects"": 3, ""al_top_ratio"": 0.658, ""ielts"": 7.6}",synthetic-demo
+QS200,2024,IB,0.586,"{""ib_total"": 36.0, ""toefl"": 105.0}",synthetic-demo
+QS200,2024,IB,0.586,"{""ib_total"": 36.0, ""toefl"": 105.0}",synthetic-demo
+QS200,2024,IB,0.586,"{""ib_total"": 36.0}",synthetic-demo
+QS200,2024,IB,0.586,"{""ib_total"": 37.0}",synthetic-demo
+QS200,2024,GAOKAO,0.586,"{""gk_total"": 615.0}",synthetic-demo
+QS200,2024,GAOKAO,0.586,"{""gk_total"": 594.0}",synthetic-demo
+QS200,2024,GAOKAO,0.586,"{""gk_total"": 586.0}",synthetic-demo
+QS200,2024,GAOKAO,0.586,"{""gk_total"": 595.0}",synthetic-demo
+QS500,2019,AP,0.395,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.4, ""toefl"": 94.0}",synthetic-demo
+QS500,2019,AP,0.395,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.36, ""sat"": 1352.0, ""toefl"": 104.0}",synthetic-demo
+QS500,2019,AP,0.395,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""gpa"": 3.26}",synthetic-demo
+QS500,2019,AP,0.395,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.35}",synthetic-demo
+QS500,2019,AL,0.395,"{""al_avg"": 3.28, ""al_subjects"": 3, ""al_top_ratio"": 0.326, ""ielts"": 7.1}",synthetic-demo
+QS500,2019,AL,0.395,"{""al_avg"": 3.21, ""al_subjects"": 3, ""al_top_ratio"": 0.278, ""ielts"": 7.1}",synthetic-demo
+QS500,2019,AL,0.395,"{""al_avg"": 3.44, ""al_subjects"": 3, ""al_top_ratio"": 0.589, ""ielts"": 7.5}",synthetic-demo
+QS500,2019,AL,0.395,"{""al_avg"": 3.32, ""al_subjects"": 3, ""al_top_ratio"": 0.351, ""ielts"": 7.0}",synthetic-demo
+QS500,2019,IB,0.395,"{""ib_total"": 32.0, ""toefl"": 98.0}",synthetic-demo
+QS500,2019,IB,0.395,"{""ib_total"": 33.0}",synthetic-demo
+QS500,2019,IB,0.395,"{""ib_total"": 32.0}",synthetic-demo
+QS500,2019,IB,0.395,"{""ib_total"": 33.0, ""toefl"": 98.0}",synthetic-demo
+QS500,2019,GAOKAO,0.395,"{""gk_total"": 511.0}",synthetic-demo
+QS500,2019,GAOKAO,0.395,"{""gk_total"": 520.0}",synthetic-demo
+QS500,2019,GAOKAO,0.395,"{""gk_total"": 527.0}",synthetic-demo
+QS500,2019,GAOKAO,0.395,"{""gk_total"": 535.0}",synthetic-demo
+QS500,2020,AP,0.408,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.32, ""sat"": 1335.0, ""toefl"": 102.0}",synthetic-demo
+QS500,2020,AP,0.408,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.2, ""gpa"": 3.44, ""sat"": 1393.0}",synthetic-demo
+QS500,2020,AP,0.408,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.42, ""sat"": 1373.0, ""toefl"": 91.0}",synthetic-demo
+QS500,2020,AP,0.408,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.42, ""sat"": 1342.0}",synthetic-demo
+QS500,2020,AL,0.408,"{""al_avg"": 3.36, ""al_subjects"": 3, ""al_top_ratio"": 0.462, ""ielts"": 7.4}",synthetic-demo
+QS500,2020,AL,0.408,"{""al_avg"": 3.48, ""al_subjects"": 3, ""al_top_ratio"": 0.345, ""ielts"": 6.8}",synthetic-demo
+QS500,2020,AL,0.408,"{""al_avg"": 3.45, ""al_subjects"": 3, ""al_top_ratio"": 0.338, ""ielts"": 7.3}",synthetic-demo
+QS500,2020,AL,0.408,"{""al_avg"": 3.4, ""al_subjects"": 3, ""al_top_ratio"": 0.329, ""ielts"": 7.7}",synthetic-demo
+QS500,2020,IB,0.408,"{""ib_total"": 33.0}",synthetic-demo
+QS500,2020,IB,0.408,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
+QS500,2020,IB,0.408,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
+QS500,2020,IB,0.408,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
+QS500,2020,GAOKAO,0.408,"{""gk_total"": 545.0}",synthetic-demo
+QS500,2020,GAOKAO,0.408,"{""gk_total"": 500.0}",synthetic-demo
+QS500,2020,GAOKAO,0.408,"{""gk_total"": 519.0}",synthetic-demo
+QS500,2020,GAOKAO,0.408,"{""gk_total"": 515.0}",synthetic-demo
+QS500,2021,AP,0.416,"{""ap_avg"": 4.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""toefl"": 105.0}",synthetic-demo
+QS500,2021,AP,0.416,"{""ap_avg"": 4.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""gpa"": 3.48, ""toefl"": 111.0}",synthetic-demo
+QS500,2021,AP,0.416,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.38, ""toefl"": 103.0}",synthetic-demo
+QS500,2021,AP,0.416,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.2, ""gpa"": 3.36, ""sat"": 1381.0}",synthetic-demo
+QS500,2021,AL,0.416,"{""al_avg"": 3.41, ""al_subjects"": 3, ""al_top_ratio"": 0.569}",synthetic-demo
+QS500,2021,AL,0.416,"{""al_avg"": 3.31, ""al_subjects"": 3, ""al_top_ratio"": 0.382, ""ielts"": 7.0}",synthetic-demo
+QS500,2021,AL,0.416,"{""al_avg"": 3.46, ""al_subjects"": 3, ""al_top_ratio"": 0.315, ""ielts"": 7.3}",synthetic-demo
+QS500,2021,AL,0.416,"{""al_avg"": 3.51, ""al_subjects"": 3, ""al_top_ratio"": 0.426, ""ielts"": 6.9}",synthetic-demo
+QS500,2021,IB,0.416,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
+QS500,2021,IB,0.416,"{""ib_total"": 34.0}",synthetic-demo
+QS500,2021,IB,0.416,"{""ib_total"": 33.0, ""toefl"": 99.0}",synthetic-demo
+QS500,2021,IB,0.416,"{""ib_total"": 34.0, ""toefl"": 99.0}",synthetic-demo
+QS500,2021,GAOKAO,0.416,"{""gk_total"": 509.0}",synthetic-demo
+QS500,2021,GAOKAO,0.416,"{""gk_total"": 518.0}",synthetic-demo
+QS500,2021,GAOKAO,0.416,"{""gk_total"": 526.0}",synthetic-demo
+QS500,2021,GAOKAO,0.416,"{""gk_total"": 526.0}",synthetic-demo
+QS500,2022,AP,0.429,"{""ap_avg"": 4.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""gpa"": 3.36, ""sat"": 1356.0}",synthetic-demo
+QS500,2022,AP,0.429,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.41}",synthetic-demo
+QS500,2022,AP,0.429,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.38, ""toefl"": 103.0}",synthetic-demo
+QS500,2022,AP,0.429,"{""ap_avg"": 4.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.0, ""gpa"": 3.43, ""toefl"": 107.0}",synthetic-demo
+QS500,2022,AL,0.429,"{""al_avg"": 3.07, ""al_subjects"": 3, ""al_top_ratio"": 0.402, ""ielts"": 7.2}",synthetic-demo
+QS500,2022,AL,0.429,"{""al_avg"": 3.36, ""al_subjects"": 3, ""al_top_ratio"": 0.575, ""ielts"": 7.4}",synthetic-demo
+QS500,2022,AL,0.429,"{""al_avg"": 3.28, ""al_subjects"": 3, ""al_top_ratio"": 0.238, ""ielts"": 7.4}",synthetic-demo
+QS500,2022,AL,0.429,"{""al_avg"": 3.31, ""al_subjects"": 3, ""al_top_ratio"": 0.382, ""ielts"": 7.3}",synthetic-demo
+QS500,2022,IB,0.429,"{""ib_total"": 33.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2022,IB,0.429,"{""ib_total"": 34.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2022,IB,0.429,"{""ib_total"": 33.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2022,IB,0.429,"{""ib_total"": 33.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2022,GAOKAO,0.429,"{""gk_total"": 539.0}",synthetic-demo
+QS500,2022,GAOKAO,0.429,"{""gk_total"": 522.0}",synthetic-demo
+QS500,2022,GAOKAO,0.429,"{""gk_total"": 515.0}",synthetic-demo
+QS500,2022,GAOKAO,0.429,"{""gk_total"": 562.0}",synthetic-demo
+QS500,2023,AP,0.435,"{""ap_avg"": 4.5, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.35, ""sat"": 1388.0, ""toefl"": 103.0}",synthetic-demo
+QS500,2023,AP,0.435,"{""ap_avg"": 4.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.39, ""toefl"": 110.0}",synthetic-demo
+QS500,2023,AP,0.435,"{""ap_avg"": 4.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""gpa"": 3.37, ""toefl"": 98.0}",synthetic-demo
+QS500,2023,AP,0.435,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""sat"": 1360.0, ""toefl"": 103.0}",synthetic-demo
+QS500,2023,AL,0.435,"{""al_avg"": 3.34, ""al_subjects"": 3, ""al_top_ratio"": 0.394, ""ielts"": 7.2}",synthetic-demo
+QS500,2023,AL,0.435,"{""al_avg"": 3.39, ""al_subjects"": 3, ""al_top_ratio"": 0.275, ""ielts"": 7.5}",synthetic-demo
+QS500,2023,AL,0.435,"{""al_avg"": 3.47, ""al_subjects"": 3, ""al_top_ratio"": 0.44, ""ielts"": 7.2}",synthetic-demo
+QS500,2023,AL,0.435,"{""al_avg"": 3.56, ""al_subjects"": 3, ""al_top_ratio"": 0.364, ""ielts"": 7.5}",synthetic-demo
+QS500,2023,IB,0.435,"{""ib_total"": 34.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2023,IB,0.435,"{""ib_total"": 33.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2023,IB,0.435,"{""ib_total"": 33.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2023,IB,0.435,"{""ib_total"": 34.0}",synthetic-demo
+QS500,2023,GAOKAO,0.435,"{""gk_total"": 526.0}",synthetic-demo
+QS500,2023,GAOKAO,0.435,"{""gk_total"": 504.0}",synthetic-demo
+QS500,2023,GAOKAO,0.435,"{""gk_total"": 505.0}",synthetic-demo
+QS500,2023,GAOKAO,0.435,"{""gk_total"": 522.0}",synthetic-demo
+QS500,2024,AP,0.446,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.38}",synthetic-demo
+QS500,2024,AP,0.446,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""sat"": 1342.0, ""toefl"": 95.0}",synthetic-demo
+QS500,2024,AP,0.446,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.52, ""sat"": 1339.0}",synthetic-demo
+QS500,2024,AP,0.446,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0}",synthetic-demo
+QS500,2024,AL,0.446,"{""al_avg"": 3.48, ""al_subjects"": 3, ""al_top_ratio"": 0.309, ""ielts"": 7.3}",synthetic-demo
+QS500,2024,AL,0.446,"{""al_avg"": 3.28, ""al_subjects"": 3, ""al_top_ratio"": 0.319}",synthetic-demo
+QS500,2024,AL,0.446,"{""al_avg"": 3.34, ""al_subjects"": 3, ""al_top_ratio"": 0.502, ""ielts"": 7.3}",synthetic-demo
+QS500,2024,AL,0.446,"{""al_avg"": 3.23, ""al_subjects"": 3, ""al_top_ratio"": 0.538, ""ielts"": 7.0}",synthetic-demo
+QS500,2024,IB,0.446,"{""ib_total"": 34.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2024,IB,0.446,"{""ib_total"": 33.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2024,IB,0.446,"{""ib_total"": 34.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2024,IB,0.446,"{""ib_total"": 33.0, ""toefl"": 100.0}",synthetic-demo
+QS500,2024,GAOKAO,0.446,"{""gk_total"": 540.0}",synthetic-demo
+QS500,2024,GAOKAO,0.446,"{""gk_total"": 518.0}",synthetic-demo
+QS500,2024,GAOKAO,0.446,"{""gk_total"": 550.0}",synthetic-demo
+QS500,2024,GAOKAO,0.446,"{""gk_total"": 501.0}",synthetic-demo
+QS1000,2019,AP,0.284,"{""ap_avg"": 3.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""gpa"": 3.16, ""sat"": 1306.0}",synthetic-demo
+QS1000,2019,AP,0.284,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.2, ""toefl"": 89.0}",synthetic-demo
+QS1000,2019,AP,0.284,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.2, ""sat"": 1316.0}",synthetic-demo
+QS1000,2019,AP,0.284,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""sat"": 1278.0}",synthetic-demo
+QS1000,2019,AL,0.284,"{""al_avg"": 2.91, ""al_subjects"": 3, ""al_top_ratio"": 0.177, ""ielts"": 7.0}",synthetic-demo
+QS1000,2019,AL,0.284,"{""al_avg"": 2.96, ""al_subjects"": 3, ""al_top_ratio"": 0.203, ""ielts"": 6.7}",synthetic-demo
+QS1000,2019,AL,0.284,"{""al_avg"": 3.01, ""al_subjects"": 3, ""al_top_ratio"": 0.293, ""ielts"": 6.8}",synthetic-demo
+QS1000,2019,AL,0.284,"{""al_avg"": 2.98, ""al_subjects"": 3, ""al_top_ratio"": 0.164, ""ielts"": 6.9}",synthetic-demo
+QS1000,2019,IB,0.284,"{""ib_total"": 30.0}",synthetic-demo
+QS1000,2019,IB,0.284,"{""ib_total"": 31.0, ""toefl"": 94.0}",synthetic-demo
+QS1000,2019,IB,0.284,"{""ib_total"": 30.0}",synthetic-demo
+QS1000,2019,IB,0.284,"{""ib_total"": 31.0}",synthetic-demo
+QS1000,2019,GAOKAO,0.284,"{""gk_total"": 445.0}",synthetic-demo
+QS1000,2019,GAOKAO,0.284,"{""gk_total"": 459.0}",synthetic-demo
+QS1000,2019,GAOKAO,0.284,"{""gk_total"": 469.0}",synthetic-demo
+QS1000,2019,GAOKAO,0.284,"{""gk_total"": 474.0}",synthetic-demo
+QS1000,2020,AP,0.291,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.15, ""sat"": 1336.0, ""toefl"": 91.0}",synthetic-demo
+QS1000,2020,AP,0.291,"{""ap_avg"": 3.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.0, ""gpa"": 3.25, ""sat"": 1366.0, ""toefl"": 89.0}",synthetic-demo
+QS1000,2020,AP,0.291,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.22, ""toefl"": 90.0}",synthetic-demo
+QS1000,2020,AP,0.291,"{""ap_avg"": 4.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.0, ""gpa"": 3.26, ""sat"": 1330.0, ""toefl"": 98.0}",synthetic-demo
+QS1000,2020,AL,0.291,"{""al_avg"": 3.15, ""al_subjects"": 3, ""al_top_ratio"": 0.293}",synthetic-demo
+QS1000,2020,AL,0.291,"{""al_avg"": 3.2, ""al_subjects"": 3, ""al_top_ratio"": 0.401, ""ielts"": 6.6}",synthetic-demo
+QS1000,2020,AL,0.291,"{""al_avg"": 3.01, ""al_subjects"": 3, ""al_top_ratio"": 0.221, ""ielts"": 6.7}",synthetic-demo
+QS1000,2020,AL,0.291,"{""al_avg"": 2.95, ""al_subjects"": 3, ""al_top_ratio"": 0.265}",synthetic-demo
+QS1000,2020,IB,0.291,"{""ib_total"": 31.0}",synthetic-demo
+QS1000,2020,IB,0.291,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2020,IB,0.291,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2020,IB,0.291,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2020,GAOKAO,0.291,"{""gk_total"": 459.0}",synthetic-demo
+QS1000,2020,GAOKAO,0.291,"{""gk_total"": 464.0}",synthetic-demo
+QS1000,2020,GAOKAO,0.291,"{""gk_total"": 486.0}",synthetic-demo
+QS1000,2020,GAOKAO,0.291,"{""gk_total"": 483.0}",synthetic-demo
+QS1000,2021,AP,0.299,"{""ap_avg"": 3.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""gpa"": 3.22, ""sat"": 1326.0, ""toefl"": 104.0}",synthetic-demo
+QS1000,2021,AP,0.299,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""gpa"": 3.27, ""sat"": 1329.0, ""toefl"": 86.0}",synthetic-demo
+QS1000,2021,AP,0.299,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.34, ""toefl"": 94.0}",synthetic-demo
+QS1000,2021,AP,0.299,"{""ap_avg"": 4.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.167, ""gpa"": 3.22, ""sat"": 1333.0, ""toefl"": 100.0}",synthetic-demo
+QS1000,2021,AL,0.299,"{""al_avg"": 3.14, ""al_subjects"": 3, ""al_top_ratio"": 0.228, ""ielts"": 7.4}",synthetic-demo
+QS1000,2021,AL,0.299,"{""al_avg"": 3.16, ""al_subjects"": 3, ""al_top_ratio"": 0.242}",synthetic-demo
+QS1000,2021,AL,0.299,"{""al_avg"": 3.07, ""al_subjects"": 3, ""al_top_ratio"": 0.108, ""ielts"": 6.6}",synthetic-demo
+QS1000,2021,AL,0.299,"{""al_avg"": 3.09, ""al_subjects"": 3, ""al_top_ratio"": 0.246, ""ielts"": 7.0}",synthetic-demo
+QS1000,2021,IB,0.299,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2021,IB,0.299,"{""ib_total"": 30.0}",synthetic-demo
+QS1000,2021,IB,0.299,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2021,IB,0.299,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2021,GAOKAO,0.299,"{""gk_total"": 455.0}",synthetic-demo
+QS1000,2021,GAOKAO,0.299,"{""gk_total"": 470.0}",synthetic-demo
+QS1000,2021,GAOKAO,0.299,"{""gk_total"": 467.0}",synthetic-demo
+QS1000,2021,GAOKAO,0.299,"{""gk_total"": 465.0}",synthetic-demo
+QS1000,2022,AP,0.304,"{""ap_avg"": 4.17, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.333, ""gpa"": 3.2, ""toefl"": 103.0}",synthetic-demo
+QS1000,2022,AP,0.304,"{""ap_avg"": 3.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""gpa"": 3.27}",synthetic-demo
+QS1000,2022,AP,0.304,"{""ap_avg"": 4.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.333, ""sat"": 1322.0, ""toefl"": 98.0}",synthetic-demo
+QS1000,2022,AP,0.304,"{""ap_avg"": 4.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""sat"": 1341.0, ""toefl"": 86.0}",synthetic-demo
+QS1000,2022,AL,0.304,"{""al_avg"": 3.31, ""al_subjects"": 3, ""al_top_ratio"": 0.252}",synthetic-demo
+QS1000,2022,AL,0.304,"{""al_avg"": 3.13, ""al_subjects"": 3, ""al_top_ratio"": 0.383, ""ielts"": 7.0}",synthetic-demo
+QS1000,2022,AL,0.304,"{""al_avg"": 2.85, ""al_subjects"": 3, ""al_top_ratio"": 0.165, ""ielts"": 7.1}",synthetic-demo
+QS1000,2022,AL,0.304,"{""al_avg"": 2.87, ""al_subjects"": 3, ""al_top_ratio"": 0.235, ""ielts"": 7.1}",synthetic-demo
+QS1000,2022,IB,0.304,"{""ib_total"": 31.0}",synthetic-demo
+QS1000,2022,IB,0.304,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2022,IB,0.304,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2022,IB,0.304,"{""ib_total"": 30.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2022,GAOKAO,0.304,"{""gk_total"": 456.0}",synthetic-demo
+QS1000,2022,GAOKAO,0.304,"{""gk_total"": 461.0}",synthetic-demo
+QS1000,2022,GAOKAO,0.304,"{""gk_total"": 515.0}",synthetic-demo
+QS1000,2022,GAOKAO,0.304,"{""gk_total"": 465.0}",synthetic-demo
+QS1000,2023,AP,0.314,"{""ap_avg"": 4.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""gpa"": 3.3}",synthetic-demo
+QS1000,2023,AP,0.314,"{""ap_avg"": 4.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.0, ""sat"": 1326.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2023,AP,0.314,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.32, ""sat"": 1343.0}",synthetic-demo
+QS1000,2023,AP,0.314,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""sat"": 1320.0, ""toefl"": 97.0}",synthetic-demo
+QS1000,2023,AL,0.314,"{""al_avg"": 2.84, ""al_subjects"": 3, ""al_top_ratio"": 0.308, ""ielts"": 7.0}",synthetic-demo
+QS1000,2023,AL,0.314,"{""al_avg"": 3.04, ""al_subjects"": 3, ""al_top_ratio"": 0.489, ""ielts"": 7.3}",synthetic-demo
+QS1000,2023,AL,0.314,"{""al_avg"": 3.13, ""al_subjects"": 3, ""al_top_ratio"": 0.277, ""ielts"": 7.0}",synthetic-demo
+QS1000,2023,AL,0.314,"{""al_avg"": 3.03, ""al_subjects"": 3, ""al_top_ratio"": 0.264, ""ielts"": 6.8}",synthetic-demo
+QS1000,2023,IB,0.314,"{""ib_total"": 32.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2023,IB,0.314,"{""ib_total"": 31.0}",synthetic-demo
+QS1000,2023,IB,0.314,"{""ib_total"": 32.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2023,IB,0.314,"{""ib_total"": 31.0, ""toefl"": 95.0}",synthetic-demo
+QS1000,2023,GAOKAO,0.314,"{""gk_total"": 489.0}",synthetic-demo
+QS1000,2023,GAOKAO,0.314,"{""gk_total"": 504.0}",synthetic-demo
+QS1000,2023,GAOKAO,0.314,"{""gk_total"": 483.0}",synthetic-demo
+QS1000,2023,GAOKAO,0.314,"{""gk_total"": 476.0}",synthetic-demo
+QS1000,2024,AP,0.319,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""sat"": 1355.0}",synthetic-demo
+QS1000,2024,AP,0.319,"{""ap_avg"": 4.5, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.29, ""toefl"": 91.0}",synthetic-demo
+QS1000,2024,AP,0.319,"{""ap_avg"": 4.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""sat"": 1328.0}",synthetic-demo
+QS1000,2024,AP,0.319,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.25, ""sat"": 1326.0, ""toefl"": 93.0}",synthetic-demo
+QS1000,2024,AL,0.319,"{""al_avg"": 3.11, ""al_subjects"": 3, ""al_top_ratio"": 0.403}",synthetic-demo
+QS1000,2024,AL,0.319,"{""al_avg"": 3.33, ""al_subjects"": 3, ""al_top_ratio"": 0.284}",synthetic-demo
+QS1000,2024,AL,0.319,"{""al_avg"": 3.38, ""al_subjects"": 3, ""al_top_ratio"": 0.186, ""ielts"": 6.9}",synthetic-demo
+QS1000,2024,AL,0.319,"{""al_avg"": 2.96, ""al_subjects"": 3, ""al_top_ratio"": 0.329}",synthetic-demo
+QS1000,2024,IB,0.319,"{""ib_total"": 31.0, ""toefl"": 96.0}",synthetic-demo
+QS1000,2024,IB,0.319,"{""ib_total"": 31.0, ""toefl"": 96.0}",synthetic-demo
+QS1000,2024,IB,0.319,"{""ib_total"": 31.0, ""toefl"": 96.0}",synthetic-demo
+QS1000,2024,IB,0.319,"{""ib_total"": 31.0}",synthetic-demo
+QS1000,2024,GAOKAO,0.319,"{""gk_total"": 476.0}",synthetic-demo
+QS1000,2024,GAOKAO,0.319,"{""gk_total"": 466.0}",synthetic-demo
+QS1000,2024,GAOKAO,0.319,"{""gk_total"": 502.0}",synthetic-demo
+QS1000,2024,GAOKAO,0.319,"{""gk_total"": 470.0}",synthetic-demo

@@ -4,7 +4,7 @@ import sys, os, unittest
 # 加入 score-engine 目录（score_engine 包的上级）
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
-from score_engine import registry, models, recognizer, converter, trainer, valley, nn
+from score_engine import registry, models, recognizer, converter, trainer, valley, nn, drift
 
 
 class TestRecognizer(unittest.TestCase):
@@ -85,3 +85,33 @@ class TestConversion(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestYearDrift(unittest.TestCase):
+    """年度漂移识别：换算应随年份变化（核心需求）。"""
+    def test_drift_detects_year_change(self):
+        recs = models.make_mock_admissions()
+        yd = drift.YearDrift.from_records(recs)
+        ys = yd.years()
+        self.assertGreaterEqual(len(ys), 5)
+        # 数据 2019 较易 → 2024 更难，difficulty 应递增
+        d = yd.drift_between(min(ys), max(ys))
+        self.assertGreater(d, 0.03)
+
+    def test_convert_year_aware(self):
+        recs = models.make_mock_admissions()
+        yd = drift.YearDrift.from_records(recs)
+        t = trainer.Trainer()
+        t.train(recs, epochs=120, verbose=0)
+        conv = converter.ScoreConverter(model=t.model)
+        y1, y2 = min(yd.years()), max(yd.years())
+        v1 = conv.convert("AP: Calc BC 5, Physics 4, Chem 5, GPA 3.9",
+                          year=y1, drift=yd)["source"]["value"]
+        v2 = conv.convert("AP: Calc BC 5, Physics 4, Chem 5, GPA 3.9",
+                          year=y2, drift=yd)["source"]["value"]
+        # 更难点应更高价值（门槛更高）
+        self.assertGreater(v2, v1)
+
+    def test_scale_for_none_is_one(self):
+        yd = drift.YearDrift()
+        self.assertEqual(yd.scale_for(None), 1.0)

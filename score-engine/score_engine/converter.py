@@ -24,9 +24,18 @@ class ScoreConverter:
         self.feature_fn = feature_fn or models.features_to_vector
 
     # ---------- 识别 + 单价值 ----------
-    def value_of_text(self, text: str, system_hint: str = "") -> Dict:
-        """识别 + 返回 (system, confidence, features, value)。"""
-        from . import recognizer
+    def value_of_text(self, text: str, system_hint: str = "",
+                     year: Optional[int] = None,
+                     drift: Optional["YearDrift"] = None) -> Dict:
+        """识别 + 返回 (system, confidence, features, value, year, drift)。
+
+        参数
+        ----
+        year : 可选。给定申请年份，用年度漂移校准价值（识别逐年变化）。
+        drift: 可选。由历史样本构建的 YearDrift 估计器；None 且给 year 时自动按
+               (system, year) 无法细分则退化为不漂移（由上层传入 drift 更可靠）。
+        """
+        from . import recognizer, drift as drift_mod
         # 若给了体系提示，优先
         sys_ = registry.normalize_system(system_hint)
         if sys_ == "OTHER":
@@ -43,19 +52,28 @@ class ScoreConverter:
             value = self.model.predict(vec)
         else:
             value = _heuristic_value(feats)
+        value = max(0.0, min(1.0, value))
+        # 年度校准：同一年画像换算价值在"更难年份"应更高（需更强才够得着）
+        applied_drift = None
+        if year is not None and drift is not None:
+            value = drift.apply(value, year)
+            applied_drift = drift.scale_for(year)
         return {
             "system": sys_, "confidence": conf,
-            "features": feats, "vector": vec, "value": max(0.0, min(1.0, value))
+            "features": feats, "vector": vec, "value": value,
+            "year": year, "drift_scale": applied_drift,
         }
 
     # ---------- 换算 ----------
     def convert(self, text: str, target_systems: Optional[List[str]] = None,
-                system_hint: str = "") -> Dict:
+                system_hint: str = "", year: Optional[int] = None,
+                drift: Optional["YearDrift"] = None) -> Dict:
         """换算：把输入文本分数映射到各目标体系的"等价门槛区间"。
 
+        新增 year/drift：给定年份时换算结果随年份浮动，用于识别"逐年变化"。
         返回 { 源信息, 各体系: {等价分数范围, 说明} }
         """
-        src = self.value_of_text(text, system_hint)
+        src = self.value_of_text(text, system_hint, year=year, drift=drift)
         val = src["value"]
         result = {"source": src, "conversions": {}}
         targets = target_systems or ["AP", "AL", "IB", "GAOKAO", "SAT"]

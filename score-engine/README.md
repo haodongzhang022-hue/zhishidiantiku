@@ -32,7 +32,14 @@ python -m score_engine.cli train --data data/sample_admissions.csv --epochs 200
 python -m score_engine.cli convert --system AP --score "AP: Calc BC 5, Physics 4, Chem 5" --model models/current.json
 
 # 4) 命令行：查找某学校的最"低分路径"
-python -m score_engine.cli find-valley --school "MIT" --model models/current.json
+python -m score_engine.cli find-valley --school "QS100" --model models/current.json
+
+# 5) 年度漂移识别（核心）：同一分数在不同年份换算会变
+python -m score_engine.cli drift --data data/sample_admissions.csv "AP: Calc BC 5, Physics 4, Chem 5, GPA 3.9"
+python -m score_engine.cli convert "AP: Calc BC 5, Physics 4, Chem 5, GPA 3.9" --year 2024 --data data/sample_admissions.csv
+
+# 6) 功能达成度核验（issue #8 追评：写脚本测试）
+python3 tests/verify_features.py
 ```
 
 ## 目录结构
@@ -45,6 +52,7 @@ python -m score_engine.cli find-valley --school "MIT" --model models/current.jso
 | `score_engine/converter.py` | **模糊换算**引擎（历史对齐 + 规则 + 神经网络打分） |
 | `score_engine/nn.py` | 轻量**神经网络**（纯 Python + 可选 numpy）回归/训练 |
 | `score_engine/trainer.py` | **训练 / 后训练 / 效果跟踪**（逐年增量 + 元数据） |
+| `score_engine/drift.py` | **年度漂移识别**：从历年样本估计难度水位，让换算随年份变化 |
 | `score_engine/valley.py` | **门槛洼地寻优**（同一价值下找相对低分路径） |
 | `score_engine/cli.py` | 命令行入口 |
 | `score_engine/demo.py` | 端到端演示 |
@@ -54,3 +62,5 @@ python -m score_engine.cli find-valley --school "MIT" --model models/current.jso
 ## 概念说明
 - **统一录取价值（admission value）**：把不同体系的学生分数换算到一个 0~1 的"录取强度"标尺上，作为可比锚点。每个学校一个门槛值。
 - **门槛洼地（valley）**：同一学校的多条体系路径中，**换算成本最低 / 相对最容易达成**的那条。
+- **年度漂移（drift）**：门槛不是固定值，会随年份浮动。`YearDrift` 从历年样本估计难度水位，`convert(..., year=Y)` 据此输出当年口径的换算。
+- **功能核验**：`tests/verify_features.py` 逐项验证识别/精度/年度漂移/效果跟踪；`docs/score-engine-extend.md` 给出全球大学 + 学校质量 + LanceDB 多表扩展路线。

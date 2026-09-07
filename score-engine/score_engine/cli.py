@@ -53,12 +53,25 @@ def main(argv=None):
     sp.add_argument("--system", default="")
     sp.add_argument("score")
     sp.add_argument("--model", default="models/current.json")
+    sp.add_argument("--year", type=int, help="可选：申请年份，启用年度漂移校准")
+    sp.add_argument("--data", default=os.path.join("data", "sample_admissions.csv"),
+                    help="用于估计年度漂移的历史样本")
 
     # valley
     sp = sub.add_parser("find-valley", help="查某学校低分路径")
     sp.add_argument("--school")
     sp.add_argument("--data", default=os.path.join("data", "sample_admissions.csv"))
     sp.add_argument("--year", type=int)
+    sp.add_argument("--model", default="models/current.json")
+
+    # drift
+    sp = sub.add_parser("drift", help="查看某年度门槛漂移 / 或换算随年份变化")
+    sp.add_argument("--data", default=os.path.join("data", "sample_admissions.csv"))
+    sp.add_argument("score", nargs="?", default="",
+                    help="可选：给一条分数并对比不同年份换算")
+    sp.add_argument("--system", default="")
+    sp.add_argument("--years", default="2019,2020,2021,2022,2023,2024",
+                    help="要对比的年份，逗号分隔")
     sp.add_argument("--model", default="models/current.json")
 
     # compare
@@ -89,12 +102,41 @@ def main(argv=None):
 
     elif args.cmd == "convert":
         from . import converter
-        from . import nn, models
+        from . import nn, drift as drift_mod
         conv = converter.ScoreConverter()
         if os.path.exists(args.model):
             conv.model = nn.MLP.load(args.model)
-        res = conv.convert(args.score, system_hint=args.system)
+        yd = None
+        if args.year is not None:
+            yd = drift_mod.YearDrift.from_records(_load_csv(args.data))
+        res = conv.convert(args.score, system_hint=args.system,
+                           year=args.year, drift=yd)
         _print_convert(res)
+
+    elif args.cmd == "drift":
+        from . import converter, nn, drift as drift_mod
+        from . import registry
+        recs = _load_csv(args.data)
+        yd = drift_mod.YearDrift.from_records(recs)
+        print("年度门槛水位指数（difficulty）趋势：")
+        for row in yd.trend():
+            print(f"  year={row['year']}  difficulty={row['difficulty_index']:.3f} "
+                  f"scale={row['scale']:.3f}")
+        if args.score:
+            conv = converter.ScoreConverter()
+            if os.path.exists(args.model):
+                conv.model = nn.MLP.load(args.model)
+            years = [int(y) for y in args.years.split(",") if y.strip()]
+            print(f"\n分数『{args.score}』在不同年份的换算（GAOKAO 口径）：")
+            base = None
+            for y in years:
+                res = conv.convert(args.score, system_hint=args.system,
+                                   year=y, drift=yd)
+                v = res["source"]["value"]
+                gk = res["conversions"].get("GAOKAO", {}).get("approx_score", None)
+                bar = "  <-- 基准" if base is None else                       ("  <-- 更易" if v < base else ("  <-- 更难" if v > base else "  <-- 持平"))
+                base = v if base is None else base
+                print(f"  year={y}: 统一价值={v:.3f}  ≈高考{gk}  {bar}")
 
     elif args.cmd == "find-valley":
         from . import nn, valley

@@ -1,6 +1,6 @@
 # 知识点题库 · 题目格式校验 + 分数换算引擎自测 流水线（CNB 云原生构建）
 # 骨架依据 CNB 官方示例：https://cnb.cool/examples/ecosystem/
-# push 事件：node:20 校验题目格式；python:3 跑 score-engine 自测。
+# push 事件：node:20 校验题目格式；python:3.11 跑 score-engine 自测 + 功能达成度核验。
 # 声明式缓存：/root/.npm 使用 copy-on-write，并发安全、跨节点复用。
 main:
   push:
@@ -19,6 +19,7 @@ main:
         image: python:3.11
       stages:
         - python -m unittest discover -s score-engine/tests -v
+        - python score-engine/tests/verify_features.py   # 功能达成度核验（issue #8）
       runner:
         cpus: 2
 # 云原生开发环境（同文件声明，branch-as-environment）

@@ -17,6 +17,9 @@ python -m score_engine.demo                                  # 端到端演示
 python -m score_engine.cli train --data data/sample_admissions.csv --epochs 150
 python -m score_engine.cli convert "高考 652 分，省位次 4200"
 python -m score_engine.cli find-valley --school "QS100" --data data/sample_admissions.csv
+python -m score_engine.cli drift --data data/sample_admissions.csv "高考 652 分，省位次 4200"   # 年度漂移
+python -m score_engine.cli convert "高考 652 分" --year 2024 --data data/sample_admissions.csv  # 当年口径
+python3 ../score-engine/tests/verify_features.py      # 功能达成度核验
 ```
 
 ## 与题库体系维度的关系
