@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.bonding
 
 ## 题目
 在水分子（H₂O）中，O-H之间的化学键属于什么类型？

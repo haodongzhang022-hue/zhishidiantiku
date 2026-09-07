@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.bonding
 
 ## 题目
 N₂中的N≡N三键和O₂中的O=O双键中，每个键分别包含什么？

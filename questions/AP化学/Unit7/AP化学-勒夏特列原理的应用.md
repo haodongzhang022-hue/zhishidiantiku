@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.equilibrium
 
 ## 题目
 根据勒夏特列原理，增加反应 2SO₂ + O₂ ⇌ 2SO₃ 中SO₂的浓度，平衡会如何移动？

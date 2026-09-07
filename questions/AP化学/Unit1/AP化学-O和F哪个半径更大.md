@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.periodic-trend
 
 ## 题目
 比较O²⁻和F⁻的离子半径，哪个更大？

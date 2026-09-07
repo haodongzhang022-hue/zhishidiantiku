@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.gas-law
 
 ## 题目
 在标准状况（STP，0°C和1 atm）下，1 mol理想气体的体积约为？

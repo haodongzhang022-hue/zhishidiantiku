@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.kinetics
 
 ## 题目
 对于速率方程 rate = k[A]²[B]，如果A的浓度加倍（其他不变），反应速率变为原来的几倍？

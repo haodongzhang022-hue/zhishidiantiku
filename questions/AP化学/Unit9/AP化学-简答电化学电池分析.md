@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.electrochem
 
 ## 题目
 一个电池由Zn/Zn2+（E°=-0.76V）和Cu/Cu2+（E°=+0.34V）半电池组成。

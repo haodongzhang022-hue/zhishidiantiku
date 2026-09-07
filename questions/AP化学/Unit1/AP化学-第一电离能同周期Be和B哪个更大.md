@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.ionization
 
 ## 题目
 在同周期元素中，Be（铍）和B（硼）的第一电离能哪个更大？

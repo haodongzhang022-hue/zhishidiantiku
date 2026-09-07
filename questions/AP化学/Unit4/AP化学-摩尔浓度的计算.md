@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.stoichiometry
 
 ## 题目
 将58.5 g NaCl（摩尔质量58.5 g/mol）溶解于水中，配制成500 mL溶液。该溶液的摩尔浓度是多少？

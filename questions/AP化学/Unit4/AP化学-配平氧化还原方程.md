@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.redox
 
 ## 题目
 反应 KMnO₄ + HCl → MnCl₂ + KCl + Cl₂ + H₂O 中，KMnO₄中Mn的氧化数是多少？

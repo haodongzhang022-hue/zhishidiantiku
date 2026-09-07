@@ -14,6 +14,7 @@ main:
         - node --test scripts/__tests__/check.test.mjs
         - node --test scripts/__tests__/learn.test.mjs
         - node --test scripts/__tests__/cap.test.mjs
+        - node --test scripts/__tests__/graph.test.mjs
       runner:
         cpus: 2
     - name: check-score-engine

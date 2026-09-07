@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.ionization
 
 ## 题目
 N（氮）和P（磷）的第一电离能比较，哪个更大？

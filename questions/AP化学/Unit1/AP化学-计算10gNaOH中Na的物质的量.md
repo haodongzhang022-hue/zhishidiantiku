@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.atomic-mass
 
 ## 题目
 10.0 g 氢氧化钠（NaOH）中含有多少摩尔的Na⁺？写出完整计算过程。（Na=23.0, O=16.0, H=1.0）

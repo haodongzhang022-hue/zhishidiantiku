@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.thermochem
 
 ## 题目
 在标准状态下（25°C, 1 atm），哪种物质的标准摩尔生成焓（ΔHf°）为0？

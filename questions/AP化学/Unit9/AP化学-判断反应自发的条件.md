@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.electrochem
 
 ## 题目
 对于一个ΔH < 0 且 ΔS > 0 的反应：

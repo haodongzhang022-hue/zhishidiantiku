@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.thermochem
 
 ## 题目
 利用标准生成焓计算反应 2Al(s) + Fe2O3(s) 到 Al2O3(s) + 2Fe(s) 的焓变。已知 ΔHf°(Al2O3) = -1676 kJ/mol, ΔHf°(Fe2O3) = -826 kJ/mol, ΔHf°(Al) = 0, ΔHf°(Fe) = 0。

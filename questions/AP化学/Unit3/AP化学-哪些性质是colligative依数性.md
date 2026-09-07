@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.solution
 
 ## 题目
 下列哪些溶液性质属于依数性质（colligative properties）？（多选）

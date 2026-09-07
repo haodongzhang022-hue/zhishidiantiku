@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.bonding
 
 ## 题目
 写出SO₃²⁻的Lewis结构，计算S原子的形式电荷，并讨论共振结构。

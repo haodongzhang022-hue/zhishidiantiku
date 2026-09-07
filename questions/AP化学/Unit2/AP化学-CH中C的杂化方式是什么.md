@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.vsepr
 
 ## 题目
 甲烷（CH₄）中碳原子的杂化方式是什么？

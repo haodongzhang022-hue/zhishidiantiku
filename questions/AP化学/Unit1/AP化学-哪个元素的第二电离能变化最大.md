@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.ionization
 
 ## 题目
 下列哪个元素的第一电离能（IE₁）和第二电离能（IE₂）差距最大？

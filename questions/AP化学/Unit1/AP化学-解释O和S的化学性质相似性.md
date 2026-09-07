@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.periodic-trend
 
 ## 题目
 O（氧）和S（硫）虽然原子量差异大，但化学性质非常相似。请用价电子构型解释这一现象。

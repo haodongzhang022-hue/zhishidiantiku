@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.equilibrium
 
 ## 题目
 对于反应 CaCO3(s) 可逆 CaO(s) + CO2(g)，Kc的表达式为：

@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.bonding
 
 ## 题目
 硝酸根离子（NO₃⁻）有多少种等价的Lewis共振结构？

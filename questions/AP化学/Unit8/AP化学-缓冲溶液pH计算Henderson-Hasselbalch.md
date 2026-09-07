@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.acid-base
 
 ## 题目
 缓冲溶液含有0.50M CH3COOH和0.25M CH3COONa。已知CH3COOH的Ka = 1.8x10^-5，计算该缓冲溶液的pH。

@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.electron-config
 
 ## 题目
 下列哪些离子具有与氩（Ar）相同的电子构型（等电子体）？（多选）

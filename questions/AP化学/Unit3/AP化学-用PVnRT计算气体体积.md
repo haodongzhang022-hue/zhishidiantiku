@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.gas-law
 
 ## 题目
 在25°C和1.00 atm下，2.00 mol的CO₂气体占有多大体积？R = 0.08206 L·atm/(mol·K)。

@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.electrochem
 
 ## 题目
 已知E°(Cu2+/Cu) = +0.34V, E°(Zn2+/Zn) = -0.76V。锌铜原电池的标准电动势E°cell为：

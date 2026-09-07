@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.nucleus
 
 ## 题目
 锂原子（⁷Li）的原子核中含有多少个质子和中子？

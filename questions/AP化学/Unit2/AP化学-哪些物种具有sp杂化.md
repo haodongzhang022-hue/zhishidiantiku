@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.vsepr
 
 ## 题目
 下列哪些分子/离子的中心原子具有sp²杂化？（多选）

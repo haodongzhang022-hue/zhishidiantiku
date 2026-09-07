@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.periodic-trend
 
 ## 题目
 氯原子（Cl）和氯离子（Cl⁻）相比，哪个的离子半径更大？

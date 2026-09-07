@@ -27,6 +27,8 @@
 | capabilities/ | **跨库能力注册与索引机制**（解耦登记可调用的跨库能力契约 + 缺口引导），见 [capabilities/README.md](capabilities/README.md) |
 | scripts/cap.mjs | 🧩 能力索引查询 + 可执行调用（node scripts/cap.mjs available/gaps/find/run…） |
 | score-engine/ | **跨体系分数换算引擎**（识别/换算/深度学习/门槛洼地寻优），见 [score-engine/README.md](score-engine/README.md) |
+| graph/ | 🧭 **知识图谱层 L0→L2**（知识点→题目→使用场景，函数硬通道跳转），见 [graph/README.md](graph/README.md) |
+| scripts/graph.mjs | 🧭 图谱构建/检索/层间函数跳转工具（node scripts/graph.mjs layers/by-scene/jump…） |
 | .github/PULL_REQUEST_TEMPLATE.md | PR 模板 |
 | CONTRIBUTING.md | 贡献协作流程 |
 
@@ -40,6 +42,7 @@
 - 题型：单选 | 多选 | 判断 | 简答
 - 范围：<范围编号，指向 papers/ 登记表>（可选但建议）
 - 难度口径：<可选，AP|AL|IB|国内|其他，难度评价基准体系>
+- 知识点：<可选，该题考察的最小知识点 L0 id，如 K.AP-CHEM.electron-config，用于图谱跳转>
 - owner：<负责人>
 - 录入时间：YYYY-MM-DD
 
@@ -64,6 +67,8 @@ node scripts/cap.mjs available     # 列出可调用的跨库能力
 node scripts/cap.mjs gaps          # 列出应有无缺的能力（可去增强）
 node scripts/cap.mjs run cap.arch.dev   # 生成可执行调用语句（可用→召唤/命令；缺口→获取引导）
 node scripts/learn.mjs quiz       # 从还没会的知识点里随机刷题
+node scripts/graph.mjs by-scene S.ap-chem-exam   # 场景→可刷题目（精准刷题）
+node scripts/graph.mjs scene-from-kp "AP 化学"    # 输入现实需求→命中场景→出题
 ```
 
 ## 跨库能力注册与索引机制
@@ -90,3 +95,4 @@ node scripts/learn.mjs quiz       # 从还没会的知识点里随机刷题
 - 2026-09-07 体系维度：每道题新增 `体系` 字段（AP/AL/IB/国内/其他），区分并显示所属教育体系；分类/范围均绑定所属体系。
 - 2026-09-07 新增 **score-engine/**：跨体系分数换算引擎（识别、历史数据驱动模糊换算、深度学习训练与后训练、门槛洼地低分路径寻优）。
 - 2026-09-07 新增：个人学习进度系统（scripts/learn.mjs）——会/不会进度库、同知识点出2题判定会了、随机只从未会知识点出题。
+- 2026-09-08 新增 **知识图谱层 L0→L2**：把题目挂到最小知识点(L0)与使用场景(L2)，`scripts/graph.mjs` 做函数硬通道层间跳转与精准刷题（graph-seed + 题目 `知识点` 标注）；向量软通道留待 LanceDB 接入。

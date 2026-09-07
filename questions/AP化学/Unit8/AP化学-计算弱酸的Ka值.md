@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.acid-base
 
 ## 题目
 0.100M的CH3COOH溶液在25°C下的pH为2.88。计算CH3COOH的电离常数Ka。

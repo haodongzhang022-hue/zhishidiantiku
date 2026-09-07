@@ -17,3 +17,5 @@
 - [🔌 跨库能力注册与索引机制（capabilities）](../capabilities/README.md)
 - [🧩 能力注册表（registry）](../capabilities/registry.md)
 - [🧭 能力缺口清单（gaps · 应有无缺 + 增强引导）](../capabilities/gaps.md)
+- [🧭 知识图谱层 L0→L2（graph）](../graph/README.md)
+- [🗂 知识图谱登记（graph/INDEX）](../graph/INDEX.md)

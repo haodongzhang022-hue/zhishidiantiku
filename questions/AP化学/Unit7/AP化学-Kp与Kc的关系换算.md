@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.equilibrium
 
 ## 题目
 对于气体反应 N2(g) + 3H2(g) 可逆 2NH3(g)，Kp与Kc的关系为：

@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.stoichiometry
 
 ## 题目
 反应 N2(g) + 3H2(g) 到 2NH3(g)。将28.0g N2 与 6.0g H2混合。

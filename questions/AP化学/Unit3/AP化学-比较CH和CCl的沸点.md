@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.imf
 
 ## 题目
 CH₄和CCl₄的沸点分别为-164°C和77°C。请解释CCl₄沸点更高的原因。

@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.redox
 
 ## 题目
 在反应 Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag 中，Cu失去多少个电子？

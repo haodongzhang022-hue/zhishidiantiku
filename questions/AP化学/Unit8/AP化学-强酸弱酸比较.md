@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.acid-base
 
 ## 题目
 相同浓度的HCl（强酸）和CH₃COOH（弱酸）溶液相比，哪个的pH更低（酸性更强）？

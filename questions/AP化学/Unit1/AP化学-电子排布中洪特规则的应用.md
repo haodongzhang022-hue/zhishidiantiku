@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.electron-config
 
 ## 题目
 氮原子(N)的2p亚层中3个电子的排布方式是：

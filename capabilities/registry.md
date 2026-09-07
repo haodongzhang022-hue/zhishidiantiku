@@ -85,7 +85,8 @@
 |----------|--------|------|--------|----------|------|-------|----------|
 | `cap.graph.layer` | 14层知识图谱（L0~L13） | 跨库调用 | 架构库（蓝图待落） | 蓝图（架构库 `dongdongxiaozu/dongjiagoushi`）定义，未落代码 | 缺口 | 架构·总师 | 2026-09-06 |
 | `cap.graph.vector` | LanceDB 向量检索 | 跨库调用 | 待接入 | 待 G4(LanceDB) 与 embedding 选型后接入 | 缺口 | 架构·总师 | 2026-09-06 |
-| `cap.graph.func` | 函数+向量层间跳转 | 跨库调用 | 架构库（蓝图待落） | 待图谱与向量库就绪后实现 relations 表 | 缺口 | 架构·总师 | 2026-09-06 |
+| `cap.graph.func` | 函数+向量层间跳转 | 本地内置 | `scripts/graph.mjs` | `node scripts/graph.mjs jump <知识点id>`；函数硬通道已落地，向量软通道仍缺 → 记缺口见 gaps G7 | 缺口 | 架构·开发 | 2026-09-08 |
+| `cap.graph.jump` | 图谱层间函数跳转(精准刷题) | 本地内置 | `scripts/graph.mjs` | `node scripts/graph.mjs by-scene <场景id>` / `scene-from-kp <关键字>` / `jump <知识点id>` | 可用 | 架构·开发 | 2026-09-08 |
 
 ---
 

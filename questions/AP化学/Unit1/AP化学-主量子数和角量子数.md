@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.electron-config
 
 ## 题目
 在3d轨道中，主量子数n和角量子数l分别是：

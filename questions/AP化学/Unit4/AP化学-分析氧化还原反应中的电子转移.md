@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.redox
 
 ## 题目
 对于反应：2Al + 3CuCl₂ → 2AlCl₃ + 3Cu

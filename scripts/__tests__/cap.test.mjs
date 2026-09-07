@@ -18,15 +18,15 @@ function run(args = []) {
 }
 
 // ---------- 基础解析 ----------
-test('all: 解析 23 项能力（可用 16 / 缺口 7）', () => {
+test('all: 解析 24 项能力（可用 17 / 缺口 7）', () => {
   const out = run(['all']);
-  assert.match(out, /全部能力（共 23 项）/);
-  assert.match(out, /可用 16 \/ 缺口 7/);
+  assert.match(out, /全部能力（共 24 项）/);
+  assert.match(out, /可用 17 \/ 缺口 7/);
 });
 
-test('available: 列出 16 项可用能力', () => {
+test('available: 列出 17 项可用能力', () => {
   const out = run(['available']);
-  assert.match(out, /可用能力（16 项，可自动匹配调用）/);
+  assert.match(out, /可用能力（17 项，可自动匹配调用）/);
 });
 
 test('gaps: 列出 7 项缺口能力', () => {

@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.electron-config
 
 ## 题目
 下列电子构型中，哪一个违反了泡利不相容原理？

@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.stoichiometry
 
 ## 题目
 将50.0mL 6.0M HCl溶液稀释至2.0M，最终溶液体积为多少？

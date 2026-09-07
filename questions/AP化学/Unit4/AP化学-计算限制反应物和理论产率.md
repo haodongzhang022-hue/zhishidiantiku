@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.stoichiometry
 
 ## 题目
 将3.00 mol Fe₂O₃与4.00 mol CO反应：

@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.bonding
 
 ## 题目
 CCl₄分子中C-Cl键是极性的，但CCl₄整体是非极性分子。这是因为？

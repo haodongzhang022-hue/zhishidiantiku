@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.gas-law
 
 ## 题目
 在相同温度和压强下，相同体积的He和N₂气体中含有什么相同？

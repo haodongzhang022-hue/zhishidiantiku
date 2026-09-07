@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.stoichiometry
 
 ## 题目
 某反应的理论产率为25.0 g，实际产率为18.0 g。该反应的产率百分数是多少？

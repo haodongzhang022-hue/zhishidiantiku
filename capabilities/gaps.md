@@ -17,9 +17,9 @@
 | G2 | `cap.mishu.assign` | 秘书·分派编排 | 待获取 | 分派仍由人工/经理手动触发 |
 | G3 | `cap.mishu.session` | 秘书·会话/状态管理 | 待获取 | 跨会话上下文仍易丢失 |
 | G4 | `cap.score.db-lancedb` | LanceDB 双库读写 | 部分可用 | 环境缺 `lancedb` 依赖，退 JSON 兜底 |
-| G5 | `cap.graph.layer` | 14层知识图谱 | 待获取 | 蓝图已定稿，未落代码 |
+| G5 | `cap.graph.layer` | 14层知识图谱 | 建设中 | 已打穿 L0→L1→L2 主链，L3~L13 待接 |
 | G6 | `cap.graph.vector` | LanceDB 向量检索 | 待获取 | 未建向量库 |
-| G7 | `cap.graph.func` | 函数+向量层间跳转 | 待获取 | 未实现 |
+| G7 | `cap.graph.func` | 函数+向量层间跳转 | 部分可用 | 函数硬通道已可用，向量软通道待接 |
 
 ---
 
@@ -59,20 +59,22 @@
 
 ## 三、检索/图谱缺口（蓝图演进）
 
-### G5｜`cap.graph.layer` 14层知识图谱 — 待获取
+### G5｜`cap.graph.layer` 14层知识图谱 — 建设中
 - **应当有**：把题目/知识点组织成 L0~L13 目的驱动知识图谱（由架构·总师蓝图定义）。
-- **当前缺在哪**：蓝图（架构库 `dongdongxiaozu/dongjiagoushi` 中 `docs/arch/00-总览-架构设计研究报告.md`）已定稿，但**未落代码**；当前仓库是"扁平题目库 + 范围登记"，未上图谱。
-- **获取/增强引导**：按蓝图分期演进；MVP 先打穿 L0~L2（最小知识点→题目→使用场景），再接 L3~L13。
+- **当前进展**：**L0→L1→L2 主链已落地**（见 `graph/` + `scripts/graph.mjs`）：L0 最小知识点、L1 题目、L2 使用场景已结构化，函数硬通道 `covered_by`/`requires` 可做层间跳转与精准刷题。
+- **仍缺在哪**：L3~L13（人类分类/章节/交叉题/标准等）高层节点尚未建模。
+- **获取/增强引导**：沿用 `graph/graph-seed.json` 的 schema 继续往 L3~L13 扩节点，再接高层关系。
 
 ### G6｜`cap.graph.vector` LanceDB 向量检索 — 待获取
 - **应当有**：对知识点/题干/场景做向量化语义检索（多向量加权排序）。
 - **当前缺在哪**：未建向量库、无 embedding 模型接入。
 - **获取/增强引导**：待 G4(LanceDB) 与 embedding 选型（本地开源 vs API）拍板后建向量库。
 
-### G7｜`cap.graph.func` 函数+向量层间跳转 — 待获取
+### G7｜`cap.graph.func` 函数+向量层间跳转 — 部分可用
 - **应当有**：层间双通道跳转（向量软通道 top-K + 函数硬通道 relations 关系表）。
-- **当前缺在哪**：relations 关系模型未落数据、跳转逻辑未实现。
-- **获取/增强引导**：待图谱与向量库就绪后实现 `relations` 表与跳转逻辑。
+- **当前进展（函数硬通道已通）**：`graph/graph-seed.json` 的 `relations` + 题目 `知识点` 字段已建立 `requires`/`covered_by`，`node scripts/graph.mjs` 可做 L0→L1→L2 精确跳转（`by-scene`/`by-kp`/`jump`/`scene-from-kp`）。
+- **仍缺在哪**：**向量软通道**未接——语义 top-K 检索需 LanceDB 依赖（G4）+ embedding 选型就绪后才能启用。
+- **获取/增强引导**：先补 G4(LanceDB) 与 embedding，再在 `graph.mjs` 加向量检索分支，与函数跳转合并为双通道。
 
 ---
 
@@ -86,3 +88,4 @@
 | 2026-09-07 | 新建 | 登记 7 项能力缺口（秘书路由3 + LanceDB 1 + 图谱3），附获取/增强引导 | CodeBuddy |
 | 2026-09-07 | 修复 | 章节号重排（原二/变更历史 → 四/五）、G5 蓝图引用标注跨库来源 | CodeBuddy |
 | 2026-09-08 | 修复 | 秘书团触发格式对齐（去掉括号前多余 `/`、来源库补组织前缀）；G1 完成判定引用正确召唤语句 | CodeBuddy |
+| 2026-09-08 | 推进 | L0→L1→L2 图谱主链落地（graph/ + scripts/graph.mjs）：G5 转建设中、G7 函数硬通道部分可用、向量软通道仍缺 | CodeBuddy |

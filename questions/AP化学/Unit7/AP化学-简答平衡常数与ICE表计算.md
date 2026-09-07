@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：架构·开发
 - 录入时间：2026-09-07
+- 知识点：K.AP-CHEM.equilibrium
 
 ## 题目
 在500K时，反应 H2(g) + CO2(g) 可逆 CO(g) + H2O(g) 的Kc = 0.16。

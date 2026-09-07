@@ -7,6 +7,7 @@
 - 范围：AP-CHEM-CB-2024
 - owner：zhongguoliandanshidongdong
 - 录入时间：2026-09-06
+- 知识点：K.AP-CHEM.atomic-mass
 
 ## 题目
 已知 C 的相对原子质量约 12.01，O 约 16.00。1.00 mol 二氧化碳 CO₂ 的质量最接近下列哪个值？
