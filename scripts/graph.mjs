@@ -84,7 +84,7 @@ function scanQuestions(seed) {
     for (const item of rawItems) {
       const id = kpIndex.get(item) || (seed.l0 && seed.l0[item] ? item : null)
         || findByIdOrName(item, seed);
-      if (id) { qKp.push(id); if (!qKp.includes(id)) ; }
+      if (id) qKp.push(id);
     }
     const uniq = [...new Set(qKp)];
     questions.push({ id: qid, file: p, kpIds: uniq });

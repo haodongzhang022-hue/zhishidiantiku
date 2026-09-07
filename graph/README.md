@@ -17,7 +17,7 @@
 |----|------|----------|
 | **L0** | 最小知识点颗粒（"是什么"） | `K.AP-CHEM.electron-config` 电子构型 |
 | **L1** | 题目（"怎么考"） | `AP-CHEM-CB-2024-MC-0107`（引用题库 ID） |
-| **L2** | 真实使用场景（"用在哪"） | `S.ap-chem-unit1` 备考 AP 化学 Unit1 |
+| **L2** | 真实使用场景（"用在哪"） | `S.ap-chem-exam` 备考 AP 化学考试 |
 
 > L1 题目**不复制**题干/答案到图谱（解耦），只登记对 `questions/` 题目 ID 的引用，单向指向，不重复存储。
 
@@ -48,11 +48,11 @@
 ## 用法（scripts/graph.mjs）
 ```bash
 node scripts/graph.mjs layers                    # 列出各层节点
-node scripts/graph.mjs node k.electron-config    # 查单个节点详情
-node scripts/graph.mjs by-scene s.ap-chem-unit1  # 场景→题目（requires + covered_by 回溯）
-node scripts/graph.mjs by-kp k.electron-config   # 知识点→题目（covered_by）
+node scripts/graph.mjs node K.AP-CHEM.electron-config  # 查单个节点详情
+node scripts/graph.mjs by-scene S.ap-chem-exam   # 场景→题目（requires + covered_by 回溯）
+node scripts/graph.mjs by-kp K.AP-CHEM.electron-config  # 知识点→题目（covered_by）
 node scripts/graph.mjs scene-from-kp <场景关键字> # 输入现实需求→命中场景→出题（精准刷题链路）
-node scripts/graph.mjs jump <知识点>             # 知识点→题目→场景 函数跳转全链路
+node scripts/graph.mjs jump K.AP-CHEM.thermochem # 知识点→题目→场景 函数跳转全链路
 node scripts/graph.mjs stats                     # 图谱规模统计
 ```
 
