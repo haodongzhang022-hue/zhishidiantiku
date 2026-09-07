@@ -7,6 +7,7 @@
 - ✅ **题型锁定 4 类**：单选 | 多选 | 判断 | 简答。
 - ✅ **白名单机制化**：分类/范围带 **owner + 登记时间 + 唯一编号**，可登记、可增、可回溯，防挡也防乱。
 - ✅ **体系锚定**：每道题标注所属教育体系（AP/AL/IB/国内/其他），体系考纲有差异，检索/刷题先按体系过滤，可区分显示。
+- ✅ **难度适配**：题目标 `- 难度`（体系内相对）+ 可选 `- 难度口径`；跨体系难度与适配见 `questions/CATEGORIES.md`「体系难度档案」（AP≈中高、国内难度不低、跨体系做题前先核对）。
 - ✅ **范围锚定**：每道题可指向试卷/大纲范围（带年份、出处、唯一编号），保证"题不歪"。
 - ✅ **规模目标 3000**：首批优先 **AP 化学**，锚定 College Board 官方 CED 大纲。
 
@@ -15,11 +16,12 @@
 |------|------|
 | questions/ | 题目库，按白名单分类分目录，每题一个 .md |
 | questions/README.md | 题目收录规范（格式 + 元信息字段） |
-| questions/CATEGORIES.md | **体系 + 分类 + 题型白名单**（owner + 登记时间留痕） |
+| questions/CATEGORIES.md | **体系 + 分类 + 题型白名单**（owner + 登记时间留痕）+ **体系难度适配档案** |
 | papers/ | 试卷/大纲范围登记簿（唯一编号 scope_id） |
 | papers/README.md | 范围登记表（编号/年份/出处/owner/时间） |
 | papers/AP-Chemistry/ | AP 化学首批铺题范围说明 |
 | scripts/check.mjs | 题目格式校验（CI 门禁，强校验） |
+| scripts/learn.mjs | 🎓 个人学习进度系统（会/不会进度库 + 抽题 + 判定会了） |
 | scripts/__tests__/ | 校验脚本自测用例 |
 | docs/ | 文档索引 |
 | score-engine/ | **跨体系分数换算引擎**（识别/换算/深度学习/门槛洼地寻优），见 [score-engine/README.md](score-engine/README.md) |
@@ -35,6 +37,7 @@
 - 体系：AP | AL | IB | 国内 | 其他
 - 题型：单选 | 多选 | 判断 | 简答
 - 范围：<范围编号，指向 papers/ 登记表>（可选但建议）
+- 难度口径：<可选，AP|AL|IB|国内|其他，难度评价基准体系>
 - owner：<负责人>
 - 录入时间：YYYY-MM-DD
 
@@ -53,7 +56,14 @@
 ```bash
 node scripts/check.mjs            # 校验全部题目（全绿再提交）
 node --test scripts/__tests__     # 校验脚本自测（改脚本时跑）
+node scripts/learn.mjs list       # 查看题库知识点
+node scripts/learn.mjs progress   # 查看个人进度（会/不会/未学）
+node scripts/learn.mjs quiz       # 从还没会的知识点里随机刷题
 ```
+
+## 个人学习进度系统
+把题库变成你的"会/不会"进度库：同知识点随机抽 2 道不同题都答对 = 会了，
+随机刷题只从还没会的知识点里出，方便补弱。详见 [docs/学习系统.md](docs/学习系统.md)。
 
 ## 流水线
 [.cnb.yml](.cnb.yml)：push/PR 事件触发 `node scripts/check.mjs` 格式校验 + `node --test scripts/__tests__` 自测。
@@ -63,3 +73,4 @@ node --test scripts/__tests__     # 校验脚本自测（改脚本时跑）
 - 2026-09-06 升级：锁定 4 类题型、白名单机制化（owner+时间）、范围登记（试卷年份/出处/唯一编号）、校验脚本重构+自测、首批 AP 化学范围落定（目标 3000）。
 - 2026-09-07 体系维度：每道题新增 `体系` 字段（AP/AL/IB/国内/其他），区分并显示所属教育体系；分类/范围均绑定所属体系。
 - 2026-09-07 新增 **score-engine/**：跨体系分数换算引擎（识别、历史数据驱动模糊换算、深度学习训练与后训练、门槛洼地低分路径寻优）。
+- 2026-09-07 新增：个人学习进度系统（scripts/learn.mjs）——会/不会进度库、同知识点出2题判定会了、随机只从未会知识点出题。
