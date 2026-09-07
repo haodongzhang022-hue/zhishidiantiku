@@ -10,4 +10,6 @@
 - [贡献指南（CONTRIBUTING）](../CONTRIBUTING.md)
 - [题目校验脚本（scripts/check.mjs）](../scripts/check.mjs)
 - [📤 项目交接卡（经理承接分工）](./交接卡.md)
+- [分数换算引擎使用文档](score-engine.md)
+- [分数换算引擎扩展架构·全球大学/质量/LanceDB 多表](score-engine-extend.md)
 - [🎓 个人学习进度系统（做题/出题/进度库）](./学习系统.md)

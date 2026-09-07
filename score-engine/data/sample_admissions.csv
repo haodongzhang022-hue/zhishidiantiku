@@ -1,0 +1,1441 @@
+school,university_id,year,system,school_value,features,source
+Massachusetts Institute of Technology,mit,2019,AP,0.956,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,AP,0.956,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84, ""sat"": 1588.0, ""toefl"": 120.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,AP,0.956,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.88, ""toefl"": 120.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,AL,0.956,"{""al_avg"": 4.79, ""al_subjects"": 5, ""al_top_ratio"": 0.931}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,AL,0.956,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.89}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,AL,0.956,"{""al_avg"": 4.93, ""al_subjects"": 5, ""al_top_ratio"": 0.841}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,IB,0.956,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,IB,0.956,"{""ib_total"": 44.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,IB,0.956,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,GAOKAO,0.956,"{""gk_total"": 738.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,GAOKAO,0.956,"{""gk_total"": 689.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2019,GAOKAO,0.956,"{""gk_total"": 750.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,AP,0.975,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""toefl"": 111.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,AP,0.975,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.95}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,AP,0.975,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84, ""sat"": 1575.0, ""toefl"": 120.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,AL,0.975,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.82}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,AL,0.975,"{""al_avg"": 4.93, ""al_subjects"": 5, ""al_top_ratio"": 1}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,AL,0.975,"{""al_avg"": 4.65, ""al_subjects"": 5, ""al_top_ratio"": 0.769, ""ielts"": 9.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,IB,0.975,"{""ib_total"": 45.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,IB,0.975,"{""ib_total"": 44.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,IB,0.975,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,GAOKAO,0.975,"{""gk_total"": 750.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,GAOKAO,0.975,"{""gk_total"": 735.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2020,GAOKAO,0.975,"{""gk_total"": 742.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.88, ""sat"": 1584.0, ""toefl"": 120.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,AP,0.99,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.85, ""toefl"": 120.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,AP,0.99,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.86, ""sat"": 1583.0, ""toefl"": 119.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.874}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,AL,0.99,"{""al_avg"": 4.98, ""al_subjects"": 5, ""al_top_ratio"": 1}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,AL,0.99,"{""al_avg"": 4.94, ""al_subjects"": 5, ""al_top_ratio"": 0.708, ""ielts"": 8.9}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,GAOKAO,0.99,"{""gk_total"": 744.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2021,GAOKAO,0.99,"{""gk_total"": 735.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,AP,0.99,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""sat"": 1600.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.952, ""ielts"": 8.7}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.758}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,AL,0.99,"{""al_avg"": 4.59, ""al_subjects"": 5, ""al_top_ratio"": 0.816, ""ielts"": 9.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,GAOKAO,0.99,"{""gk_total"": 738.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2022,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1571.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.93, ""sat"": 1594.0, ""toefl"": 108.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,AP,0.99,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.95, ""toefl"": 109.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,AL,0.99,"{""al_avg"": 4.97, ""al_subjects"": 5, ""al_top_ratio"": 1}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.944, ""ielts"": 9.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,AL,0.99,"{""al_avg"": 4.98, ""al_subjects"": 5, ""al_top_ratio"": 0.941, ""ielts"": 9.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,GAOKAO,0.99,"{""gk_total"": 743.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2023,GAOKAO,0.99,"{""gk_total"": 735.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.96, ""sat"": 1598.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.94, ""sat"": 1600.0, ""toefl"": 120.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1593.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.786}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,AL,0.99,"{""al_avg"": 4.95, ""al_subjects"": 5, ""al_top_ratio"": 0.958, ""ielts"": 8.8}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,AL,0.99,"{""al_avg"": 4.7, ""al_subjects"": 5, ""al_top_ratio"": 0.815, ""ielts"": 9.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,GAOKAO,0.99,"{""gk_total"": 744.0}",synthetic-demo
+Massachusetts Institute of Technology,mit,2024,GAOKAO,0.99,"{""gk_total"": 724.0}",synthetic-demo
+Stanford University,stanford,2019,AP,0.926,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.86}",synthetic-demo
+Stanford University,stanford,2019,AP,0.926,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.81, ""sat"": 1549.0, ""toefl"": 120.0}",synthetic-demo
+Stanford University,stanford,2019,AP,0.926,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""sat"": 1563.0}",synthetic-demo
+Stanford University,stanford,2019,AL,0.926,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.757, ""ielts"": 8.8}",synthetic-demo
+Stanford University,stanford,2019,AL,0.926,"{""al_avg"": 4.68, ""al_subjects"": 5, ""al_top_ratio"": 0.844, ""ielts"": 8.7}",synthetic-demo
+Stanford University,stanford,2019,AL,0.926,"{""al_avg"": 4.86, ""al_subjects"": 5, ""al_top_ratio"": 0.778, ""ielts"": 8.6}",synthetic-demo
+Stanford University,stanford,2019,IB,0.926,"{""ib_total"": 44.0}",synthetic-demo
+Stanford University,stanford,2019,IB,0.926,"{""ib_total"": 43.0}",synthetic-demo
+Stanford University,stanford,2019,IB,0.926,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
+Stanford University,stanford,2019,GAOKAO,0.926,"{""gk_total"": 723.0}",synthetic-demo
+Stanford University,stanford,2019,GAOKAO,0.926,"{""gk_total"": 732.0}",synthetic-demo
+Stanford University,stanford,2019,GAOKAO,0.926,"{""gk_total"": 717.0}",synthetic-demo
+Stanford University,stanford,2020,AP,0.943,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84, ""sat"": 1600.0}",synthetic-demo
+Stanford University,stanford,2020,AP,0.943,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.81, ""sat"": 1568.0}",synthetic-demo
+Stanford University,stanford,2020,AP,0.943,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.83, ""sat"": 1596.0, ""toefl"": 116.0}",synthetic-demo
+Stanford University,stanford,2020,AL,0.943,"{""al_avg"": 4.96, ""al_subjects"": 5, ""al_top_ratio"": 0.764}",synthetic-demo
+Stanford University,stanford,2020,AL,0.943,"{""al_avg"": 4.92, ""al_subjects"": 5, ""al_top_ratio"": 0.921, ""ielts"": 9.0}",synthetic-demo
+Stanford University,stanford,2020,AL,0.943,"{""al_avg"": 4.7, ""al_subjects"": 5, ""al_top_ratio"": 0.655, ""ielts"": 8.7}",synthetic-demo
+Stanford University,stanford,2020,IB,0.943,"{""ib_total"": 44.0}",synthetic-demo
+Stanford University,stanford,2020,IB,0.943,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+Stanford University,stanford,2020,IB,0.943,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+Stanford University,stanford,2020,GAOKAO,0.943,"{""gk_total"": 745.0}",synthetic-demo
+Stanford University,stanford,2020,GAOKAO,0.943,"{""gk_total"": 717.0}",synthetic-demo
+Stanford University,stanford,2020,GAOKAO,0.943,"{""gk_total"": 730.0}",synthetic-demo
+Stanford University,stanford,2021,AP,0.96,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.85, ""sat"": 1576.0}",synthetic-demo
+Stanford University,stanford,2021,AP,0.96,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.88, ""sat"": 1576.0, ""toefl"": 120.0}",synthetic-demo
+Stanford University,stanford,2021,AP,0.96,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.94, ""sat"": 1587.0, ""toefl"": 115.0}",synthetic-demo
+Stanford University,stanford,2021,AL,0.96,"{""al_avg"": 4.83, ""al_subjects"": 5, ""al_top_ratio"": 0.759, ""ielts"": 9.0}",synthetic-demo
+Stanford University,stanford,2021,AL,0.96,"{""al_avg"": 4.85, ""al_subjects"": 5, ""al_top_ratio"": 0.939, ""ielts"": 9.0}",synthetic-demo
+Stanford University,stanford,2021,AL,0.96,"{""al_avg"": 4.77, ""al_subjects"": 5, ""al_top_ratio"": 0.833, ""ielts"": 8.5}",synthetic-demo
+Stanford University,stanford,2021,IB,0.96,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+Stanford University,stanford,2021,IB,0.96,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+Stanford University,stanford,2021,IB,0.96,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+Stanford University,stanford,2021,GAOKAO,0.96,"{""gk_total"": 743.0}",synthetic-demo
+Stanford University,stanford,2021,GAOKAO,0.96,"{""gk_total"": 710.0}",synthetic-demo
+Stanford University,stanford,2021,GAOKAO,0.96,"{""gk_total"": 741.0}",synthetic-demo
+Stanford University,stanford,2022,AP,0.977,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.87, ""sat"": 1600.0}",synthetic-demo
+Stanford University,stanford,2022,AP,0.977,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.85, ""toefl"": 120.0}",synthetic-demo
+Stanford University,stanford,2022,AP,0.977,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.88, ""sat"": 1592.0, ""toefl"": 120.0}",synthetic-demo
+Stanford University,stanford,2022,AL,0.977,"{""al_avg"": 4.64, ""al_subjects"": 5, ""al_top_ratio"": 0.734, ""ielts"": 9.0}",synthetic-demo
+Stanford University,stanford,2022,AL,0.977,"{""al_avg"": 4.85, ""al_subjects"": 5, ""al_top_ratio"": 0.836}",synthetic-demo
+Stanford University,stanford,2022,AL,0.977,"{""al_avg"": 4.9, ""al_subjects"": 5, ""al_top_ratio"": 0.889, ""ielts"": 8.8}",synthetic-demo
+Stanford University,stanford,2022,IB,0.977,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Stanford University,stanford,2022,IB,0.977,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Stanford University,stanford,2022,IB,0.977,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Stanford University,stanford,2022,GAOKAO,0.977,"{""gk_total"": 726.0}",synthetic-demo
+Stanford University,stanford,2022,GAOKAO,0.977,"{""gk_total"": 737.0}",synthetic-demo
+Stanford University,stanford,2022,GAOKAO,0.977,"{""gk_total"": 739.0}",synthetic-demo
+Stanford University,stanford,2023,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84, ""toefl"": 120.0}",synthetic-demo
+Stanford University,stanford,2023,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.85, ""sat"": 1600.0, ""toefl"": 119.0}",synthetic-demo
+Stanford University,stanford,2023,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.77, ""toefl"": 115.0}",synthetic-demo
+Stanford University,stanford,2023,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.798, ""ielts"": 9.0}",synthetic-demo
+Stanford University,stanford,2023,AL,0.99,"{""al_avg"": 4.92, ""al_subjects"": 5, ""al_top_ratio"": 0.721}",synthetic-demo
+Stanford University,stanford,2023,AL,0.99,"{""al_avg"": 4.9, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 8.6}",synthetic-demo
+Stanford University,stanford,2023,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Stanford University,stanford,2023,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Stanford University,stanford,2023,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Stanford University,stanford,2023,GAOKAO,0.99,"{""gk_total"": 730.0}",synthetic-demo
+Stanford University,stanford,2023,GAOKAO,0.99,"{""gk_total"": 741.0}",synthetic-demo
+Stanford University,stanford,2023,GAOKAO,0.99,"{""gk_total"": 733.0}",synthetic-demo
+Stanford University,stanford,2024,AP,0.99,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.85, ""sat"": 1595.0, ""toefl"": 120.0}",synthetic-demo
+Stanford University,stanford,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.97, ""sat"": 1600.0, ""toefl"": 115.0}",synthetic-demo
+Stanford University,stanford,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""sat"": 1577.0}",synthetic-demo
+Stanford University,stanford,2024,AL,0.99,"{""al_avg"": 4.88, ""al_subjects"": 5, ""al_top_ratio"": 0.929}",synthetic-demo
+Stanford University,stanford,2024,AL,0.99,"{""al_avg"": 4.9, ""al_subjects"": 5, ""al_top_ratio"": 0.918, ""ielts"": 8.8}",synthetic-demo
+Stanford University,stanford,2024,AL,0.99,"{""al_avg"": 4.94, ""al_subjects"": 5, ""al_top_ratio"": 0.814}",synthetic-demo
+Stanford University,stanford,2024,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Stanford University,stanford,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Stanford University,stanford,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Stanford University,stanford,2024,GAOKAO,0.99,"{""gk_total"": 735.0}",synthetic-demo
+Stanford University,stanford,2024,GAOKAO,0.99,"{""gk_total"": 732.0}",synthetic-demo
+Stanford University,stanford,2024,GAOKAO,0.99,"{""gk_total"": 747.0}",synthetic-demo
+University of Oxford,oxford,2019,AP,0.903,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.79, ""sat"": 1514.0, ""toefl"": 120.0}",synthetic-demo
+University of Oxford,oxford,2019,AP,0.903,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""toefl"": 116.0}",synthetic-demo
+University of Oxford,oxford,2019,AP,0.903,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.78, ""sat"": 1600.0}",synthetic-demo
+University of Oxford,oxford,2019,AL,0.903,"{""al_avg"": 4.69, ""al_subjects"": 5, ""al_top_ratio"": 0.758, ""ielts"": 8.8}",synthetic-demo
+University of Oxford,oxford,2019,AL,0.903,"{""al_avg"": 4.76, ""al_subjects"": 5, ""al_top_ratio"": 0.834}",synthetic-demo
+University of Oxford,oxford,2019,AL,0.903,"{""al_avg"": 4.63, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 8.7}",synthetic-demo
+University of Oxford,oxford,2019,IB,0.903,"{""ib_total"": 43.0}",synthetic-demo
+University of Oxford,oxford,2019,IB,0.903,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+University of Oxford,oxford,2019,IB,0.903,"{""ib_total"": 44.0}",synthetic-demo
+University of Oxford,oxford,2019,GAOKAO,0.903,"{""gk_total"": 704.0}",synthetic-demo
+University of Oxford,oxford,2019,GAOKAO,0.903,"{""gk_total"": 715.0}",synthetic-demo
+University of Oxford,oxford,2019,GAOKAO,0.903,"{""gk_total"": 705.0}",synthetic-demo
+University of Oxford,oxford,2020,AP,0.921,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""toefl"": 111.0}",synthetic-demo
+University of Oxford,oxford,2020,AP,0.921,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.98, ""sat"": 1528.0}",synthetic-demo
+University of Oxford,oxford,2020,AP,0.921,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""toefl"": 120.0}",synthetic-demo
+University of Oxford,oxford,2020,AL,0.921,"{""al_avg"": 4.86, ""al_subjects"": 5, ""al_top_ratio"": 0.914, ""ielts"": 8.7}",synthetic-demo
+University of Oxford,oxford,2020,AL,0.921,"{""al_avg"": 4.79, ""al_subjects"": 5, ""al_top_ratio"": 0.809, ""ielts"": 8.9}",synthetic-demo
+University of Oxford,oxford,2020,AL,0.921,"{""al_avg"": 4.88, ""al_subjects"": 5, ""al_top_ratio"": 0.86}",synthetic-demo
+University of Oxford,oxford,2020,IB,0.921,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+University of Oxford,oxford,2020,IB,0.921,"{""ib_total"": 44.0}",synthetic-demo
+University of Oxford,oxford,2020,IB,0.921,"{""ib_total"": 43.0}",synthetic-demo
+University of Oxford,oxford,2020,GAOKAO,0.921,"{""gk_total"": 725.0}",synthetic-demo
+University of Oxford,oxford,2020,GAOKAO,0.921,"{""gk_total"": 727.0}",synthetic-demo
+University of Oxford,oxford,2020,GAOKAO,0.921,"{""gk_total"": 721.0}",synthetic-demo
+University of Oxford,oxford,2021,AP,0.937,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.86, ""sat"": 1545.0}",synthetic-demo
+University of Oxford,oxford,2021,AP,0.937,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""toefl"": 117.0}",synthetic-demo
+University of Oxford,oxford,2021,AP,0.937,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.78, ""toefl"": 108.0}",synthetic-demo
+University of Oxford,oxford,2021,AL,0.937,"{""al_avg"": 4.71, ""al_subjects"": 5, ""al_top_ratio"": 0.756}",synthetic-demo
+University of Oxford,oxford,2021,AL,0.937,"{""al_avg"": 4.74, ""al_subjects"": 5, ""al_top_ratio"": 0.917, ""ielts"": 8.9}",synthetic-demo
+University of Oxford,oxford,2021,AL,0.937,"{""al_avg"": 4.72, ""al_subjects"": 5, ""al_top_ratio"": 0.814, ""ielts"": 8.7}",synthetic-demo
+University of Oxford,oxford,2021,IB,0.937,"{""ib_total"": 45.0, ""toefl"": 117.0}",synthetic-demo
+University of Oxford,oxford,2021,IB,0.937,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+University of Oxford,oxford,2021,IB,0.937,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+University of Oxford,oxford,2021,GAOKAO,0.937,"{""gk_total"": 709.0}",synthetic-demo
+University of Oxford,oxford,2021,GAOKAO,0.937,"{""gk_total"": 734.0}",synthetic-demo
+University of Oxford,oxford,2021,GAOKAO,0.937,"{""gk_total"": 746.0}",synthetic-demo
+University of Oxford,oxford,2022,AP,0.956,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.86}",synthetic-demo
+University of Oxford,oxford,2022,AP,0.956,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""toefl"": 116.0}",synthetic-demo
+University of Oxford,oxford,2022,AP,0.956,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.85, ""toefl"": 120.0}",synthetic-demo
+University of Oxford,oxford,2022,AL,0.956,"{""al_avg"": 4.86, ""al_subjects"": 5, ""al_top_ratio"": 0.767, ""ielts"": 8.8}",synthetic-demo
+University of Oxford,oxford,2022,AL,0.956,"{""al_avg"": 4.57, ""al_subjects"": 5, ""al_top_ratio"": 0.85, ""ielts"": 8.8}",synthetic-demo
+University of Oxford,oxford,2022,AL,0.956,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.66, ""ielts"": 9.0}",synthetic-demo
+University of Oxford,oxford,2022,IB,0.956,"{""ib_total"": 45.0}",synthetic-demo
+University of Oxford,oxford,2022,IB,0.956,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+University of Oxford,oxford,2022,IB,0.956,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+University of Oxford,oxford,2022,GAOKAO,0.956,"{""gk_total"": 743.0}",synthetic-demo
+University of Oxford,oxford,2022,GAOKAO,0.956,"{""gk_total"": 747.0}",synthetic-demo
+University of Oxford,oxford,2022,GAOKAO,0.956,"{""gk_total"": 721.0}",synthetic-demo
+University of Oxford,oxford,2023,AP,0.972,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""sat"": 1600.0, ""toefl"": 120.0}",synthetic-demo
+University of Oxford,oxford,2023,AP,0.972,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.83, ""sat"": 1561.0, ""toefl"": 118.0}",synthetic-demo
+University of Oxford,oxford,2023,AP,0.972,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.93, ""sat"": 1549.0, ""toefl"": 115.0}",synthetic-demo
+University of Oxford,oxford,2023,AL,0.972,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.886}",synthetic-demo
+University of Oxford,oxford,2023,AL,0.972,"{""al_avg"": 4.62, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 9.0}",synthetic-demo
+University of Oxford,oxford,2023,AL,0.972,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.872, ""ielts"": 9.0}",synthetic-demo
+University of Oxford,oxford,2023,IB,0.972,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+University of Oxford,oxford,2023,IB,0.972,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+University of Oxford,oxford,2023,IB,0.972,"{""ib_total"": 44.0, ""toefl"": 119.0}",synthetic-demo
+University of Oxford,oxford,2023,GAOKAO,0.972,"{""gk_total"": 750.0}",synthetic-demo
+University of Oxford,oxford,2023,GAOKAO,0.972,"{""gk_total"": 734.0}",synthetic-demo
+University of Oxford,oxford,2023,GAOKAO,0.972,"{""gk_total"": 750.0}",synthetic-demo
+University of Oxford,oxford,2024,AP,0.989,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""toefl"": 114.0}",synthetic-demo
+University of Oxford,oxford,2024,AP,0.989,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.94, ""toefl"": 120.0}",synthetic-demo
+University of Oxford,oxford,2024,AP,0.989,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.85, ""sat"": 1575.0, ""toefl"": 120.0}",synthetic-demo
+University of Oxford,oxford,2024,AL,0.989,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.853, ""ielts"": 8.9}",synthetic-demo
+University of Oxford,oxford,2024,AL,0.989,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.884, ""ielts"": 8.9}",synthetic-demo
+University of Oxford,oxford,2024,AL,0.989,"{""al_avg"": 4.96, ""al_subjects"": 5, ""al_top_ratio"": 0.898, ""ielts"": 9.0}",synthetic-demo
+University of Oxford,oxford,2024,IB,0.989,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+University of Oxford,oxford,2024,IB,0.989,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+University of Oxford,oxford,2024,IB,0.989,"{""ib_total"": 45.0}",synthetic-demo
+University of Oxford,oxford,2024,GAOKAO,0.989,"{""gk_total"": 705.0}",synthetic-demo
+University of Oxford,oxford,2024,GAOKAO,0.989,"{""gk_total"": 749.0}",synthetic-demo
+University of Oxford,oxford,2024,GAOKAO,0.989,"{""gk_total"": 735.0}",synthetic-demo
+University of Cambridge,cambridge,2019,AP,0.902,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.85, ""sat"": 1530.0, ""toefl"": 114.0}",synthetic-demo
+University of Cambridge,cambridge,2019,AP,0.902,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.86, ""sat"": 1506.0, ""toefl"": 114.0}",synthetic-demo
+University of Cambridge,cambridge,2019,AP,0.902,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""sat"": 1566.0, ""toefl"": 120.0}",synthetic-demo
+University of Cambridge,cambridge,2019,AL,0.902,"{""al_avg"": 4.49, ""al_subjects"": 5, ""al_top_ratio"": 0.928, ""ielts"": 8.9}",synthetic-demo
+University of Cambridge,cambridge,2019,AL,0.902,"{""al_avg"": 4.81, ""al_subjects"": 5, ""al_top_ratio"": 0.807, ""ielts"": 8.8}",synthetic-demo
+University of Cambridge,cambridge,2019,AL,0.902,"{""al_avg"": 4.72, ""al_subjects"": 5, ""al_top_ratio"": 0.734, ""ielts"": 8.6}",synthetic-demo
+University of Cambridge,cambridge,2019,IB,0.902,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+University of Cambridge,cambridge,2019,IB,0.902,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+University of Cambridge,cambridge,2019,IB,0.902,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+University of Cambridge,cambridge,2019,GAOKAO,0.902,"{""gk_total"": 699.0}",synthetic-demo
+University of Cambridge,cambridge,2019,GAOKAO,0.902,"{""gk_total"": 698.0}",synthetic-demo
+University of Cambridge,cambridge,2019,GAOKAO,0.902,"{""gk_total"": 693.0}",synthetic-demo
+University of Cambridge,cambridge,2020,AP,0.918,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.85, ""sat"": 1579.0, ""toefl"": 108.0}",synthetic-demo
+University of Cambridge,cambridge,2020,AP,0.918,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""sat"": 1600.0}",synthetic-demo
+University of Cambridge,cambridge,2020,AP,0.918,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.95, ""sat"": 1555.0}",synthetic-demo
+University of Cambridge,cambridge,2020,AL,0.918,"{""al_avg"": 4.82, ""al_subjects"": 5, ""al_top_ratio"": 0.965, ""ielts"": 8.9}",synthetic-demo
+University of Cambridge,cambridge,2020,AL,0.918,"{""al_avg"": 4.81, ""al_subjects"": 5, ""al_top_ratio"": 1}",synthetic-demo
+University of Cambridge,cambridge,2020,AL,0.918,"{""al_avg"": 4.75, ""al_subjects"": 5, ""al_top_ratio"": 0.887, ""ielts"": 8.5}",synthetic-demo
+University of Cambridge,cambridge,2020,IB,0.918,"{""ib_total"": 44.0}",synthetic-demo
+University of Cambridge,cambridge,2020,IB,0.918,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+University of Cambridge,cambridge,2020,IB,0.918,"{""ib_total"": 44.0}",synthetic-demo
+University of Cambridge,cambridge,2020,GAOKAO,0.918,"{""gk_total"": 750.0}",synthetic-demo
+University of Cambridge,cambridge,2020,GAOKAO,0.918,"{""gk_total"": 712.0}",synthetic-demo
+University of Cambridge,cambridge,2020,GAOKAO,0.918,"{""gk_total"": 691.0}",synthetic-demo
+University of Cambridge,cambridge,2021,AP,0.935,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.82}",synthetic-demo
+University of Cambridge,cambridge,2021,AP,0.935,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""toefl"": 113.0}",synthetic-demo
+University of Cambridge,cambridge,2021,AP,0.935,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.89, ""sat"": 1600.0, ""toefl"": 120.0}",synthetic-demo
+University of Cambridge,cambridge,2021,AL,0.935,"{""al_avg"": 4.92, ""al_subjects"": 5, ""al_top_ratio"": 0.789}",synthetic-demo
+University of Cambridge,cambridge,2021,AL,0.935,"{""al_avg"": 4.97, ""al_subjects"": 5, ""al_top_ratio"": 0.941, ""ielts"": 8.8}",synthetic-demo
+University of Cambridge,cambridge,2021,AL,0.935,"{""al_avg"": 4.68, ""al_subjects"": 5, ""al_top_ratio"": 0.773, ""ielts"": 8.7}",synthetic-demo
+University of Cambridge,cambridge,2021,IB,0.935,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+University of Cambridge,cambridge,2021,IB,0.935,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+University of Cambridge,cambridge,2021,IB,0.935,"{""ib_total"": 45.0, ""toefl"": 117.0}",synthetic-demo
+University of Cambridge,cambridge,2021,GAOKAO,0.935,"{""gk_total"": 734.0}",synthetic-demo
+University of Cambridge,cambridge,2021,GAOKAO,0.935,"{""gk_total"": 712.0}",synthetic-demo
+University of Cambridge,cambridge,2021,GAOKAO,0.935,"{""gk_total"": 735.0}",synthetic-demo
+University of Cambridge,cambridge,2022,AP,0.955,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""sat"": 1565.0}",synthetic-demo
+University of Cambridge,cambridge,2022,AP,0.955,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.79, ""sat"": 1568.0, ""toefl"": 120.0}",synthetic-demo
+University of Cambridge,cambridge,2022,AP,0.955,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""sat"": 1572.0, ""toefl"": 114.0}",synthetic-demo
+University of Cambridge,cambridge,2022,AL,0.955,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.921}",synthetic-demo
+University of Cambridge,cambridge,2022,AL,0.955,"{""al_avg"": 4.96, ""al_subjects"": 5, ""al_top_ratio"": 0.744, ""ielts"": 9.0}",synthetic-demo
+University of Cambridge,cambridge,2022,AL,0.955,"{""al_avg"": 4.71, ""al_subjects"": 5, ""al_top_ratio"": 0.756, ""ielts"": 8.6}",synthetic-demo
+University of Cambridge,cambridge,2022,IB,0.955,"{""ib_total"": 45.0}",synthetic-demo
+University of Cambridge,cambridge,2022,IB,0.955,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+University of Cambridge,cambridge,2022,IB,0.955,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+University of Cambridge,cambridge,2022,GAOKAO,0.955,"{""gk_total"": 718.0}",synthetic-demo
+University of Cambridge,cambridge,2022,GAOKAO,0.955,"{""gk_total"": 735.0}",synthetic-demo
+University of Cambridge,cambridge,2022,GAOKAO,0.955,"{""gk_total"": 739.0}",synthetic-demo
+University of Cambridge,cambridge,2023,AP,0.973,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""sat"": 1576.0, ""toefl"": 120.0}",synthetic-demo
+University of Cambridge,cambridge,2023,AP,0.973,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.82, ""sat"": 1600.0}",synthetic-demo
+University of Cambridge,cambridge,2023,AP,0.973,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.92, ""sat"": 1596.0}",synthetic-demo
+University of Cambridge,cambridge,2023,AL,0.973,"{""al_avg"": 4.89, ""al_subjects"": 5, ""al_top_ratio"": 0.941}",synthetic-demo
+University of Cambridge,cambridge,2023,AL,0.973,"{""al_avg"": 4.92, ""al_subjects"": 5, ""al_top_ratio"": 0.965}",synthetic-demo
+University of Cambridge,cambridge,2023,AL,0.973,"{""al_avg"": 4.92, ""al_subjects"": 5, ""al_top_ratio"": 0.814, ""ielts"": 8.9}",synthetic-demo
+University of Cambridge,cambridge,2023,IB,0.973,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+University of Cambridge,cambridge,2023,IB,0.973,"{""ib_total"": 44.0, ""toefl"": 119.0}",synthetic-demo
+University of Cambridge,cambridge,2023,IB,0.973,"{""ib_total"": 44.0}",synthetic-demo
+University of Cambridge,cambridge,2023,GAOKAO,0.973,"{""gk_total"": 722.0}",synthetic-demo
+University of Cambridge,cambridge,2023,GAOKAO,0.973,"{""gk_total"": 750.0}",synthetic-demo
+University of Cambridge,cambridge,2023,GAOKAO,0.973,"{""gk_total"": 725.0}",synthetic-demo
+University of Cambridge,cambridge,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.95, ""sat"": 1600.0, ""toefl"": 116.0}",synthetic-demo
+University of Cambridge,cambridge,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.93}",synthetic-demo
+University of Cambridge,cambridge,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1558.0, ""toefl"": 120.0}",synthetic-demo
+University of Cambridge,cambridge,2024,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.928}",synthetic-demo
+University of Cambridge,cambridge,2024,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.942, ""ielts"": 9.0}",synthetic-demo
+University of Cambridge,cambridge,2024,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.814, ""ielts"": 8.8}",synthetic-demo
+University of Cambridge,cambridge,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+University of Cambridge,cambridge,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+University of Cambridge,cambridge,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+University of Cambridge,cambridge,2024,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+University of Cambridge,cambridge,2024,GAOKAO,0.99,"{""gk_total"": 743.0}",synthetic-demo
+University of Cambridge,cambridge,2024,GAOKAO,0.99,"{""gk_total"": 730.0}",synthetic-demo
+Harvard University,harvard,2019,AP,0.945,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.87, ""toefl"": 120.0}",synthetic-demo
+Harvard University,harvard,2019,AP,0.945,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.9, ""sat"": 1590.0, ""toefl"": 120.0}",synthetic-demo
+Harvard University,harvard,2019,AP,0.945,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.91, ""toefl"": 120.0}",synthetic-demo
+Harvard University,harvard,2019,AL,0.945,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.843, ""ielts"": 8.5}",synthetic-demo
+Harvard University,harvard,2019,AL,0.945,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.719, ""ielts"": 9.0}",synthetic-demo
+Harvard University,harvard,2019,AL,0.945,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.896, ""ielts"": 8.7}",synthetic-demo
+Harvard University,harvard,2019,IB,0.945,"{""ib_total"": 44.0}",synthetic-demo
+Harvard University,harvard,2019,IB,0.945,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+Harvard University,harvard,2019,IB,0.945,"{""ib_total"": 45.0}",synthetic-demo
+Harvard University,harvard,2019,GAOKAO,0.945,"{""gk_total"": 744.0}",synthetic-demo
+Harvard University,harvard,2019,GAOKAO,0.945,"{""gk_total"": 747.0}",synthetic-demo
+Harvard University,harvard,2019,GAOKAO,0.945,"{""gk_total"": 738.0}",synthetic-demo
+Harvard University,harvard,2020,AP,0.963,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.92, ""sat"": 1600.0}",synthetic-demo
+Harvard University,harvard,2020,AP,0.963,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""sat"": 1579.0, ""toefl"": 116.0}",synthetic-demo
+Harvard University,harvard,2020,AP,0.963,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.89}",synthetic-demo
+Harvard University,harvard,2020,AL,0.963,"{""al_avg"": 4.94, ""al_subjects"": 5, ""al_top_ratio"": 0.751, ""ielts"": 8.9}",synthetic-demo
+Harvard University,harvard,2020,AL,0.963,"{""al_avg"": 4.71, ""al_subjects"": 5, ""al_top_ratio"": 0.759, ""ielts"": 8.5}",synthetic-demo
+Harvard University,harvard,2020,AL,0.963,"{""al_avg"": 4.82, ""al_subjects"": 5, ""al_top_ratio"": 0.833}",synthetic-demo
+Harvard University,harvard,2020,IB,0.963,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+Harvard University,harvard,2020,IB,0.963,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+Harvard University,harvard,2020,IB,0.963,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+Harvard University,harvard,2020,GAOKAO,0.963,"{""gk_total"": 727.0}",synthetic-demo
+Harvard University,harvard,2020,GAOKAO,0.963,"{""gk_total"": 696.0}",synthetic-demo
+Harvard University,harvard,2020,GAOKAO,0.963,"{""gk_total"": 715.0}",synthetic-demo
+Harvard University,harvard,2021,AP,0.98,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.83, ""sat"": 1600.0}",synthetic-demo
+Harvard University,harvard,2021,AP,0.98,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.88, ""sat"": 1600.0, ""toefl"": 120.0}",synthetic-demo
+Harvard University,harvard,2021,AP,0.98,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""toefl"": 109.0}",synthetic-demo
+Harvard University,harvard,2021,AL,0.98,"{""al_avg"": 4.92, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 9.0}",synthetic-demo
+Harvard University,harvard,2021,AL,0.98,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.729, ""ielts"": 8.8}",synthetic-demo
+Harvard University,harvard,2021,AL,0.98,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.851}",synthetic-demo
+Harvard University,harvard,2021,IB,0.98,"{""ib_total"": 45.0}",synthetic-demo
+Harvard University,harvard,2021,IB,0.98,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Harvard University,harvard,2021,IB,0.98,"{""ib_total"": 45.0}",synthetic-demo
+Harvard University,harvard,2021,GAOKAO,0.98,"{""gk_total"": 746.0}",synthetic-demo
+Harvard University,harvard,2021,GAOKAO,0.98,"{""gk_total"": 750.0}",synthetic-demo
+Harvard University,harvard,2021,GAOKAO,0.98,"{""gk_total"": 733.0}",synthetic-demo
+Harvard University,harvard,2022,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.81, ""sat"": 1583.0}",synthetic-demo
+Harvard University,harvard,2022,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.98, ""sat"": 1600.0, ""toefl"": 115.0}",synthetic-demo
+Harvard University,harvard,2022,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84, ""toefl"": 120.0}",synthetic-demo
+Harvard University,harvard,2022,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.593, ""ielts"": 8.9}",synthetic-demo
+Harvard University,harvard,2022,AL,0.99,"{""al_avg"": 4.84, ""al_subjects"": 5, ""al_top_ratio"": 0.963, ""ielts"": 9.0}",synthetic-demo
+Harvard University,harvard,2022,AL,0.99,"{""al_avg"": 4.96, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 9.0}",synthetic-demo
+Harvard University,harvard,2022,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Harvard University,harvard,2022,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Harvard University,harvard,2022,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Harvard University,harvard,2022,GAOKAO,0.99,"{""gk_total"": 719.0}",synthetic-demo
+Harvard University,harvard,2022,GAOKAO,0.99,"{""gk_total"": 738.0}",synthetic-demo
+Harvard University,harvard,2022,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+Harvard University,harvard,2023,AP,0.99,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.97}",synthetic-demo
+Harvard University,harvard,2023,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.91, ""toefl"": 114.0}",synthetic-demo
+Harvard University,harvard,2023,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1600.0, ""toefl"": 114.0}",synthetic-demo
+Harvard University,harvard,2023,AL,0.99,"{""al_avg"": 4.67, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 8.5}",synthetic-demo
+Harvard University,harvard,2023,AL,0.99,"{""al_avg"": 4.98, ""al_subjects"": 5, ""al_top_ratio"": 0.713, ""ielts"": 8.9}",synthetic-demo
+Harvard University,harvard,2023,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.956, ""ielts"": 8.8}",synthetic-demo
+Harvard University,harvard,2023,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Harvard University,harvard,2023,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Harvard University,harvard,2023,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Harvard University,harvard,2023,GAOKAO,0.99,"{""gk_total"": 742.0}",synthetic-demo
+Harvard University,harvard,2023,GAOKAO,0.99,"{""gk_total"": 743.0}",synthetic-demo
+Harvard University,harvard,2023,GAOKAO,0.99,"{""gk_total"": 749.0}",synthetic-demo
+Harvard University,harvard,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84, ""sat"": 1600.0}",synthetic-demo
+Harvard University,harvard,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""toefl"": 116.0}",synthetic-demo
+Harvard University,harvard,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""toefl"": 120.0}",synthetic-demo
+Harvard University,harvard,2024,AL,0.99,"{""al_avg"": 4.92, ""al_subjects"": 5, ""al_top_ratio"": 0.965, ""ielts"": 9.0}",synthetic-demo
+Harvard University,harvard,2024,AL,0.99,"{""al_avg"": 4.99, ""al_subjects"": 5, ""al_top_ratio"": 0.671}",synthetic-demo
+Harvard University,harvard,2024,AL,0.99,"{""al_avg"": 4.94, ""al_subjects"": 5, ""al_top_ratio"": 0.915}",synthetic-demo
+Harvard University,harvard,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Harvard University,harvard,2024,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Harvard University,harvard,2024,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Harvard University,harvard,2024,GAOKAO,0.99,"{""gk_total"": 722.0}",synthetic-demo
+Harvard University,harvard,2024,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+Harvard University,harvard,2024,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+ETH Zurich,eth,2019,AP,0.861,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.74}",synthetic-demo
+ETH Zurich,eth,2019,AP,0.861,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""sat"": 1538.0}",synthetic-demo
+ETH Zurich,eth,2019,AP,0.861,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.72, ""sat"": 1547.0, ""toefl"": 118.0}",synthetic-demo
+ETH Zurich,eth,2019,AL,0.861,"{""al_avg"": 4.7, ""al_subjects"": 4, ""al_top_ratio"": 0.875, ""ielts"": 8.7}",synthetic-demo
+ETH Zurich,eth,2019,AL,0.861,"{""al_avg"": 4.81, ""al_subjects"": 4, ""al_top_ratio"": 0.911, ""ielts"": 8.3}",synthetic-demo
+ETH Zurich,eth,2019,AL,0.861,"{""al_avg"": 4.48, ""al_subjects"": 4, ""al_top_ratio"": 0.856, ""ielts"": 8.8}",synthetic-demo
+ETH Zurich,eth,2019,IB,0.861,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+ETH Zurich,eth,2019,IB,0.861,"{""ib_total"": 42.0}",synthetic-demo
+ETH Zurich,eth,2019,IB,0.861,"{""ib_total"": 43.0}",synthetic-demo
+ETH Zurich,eth,2019,GAOKAO,0.861,"{""gk_total"": 711.0}",synthetic-demo
+ETH Zurich,eth,2019,GAOKAO,0.861,"{""gk_total"": 688.0}",synthetic-demo
+ETH Zurich,eth,2019,GAOKAO,0.861,"{""gk_total"": 693.0}",synthetic-demo
+ETH Zurich,eth,2020,AP,0.878,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.81, ""sat"": 1536.0, ""toefl"": 115.0}",synthetic-demo
+ETH Zurich,eth,2020,AP,0.878,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.81, ""sat"": 1552.0, ""toefl"": 110.0}",synthetic-demo
+ETH Zurich,eth,2020,AP,0.878,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.72, ""toefl"": 111.0}",synthetic-demo
+ETH Zurich,eth,2020,AL,0.878,"{""al_avg"": 4.75, ""al_subjects"": 5, ""al_top_ratio"": 0.768, ""ielts"": 8.5}",synthetic-demo
+ETH Zurich,eth,2020,AL,0.878,"{""al_avg"": 4.53, ""al_subjects"": 5, ""al_top_ratio"": 0.81}",synthetic-demo
+ETH Zurich,eth,2020,AL,0.878,"{""al_avg"": 4.74, ""al_subjects"": 5, ""al_top_ratio"": 0.723, ""ielts"": 8.5}",synthetic-demo
+ETH Zurich,eth,2020,IB,0.878,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+ETH Zurich,eth,2020,IB,0.878,"{""ib_total"": 42.0}",synthetic-demo
+ETH Zurich,eth,2020,IB,0.878,"{""ib_total"": 42.0, ""toefl"": 115.0}",synthetic-demo
+ETH Zurich,eth,2020,GAOKAO,0.878,"{""gk_total"": 713.0}",synthetic-demo
+ETH Zurich,eth,2020,GAOKAO,0.878,"{""gk_total"": 704.0}",synthetic-demo
+ETH Zurich,eth,2020,GAOKAO,0.878,"{""gk_total"": 704.0}",synthetic-demo
+ETH Zurich,eth,2021,AP,0.894,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.8, ""toefl"": 113.0}",synthetic-demo
+ETH Zurich,eth,2021,AP,0.894,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.81, ""toefl"": 120.0}",synthetic-demo
+ETH Zurich,eth,2021,AP,0.894,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.77, ""sat"": 1576.0}",synthetic-demo
+ETH Zurich,eth,2021,AL,0.894,"{""al_avg"": 4.65, ""al_subjects"": 5, ""al_top_ratio"": 0.792, ""ielts"": 8.7}",synthetic-demo
+ETH Zurich,eth,2021,AL,0.894,"{""al_avg"": 4.58, ""al_subjects"": 5, ""al_top_ratio"": 0.956}",synthetic-demo
+ETH Zurich,eth,2021,AL,0.894,"{""al_avg"": 4.69, ""al_subjects"": 5, ""al_top_ratio"": 0.904, ""ielts"": 8.7}",synthetic-demo
+ETH Zurich,eth,2021,IB,0.894,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+ETH Zurich,eth,2021,IB,0.894,"{""ib_total"": 44.0}",synthetic-demo
+ETH Zurich,eth,2021,IB,0.894,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+ETH Zurich,eth,2021,GAOKAO,0.894,"{""gk_total"": 715.0}",synthetic-demo
+ETH Zurich,eth,2021,GAOKAO,0.894,"{""gk_total"": 709.0}",synthetic-demo
+ETH Zurich,eth,2021,GAOKAO,0.894,"{""gk_total"": 699.0}",synthetic-demo
+ETH Zurich,eth,2022,AP,0.909,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.87, ""toefl"": 109.0}",synthetic-demo
+ETH Zurich,eth,2022,AP,0.909,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""toefl"": 120.0}",synthetic-demo
+ETH Zurich,eth,2022,AP,0.909,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.77, ""toefl"": 109.0}",synthetic-demo
+ETH Zurich,eth,2022,AL,0.909,"{""al_avg"": 4.55, ""al_subjects"": 5, ""al_top_ratio"": 0.908}",synthetic-demo
+ETH Zurich,eth,2022,AL,0.909,"{""al_avg"": 4.93, ""al_subjects"": 5, ""al_top_ratio"": 0.864}",synthetic-demo
+ETH Zurich,eth,2022,AL,0.909,"{""al_avg"": 4.72, ""al_subjects"": 5, ""al_top_ratio"": 0.795, ""ielts"": 8.8}",synthetic-demo
+ETH Zurich,eth,2022,IB,0.909,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+ETH Zurich,eth,2022,IB,0.909,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+ETH Zurich,eth,2022,IB,0.909,"{""ib_total"": 44.0}",synthetic-demo
+ETH Zurich,eth,2022,GAOKAO,0.909,"{""gk_total"": 720.0}",synthetic-demo
+ETH Zurich,eth,2022,GAOKAO,0.909,"{""gk_total"": 721.0}",synthetic-demo
+ETH Zurich,eth,2022,GAOKAO,0.909,"{""gk_total"": 703.0}",synthetic-demo
+ETH Zurich,eth,2023,AP,0.926,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.9, ""sat"": 1567.0, ""toefl"": 120.0}",synthetic-demo
+ETH Zurich,eth,2023,AP,0.926,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.78, ""sat"": 1572.0, ""toefl"": 116.0}",synthetic-demo
+ETH Zurich,eth,2023,AP,0.926,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.79, ""sat"": 1554.0}",synthetic-demo
+ETH Zurich,eth,2023,AL,0.926,"{""al_avg"": 4.93, ""al_subjects"": 5, ""al_top_ratio"": 0.767, ""ielts"": 8.8}",synthetic-demo
+ETH Zurich,eth,2023,AL,0.926,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.77}",synthetic-demo
+ETH Zurich,eth,2023,AL,0.926,"{""al_avg"": 4.64, ""al_subjects"": 5, ""al_top_ratio"": 0.745}",synthetic-demo
+ETH Zurich,eth,2023,IB,0.926,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+ETH Zurich,eth,2023,IB,0.926,"{""ib_total"": 44.0}",synthetic-demo
+ETH Zurich,eth,2023,IB,0.926,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
+ETH Zurich,eth,2023,GAOKAO,0.926,"{""gk_total"": 741.0}",synthetic-demo
+ETH Zurich,eth,2023,GAOKAO,0.926,"{""gk_total"": 735.0}",synthetic-demo
+ETH Zurich,eth,2023,GAOKAO,0.926,"{""gk_total"": 739.0}",synthetic-demo
+ETH Zurich,eth,2024,AP,0.942,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""sat"": 1577.0}",synthetic-demo
+ETH Zurich,eth,2024,AP,0.942,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.96, ""sat"": 1589.0, ""toefl"": 119.0}",synthetic-demo
+ETH Zurich,eth,2024,AP,0.942,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""sat"": 1573.0}",synthetic-demo
+ETH Zurich,eth,2024,AL,0.942,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.839, ""ielts"": 9.0}",synthetic-demo
+ETH Zurich,eth,2024,AL,0.942,"{""al_avg"": 4.73, ""al_subjects"": 5, ""al_top_ratio"": 0.784}",synthetic-demo
+ETH Zurich,eth,2024,AL,0.942,"{""al_avg"": 4.86, ""al_subjects"": 5, ""al_top_ratio"": 0.906}",synthetic-demo
+ETH Zurich,eth,2024,IB,0.942,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+ETH Zurich,eth,2024,IB,0.942,"{""ib_total"": 45.0, ""toefl"": 117.0}",synthetic-demo
+ETH Zurich,eth,2024,IB,0.942,"{""ib_total"": 45.0}",synthetic-demo
+ETH Zurich,eth,2024,GAOKAO,0.942,"{""gk_total"": 740.0}",synthetic-demo
+ETH Zurich,eth,2024,GAOKAO,0.942,"{""gk_total"": 746.0}",synthetic-demo
+ETH Zurich,eth,2024,GAOKAO,0.942,"{""gk_total"": 701.0}",synthetic-demo
+National University of Singapore,nus,2019,AP,0.778,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.66, ""toefl"": 113.0}",synthetic-demo
+National University of Singapore,nus,2019,AP,0.778,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.65, ""sat"": 1527.0, ""toefl"": 111.0}",synthetic-demo
+National University of Singapore,nus,2019,AP,0.778,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.72, ""sat"": 1484.0, ""toefl"": 110.0}",synthetic-demo
+National University of Singapore,nus,2019,AL,0.778,"{""al_avg"": 4.32, ""al_subjects"": 4, ""al_top_ratio"": 0.64}",synthetic-demo
+National University of Singapore,nus,2019,AL,0.778,"{""al_avg"": 4.39, ""al_subjects"": 4, ""al_top_ratio"": 0.497}",synthetic-demo
+National University of Singapore,nus,2019,AL,0.778,"{""al_avg"": 4.16, ""al_subjects"": 4, ""al_top_ratio"": 0.751}",synthetic-demo
+National University of Singapore,nus,2019,IB,0.778,"{""ib_total"": 41.0}",synthetic-demo
+National University of Singapore,nus,2019,IB,0.778,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
+National University of Singapore,nus,2019,IB,0.778,"{""ib_total"": 41.0}",synthetic-demo
+National University of Singapore,nus,2019,GAOKAO,0.778,"{""gk_total"": 652.0}",synthetic-demo
+National University of Singapore,nus,2019,GAOKAO,0.778,"{""gk_total"": 677.0}",synthetic-demo
+National University of Singapore,nus,2019,GAOKAO,0.778,"{""gk_total"": 668.0}",synthetic-demo
+National University of Singapore,nus,2020,AP,0.793,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""sat"": 1528.0, ""toefl"": 111.0}",synthetic-demo
+National University of Singapore,nus,2020,AP,0.793,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""sat"": 1492.0, ""toefl"": 108.0}",synthetic-demo
+National University of Singapore,nus,2020,AP,0.793,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.72, ""sat"": 1479.0, ""toefl"": 119.0}",synthetic-demo
+National University of Singapore,nus,2020,AL,0.793,"{""al_avg"": 4.26, ""al_subjects"": 4, ""al_top_ratio"": 0.82, ""ielts"": 8.1}",synthetic-demo
+National University of Singapore,nus,2020,AL,0.793,"{""al_avg"": 4.37, ""al_subjects"": 4, ""al_top_ratio"": 0.677, ""ielts"": 8.5}",synthetic-demo
+National University of Singapore,nus,2020,AL,0.793,"{""al_avg"": 4.18, ""al_subjects"": 4, ""al_top_ratio"": 0.684}",synthetic-demo
+National University of Singapore,nus,2020,IB,0.793,"{""ib_total"": 41.0}",synthetic-demo
+National University of Singapore,nus,2020,IB,0.793,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
+National University of Singapore,nus,2020,IB,0.793,"{""ib_total"": 42.0, ""toefl"": 112.0}",synthetic-demo
+National University of Singapore,nus,2020,GAOKAO,0.793,"{""gk_total"": 672.0}",synthetic-demo
+National University of Singapore,nus,2020,GAOKAO,0.793,"{""gk_total"": 656.0}",synthetic-demo
+National University of Singapore,nus,2020,GAOKAO,0.793,"{""gk_total"": 660.0}",synthetic-demo
+National University of Singapore,nus,2021,AP,0.807,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""toefl"": 116.0}",synthetic-demo
+National University of Singapore,nus,2021,AP,0.807,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.73, ""sat"": 1540.0}",synthetic-demo
+National University of Singapore,nus,2021,AP,0.807,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.72, ""sat"": 1554.0, ""toefl"": 116.0}",synthetic-demo
+National University of Singapore,nus,2021,AL,0.807,"{""al_avg"": 4.66, ""al_subjects"": 4, ""al_top_ratio"": 0.697, ""ielts"": 8.4}",synthetic-demo
+National University of Singapore,nus,2021,AL,0.807,"{""al_avg"": 4.37, ""al_subjects"": 4, ""al_top_ratio"": 0.65, ""ielts"": 8.4}",synthetic-demo
+National University of Singapore,nus,2021,AL,0.807,"{""al_avg"": 4.32, ""al_subjects"": 4, ""al_top_ratio"": 0.707, ""ielts"": 8.5}",synthetic-demo
+National University of Singapore,nus,2021,IB,0.807,"{""ib_total"": 41.0}",synthetic-demo
+National University of Singapore,nus,2021,IB,0.807,"{""ib_total"": 42.0}",synthetic-demo
+National University of Singapore,nus,2021,IB,0.807,"{""ib_total"": 41.0}",synthetic-demo
+National University of Singapore,nus,2021,GAOKAO,0.807,"{""gk_total"": 659.0}",synthetic-demo
+National University of Singapore,nus,2021,GAOKAO,0.807,"{""gk_total"": 680.0}",synthetic-demo
+National University of Singapore,nus,2021,GAOKAO,0.807,"{""gk_total"": 658.0}",synthetic-demo
+National University of Singapore,nus,2022,AP,0.822,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.73}",synthetic-demo
+National University of Singapore,nus,2022,AP,0.822,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.75, ""sat"": 1545.0}",synthetic-demo
+National University of Singapore,nus,2022,AP,0.822,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.74, ""sat"": 1473.0, ""toefl"": 110.0}",synthetic-demo
+National University of Singapore,nus,2022,AL,0.822,"{""al_avg"": 4.57, ""al_subjects"": 4, ""al_top_ratio"": 0.704, ""ielts"": 8.6}",synthetic-demo
+National University of Singapore,nus,2022,AL,0.822,"{""al_avg"": 4.42, ""al_subjects"": 4, ""al_top_ratio"": 0.671, ""ielts"": 8.6}",synthetic-demo
+National University of Singapore,nus,2022,AL,0.822,"{""al_avg"": 4.39, ""al_subjects"": 4, ""al_top_ratio"": 0.792, ""ielts"": 8.2}",synthetic-demo
+National University of Singapore,nus,2022,IB,0.822,"{""ib_total"": 41.0}",synthetic-demo
+National University of Singapore,nus,2022,IB,0.822,"{""ib_total"": 41.0}",synthetic-demo
+National University of Singapore,nus,2022,IB,0.822,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+National University of Singapore,nus,2022,GAOKAO,0.822,"{""gk_total"": 697.0}",synthetic-demo
+National University of Singapore,nus,2022,GAOKAO,0.822,"{""gk_total"": 680.0}",synthetic-demo
+National University of Singapore,nus,2022,GAOKAO,0.822,"{""gk_total"": 658.0}",synthetic-demo
+National University of Singapore,nus,2023,AP,0.839,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.71, ""sat"": 1570.0, ""toefl"": 112.0}",synthetic-demo
+National University of Singapore,nus,2023,AP,0.839,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""sat"": 1583.0, ""toefl"": 104.0}",synthetic-demo
+National University of Singapore,nus,2023,AP,0.839,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.74, ""toefl"": 120.0}",synthetic-demo
+National University of Singapore,nus,2023,AL,0.839,"{""al_avg"": 4.56, ""al_subjects"": 4, ""al_top_ratio"": 0.658, ""ielts"": 8.7}",synthetic-demo
+National University of Singapore,nus,2023,AL,0.839,"{""al_avg"": 4.42, ""al_subjects"": 4, ""al_top_ratio"": 0.678, ""ielts"": 8.8}",synthetic-demo
+National University of Singapore,nus,2023,AL,0.839,"{""al_avg"": 4.56, ""al_subjects"": 4, ""al_top_ratio"": 0.877}",synthetic-demo
+National University of Singapore,nus,2023,IB,0.839,"{""ib_total"": 43.0}",synthetic-demo
+National University of Singapore,nus,2023,IB,0.839,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+National University of Singapore,nus,2023,IB,0.839,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+National University of Singapore,nus,2023,GAOKAO,0.839,"{""gk_total"": 686.0}",synthetic-demo
+National University of Singapore,nus,2023,GAOKAO,0.839,"{""gk_total"": 690.0}",synthetic-demo
+National University of Singapore,nus,2023,GAOKAO,0.839,"{""gk_total"": 689.0}",synthetic-demo
+National University of Singapore,nus,2024,AP,0.853,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.77, ""sat"": 1531.0, ""toefl"": 115.0}",synthetic-demo
+National University of Singapore,nus,2024,AP,0.853,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.85, ""sat"": 1544.0}",synthetic-demo
+National University of Singapore,nus,2024,AP,0.853,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""sat"": 1542.0, ""toefl"": 111.0}",synthetic-demo
+National University of Singapore,nus,2024,AL,0.853,"{""al_avg"": 4.54, ""al_subjects"": 4, ""al_top_ratio"": 0.903}",synthetic-demo
+National University of Singapore,nus,2024,AL,0.853,"{""al_avg"": 4.49, ""al_subjects"": 4, ""al_top_ratio"": 0.627}",synthetic-demo
+National University of Singapore,nus,2024,AL,0.853,"{""al_avg"": 4.53, ""al_subjects"": 4, ""al_top_ratio"": 0.779}",synthetic-demo
+National University of Singapore,nus,2024,IB,0.853,"{""ib_total"": 42.0, ""toefl"": 114.0}",synthetic-demo
+National University of Singapore,nus,2024,IB,0.853,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+National University of Singapore,nus,2024,IB,0.853,"{""ib_total"": 42.0, ""toefl"": 114.0}",synthetic-demo
+National University of Singapore,nus,2024,GAOKAO,0.853,"{""gk_total"": 689.0}",synthetic-demo
+National University of Singapore,nus,2024,GAOKAO,0.853,"{""gk_total"": 664.0}",synthetic-demo
+National University of Singapore,nus,2024,GAOKAO,0.853,"{""gk_total"": 679.0}",synthetic-demo
+"University of California, Berkeley",ucb,2019,AP,0.824,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.77, ""toefl"": 115.0}",synthetic-demo
+"University of California, Berkeley",ucb,2019,AP,0.824,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.77, ""sat"": 1560.0, ""toefl"": 112.0}",synthetic-demo
+"University of California, Berkeley",ucb,2019,AP,0.824,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.78, ""sat"": 1524.0}",synthetic-demo
+"University of California, Berkeley",ucb,2019,AL,0.824,"{""al_avg"": 4.57, ""al_subjects"": 4, ""al_top_ratio"": 0.708}",synthetic-demo
+"University of California, Berkeley",ucb,2019,AL,0.824,"{""al_avg"": 4.64, ""al_subjects"": 4, ""al_top_ratio"": 0.785, ""ielts"": 8.6}",synthetic-demo
+"University of California, Berkeley",ucb,2019,AL,0.824,"{""al_avg"": 4.36, ""al_subjects"": 4, ""al_top_ratio"": 0.707}",synthetic-demo
+"University of California, Berkeley",ucb,2019,IB,0.824,"{""ib_total"": 41.0}",synthetic-demo
+"University of California, Berkeley",ucb,2019,IB,0.824,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+"University of California, Berkeley",ucb,2019,IB,0.824,"{""ib_total"": 41.0}",synthetic-demo
+"University of California, Berkeley",ucb,2019,GAOKAO,0.824,"{""gk_total"": 674.0}",synthetic-demo
+"University of California, Berkeley",ucb,2019,GAOKAO,0.824,"{""gk_total"": 683.0}",synthetic-demo
+"University of California, Berkeley",ucb,2019,GAOKAO,0.824,"{""gk_total"": 706.0}",synthetic-demo
+"University of California, Berkeley",ucb,2020,AP,0.84,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""toefl"": 108.0}",synthetic-demo
+"University of California, Berkeley",ucb,2020,AP,0.84,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.68, ""sat"": 1582.0, ""toefl"": 110.0}",synthetic-demo
+"University of California, Berkeley",ucb,2020,AP,0.84,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.72, ""toefl"": 120.0}",synthetic-demo
+"University of California, Berkeley",ucb,2020,AL,0.84,"{""al_avg"": 4.24, ""al_subjects"": 4, ""al_top_ratio"": 0.814, ""ielts"": 8.7}",synthetic-demo
+"University of California, Berkeley",ucb,2020,AL,0.84,"{""al_avg"": 4.59, ""al_subjects"": 4, ""al_top_ratio"": 0.839, ""ielts"": 8.7}",synthetic-demo
+"University of California, Berkeley",ucb,2020,AL,0.84,"{""al_avg"": 4.53, ""al_subjects"": 4, ""al_top_ratio"": 0.717, ""ielts"": 8.3}",synthetic-demo
+"University of California, Berkeley",ucb,2020,IB,0.84,"{""ib_total"": 42.0, ""toefl"": 114.0}",synthetic-demo
+"University of California, Berkeley",ucb,2020,IB,0.84,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+"University of California, Berkeley",ucb,2020,IB,0.84,"{""ib_total"": 42.0, ""toefl"": 114.0}",synthetic-demo
+"University of California, Berkeley",ucb,2020,GAOKAO,0.84,"{""gk_total"": 670.0}",synthetic-demo
+"University of California, Berkeley",ucb,2020,GAOKAO,0.84,"{""gk_total"": 675.0}",synthetic-demo
+"University of California, Berkeley",ucb,2020,GAOKAO,0.84,"{""gk_total"": 678.0}",synthetic-demo
+"University of California, Berkeley",ucb,2021,AP,0.853,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.71, ""sat"": 1516.0, ""toefl"": 118.0}",synthetic-demo
+"University of California, Berkeley",ucb,2021,AP,0.853,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.7, ""sat"": 1551.0, ""toefl"": 120.0}",synthetic-demo
+"University of California, Berkeley",ucb,2021,AP,0.853,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.72, ""toefl"": 112.0}",synthetic-demo
+"University of California, Berkeley",ucb,2021,AL,0.853,"{""al_avg"": 4.47, ""al_subjects"": 4, ""al_top_ratio"": 0.75, ""ielts"": 8.5}",synthetic-demo
+"University of California, Berkeley",ucb,2021,AL,0.853,"{""al_avg"": 4.52, ""al_subjects"": 4, ""al_top_ratio"": 0.677, ""ielts"": 8.8}",synthetic-demo
+"University of California, Berkeley",ucb,2021,AL,0.853,"{""al_avg"": 4.56, ""al_subjects"": 4, ""al_top_ratio"": 0.845, ""ielts"": 8.6}",synthetic-demo
+"University of California, Berkeley",ucb,2021,IB,0.853,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+"University of California, Berkeley",ucb,2021,IB,0.853,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+"University of California, Berkeley",ucb,2021,IB,0.853,"{""ib_total"": 42.0, ""toefl"": 114.0}",synthetic-demo
+"University of California, Berkeley",ucb,2021,GAOKAO,0.853,"{""gk_total"": 676.0}",synthetic-demo
+"University of California, Berkeley",ucb,2021,GAOKAO,0.853,"{""gk_total"": 682.0}",synthetic-demo
+"University of California, Berkeley",ucb,2021,GAOKAO,0.853,"{""gk_total"": 689.0}",synthetic-demo
+"University of California, Berkeley",ucb,2022,AP,0.867,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.79, ""sat"": 1523.0}",synthetic-demo
+"University of California, Berkeley",ucb,2022,AP,0.867,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.77, ""sat"": 1540.0, ""toefl"": 112.0}",synthetic-demo
+"University of California, Berkeley",ucb,2022,AP,0.867,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.69, ""sat"": 1557.0}",synthetic-demo
+"University of California, Berkeley",ucb,2022,AL,0.867,"{""al_avg"": 4.55, ""al_subjects"": 4, ""al_top_ratio"": 0.697, ""ielts"": 8.8}",synthetic-demo
+"University of California, Berkeley",ucb,2022,AL,0.867,"{""al_avg"": 4.52, ""al_subjects"": 4, ""al_top_ratio"": 0.772}",synthetic-demo
+"University of California, Berkeley",ucb,2022,AL,0.867,"{""al_avg"": 4.63, ""al_subjects"": 4, ""al_top_ratio"": 0.753, ""ielts"": 8.9}",synthetic-demo
+"University of California, Berkeley",ucb,2022,IB,0.867,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+"University of California, Berkeley",ucb,2022,IB,0.867,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+"University of California, Berkeley",ucb,2022,IB,0.867,"{""ib_total"": 42.0}",synthetic-demo
+"University of California, Berkeley",ucb,2022,GAOKAO,0.867,"{""gk_total"": 688.0}",synthetic-demo
+"University of California, Berkeley",ucb,2022,GAOKAO,0.867,"{""gk_total"": 681.0}",synthetic-demo
+"University of California, Berkeley",ucb,2022,GAOKAO,0.867,"{""gk_total"": 709.0}",synthetic-demo
+"University of California, Berkeley",ucb,2023,AP,0.902,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""sat"": 1554.0, ""toefl"": 112.0}",synthetic-demo
+"University of California, Berkeley",ucb,2023,AP,0.902,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1576.0, ""toefl"": 120.0}",synthetic-demo
+"University of California, Berkeley",ucb,2023,AP,0.902,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.76}",synthetic-demo
+"University of California, Berkeley",ucb,2023,AL,0.902,"{""al_avg"": 4.67, ""al_subjects"": 5, ""al_top_ratio"": 0.78, ""ielts"": 8.7}",synthetic-demo
+"University of California, Berkeley",ucb,2023,AL,0.902,"{""al_avg"": 4.81, ""al_subjects"": 5, ""al_top_ratio"": 0.815, ""ielts"": 8.9}",synthetic-demo
+"University of California, Berkeley",ucb,2023,AL,0.902,"{""al_avg"": 4.68, ""al_subjects"": 5, ""al_top_ratio"": 0.66, ""ielts"": 8.7}",synthetic-demo
+"University of California, Berkeley",ucb,2023,IB,0.902,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+"University of California, Berkeley",ucb,2023,IB,0.902,"{""ib_total"": 43.0}",synthetic-demo
+"University of California, Berkeley",ucb,2023,IB,0.902,"{""ib_total"": 44.0}",synthetic-demo
+"University of California, Berkeley",ucb,2023,GAOKAO,0.902,"{""gk_total"": 707.0}",synthetic-demo
+"University of California, Berkeley",ucb,2023,GAOKAO,0.902,"{""gk_total"": 729.0}",synthetic-demo
+"University of California, Berkeley",ucb,2023,GAOKAO,0.902,"{""gk_total"": 718.0}",synthetic-demo
+"University of California, Berkeley",ucb,2024,AP,0.917,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.87, ""sat"": 1526.0, ""toefl"": 114.0}",synthetic-demo
+"University of California, Berkeley",ucb,2024,AP,0.917,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.91, ""toefl"": 120.0}",synthetic-demo
+"University of California, Berkeley",ucb,2024,AP,0.917,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.81}",synthetic-demo
+"University of California, Berkeley",ucb,2024,AL,0.917,"{""al_avg"": 4.7, ""al_subjects"": 5, ""al_top_ratio"": 0.835, ""ielts"": 8.8}",synthetic-demo
+"University of California, Berkeley",ucb,2024,AL,0.917,"{""al_avg"": 4.73, ""al_subjects"": 5, ""al_top_ratio"": 0.948, ""ielts"": 8.7}",synthetic-demo
+"University of California, Berkeley",ucb,2024,AL,0.917,"{""al_avg"": 4.65, ""al_subjects"": 5, ""al_top_ratio"": 0.804, ""ielts"": 9.0}",synthetic-demo
+"University of California, Berkeley",ucb,2024,IB,0.917,"{""ib_total"": 44.0}",synthetic-demo
+"University of California, Berkeley",ucb,2024,IB,0.917,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+"University of California, Berkeley",ucb,2024,IB,0.917,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+"University of California, Berkeley",ucb,2024,GAOKAO,0.917,"{""gk_total"": 722.0}",synthetic-demo
+"University of California, Berkeley",ucb,2024,GAOKAO,0.917,"{""gk_total"": 711.0}",synthetic-demo
+"University of California, Berkeley",ucb,2024,GAOKAO,0.917,"{""gk_total"": 724.0}",synthetic-demo
+Yale University,yale,2019,AP,0.874,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.76, ""sat"": 1542.0, ""toefl"": 117.0}",synthetic-demo
+Yale University,yale,2019,AP,0.874,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.78, ""sat"": 1509.0, ""toefl"": 114.0}",synthetic-demo
+Yale University,yale,2019,AP,0.874,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.8, ""toefl"": 118.0}",synthetic-demo
+Yale University,yale,2019,AL,0.874,"{""al_avg"": 4.34, ""al_subjects"": 4, ""al_top_ratio"": 0.789, ""ielts"": 8.6}",synthetic-demo
+Yale University,yale,2019,AL,0.874,"{""al_avg"": 4.66, ""al_subjects"": 4, ""al_top_ratio"": 0.771, ""ielts"": 8.7}",synthetic-demo
+Yale University,yale,2019,AL,0.874,"{""al_avg"": 4.79, ""al_subjects"": 4, ""al_top_ratio"": 0.892, ""ielts"": 8.6}",synthetic-demo
+Yale University,yale,2019,IB,0.874,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+Yale University,yale,2019,IB,0.874,"{""ib_total"": 42.0, ""toefl"": 115.0}",synthetic-demo
+Yale University,yale,2019,IB,0.874,"{""ib_total"": 43.0}",synthetic-demo
+Yale University,yale,2019,GAOKAO,0.874,"{""gk_total"": 695.0}",synthetic-demo
+Yale University,yale,2019,GAOKAO,0.874,"{""gk_total"": 704.0}",synthetic-demo
+Yale University,yale,2019,GAOKAO,0.874,"{""gk_total"": 688.0}",synthetic-demo
+Yale University,yale,2020,AP,0.889,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1524.0, ""toefl"": 120.0}",synthetic-demo
+Yale University,yale,2020,AP,0.889,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0}",synthetic-demo
+Yale University,yale,2020,AP,0.889,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""sat"": 1583.0, ""toefl"": 120.0}",synthetic-demo
+Yale University,yale,2020,AL,0.889,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 1}",synthetic-demo
+Yale University,yale,2020,AL,0.889,"{""al_avg"": 4.67, ""al_subjects"": 5, ""al_top_ratio"": 0.798, ""ielts"": 8.4}",synthetic-demo
+Yale University,yale,2020,AL,0.889,"{""al_avg"": 4.78, ""al_subjects"": 5, ""al_top_ratio"": 0.76, ""ielts"": 8.6}",synthetic-demo
+Yale University,yale,2020,IB,0.889,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+Yale University,yale,2020,IB,0.889,"{""ib_total"": 43.0}",synthetic-demo
+Yale University,yale,2020,IB,0.889,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+Yale University,yale,2020,GAOKAO,0.889,"{""gk_total"": 676.0}",synthetic-demo
+Yale University,yale,2020,GAOKAO,0.889,"{""gk_total"": 731.0}",synthetic-demo
+Yale University,yale,2020,GAOKAO,0.889,"{""gk_total"": 702.0}",synthetic-demo
+Yale University,yale,2021,AP,0.905,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84, ""sat"": 1600.0, ""toefl"": 118.0}",synthetic-demo
+Yale University,yale,2021,AP,0.905,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.92, ""sat"": 1580.0, ""toefl"": 120.0}",synthetic-demo
+Yale University,yale,2021,AP,0.905,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.85, ""sat"": 1562.0}",synthetic-demo
+Yale University,yale,2021,AL,0.905,"{""al_avg"": 4.71, ""al_subjects"": 5, ""al_top_ratio"": 0.813}",synthetic-demo
+Yale University,yale,2021,AL,0.905,"{""al_avg"": 4.78, ""al_subjects"": 5, ""al_top_ratio"": 0.844, ""ielts"": 8.5}",synthetic-demo
+Yale University,yale,2021,AL,0.905,"{""al_avg"": 4.58, ""al_subjects"": 5, ""al_top_ratio"": 0.814, ""ielts"": 8.9}",synthetic-demo
+Yale University,yale,2021,IB,0.905,"{""ib_total"": 44.0}",synthetic-demo
+Yale University,yale,2021,IB,0.905,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+Yale University,yale,2021,IB,0.905,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+Yale University,yale,2021,GAOKAO,0.905,"{""gk_total"": 721.0}",synthetic-demo
+Yale University,yale,2021,GAOKAO,0.905,"{""gk_total"": 697.0}",synthetic-demo
+Yale University,yale,2021,GAOKAO,0.905,"{""gk_total"": 708.0}",synthetic-demo
+Yale University,yale,2022,AP,0.924,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.83, ""sat"": 1588.0}",synthetic-demo
+Yale University,yale,2022,AP,0.924,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.82, ""sat"": 1555.0, ""toefl"": 118.0}",synthetic-demo
+Yale University,yale,2022,AP,0.924,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.75, ""toefl"": 114.0}",synthetic-demo
+Yale University,yale,2022,AL,0.924,"{""al_avg"": 4.93, ""al_subjects"": 5, ""al_top_ratio"": 0.755, ""ielts"": 8.8}",synthetic-demo
+Yale University,yale,2022,AL,0.924,"{""al_avg"": 4.67, ""al_subjects"": 5, ""al_top_ratio"": 0.748, ""ielts"": 9.0}",synthetic-demo
+Yale University,yale,2022,AL,0.924,"{""al_avg"": 4.89, ""al_subjects"": 5, ""al_top_ratio"": 0.861, ""ielts"": 8.9}",synthetic-demo
+Yale University,yale,2022,IB,0.924,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+Yale University,yale,2022,IB,0.924,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
+Yale University,yale,2022,IB,0.924,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
+Yale University,yale,2022,GAOKAO,0.924,"{""gk_total"": 724.0}",synthetic-demo
+Yale University,yale,2022,GAOKAO,0.924,"{""gk_total"": 720.0}",synthetic-demo
+Yale University,yale,2022,GAOKAO,0.924,"{""gk_total"": 697.0}",synthetic-demo
+Yale University,yale,2023,AP,0.939,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""gpa"": 3.93, ""toefl"": 117.0}",synthetic-demo
+Yale University,yale,2023,AP,0.939,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""toefl"": 113.0}",synthetic-demo
+Yale University,yale,2023,AP,0.939,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.89, ""sat"": 1589.0}",synthetic-demo
+Yale University,yale,2023,AL,0.939,"{""al_avg"": 4.88, ""al_subjects"": 5, ""al_top_ratio"": 0.685}",synthetic-demo
+Yale University,yale,2023,AL,0.939,"{""al_avg"": 4.56, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 8.9}",synthetic-demo
+Yale University,yale,2023,AL,0.939,"{""al_avg"": 4.59, ""al_subjects"": 5, ""al_top_ratio"": 0.674}",synthetic-demo
+Yale University,yale,2023,IB,0.939,"{""ib_total"": 45.0}",synthetic-demo
+Yale University,yale,2023,IB,0.939,"{""ib_total"": 45.0, ""toefl"": 117.0}",synthetic-demo
+Yale University,yale,2023,IB,0.939,"{""ib_total"": 45.0}",synthetic-demo
+Yale University,yale,2023,GAOKAO,0.939,"{""gk_total"": 717.0}",synthetic-demo
+Yale University,yale,2023,GAOKAO,0.939,"{""gk_total"": 712.0}",synthetic-demo
+Yale University,yale,2023,GAOKAO,0.939,"{""gk_total"": 747.0}",synthetic-demo
+Yale University,yale,2024,AP,0.955,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1600.0, ""toefl"": 120.0}",synthetic-demo
+Yale University,yale,2024,AP,0.955,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.9, ""sat"": 1565.0, ""toefl"": 111.0}",synthetic-demo
+Yale University,yale,2024,AP,0.955,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.86, ""sat"": 1545.0}",synthetic-demo
+Yale University,yale,2024,AL,0.955,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.79, ""ielts"": 8.9}",synthetic-demo
+Yale University,yale,2024,AL,0.955,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.989}",synthetic-demo
+Yale University,yale,2024,AL,0.955,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.927, ""ielts"": 9.0}",synthetic-demo
+Yale University,yale,2024,IB,0.955,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+Yale University,yale,2024,IB,0.955,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+Yale University,yale,2024,IB,0.955,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+Yale University,yale,2024,GAOKAO,0.955,"{""gk_total"": 741.0}",synthetic-demo
+Yale University,yale,2024,GAOKAO,0.955,"{""gk_total"": 724.0}",synthetic-demo
+Yale University,yale,2024,GAOKAO,0.955,"{""gk_total"": 750.0}",synthetic-demo
+University College London,ucl,2019,AP,0.7,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.64, ""sat"": 1466.0, ""toefl"": 103.0}",synthetic-demo
+University College London,ucl,2019,AP,0.7,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.61}",synthetic-demo
+University College London,ucl,2019,AP,0.7,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.63, ""toefl"": 108.0}",synthetic-demo
+University College London,ucl,2019,AL,0.7,"{""al_avg"": 4.09, ""al_subjects"": 4, ""al_top_ratio"": 0.648, ""ielts"": 8.2}",synthetic-demo
+University College London,ucl,2019,AL,0.7,"{""al_avg"": 4.04, ""al_subjects"": 4, ""al_top_ratio"": 0.737}",synthetic-demo
+University College London,ucl,2019,AL,0.7,"{""al_avg"": 4.2, ""al_subjects"": 4, ""al_top_ratio"": 0.464, ""ielts"": 7.9}",synthetic-demo
+University College London,ucl,2019,IB,0.7,"{""ib_total"": 39.0, ""toefl"": 109.0}",synthetic-demo
+University College London,ucl,2019,IB,0.7,"{""ib_total"": 39.0}",synthetic-demo
+University College London,ucl,2019,IB,0.7,"{""ib_total"": 39.0}",synthetic-demo
+University College London,ucl,2019,GAOKAO,0.7,"{""gk_total"": 633.0}",synthetic-demo
+University College London,ucl,2019,GAOKAO,0.7,"{""gk_total"": 627.0}",synthetic-demo
+University College London,ucl,2019,GAOKAO,0.7,"{""gk_total"": 621.0}",synthetic-demo
+University College London,ucl,2020,AP,0.713,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""sat"": 1472.0, ""toefl"": 103.0}",synthetic-demo
+University College London,ucl,2020,AP,0.713,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833}",synthetic-demo
+University College London,ucl,2020,AP,0.713,"{""ap_avg"": 4.17, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.333, ""sat"": 1452.0}",synthetic-demo
+University College London,ucl,2020,AL,0.713,"{""al_avg"": 4.35, ""al_subjects"": 4, ""al_top_ratio"": 0.495, ""ielts"": 8.3}",synthetic-demo
+University College London,ucl,2020,AL,0.713,"{""al_avg"": 3.95, ""al_subjects"": 4, ""al_top_ratio"": 0.702, ""ielts"": 8.4}",synthetic-demo
+University College London,ucl,2020,AL,0.713,"{""al_avg"": 4.09, ""al_subjects"": 4, ""al_top_ratio"": 0.432}",synthetic-demo
+University College London,ucl,2020,IB,0.713,"{""ib_total"": 40.0, ""toefl"": 109.0}",synthetic-demo
+University College London,ucl,2020,IB,0.713,"{""ib_total"": 40.0, ""toefl"": 109.0}",synthetic-demo
+University College London,ucl,2020,IB,0.713,"{""ib_total"": 39.0, ""toefl"": 109.0}",synthetic-demo
+University College London,ucl,2020,GAOKAO,0.713,"{""gk_total"": 648.0}",synthetic-demo
+University College London,ucl,2020,GAOKAO,0.713,"{""gk_total"": 623.0}",synthetic-demo
+University College London,ucl,2020,GAOKAO,0.713,"{""gk_total"": 629.0}",synthetic-demo
+University College London,ucl,2021,AP,0.725,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.71, ""toefl"": 111.0}",synthetic-demo
+University College London,ucl,2021,AP,0.725,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.61, ""sat"": 1497.0, ""toefl"": 100.0}",synthetic-demo
+University College London,ucl,2021,AP,0.725,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.73, ""sat"": 1483.0, ""toefl"": 106.0}",synthetic-demo
+University College London,ucl,2021,AL,0.725,"{""al_avg"": 4.24, ""al_subjects"": 4, ""al_top_ratio"": 0.618, ""ielts"": 7.9}",synthetic-demo
+University College London,ucl,2021,AL,0.725,"{""al_avg"": 4.12, ""al_subjects"": 4, ""al_top_ratio"": 0.591, ""ielts"": 8.3}",synthetic-demo
+University College London,ucl,2021,AL,0.725,"{""al_avg"": 4.1, ""al_subjects"": 4, ""al_top_ratio"": 0.644}",synthetic-demo
+University College London,ucl,2021,IB,0.725,"{""ib_total"": 39.0, ""toefl"": 110.0}",synthetic-demo
+University College London,ucl,2021,IB,0.725,"{""ib_total"": 40.0, ""toefl"": 110.0}",synthetic-demo
+University College London,ucl,2021,IB,0.725,"{""ib_total"": 40.0, ""toefl"": 110.0}",synthetic-demo
+University College London,ucl,2021,GAOKAO,0.725,"{""gk_total"": 627.0}",synthetic-demo
+University College London,ucl,2021,GAOKAO,0.725,"{""gk_total"": 645.0}",synthetic-demo
+University College London,ucl,2021,GAOKAO,0.725,"{""gk_total"": 651.0}",synthetic-demo
+University College London,ucl,2022,AP,0.74,"{""ap_avg"": 3.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.333, ""gpa"": 3.7, ""sat"": 1497.0, ""toefl"": 112.0}",synthetic-demo
+University College London,ucl,2022,AP,0.74,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.59, ""sat"": 1484.0, ""toefl"": 110.0}",synthetic-demo
+University College London,ucl,2022,AP,0.74,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.69, ""toefl"": 108.0}",synthetic-demo
+University College London,ucl,2022,AL,0.74,"{""al_avg"": 4.41, ""al_subjects"": 4, ""al_top_ratio"": 0.653, ""ielts"": 8.5}",synthetic-demo
+University College London,ucl,2022,AL,0.74,"{""al_avg"": 4.13, ""al_subjects"": 4, ""al_top_ratio"": 0.533, ""ielts"": 8.3}",synthetic-demo
+University College London,ucl,2022,AL,0.74,"{""al_avg"": 4.23, ""al_subjects"": 4, ""al_top_ratio"": 0.679, ""ielts"": 8.4}",synthetic-demo
+University College London,ucl,2022,IB,0.74,"{""ib_total"": 41.0, ""toefl"": 110.0}",synthetic-demo
+University College London,ucl,2022,IB,0.74,"{""ib_total"": 41.0, ""toefl"": 110.0}",synthetic-demo
+University College London,ucl,2022,IB,0.74,"{""ib_total"": 40.0}",synthetic-demo
+University College London,ucl,2022,GAOKAO,0.74,"{""gk_total"": 643.0}",synthetic-demo
+University College London,ucl,2022,GAOKAO,0.74,"{""gk_total"": 631.0}",synthetic-demo
+University College London,ucl,2022,GAOKAO,0.74,"{""gk_total"": 657.0}",synthetic-demo
+University College London,ucl,2023,AP,0.752,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.65}",synthetic-demo
+University College London,ucl,2023,AP,0.752,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.66, ""toefl"": 115.0}",synthetic-demo
+University College London,ucl,2023,AP,0.752,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.77, ""sat"": 1523.0}",synthetic-demo
+University College London,ucl,2023,AL,0.752,"{""al_avg"": 4.49, ""al_subjects"": 4, ""al_top_ratio"": 0.587, ""ielts"": 7.9}",synthetic-demo
+University College London,ucl,2023,AL,0.752,"{""al_avg"": 4.31, ""al_subjects"": 4, ""al_top_ratio"": 0.605}",synthetic-demo
+University College London,ucl,2023,AL,0.752,"{""al_avg"": 4.17, ""al_subjects"": 4, ""al_top_ratio"": 0.756, ""ielts"": 8.1}",synthetic-demo
+University College London,ucl,2023,IB,0.752,"{""ib_total"": 41.0}",synthetic-demo
+University College London,ucl,2023,IB,0.752,"{""ib_total"": 40.0, ""toefl"": 111.0}",synthetic-demo
+University College London,ucl,2023,IB,0.752,"{""ib_total"": 41.0}",synthetic-demo
+University College London,ucl,2023,GAOKAO,0.752,"{""gk_total"": 618.0}",synthetic-demo
+University College London,ucl,2023,GAOKAO,0.752,"{""gk_total"": 634.0}",synthetic-demo
+University College London,ucl,2023,GAOKAO,0.752,"{""gk_total"": 642.0}",synthetic-demo
+University College London,ucl,2024,AP,0.765,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.78, ""toefl"": 110.0}",synthetic-demo
+University College London,ucl,2024,AP,0.765,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.73, ""sat"": 1482.0}",synthetic-demo
+University College London,ucl,2024,AP,0.765,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.69, ""sat"": 1446.0, ""toefl"": 115.0}",synthetic-demo
+University College London,ucl,2024,AL,0.765,"{""al_avg"": 4.42, ""al_subjects"": 4, ""al_top_ratio"": 0.599, ""ielts"": 8.3}",synthetic-demo
+University College London,ucl,2024,AL,0.765,"{""al_avg"": 4.21, ""al_subjects"": 4, ""al_top_ratio"": 0.766, ""ielts"": 8.5}",synthetic-demo
+University College London,ucl,2024,AL,0.765,"{""al_avg"": 4.37, ""al_subjects"": 4, ""al_top_ratio"": 0.773, ""ielts"": 8.5}",synthetic-demo
+University College London,ucl,2024,IB,0.765,"{""ib_total"": 40.0, ""toefl"": 111.0}",synthetic-demo
+University College London,ucl,2024,IB,0.765,"{""ib_total"": 40.0}",synthetic-demo
+University College London,ucl,2024,IB,0.765,"{""ib_total"": 41.0, ""toefl"": 111.0}",synthetic-demo
+University College London,ucl,2024,GAOKAO,0.765,"{""gk_total"": 658.0}",synthetic-demo
+University College London,ucl,2024,GAOKAO,0.765,"{""gk_total"": 654.0}",synthetic-demo
+University College London,ucl,2024,GAOKAO,0.765,"{""gk_total"": 661.0}",synthetic-demo
+Peking University,pk,2019,AP,0.744,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""gpa"": 3.63, ""sat"": 1487.0}",synthetic-demo
+Peking University,pk,2019,AP,0.744,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""sat"": 1484.0, ""toefl"": 114.0}",synthetic-demo
+Peking University,pk,2019,AP,0.744,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.68, ""sat"": 1452.0, ""toefl"": 117.0}",synthetic-demo
+Peking University,pk,2019,AL,0.744,"{""al_avg"": 4.29, ""al_subjects"": 4, ""al_top_ratio"": 0.785, ""ielts"": 8.5}",synthetic-demo
+Peking University,pk,2019,AL,0.744,"{""al_avg"": 4.24, ""al_subjects"": 4, ""al_top_ratio"": 0.583, ""ielts"": 8.2}",synthetic-demo
+Peking University,pk,2019,AL,0.744,"{""al_avg"": 4.27, ""al_subjects"": 4, ""al_top_ratio"": 0.858}",synthetic-demo
+Peking University,pk,2019,IB,0.744,"{""ib_total"": 40.0}",synthetic-demo
+Peking University,pk,2019,IB,0.744,"{""ib_total"": 41.0, ""toefl"": 111.0}",synthetic-demo
+Peking University,pk,2019,IB,0.744,"{""ib_total"": 40.0}",synthetic-demo
+Peking University,pk,2019,GAOKAO,0.744,"{""gk_total"": 649.0}",synthetic-demo
+Peking University,pk,2019,GAOKAO,0.744,"{""gk_total"": 657.0}",synthetic-demo
+Peking University,pk,2019,GAOKAO,0.744,"{""gk_total"": 637.0}",synthetic-demo
+Peking University,pk,2020,AP,0.764,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.64, ""toefl"": 108.0}",synthetic-demo
+Peking University,pk,2020,AP,0.764,"{""ap_avg"": 4.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""sat"": 1485.0, ""toefl"": 115.0}",synthetic-demo
+Peking University,pk,2020,AP,0.764,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.63, ""toefl"": 115.0}",synthetic-demo
+Peking University,pk,2020,AL,0.764,"{""al_avg"": 4.26, ""al_subjects"": 4, ""al_top_ratio"": 0.788, ""ielts"": 8.6}",synthetic-demo
+Peking University,pk,2020,AL,0.764,"{""al_avg"": 4.43, ""al_subjects"": 4, ""al_top_ratio"": 0.518, ""ielts"": 8.1}",synthetic-demo
+Peking University,pk,2020,AL,0.764,"{""al_avg"": 4.15, ""al_subjects"": 4, ""al_top_ratio"": 0.661, ""ielts"": 8.0}",synthetic-demo
+Peking University,pk,2020,IB,0.764,"{""ib_total"": 40.0, ""toefl"": 111.0}",synthetic-demo
+Peking University,pk,2020,IB,0.764,"{""ib_total"": 40.0}",synthetic-demo
+Peking University,pk,2020,IB,0.764,"{""ib_total"": 41.0, ""toefl"": 111.0}",synthetic-demo
+Peking University,pk,2020,GAOKAO,0.764,"{""gk_total"": 664.0}",synthetic-demo
+Peking University,pk,2020,GAOKAO,0.764,"{""gk_total"": 678.0}",synthetic-demo
+Peking University,pk,2020,GAOKAO,0.764,"{""gk_total"": 658.0}",synthetic-demo
+Peking University,pk,2021,AP,0.777,"{""ap_avg"": 4.33, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.76, ""sat"": 1562.0, ""toefl"": 105.0}",synthetic-demo
+Peking University,pk,2021,AP,0.777,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.68, ""toefl"": 112.0}",synthetic-demo
+Peking University,pk,2021,AP,0.777,"{""ap_avg"": 4.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.8, ""sat"": 1506.0}",synthetic-demo
+Peking University,pk,2021,AL,0.777,"{""al_avg"": 4.44, ""al_subjects"": 4, ""al_top_ratio"": 0.652}",synthetic-demo
+Peking University,pk,2021,AL,0.777,"{""al_avg"": 4.16, ""al_subjects"": 4, ""al_top_ratio"": 0.955, ""ielts"": 8.5}",synthetic-demo
+Peking University,pk,2021,AL,0.777,"{""al_avg"": 4.44, ""al_subjects"": 4, ""al_top_ratio"": 0.743, ""ielts"": 8.7}",synthetic-demo
+Peking University,pk,2021,IB,0.777,"{""ib_total"": 40.0, ""toefl"": 112.0}",synthetic-demo
+Peking University,pk,2021,IB,0.777,"{""ib_total"": 41.0}",synthetic-demo
+Peking University,pk,2021,IB,0.777,"{""ib_total"": 40.0, ""toefl"": 112.0}",synthetic-demo
+Peking University,pk,2021,GAOKAO,0.777,"{""gk_total"": 645.0}",synthetic-demo
+Peking University,pk,2021,GAOKAO,0.777,"{""gk_total"": 668.0}",synthetic-demo
+Peking University,pk,2021,GAOKAO,0.777,"{""gk_total"": 679.0}",synthetic-demo
+Peking University,pk,2022,AP,0.795,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""sat"": 1519.0}",synthetic-demo
+Peking University,pk,2022,AP,0.795,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""toefl"": 107.0}",synthetic-demo
+Peking University,pk,2022,AP,0.795,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.73, ""sat"": 1535.0, ""toefl"": 113.0}",synthetic-demo
+Peking University,pk,2022,AL,0.795,"{""al_avg"": 4.43, ""al_subjects"": 4, ""al_top_ratio"": 0.736, ""ielts"": 8.6}",synthetic-demo
+Peking University,pk,2022,AL,0.795,"{""al_avg"": 4.59, ""al_subjects"": 4, ""al_top_ratio"": 0.741, ""ielts"": 8.2}",synthetic-demo
+Peking University,pk,2022,AL,0.795,"{""al_avg"": 4.45, ""al_subjects"": 4, ""al_top_ratio"": 0.577, ""ielts"": 8.5}",synthetic-demo
+Peking University,pk,2022,IB,0.795,"{""ib_total"": 42.0}",synthetic-demo
+Peking University,pk,2022,IB,0.795,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
+Peking University,pk,2022,IB,0.795,"{""ib_total"": 41.0}",synthetic-demo
+Peking University,pk,2022,GAOKAO,0.795,"{""gk_total"": 670.0}",synthetic-demo
+Peking University,pk,2022,GAOKAO,0.795,"{""gk_total"": 665.0}",synthetic-demo
+Peking University,pk,2022,GAOKAO,0.795,"{""gk_total"": 658.0}",synthetic-demo
+Peking University,pk,2023,AP,0.814,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.79, ""toefl"": 120.0}",synthetic-demo
+Peking University,pk,2023,AP,0.814,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.75, ""sat"": 1479.0, ""toefl"": 111.0}",synthetic-demo
+Peking University,pk,2023,AP,0.814,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""sat"": 1533.0, ""toefl"": 120.0}",synthetic-demo
+Peking University,pk,2023,AL,0.814,"{""al_avg"": 4.4, ""al_subjects"": 4, ""al_top_ratio"": 0.876, ""ielts"": 8.6}",synthetic-demo
+Peking University,pk,2023,AL,0.814,"{""al_avg"": 4.38, ""al_subjects"": 4, ""al_top_ratio"": 0.646, ""ielts"": 8.4}",synthetic-demo
+Peking University,pk,2023,AL,0.814,"{""al_avg"": 4.53, ""al_subjects"": 4, ""al_top_ratio"": 0.811, ""ielts"": 8.1}",synthetic-demo
+Peking University,pk,2023,IB,0.814,"{""ib_total"": 41.0, ""toefl"": 113.0}",synthetic-demo
+Peking University,pk,2023,IB,0.814,"{""ib_total"": 41.0}",synthetic-demo
+Peking University,pk,2023,IB,0.814,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+Peking University,pk,2023,GAOKAO,0.814,"{""gk_total"": 683.0}",synthetic-demo
+Peking University,pk,2023,GAOKAO,0.814,"{""gk_total"": 676.0}",synthetic-demo
+Peking University,pk,2023,GAOKAO,0.814,"{""gk_total"": 667.0}",synthetic-demo
+Peking University,pk,2024,AP,0.827,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.71, ""sat"": 1550.0, ""toefl"": 107.0}",synthetic-demo
+Peking University,pk,2024,AP,0.827,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1544.0, ""toefl"": 118.0}",synthetic-demo
+Peking University,pk,2024,AP,0.827,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.79, ""sat"": 1512.0, ""toefl"": 112.0}",synthetic-demo
+Peking University,pk,2024,AL,0.827,"{""al_avg"": 4.53, ""al_subjects"": 4, ""al_top_ratio"": 0.735, ""ielts"": 8.5}",synthetic-demo
+Peking University,pk,2024,AL,0.827,"{""al_avg"": 4.27, ""al_subjects"": 4, ""al_top_ratio"": 0.718, ""ielts"": 8.6}",synthetic-demo
+Peking University,pk,2024,AL,0.827,"{""al_avg"": 4.88, ""al_subjects"": 4, ""al_top_ratio"": 0.829, ""ielts"": 8.3}",synthetic-demo
+Peking University,pk,2024,IB,0.827,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+Peking University,pk,2024,IB,0.827,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+Peking University,pk,2024,IB,0.827,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+Peking University,pk,2024,GAOKAO,0.827,"{""gk_total"": 697.0}",synthetic-demo
+Peking University,pk,2024,GAOKAO,0.827,"{""gk_total"": 703.0}",synthetic-demo
+Peking University,pk,2024,GAOKAO,0.827,"{""gk_total"": 696.0}",synthetic-demo
+Tsinghua University,thu,2019,AP,0.774,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.65, ""toefl"": 112.0}",synthetic-demo
+Tsinghua University,thu,2019,AP,0.774,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.83, ""toefl"": 110.0}",synthetic-demo
+Tsinghua University,thu,2019,AP,0.774,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1504.0, ""toefl"": 114.0}",synthetic-demo
+Tsinghua University,thu,2019,AL,0.774,"{""al_avg"": 4.37, ""al_subjects"": 4, ""al_top_ratio"": 0.586, ""ielts"": 8.2}",synthetic-demo
+Tsinghua University,thu,2019,AL,0.774,"{""al_avg"": 4.26, ""al_subjects"": 4, ""al_top_ratio"": 0.693, ""ielts"": 8.5}",synthetic-demo
+Tsinghua University,thu,2019,AL,0.774,"{""al_avg"": 4.32, ""al_subjects"": 4, ""al_top_ratio"": 0.763, ""ielts"": 8.4}",synthetic-demo
+Tsinghua University,thu,2019,IB,0.774,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
+Tsinghua University,thu,2019,IB,0.774,"{""ib_total"": 40.0, ""toefl"": 112.0}",synthetic-demo
+Tsinghua University,thu,2019,IB,0.774,"{""ib_total"": 41.0}",synthetic-demo
+Tsinghua University,thu,2019,GAOKAO,0.774,"{""gk_total"": 660.0}",synthetic-demo
+Tsinghua University,thu,2019,GAOKAO,0.774,"{""gk_total"": 648.0}",synthetic-demo
+Tsinghua University,thu,2019,GAOKAO,0.774,"{""gk_total"": 644.0}",synthetic-demo
+Tsinghua University,thu,2020,AP,0.79,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.79, ""sat"": 1542.0}",synthetic-demo
+Tsinghua University,thu,2020,AP,0.79,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.75, ""sat"": 1479.0, ""toefl"": 108.0}",synthetic-demo
+Tsinghua University,thu,2020,AP,0.79,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.79, ""sat"": 1495.0, ""toefl"": 116.0}",synthetic-demo
+Tsinghua University,thu,2020,AL,0.79,"{""al_avg"": 4.66, ""al_subjects"": 4, ""al_top_ratio"": 0.827, ""ielts"": 8.5}",synthetic-demo
+Tsinghua University,thu,2020,AL,0.79,"{""al_avg"": 4.28, ""al_subjects"": 4, ""al_top_ratio"": 0.896, ""ielts"": 8.1}",synthetic-demo
+Tsinghua University,thu,2020,AL,0.79,"{""al_avg"": 4.26, ""al_subjects"": 4, ""al_top_ratio"": 0.712, ""ielts"": 8.6}",synthetic-demo
+Tsinghua University,thu,2020,IB,0.79,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
+Tsinghua University,thu,2020,IB,0.79,"{""ib_total"": 41.0, ""toefl"": 112.0}",synthetic-demo
+Tsinghua University,thu,2020,IB,0.79,"{""ib_total"": 42.0, ""toefl"": 112.0}",synthetic-demo
+Tsinghua University,thu,2020,GAOKAO,0.79,"{""gk_total"": 676.0}",synthetic-demo
+Tsinghua University,thu,2020,GAOKAO,0.79,"{""gk_total"": 650.0}",synthetic-demo
+Tsinghua University,thu,2020,GAOKAO,0.79,"{""gk_total"": 656.0}",synthetic-demo
+Tsinghua University,thu,2021,AP,0.803,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""sat"": 1484.0, ""toefl"": 102.0}",synthetic-demo
+Tsinghua University,thu,2021,AP,0.803,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.7, ""sat"": 1485.0, ""toefl"": 116.0}",synthetic-demo
+Tsinghua University,thu,2021,AP,0.803,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.69, ""toefl"": 115.0}",synthetic-demo
+Tsinghua University,thu,2021,AL,0.803,"{""al_avg"": 4.55, ""al_subjects"": 4, ""al_top_ratio"": 0.722, ""ielts"": 8.8}",synthetic-demo
+Tsinghua University,thu,2021,AL,0.803,"{""al_avg"": 4.38, ""al_subjects"": 4, ""al_top_ratio"": 0.884}",synthetic-demo
+Tsinghua University,thu,2021,AL,0.803,"{""al_avg"": 4.48, ""al_subjects"": 4, ""al_top_ratio"": 0.68, ""ielts"": 8.4}",synthetic-demo
+Tsinghua University,thu,2021,IB,0.803,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+Tsinghua University,thu,2021,IB,0.803,"{""ib_total"": 41.0, ""toefl"": 113.0}",synthetic-demo
+Tsinghua University,thu,2021,IB,0.803,"{""ib_total"": 42.0}",synthetic-demo
+Tsinghua University,thu,2021,GAOKAO,0.803,"{""gk_total"": 641.0}",synthetic-demo
+Tsinghua University,thu,2021,GAOKAO,0.803,"{""gk_total"": 653.0}",synthetic-demo
+Tsinghua University,thu,2021,GAOKAO,0.803,"{""gk_total"": 641.0}",synthetic-demo
+Tsinghua University,thu,2022,AP,0.817,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""sat"": 1544.0}",synthetic-demo
+Tsinghua University,thu,2022,AP,0.817,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.69, ""sat"": 1522.0, ""toefl"": 116.0}",synthetic-demo
+Tsinghua University,thu,2022,AP,0.817,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.73, ""sat"": 1541.0}",synthetic-demo
+Tsinghua University,thu,2022,AL,0.817,"{""al_avg"": 4.14, ""al_subjects"": 4, ""al_top_ratio"": 0.785}",synthetic-demo
+Tsinghua University,thu,2022,AL,0.817,"{""al_avg"": 4.67, ""al_subjects"": 4, ""al_top_ratio"": 0.677, ""ielts"": 8.2}",synthetic-demo
+Tsinghua University,thu,2022,AL,0.817,"{""al_avg"": 4.28, ""al_subjects"": 4, ""al_top_ratio"": 0.68, ""ielts"": 8.8}",synthetic-demo
+Tsinghua University,thu,2022,IB,0.817,"{""ib_total"": 41.0, ""toefl"": 113.0}",synthetic-demo
+Tsinghua University,thu,2022,IB,0.817,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+Tsinghua University,thu,2022,IB,0.817,"{""ib_total"": 42.0, ""toefl"": 113.0}",synthetic-demo
+Tsinghua University,thu,2022,GAOKAO,0.817,"{""gk_total"": 686.0}",synthetic-demo
+Tsinghua University,thu,2022,GAOKAO,0.817,"{""gk_total"": 692.0}",synthetic-demo
+Tsinghua University,thu,2022,GAOKAO,0.817,"{""gk_total"": 665.0}",synthetic-demo
+Tsinghua University,thu,2023,AP,0.833,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.78, ""sat"": 1501.0, ""toefl"": 115.0}",synthetic-demo
+Tsinghua University,thu,2023,AP,0.833,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.73, ""sat"": 1513.0, ""toefl"": 109.0}",synthetic-demo
+Tsinghua University,thu,2023,AP,0.833,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.79, ""sat"": 1522.0}",synthetic-demo
+Tsinghua University,thu,2023,AL,0.833,"{""al_avg"": 4.74, ""al_subjects"": 4, ""al_top_ratio"": 0.789, ""ielts"": 8.5}",synthetic-demo
+Tsinghua University,thu,2023,AL,0.833,"{""al_avg"": 4.56, ""al_subjects"": 4, ""al_top_ratio"": 0.628, ""ielts"": 8.6}",synthetic-demo
+Tsinghua University,thu,2023,AL,0.833,"{""al_avg"": 4.74, ""al_subjects"": 4, ""al_top_ratio"": 0.785, ""ielts"": 8.8}",synthetic-demo
+Tsinghua University,thu,2023,IB,0.833,"{""ib_total"": 41.0, ""toefl"": 114.0}",synthetic-demo
+Tsinghua University,thu,2023,IB,0.833,"{""ib_total"": 42.0, ""toefl"": 114.0}",synthetic-demo
+Tsinghua University,thu,2023,IB,0.833,"{""ib_total"": 41.0, ""toefl"": 114.0}",synthetic-demo
+Tsinghua University,thu,2023,GAOKAO,0.833,"{""gk_total"": 703.0}",synthetic-demo
+Tsinghua University,thu,2023,GAOKAO,0.833,"{""gk_total"": 693.0}",synthetic-demo
+Tsinghua University,thu,2023,GAOKAO,0.833,"{""gk_total"": 706.0}",synthetic-demo
+Tsinghua University,thu,2024,AP,0.844,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.77, ""sat"": 1540.0, ""toefl"": 118.0}",synthetic-demo
+Tsinghua University,thu,2024,AP,0.844,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84, ""toefl"": 117.0}",synthetic-demo
+Tsinghua University,thu,2024,AP,0.844,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.73, ""sat"": 1534.0, ""toefl"": 102.0}",synthetic-demo
+Tsinghua University,thu,2024,AL,0.844,"{""al_avg"": 4.45, ""al_subjects"": 4, ""al_top_ratio"": 0.852, ""ielts"": 8.8}",synthetic-demo
+Tsinghua University,thu,2024,AL,0.844,"{""al_avg"": 4.63, ""al_subjects"": 4, ""al_top_ratio"": 0.604, ""ielts"": 8.8}",synthetic-demo
+Tsinghua University,thu,2024,AL,0.844,"{""al_avg"": 4.5, ""al_subjects"": 4, ""al_top_ratio"": 0.711}",synthetic-demo
+Tsinghua University,thu,2024,IB,0.844,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+Tsinghua University,thu,2024,IB,0.844,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+Tsinghua University,thu,2024,IB,0.844,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+Tsinghua University,thu,2024,GAOKAO,0.844,"{""gk_total"": 684.0}",synthetic-demo
+Tsinghua University,thu,2024,GAOKAO,0.844,"{""gk_total"": 678.0}",synthetic-demo
+Tsinghua University,thu,2024,GAOKAO,0.844,"{""gk_total"": 700.0}",synthetic-demo
+Imperial College London,imperial,2019,AP,0.839,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""sat"": 1567.0, ""toefl"": 113.0}",synthetic-demo
+Imperial College London,imperial,2019,AP,0.839,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.71, ""toefl"": 114.0}",synthetic-demo
+Imperial College London,imperial,2019,AP,0.839,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.72, ""sat"": 1568.0}",synthetic-demo
+Imperial College London,imperial,2019,AL,0.839,"{""al_avg"": 4.3, ""al_subjects"": 4, ""al_top_ratio"": 0.681, ""ielts"": 8.6}",synthetic-demo
+Imperial College London,imperial,2019,AL,0.839,"{""al_avg"": 4.66, ""al_subjects"": 4, ""al_top_ratio"": 0.791, ""ielts"": 8.2}",synthetic-demo
+Imperial College London,imperial,2019,AL,0.839,"{""al_avg"": 4.53, ""al_subjects"": 4, ""al_top_ratio"": 0.849, ""ielts"": 8.4}",synthetic-demo
+Imperial College London,imperial,2019,IB,0.839,"{""ib_total"": 42.0, ""toefl"": 114.0}",synthetic-demo
+Imperial College London,imperial,2019,IB,0.839,"{""ib_total"": 42.0}",synthetic-demo
+Imperial College London,imperial,2019,IB,0.839,"{""ib_total"": 43.0}",synthetic-demo
+Imperial College London,imperial,2019,GAOKAO,0.839,"{""gk_total"": 700.0}",synthetic-demo
+Imperial College London,imperial,2019,GAOKAO,0.839,"{""gk_total"": 680.0}",synthetic-demo
+Imperial College London,imperial,2019,GAOKAO,0.839,"{""gk_total"": 713.0}",synthetic-demo
+Imperial College London,imperial,2020,AP,0.855,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.79, ""sat"": 1511.0}",synthetic-demo
+Imperial College London,imperial,2020,AP,0.855,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.78, ""sat"": 1584.0}",synthetic-demo
+Imperial College London,imperial,2020,AP,0.855,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1579.0, ""toefl"": 114.0}",synthetic-demo
+Imperial College London,imperial,2020,AL,0.855,"{""al_avg"": 4.65, ""al_subjects"": 4, ""al_top_ratio"": 0.815, ""ielts"": 8.2}",synthetic-demo
+Imperial College London,imperial,2020,AL,0.855,"{""al_avg"": 4.47, ""al_subjects"": 4, ""al_top_ratio"": 0.868, ""ielts"": 8.8}",synthetic-demo
+Imperial College London,imperial,2020,AL,0.855,"{""al_avg"": 4.84, ""al_subjects"": 4, ""al_top_ratio"": 0.812}",synthetic-demo
+Imperial College London,imperial,2020,IB,0.855,"{""ib_total"": 42.0}",synthetic-demo
+Imperial College London,imperial,2020,IB,0.855,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+Imperial College London,imperial,2020,IB,0.855,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+Imperial College London,imperial,2020,GAOKAO,0.855,"{""gk_total"": 719.0}",synthetic-demo
+Imperial College London,imperial,2020,GAOKAO,0.855,"{""gk_total"": 676.0}",synthetic-demo
+Imperial College London,imperial,2020,GAOKAO,0.855,"{""gk_total"": 713.0}",synthetic-demo
+Imperial College London,imperial,2021,AP,0.872,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""toefl"": 118.0}",synthetic-demo
+Imperial College London,imperial,2021,AP,0.872,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.85, ""sat"": 1520.0, ""toefl"": 115.0}",synthetic-demo
+Imperial College London,imperial,2021,AP,0.872,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.78, ""toefl"": 113.0}",synthetic-demo
+Imperial College London,imperial,2021,AL,0.872,"{""al_avg"": 4.61, ""al_subjects"": 4, ""al_top_ratio"": 0.672, ""ielts"": 8.6}",synthetic-demo
+Imperial College London,imperial,2021,AL,0.872,"{""al_avg"": 4.73, ""al_subjects"": 4, ""al_top_ratio"": 0.795}",synthetic-demo
+Imperial College London,imperial,2021,AL,0.872,"{""al_avg"": 4.61, ""al_subjects"": 4, ""al_top_ratio"": 0.732, ""ielts"": 8.6}",synthetic-demo
+Imperial College London,imperial,2021,IB,0.872,"{""ib_total"": 42.0, ""toefl"": 115.0}",synthetic-demo
+Imperial College London,imperial,2021,IB,0.872,"{""ib_total"": 42.0}",synthetic-demo
+Imperial College London,imperial,2021,IB,0.872,"{""ib_total"": 42.0, ""toefl"": 115.0}",synthetic-demo
+Imperial College London,imperial,2021,GAOKAO,0.872,"{""gk_total"": 683.0}",synthetic-demo
+Imperial College London,imperial,2021,GAOKAO,0.872,"{""gk_total"": 687.0}",synthetic-demo
+Imperial College London,imperial,2021,GAOKAO,0.872,"{""gk_total"": 722.0}",synthetic-demo
+Imperial College London,imperial,2022,AP,0.889,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.81, ""toefl"": 115.0}",synthetic-demo
+Imperial College London,imperial,2022,AP,0.889,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""sat"": 1595.0, ""toefl"": 112.0}",synthetic-demo
+Imperial College London,imperial,2022,AP,0.889,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.71, ""toefl"": 120.0}",synthetic-demo
+Imperial College London,imperial,2022,AL,0.889,"{""al_avg"": 4.84, ""al_subjects"": 5, ""al_top_ratio"": 0.9, ""ielts"": 8.3}",synthetic-demo
+Imperial College London,imperial,2022,AL,0.889,"{""al_avg"": 4.58, ""al_subjects"": 5, ""al_top_ratio"": 0.702, ""ielts"": 8.9}",synthetic-demo
+Imperial College London,imperial,2022,AL,0.889,"{""al_avg"": 4.74, ""al_subjects"": 5, ""al_top_ratio"": 0.823, ""ielts"": 9.0}",synthetic-demo
+Imperial College London,imperial,2022,IB,0.889,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+Imperial College London,imperial,2022,IB,0.889,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+Imperial College London,imperial,2022,IB,0.889,"{""ib_total"": 44.0}",synthetic-demo
+Imperial College London,imperial,2022,GAOKAO,0.889,"{""gk_total"": 717.0}",synthetic-demo
+Imperial College London,imperial,2022,GAOKAO,0.889,"{""gk_total"": 718.0}",synthetic-demo
+Imperial College London,imperial,2022,GAOKAO,0.889,"{""gk_total"": 708.0}",synthetic-demo
+Imperial College London,imperial,2023,AP,0.905,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.91, ""toefl"": 111.0}",synthetic-demo
+Imperial College London,imperial,2023,AP,0.905,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1559.0}",synthetic-demo
+Imperial College London,imperial,2023,AP,0.905,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.77}",synthetic-demo
+Imperial College London,imperial,2023,AL,0.905,"{""al_avg"": 4.87, ""al_subjects"": 5, ""al_top_ratio"": 0.727, ""ielts"": 9.0}",synthetic-demo
+Imperial College London,imperial,2023,AL,0.905,"{""al_avg"": 4.87, ""al_subjects"": 5, ""al_top_ratio"": 0.699, ""ielts"": 8.4}",synthetic-demo
+Imperial College London,imperial,2023,AL,0.905,"{""al_avg"": 4.81, ""al_subjects"": 5, ""al_top_ratio"": 0.851, ""ielts"": 8.8}",synthetic-demo
+Imperial College London,imperial,2023,IB,0.905,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+Imperial College London,imperial,2023,IB,0.905,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+Imperial College London,imperial,2023,IB,0.905,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+Imperial College London,imperial,2023,GAOKAO,0.905,"{""gk_total"": 718.0}",synthetic-demo
+Imperial College London,imperial,2023,GAOKAO,0.905,"{""gk_total"": 712.0}",synthetic-demo
+Imperial College London,imperial,2023,GAOKAO,0.905,"{""gk_total"": 732.0}",synthetic-demo
+Imperial College London,imperial,2024,AP,0.921,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.92, ""sat"": 1538.0}",synthetic-demo
+Imperial College London,imperial,2024,AP,0.921,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.87, ""sat"": 1551.0, ""toefl"": 116.0}",synthetic-demo
+Imperial College London,imperial,2024,AP,0.921,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""toefl"": 118.0}",synthetic-demo
+Imperial College London,imperial,2024,AL,0.921,"{""al_avg"": 4.64, ""al_subjects"": 5, ""al_top_ratio"": 0.724, ""ielts"": 8.9}",synthetic-demo
+Imperial College London,imperial,2024,AL,0.921,"{""al_avg"": 4.77, ""al_subjects"": 5, ""al_top_ratio"": 0.791}",synthetic-demo
+Imperial College London,imperial,2024,AL,0.921,"{""al_avg"": 4.72, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 8.5}",synthetic-demo
+Imperial College London,imperial,2024,IB,0.921,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
+Imperial College London,imperial,2024,IB,0.921,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
+Imperial College London,imperial,2024,IB,0.921,"{""ib_total"": 44.0}",synthetic-demo
+Imperial College London,imperial,2024,GAOKAO,0.921,"{""gk_total"": 749.0}",synthetic-demo
+Imperial College London,imperial,2024,GAOKAO,0.921,"{""gk_total"": 712.0}",synthetic-demo
+Imperial College London,imperial,2024,GAOKAO,0.921,"{""gk_total"": 722.0}",synthetic-demo
+University of Chicago,uchicago,2019,AP,0.859,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.77, ""sat"": 1574.0}",synthetic-demo
+University of Chicago,uchicago,2019,AP,0.859,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.81, ""toefl"": 110.0}",synthetic-demo
+University of Chicago,uchicago,2019,AP,0.859,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""toefl"": 115.0}",synthetic-demo
+University of Chicago,uchicago,2019,AL,0.859,"{""al_avg"": 4.55, ""al_subjects"": 4, ""al_top_ratio"": 0.876, ""ielts"": 8.5}",synthetic-demo
+University of Chicago,uchicago,2019,AL,0.859,"{""al_avg"": 4.7, ""al_subjects"": 4, ""al_top_ratio"": 0.724, ""ielts"": 8.4}",synthetic-demo
+University of Chicago,uchicago,2019,AL,0.859,"{""al_avg"": 4.3, ""al_subjects"": 4, ""al_top_ratio"": 0.706, ""ielts"": 8.6}",synthetic-demo
+University of Chicago,uchicago,2019,IB,0.859,"{""ib_total"": 43.0}",synthetic-demo
+University of Chicago,uchicago,2019,IB,0.859,"{""ib_total"": 42.0}",synthetic-demo
+University of Chicago,uchicago,2019,IB,0.859,"{""ib_total"": 43.0}",synthetic-demo
+University of Chicago,uchicago,2019,GAOKAO,0.859,"{""gk_total"": 719.0}",synthetic-demo
+University of Chicago,uchicago,2019,GAOKAO,0.859,"{""gk_total"": 714.0}",synthetic-demo
+University of Chicago,uchicago,2019,GAOKAO,0.859,"{""gk_total"": 683.0}",synthetic-demo
+University of Chicago,uchicago,2020,AP,0.876,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.72, ""sat"": 1532.0}",synthetic-demo
+University of Chicago,uchicago,2020,AP,0.876,"{""ap_avg"": 4.5, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.77, ""sat"": 1581.0, ""toefl"": 120.0}",synthetic-demo
+University of Chicago,uchicago,2020,AP,0.876,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1560.0}",synthetic-demo
+University of Chicago,uchicago,2020,AL,0.876,"{""al_avg"": 4.58, ""al_subjects"": 5, ""al_top_ratio"": 0.757, ""ielts"": 9.0}",synthetic-demo
+University of Chicago,uchicago,2020,AL,0.876,"{""al_avg"": 4.72, ""al_subjects"": 5, ""al_top_ratio"": 0.884, ""ielts"": 8.6}",synthetic-demo
+University of Chicago,uchicago,2020,AL,0.876,"{""al_avg"": 4.51, ""al_subjects"": 5, ""al_top_ratio"": 0.699, ""ielts"": 8.8}",synthetic-demo
+University of Chicago,uchicago,2020,IB,0.876,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+University of Chicago,uchicago,2020,IB,0.876,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+University of Chicago,uchicago,2020,IB,0.876,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+University of Chicago,uchicago,2020,GAOKAO,0.876,"{""gk_total"": 706.0}",synthetic-demo
+University of Chicago,uchicago,2020,GAOKAO,0.876,"{""gk_total"": 692.0}",synthetic-demo
+University of Chicago,uchicago,2020,GAOKAO,0.876,"{""gk_total"": 707.0}",synthetic-demo
+University of Chicago,uchicago,2021,AP,0.892,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.72, ""sat"": 1561.0, ""toefl"": 112.0}",synthetic-demo
+University of Chicago,uchicago,2021,AP,0.892,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.87, ""toefl"": 120.0}",synthetic-demo
+University of Chicago,uchicago,2021,AP,0.892,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.77, ""sat"": 1531.0}",synthetic-demo
+University of Chicago,uchicago,2021,AL,0.892,"{""al_avg"": 4.62, ""al_subjects"": 5, ""al_top_ratio"": 0.909, ""ielts"": 8.6}",synthetic-demo
+University of Chicago,uchicago,2021,AL,0.892,"{""al_avg"": 4.72, ""al_subjects"": 5, ""al_top_ratio"": 0.718, ""ielts"": 8.5}",synthetic-demo
+University of Chicago,uchicago,2021,AL,0.892,"{""al_avg"": 4.84, ""al_subjects"": 5, ""al_top_ratio"": 0.697, ""ielts"": 8.4}",synthetic-demo
+University of Chicago,uchicago,2021,IB,0.892,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+University of Chicago,uchicago,2021,IB,0.892,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+University of Chicago,uchicago,2021,IB,0.892,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+University of Chicago,uchicago,2021,GAOKAO,0.892,"{""gk_total"": 716.0}",synthetic-demo
+University of Chicago,uchicago,2021,GAOKAO,0.892,"{""gk_total"": 701.0}",synthetic-demo
+University of Chicago,uchicago,2021,GAOKAO,0.892,"{""gk_total"": 686.0}",synthetic-demo
+University of Chicago,uchicago,2022,AP,0.907,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.87}",synthetic-demo
+University of Chicago,uchicago,2022,AP,0.907,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.81, ""toefl"": 115.0}",synthetic-demo
+University of Chicago,uchicago,2022,AP,0.907,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.82}",synthetic-demo
+University of Chicago,uchicago,2022,AL,0.907,"{""al_avg"": 4.69, ""al_subjects"": 5, ""al_top_ratio"": 0.953}",synthetic-demo
+University of Chicago,uchicago,2022,AL,0.907,"{""al_avg"": 4.76, ""al_subjects"": 5, ""al_top_ratio"": 0.796, ""ielts"": 8.8}",synthetic-demo
+University of Chicago,uchicago,2022,AL,0.907,"{""al_avg"": 4.64, ""al_subjects"": 5, ""al_top_ratio"": 0.548, ""ielts"": 8.8}",synthetic-demo
+University of Chicago,uchicago,2022,IB,0.907,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+University of Chicago,uchicago,2022,IB,0.907,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+University of Chicago,uchicago,2022,IB,0.907,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+University of Chicago,uchicago,2022,GAOKAO,0.907,"{""gk_total"": 698.0}",synthetic-demo
+University of Chicago,uchicago,2022,GAOKAO,0.907,"{""gk_total"": 697.0}",synthetic-demo
+University of Chicago,uchicago,2022,GAOKAO,0.907,"{""gk_total"": 695.0}",synthetic-demo
+University of Chicago,uchicago,2023,AP,0.922,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.81}",synthetic-demo
+University of Chicago,uchicago,2023,AP,0.922,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""sat"": 1600.0, ""toefl"": 119.0}",synthetic-demo
+University of Chicago,uchicago,2023,AP,0.922,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1538.0, ""toefl"": 114.0}",synthetic-demo
+University of Chicago,uchicago,2023,AL,0.922,"{""al_avg"": 4.86, ""al_subjects"": 5, ""al_top_ratio"": 0.765, ""ielts"": 8.8}",synthetic-demo
+University of Chicago,uchicago,2023,AL,0.922,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.733, ""ielts"": 8.7}",synthetic-demo
+University of Chicago,uchicago,2023,AL,0.922,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.867, ""ielts"": 8.6}",synthetic-demo
+University of Chicago,uchicago,2023,IB,0.922,"{""ib_total"": 43.0}",synthetic-demo
+University of Chicago,uchicago,2023,IB,0.922,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+University of Chicago,uchicago,2023,IB,0.922,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
+University of Chicago,uchicago,2023,GAOKAO,0.922,"{""gk_total"": 719.0}",synthetic-demo
+University of Chicago,uchicago,2023,GAOKAO,0.922,"{""gk_total"": 721.0}",synthetic-demo
+University of Chicago,uchicago,2023,GAOKAO,0.922,"{""gk_total"": 736.0}",synthetic-demo
+University of Chicago,uchicago,2024,AP,0.929,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""toefl"": 119.0}",synthetic-demo
+University of Chicago,uchicago,2024,AP,0.929,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.86, ""sat"": 1573.0}",synthetic-demo
+University of Chicago,uchicago,2024,AP,0.929,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.87, ""toefl"": 108.0}",synthetic-demo
+University of Chicago,uchicago,2024,AL,0.929,"{""al_avg"": 4.8, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 8.8}",synthetic-demo
+University of Chicago,uchicago,2024,AL,0.929,"{""al_avg"": 4.76, ""al_subjects"": 5, ""al_top_ratio"": 0.67, ""ielts"": 8.9}",synthetic-demo
+University of Chicago,uchicago,2024,AL,0.929,"{""al_avg"": 4.97, ""al_subjects"": 5, ""al_top_ratio"": 0.824, ""ielts"": 8.7}",synthetic-demo
+University of Chicago,uchicago,2024,IB,0.929,"{""ib_total"": 45.0}",synthetic-demo
+University of Chicago,uchicago,2024,IB,0.929,"{""ib_total"": 45.0, ""toefl"": 117.0}",synthetic-demo
+University of Chicago,uchicago,2024,IB,0.929,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+University of Chicago,uchicago,2024,GAOKAO,0.929,"{""gk_total"": 733.0}",synthetic-demo
+University of Chicago,uchicago,2024,GAOKAO,0.929,"{""gk_total"": 731.0}",synthetic-demo
+University of Chicago,uchicago,2024,GAOKAO,0.929,"{""gk_total"": 750.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,AP,0.544,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""sat"": 1384.0, ""toefl"": 100.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,AP,0.544,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1494.0, ""toefl"": 96.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,AP,0.544,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""sat"": 1404.0, ""toefl"": 109.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,AL,0.544,"{""al_avg"": 3.54, ""al_subjects"": 3, ""al_top_ratio"": 0.662, ""ielts"": 7.8}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,AL,0.544,"{""al_avg"": 3.74, ""al_subjects"": 3, ""al_top_ratio"": 0.477}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,AL,0.544,"{""al_avg"": 3.61, ""al_subjects"": 3, ""al_top_ratio"": 0.455, ""ielts"": 7.4}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,IB,0.544,"{""ib_total"": 35.0, ""toefl"": 104.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,IB,0.544,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,IB,0.544,"{""ib_total"": 35.0, ""toefl"": 104.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,GAOKAO,0.544,"{""gk_total"": 543.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,GAOKAO,0.544,"{""gk_total"": 550.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2019,GAOKAO,0.544,"{""gk_total"": 577.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,AP,0.553,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.55, ""sat"": 1423.0, ""toefl"": 105.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,AP,0.553,"{""ap_avg"": 4.5, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.47, ""toefl"": 110.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,AP,0.553,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.55, ""sat"": 1440.0, ""toefl"": 96.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,AL,0.553,"{""al_avg"": 3.71, ""al_subjects"": 3, ""al_top_ratio"": 0.495, ""ielts"": 7.9}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,AL,0.553,"{""al_avg"": 4.06, ""al_subjects"": 3, ""al_top_ratio"": 0.598}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,AL,0.553,"{""al_avg"": 3.44, ""al_subjects"": 3, ""al_top_ratio"": 0.509}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,IB,0.553,"{""ib_total"": 37.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,IB,0.553,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,IB,0.553,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,GAOKAO,0.553,"{""gk_total"": 564.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,GAOKAO,0.553,"{""gk_total"": 544.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2020,GAOKAO,0.553,"{""gk_total"": 570.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,AP,0.563,"{""ap_avg"": 3.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""sat"": 1432.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,AP,0.563,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.58, ""sat"": 1452.0, ""toefl"": 101.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,AP,0.563,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.46, ""sat"": 1416.0, ""toefl"": 108.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,AL,0.563,"{""al_avg"": 3.64, ""al_subjects"": 3, ""al_top_ratio"": 0.596, ""ielts"": 7.5}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,AL,0.563,"{""al_avg"": 3.9, ""al_subjects"": 3, ""al_top_ratio"": 0.509}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,AL,0.563,"{""al_avg"": 3.78, ""al_subjects"": 3, ""al_top_ratio"": 0.503}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,IB,0.563,"{""ib_total"": 37.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,IB,0.563,"{""ib_total"": 37.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,IB,0.563,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,GAOKAO,0.563,"{""gk_total"": 577.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,GAOKAO,0.563,"{""gk_total"": 601.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2021,GAOKAO,0.563,"{""gk_total"": 565.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,AP,0.573,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""toefl"": 105.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,AP,0.573,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""sat"": 1448.0, ""toefl"": 95.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,AP,0.573,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.47, ""sat"": 1434.0, ""toefl"": 112.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,AL,0.573,"{""al_avg"": 4.06, ""al_subjects"": 3, ""al_top_ratio"": 0.528, ""ielts"": 7.7}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,AL,0.573,"{""al_avg"": 3.84, ""al_subjects"": 3, ""al_top_ratio"": 0.46, ""ielts"": 7.7}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,AL,0.573,"{""al_avg"": 3.81, ""al_subjects"": 3, ""al_top_ratio"": 0.547, ""ielts"": 7.5}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,IB,0.573,"{""ib_total"": 37.0, ""toefl"": 105.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,IB,0.573,"{""ib_total"": 36.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,IB,0.573,"{""ib_total"": 36.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,GAOKAO,0.573,"{""gk_total"": 589.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,GAOKAO,0.573,"{""gk_total"": 596.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2022,GAOKAO,0.573,"{""gk_total"": 588.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,AP,0.582,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.5, ""sat"": 1392.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,AP,0.582,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.5, ""sat"": 1427.0, ""toefl"": 107.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,AP,0.582,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.57, ""toefl"": 109.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,AL,0.582,"{""al_avg"": 4.03, ""al_subjects"": 3, ""al_top_ratio"": 0.664}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,AL,0.582,"{""al_avg"": 3.96, ""al_subjects"": 3, ""al_top_ratio"": 0.483, ""ielts"": 7.7}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,AL,0.582,"{""al_avg"": 3.8, ""al_subjects"": 3, ""al_top_ratio"": 0.613, ""ielts"": 7.7}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,IB,0.582,"{""ib_total"": 36.0, ""toefl"": 105.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,IB,0.582,"{""ib_total"": 36.0, ""toefl"": 105.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,IB,0.582,"{""ib_total"": 37.0, ""toefl"": 105.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,GAOKAO,0.582,"{""gk_total"": 598.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,GAOKAO,0.582,"{""gk_total"": 549.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2023,GAOKAO,0.582,"{""gk_total"": 550.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,AP,0.587,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.58, ""toefl"": 105.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,AP,0.587,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.58, ""sat"": 1418.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,AP,0.587,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.51, ""sat"": 1462.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,AL,0.587,"{""al_avg"": 3.79, ""al_subjects"": 3, ""al_top_ratio"": 0.443, ""ielts"": 8.3}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,AL,0.587,"{""al_avg"": 3.83, ""al_subjects"": 3, ""al_top_ratio"": 0.523}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,AL,0.587,"{""al_avg"": 3.9, ""al_subjects"": 3, ""al_top_ratio"": 0.19, ""ielts"": 8.3}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,IB,0.587,"{""ib_total"": 37.0, ""toefl"": 105.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,IB,0.587,"{""ib_total"": 36.0, ""toefl"": 105.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,IB,0.587,"{""ib_total"": 36.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,GAOKAO,0.587,"{""gk_total"": 582.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,GAOKAO,0.587,"{""gk_total"": 566.0}",synthetic-demo
+"University of Michigan, Ann Arbor",umich,2024,GAOKAO,0.587,"{""gk_total"": 571.0}",synthetic-demo
+University of Toronto,toronto,2019,AP,0.491,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.35}",synthetic-demo
+University of Toronto,toronto,2019,AP,0.491,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""sat"": 1415.0, ""toefl"": 99.0}",synthetic-demo
+University of Toronto,toronto,2019,AP,0.491,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.33, ""sat"": 1416.0, ""toefl"": 100.0}",synthetic-demo
+University of Toronto,toronto,2019,AL,0.491,"{""al_avg"": 3.83, ""al_subjects"": 3, ""al_top_ratio"": 0.492, ""ielts"": 7.6}",synthetic-demo
+University of Toronto,toronto,2019,AL,0.491,"{""al_avg"": 3.48, ""al_subjects"": 3, ""al_top_ratio"": 0.391, ""ielts"": 7.5}",synthetic-demo
+University of Toronto,toronto,2019,AL,0.491,"{""al_avg"": 3.68, ""al_subjects"": 3, ""al_top_ratio"": 0.405, ""ielts"": 7.3}",synthetic-demo
+University of Toronto,toronto,2019,IB,0.491,"{""ib_total"": 34.0, ""toefl"": 102.0}",synthetic-demo
+University of Toronto,toronto,2019,IB,0.491,"{""ib_total"": 35.0, ""toefl"": 102.0}",synthetic-demo
+University of Toronto,toronto,2019,IB,0.491,"{""ib_total"": 34.0, ""toefl"": 102.0}",synthetic-demo
+University of Toronto,toronto,2019,GAOKAO,0.491,"{""gk_total"": 538.0}",synthetic-demo
+University of Toronto,toronto,2019,GAOKAO,0.491,"{""gk_total"": 546.0}",synthetic-demo
+University of Toronto,toronto,2019,GAOKAO,0.491,"{""gk_total"": 547.0}",synthetic-demo
+University of Toronto,toronto,2020,AP,0.499,"{""ap_avg"": 4.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.167, ""gpa"": 3.46, ""sat"": 1417.0, ""toefl"": 95.0}",synthetic-demo
+University of Toronto,toronto,2020,AP,0.499,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.48, ""sat"": 1386.0, ""toefl"": 107.0}",synthetic-demo
+University of Toronto,toronto,2020,AP,0.499,"{""ap_avg"": 4.67, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.46, ""sat"": 1422.0, ""toefl"": 99.0}",synthetic-demo
+University of Toronto,toronto,2020,AL,0.499,"{""al_avg"": 3.75, ""al_subjects"": 3, ""al_top_ratio"": 0.513}",synthetic-demo
+University of Toronto,toronto,2020,AL,0.499,"{""al_avg"": 3.32, ""al_subjects"": 3, ""al_top_ratio"": 0.341, ""ielts"": 7.4}",synthetic-demo
+University of Toronto,toronto,2020,AL,0.499,"{""al_avg"": 3.68, ""al_subjects"": 3, ""al_top_ratio"": 0.558, ""ielts"": 7.5}",synthetic-demo
+University of Toronto,toronto,2020,IB,0.499,"{""ib_total"": 35.0, ""toefl"": 102.0}",synthetic-demo
+University of Toronto,toronto,2020,IB,0.499,"{""ib_total"": 34.0, ""toefl"": 102.0}",synthetic-demo
+University of Toronto,toronto,2020,IB,0.499,"{""ib_total"": 35.0, ""toefl"": 102.0}",synthetic-demo
+University of Toronto,toronto,2020,GAOKAO,0.499,"{""gk_total"": 562.0}",synthetic-demo
+University of Toronto,toronto,2020,GAOKAO,0.499,"{""gk_total"": 570.0}",synthetic-demo
+University of Toronto,toronto,2020,GAOKAO,0.499,"{""gk_total"": 569.0}",synthetic-demo
+University of Toronto,toronto,2021,AP,0.51,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6}",synthetic-demo
+University of Toronto,toronto,2021,AP,0.51,"{""ap_avg"": 4.33, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.5, ""sat"": 1446.0}",synthetic-demo
+University of Toronto,toronto,2021,AP,0.51,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.46, ""sat"": 1455.0}",synthetic-demo
+University of Toronto,toronto,2021,AL,0.51,"{""al_avg"": 3.64, ""al_subjects"": 3, ""al_top_ratio"": 0.331}",synthetic-demo
+University of Toronto,toronto,2021,AL,0.51,"{""al_avg"": 3.43, ""al_subjects"": 3, ""al_top_ratio"": 0.473, ""ielts"": 7.6}",synthetic-demo
+University of Toronto,toronto,2021,AL,0.51,"{""al_avg"": 3.65, ""al_subjects"": 3, ""al_top_ratio"": 0.48, ""ielts"": 7.4}",synthetic-demo
+University of Toronto,toronto,2021,IB,0.51,"{""ib_total"": 35.0}",synthetic-demo
+University of Toronto,toronto,2021,IB,0.51,"{""ib_total"": 36.0}",synthetic-demo
+University of Toronto,toronto,2021,IB,0.51,"{""ib_total"": 35.0, ""toefl"": 102.0}",synthetic-demo
+University of Toronto,toronto,2021,GAOKAO,0.51,"{""gk_total"": 546.0}",synthetic-demo
+University of Toronto,toronto,2021,GAOKAO,0.51,"{""gk_total"": 548.0}",synthetic-demo
+University of Toronto,toronto,2021,GAOKAO,0.51,"{""gk_total"": 535.0}",synthetic-demo
+University of Toronto,toronto,2022,AP,0.519,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.45, ""sat"": 1414.0, ""toefl"": 102.0}",synthetic-demo
+University of Toronto,toronto,2022,AP,0.519,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.49, ""sat"": 1385.0, ""toefl"": 92.0}",synthetic-demo
+University of Toronto,toronto,2022,AP,0.519,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.38, ""sat"": 1408.0}",synthetic-demo
+University of Toronto,toronto,2022,AL,0.519,"{""al_avg"": 3.63, ""al_subjects"": 3, ""al_top_ratio"": 0.531}",synthetic-demo
+University of Toronto,toronto,2022,AL,0.519,"{""al_avg"": 3.39, ""al_subjects"": 3, ""al_top_ratio"": 0.506, ""ielts"": 7.6}",synthetic-demo
+University of Toronto,toronto,2022,AL,0.519,"{""al_avg"": 3.85, ""al_subjects"": 3, ""al_top_ratio"": 0.441, ""ielts"": 7.6}",synthetic-demo
+University of Toronto,toronto,2022,IB,0.519,"{""ib_total"": 36.0}",synthetic-demo
+University of Toronto,toronto,2022,IB,0.519,"{""ib_total"": 36.0, ""toefl"": 103.0}",synthetic-demo
+University of Toronto,toronto,2022,IB,0.519,"{""ib_total"": 35.0}",synthetic-demo
+University of Toronto,toronto,2022,GAOKAO,0.519,"{""gk_total"": 551.0}",synthetic-demo
+University of Toronto,toronto,2022,GAOKAO,0.519,"{""gk_total"": 575.0}",synthetic-demo
+University of Toronto,toronto,2022,GAOKAO,0.519,"{""gk_total"": 558.0}",synthetic-demo
+University of Toronto,toronto,2023,AP,0.531,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.45, ""toefl"": 111.0}",synthetic-demo
+University of Toronto,toronto,2023,AP,0.531,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.43, ""sat"": 1440.0, ""toefl"": 105.0}",synthetic-demo
+University of Toronto,toronto,2023,AP,0.531,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.62, ""sat"": 1426.0, ""toefl"": 99.0}",synthetic-demo
+University of Toronto,toronto,2023,AL,0.531,"{""al_avg"": 3.62, ""al_subjects"": 3, ""al_top_ratio"": 0.313, ""ielts"": 7.4}",synthetic-demo
+University of Toronto,toronto,2023,AL,0.531,"{""al_avg"": 3.65, ""al_subjects"": 3, ""al_top_ratio"": 0.394}",synthetic-demo
+University of Toronto,toronto,2023,AL,0.531,"{""al_avg"": 3.54, ""al_subjects"": 3, ""al_top_ratio"": 0.538}",synthetic-demo
+University of Toronto,toronto,2023,IB,0.531,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+University of Toronto,toronto,2023,IB,0.531,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+University of Toronto,toronto,2023,IB,0.531,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+University of Toronto,toronto,2023,GAOKAO,0.531,"{""gk_total"": 568.0}",synthetic-demo
+University of Toronto,toronto,2023,GAOKAO,0.531,"{""gk_total"": 529.0}",synthetic-demo
+University of Toronto,toronto,2023,GAOKAO,0.531,"{""gk_total"": 559.0}",synthetic-demo
+University of Toronto,toronto,2024,AP,0.54,"{""ap_avg"": 4.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""gpa"": 3.49, ""sat"": 1410.0, ""toefl"": 101.0}",synthetic-demo
+University of Toronto,toronto,2024,AP,0.54,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""gpa"": 3.55, ""sat"": 1441.0}",synthetic-demo
+University of Toronto,toronto,2024,AP,0.54,"{""ap_avg"": 4.5, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.667, ""toefl"": 101.0}",synthetic-demo
+University of Toronto,toronto,2024,AL,0.54,"{""al_avg"": 3.69, ""al_subjects"": 3, ""al_top_ratio"": 0.364}",synthetic-demo
+University of Toronto,toronto,2024,AL,0.54,"{""al_avg"": 3.66, ""al_subjects"": 3, ""al_top_ratio"": 0.655, ""ielts"": 7.5}",synthetic-demo
+University of Toronto,toronto,2024,AL,0.54,"{""al_avg"": 3.77, ""al_subjects"": 3, ""al_top_ratio"": 0.562, ""ielts"": 7.6}",synthetic-demo
+University of Toronto,toronto,2024,IB,0.54,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+University of Toronto,toronto,2024,IB,0.54,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+University of Toronto,toronto,2024,IB,0.54,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+University of Toronto,toronto,2024,GAOKAO,0.54,"{""gk_total"": 564.0}",synthetic-demo
+University of Toronto,toronto,2024,GAOKAO,0.54,"{""gk_total"": 557.0}",synthetic-demo
+University of Toronto,toronto,2024,GAOKAO,0.54,"{""gk_total"": 535.0}",synthetic-demo
+Princeton University,princeton,2019,AP,0.916,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.79, ""sat"": 1539.0, ""toefl"": 114.0}",synthetic-demo
+Princeton University,princeton,2019,AP,0.916,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.83, ""sat"": 1599.0}",synthetic-demo
+Princeton University,princeton,2019,AP,0.916,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.91, ""sat"": 1594.0, ""toefl"": 118.0}",synthetic-demo
+Princeton University,princeton,2019,AL,0.916,"{""al_avg"": 4.68, ""al_subjects"": 5, ""al_top_ratio"": 0.839, ""ielts"": 8.7}",synthetic-demo
+Princeton University,princeton,2019,AL,0.916,"{""al_avg"": 4.72, ""al_subjects"": 5, ""al_top_ratio"": 0.971, ""ielts"": 9.0}",synthetic-demo
+Princeton University,princeton,2019,AL,0.916,"{""al_avg"": 4.66, ""al_subjects"": 5, ""al_top_ratio"": 0.953, ""ielts"": 8.5}",synthetic-demo
+Princeton University,princeton,2019,IB,0.916,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
+Princeton University,princeton,2019,IB,0.916,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+Princeton University,princeton,2019,IB,0.916,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
+Princeton University,princeton,2019,GAOKAO,0.916,"{""gk_total"": 713.0}",synthetic-demo
+Princeton University,princeton,2019,GAOKAO,0.916,"{""gk_total"": 724.0}",synthetic-demo
+Princeton University,princeton,2019,GAOKAO,0.916,"{""gk_total"": 697.0}",synthetic-demo
+Princeton University,princeton,2020,AP,0.933,"{""ap_avg"": 4.83, ""ap_subjects"": 6.0, ""ap_top_ratio"": 0.833, ""gpa"": 3.85, ""sat"": 1562.0}",synthetic-demo
+Princeton University,princeton,2020,AP,0.933,"{""ap_avg"": 4.33, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.76, ""toefl"": 112.0}",synthetic-demo
+Princeton University,princeton,2020,AP,0.933,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.84}",synthetic-demo
+Princeton University,princeton,2020,AL,0.933,"{""al_avg"": 4.81, ""al_subjects"": 5, ""al_top_ratio"": 0.742, ""ielts"": 8.8}",synthetic-demo
+Princeton University,princeton,2020,AL,0.933,"{""al_avg"": 4.89, ""al_subjects"": 5, ""al_top_ratio"": 0.982, ""ielts"": 8.4}",synthetic-demo
+Princeton University,princeton,2020,AL,0.933,"{""al_avg"": 4.67, ""al_subjects"": 5, ""al_top_ratio"": 0.759, ""ielts"": 9.0}",synthetic-demo
+Princeton University,princeton,2020,IB,0.933,"{""ib_total"": 45.0, ""toefl"": 117.0}",synthetic-demo
+Princeton University,princeton,2020,IB,0.933,"{""ib_total"": 44.0}",synthetic-demo
+Princeton University,princeton,2020,IB,0.933,"{""ib_total"": 45.0, ""toefl"": 117.0}",synthetic-demo
+Princeton University,princeton,2020,GAOKAO,0.933,"{""gk_total"": 731.0}",synthetic-demo
+Princeton University,princeton,2020,GAOKAO,0.933,"{""gk_total"": 732.0}",synthetic-demo
+Princeton University,princeton,2020,GAOKAO,0.933,"{""gk_total"": 710.0}",synthetic-demo
+Princeton University,princeton,2021,AP,0.951,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.9, ""toefl"": 114.0}",synthetic-demo
+Princeton University,princeton,2021,AP,0.951,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1593.0, ""toefl"": 114.0}",synthetic-demo
+Princeton University,princeton,2021,AP,0.951,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.9, ""sat"": 1510.0}",synthetic-demo
+Princeton University,princeton,2021,AL,0.951,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.791, ""ielts"": 8.7}",synthetic-demo
+Princeton University,princeton,2021,AL,0.951,"{""al_avg"": 4.91, ""al_subjects"": 5, ""al_top_ratio"": 0.724, ""ielts"": 9.0}",synthetic-demo
+Princeton University,princeton,2021,AL,0.951,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.752, ""ielts"": 8.8}",synthetic-demo
+Princeton University,princeton,2021,IB,0.951,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+Princeton University,princeton,2021,IB,0.951,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+Princeton University,princeton,2021,IB,0.951,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+Princeton University,princeton,2021,GAOKAO,0.951,"{""gk_total"": 714.0}",synthetic-demo
+Princeton University,princeton,2021,GAOKAO,0.951,"{""gk_total"": 740.0}",synthetic-demo
+Princeton University,princeton,2021,GAOKAO,0.951,"{""gk_total"": 702.0}",synthetic-demo
+Princeton University,princeton,2022,AP,0.965,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""sat"": 1600.0}",synthetic-demo
+Princeton University,princeton,2022,AP,0.965,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.81, ""sat"": 1569.0, ""toefl"": 120.0}",synthetic-demo
+Princeton University,princeton,2022,AP,0.965,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""sat"": 1587.0, ""toefl"": 117.0}",synthetic-demo
+Princeton University,princeton,2022,AL,0.965,"{""al_avg"": 4.71, ""al_subjects"": 5, ""al_top_ratio"": 0.973}",synthetic-demo
+Princeton University,princeton,2022,AL,0.965,"{""al_avg"": 4.96, ""al_subjects"": 5, ""al_top_ratio"": 1, ""ielts"": 9.0}",synthetic-demo
+Princeton University,princeton,2022,AL,0.965,"{""al_avg"": 4.81, ""al_subjects"": 5, ""al_top_ratio"": 0.81}",synthetic-demo
+Princeton University,princeton,2022,IB,0.965,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+Princeton University,princeton,2022,IB,0.965,"{""ib_total"": 44.0}",synthetic-demo
+Princeton University,princeton,2022,IB,0.965,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+Princeton University,princeton,2022,GAOKAO,0.965,"{""gk_total"": 743.0}",synthetic-demo
+Princeton University,princeton,2022,GAOKAO,0.965,"{""gk_total"": 736.0}",synthetic-demo
+Princeton University,princeton,2022,GAOKAO,0.965,"{""gk_total"": 744.0}",synthetic-demo
+Princeton University,princeton,2023,AP,0.978,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.94}",synthetic-demo
+Princeton University,princeton,2023,AP,0.978,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.84, ""sat"": 1600.0, ""toefl"": 120.0}",synthetic-demo
+Princeton University,princeton,2023,AP,0.978,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.94, ""sat"": 1591.0, ""toefl"": 113.0}",synthetic-demo
+Princeton University,princeton,2023,AL,0.978,"{""al_avg"": 4.89, ""al_subjects"": 5, ""al_top_ratio"": 0.771}",synthetic-demo
+Princeton University,princeton,2023,AL,0.978,"{""al_avg"": 4.95, ""al_subjects"": 5, ""al_top_ratio"": 0.869, ""ielts"": 8.6}",synthetic-demo
+Princeton University,princeton,2023,AL,0.978,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 1}",synthetic-demo
+Princeton University,princeton,2023,IB,0.978,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Princeton University,princeton,2023,IB,0.978,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Princeton University,princeton,2023,IB,0.978,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Princeton University,princeton,2023,GAOKAO,0.978,"{""gk_total"": 735.0}",synthetic-demo
+Princeton University,princeton,2023,GAOKAO,0.978,"{""gk_total"": 735.0}",synthetic-demo
+Princeton University,princeton,2023,GAOKAO,0.978,"{""gk_total"": 750.0}",synthetic-demo
+Princeton University,princeton,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.89, ""sat"": 1600.0, ""toefl"": 112.0}",synthetic-demo
+Princeton University,princeton,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""toefl"": 105.0}",synthetic-demo
+Princeton University,princeton,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.95, ""sat"": 1600.0}",synthetic-demo
+Princeton University,princeton,2024,AL,0.99,"{""al_avg"": 4.91, ""al_subjects"": 5, ""al_top_ratio"": 0.861, ""ielts"": 9.0}",synthetic-demo
+Princeton University,princeton,2024,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.77, ""ielts"": 9.0}",synthetic-demo
+Princeton University,princeton,2024,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.831}",synthetic-demo
+Princeton University,princeton,2024,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Princeton University,princeton,2024,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+Princeton University,princeton,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+Princeton University,princeton,2024,GAOKAO,0.99,"{""gk_total"": 748.0}",synthetic-demo
+Princeton University,princeton,2024,GAOKAO,0.99,"{""gk_total"": 723.0}",synthetic-demo
+Princeton University,princeton,2024,GAOKAO,0.99,"{""gk_total"": 733.0}",synthetic-demo
+California Institute of Technology,caltech,2019,AP,0.934,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.77, ""toefl"": 117.0}",synthetic-demo
+California Institute of Technology,caltech,2019,AP,0.934,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.89, ""toefl"": 120.0}",synthetic-demo
+California Institute of Technology,caltech,2019,AP,0.934,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.8, ""toefl"": 117.0}",synthetic-demo
+California Institute of Technology,caltech,2019,AL,0.934,"{""al_avg"": 4.81, ""al_subjects"": 5, ""al_top_ratio"": 0.937}",synthetic-demo
+California Institute of Technology,caltech,2019,AL,0.934,"{""al_avg"": 4.85, ""al_subjects"": 5, ""al_top_ratio"": 0.793}",synthetic-demo
+California Institute of Technology,caltech,2019,AL,0.934,"{""al_avg"": 4.95, ""al_subjects"": 5, ""al_top_ratio"": 0.795, ""ielts"": 8.5}",synthetic-demo
+California Institute of Technology,caltech,2019,IB,0.934,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+California Institute of Technology,caltech,2019,IB,0.934,"{""ib_total"": 45.0}",synthetic-demo
+California Institute of Technology,caltech,2019,IB,0.934,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+California Institute of Technology,caltech,2019,GAOKAO,0.934,"{""gk_total"": 713.0}",synthetic-demo
+California Institute of Technology,caltech,2019,GAOKAO,0.934,"{""gk_total"": 699.0}",synthetic-demo
+California Institute of Technology,caltech,2019,GAOKAO,0.934,"{""gk_total"": 736.0}",synthetic-demo
+California Institute of Technology,caltech,2020,AP,0.95,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.9, ""sat"": 1554.0, ""toefl"": 120.0}",synthetic-demo
+California Institute of Technology,caltech,2020,AP,0.95,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1600.0, ""toefl"": 113.0}",synthetic-demo
+California Institute of Technology,caltech,2020,AP,0.95,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""toefl"": 118.0}",synthetic-demo
+California Institute of Technology,caltech,2020,AL,0.95,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.894, ""ielts"": 8.6}",synthetic-demo
+California Institute of Technology,caltech,2020,AL,0.95,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.816, ""ielts"": 9.0}",synthetic-demo
+California Institute of Technology,caltech,2020,AL,0.95,"{""al_avg"": 4.88, ""al_subjects"": 5, ""al_top_ratio"": 0.772, ""ielts"": 9.0}",synthetic-demo
+California Institute of Technology,caltech,2020,IB,0.95,"{""ib_total"": 44.0, ""toefl"": 118.0}",synthetic-demo
+California Institute of Technology,caltech,2020,IB,0.95,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+California Institute of Technology,caltech,2020,IB,0.95,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+California Institute of Technology,caltech,2020,GAOKAO,0.95,"{""gk_total"": 729.0}",synthetic-demo
+California Institute of Technology,caltech,2020,GAOKAO,0.95,"{""gk_total"": 719.0}",synthetic-demo
+California Institute of Technology,caltech,2020,GAOKAO,0.95,"{""gk_total"": 750.0}",synthetic-demo
+California Institute of Technology,caltech,2021,AP,0.969,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.91}",synthetic-demo
+California Institute of Technology,caltech,2021,AP,0.969,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.88, ""sat"": 1579.0}",synthetic-demo
+California Institute of Technology,caltech,2021,AP,0.969,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.85, ""sat"": 1567.0, ""toefl"": 120.0}",synthetic-demo
+California Institute of Technology,caltech,2021,AL,0.969,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.917, ""ielts"": 8.6}",synthetic-demo
+California Institute of Technology,caltech,2021,AL,0.969,"{""al_avg"": 4.87, ""al_subjects"": 5, ""al_top_ratio"": 0.916}",synthetic-demo
+California Institute of Technology,caltech,2021,AL,0.969,"{""al_avg"": 4.71, ""al_subjects"": 5, ""al_top_ratio"": 0.95, ""ielts"": 8.5}",synthetic-demo
+California Institute of Technology,caltech,2021,IB,0.969,"{""ib_total"": 44.0}",synthetic-demo
+California Institute of Technology,caltech,2021,IB,0.969,"{""ib_total"": 45.0, ""toefl"": 118.0}",synthetic-demo
+California Institute of Technology,caltech,2021,IB,0.969,"{""ib_total"": 45.0}",synthetic-demo
+California Institute of Technology,caltech,2021,GAOKAO,0.969,"{""gk_total"": 750.0}",synthetic-demo
+California Institute of Technology,caltech,2021,GAOKAO,0.969,"{""gk_total"": 735.0}",synthetic-demo
+California Institute of Technology,caltech,2021,GAOKAO,0.969,"{""gk_total"": 737.0}",synthetic-demo
+California Institute of Technology,caltech,2022,AP,0.986,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.86, ""sat"": 1553.0}",synthetic-demo
+California Institute of Technology,caltech,2022,AP,0.986,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.88, ""toefl"": 118.0}",synthetic-demo
+California Institute of Technology,caltech,2022,AP,0.986,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0}",synthetic-demo
+California Institute of Technology,caltech,2022,AL,0.986,"{""al_avg"": 4.9, ""al_subjects"": 5, ""al_top_ratio"": 0.879, ""ielts"": 9.0}",synthetic-demo
+California Institute of Technology,caltech,2022,AL,0.986,"{""al_avg"": 4.78, ""al_subjects"": 5, ""al_top_ratio"": 0.921, ""ielts"": 9.0}",synthetic-demo
+California Institute of Technology,caltech,2022,AL,0.986,"{""al_avg"": 4.95, ""al_subjects"": 5, ""al_top_ratio"": 0.952, ""ielts"": 8.8}",synthetic-demo
+California Institute of Technology,caltech,2022,IB,0.986,"{""ib_total"": 45.0}",synthetic-demo
+California Institute of Technology,caltech,2022,IB,0.986,"{""ib_total"": 45.0}",synthetic-demo
+California Institute of Technology,caltech,2022,IB,0.986,"{""ib_total"": 45.0}",synthetic-demo
+California Institute of Technology,caltech,2022,GAOKAO,0.986,"{""gk_total"": 708.0}",synthetic-demo
+California Institute of Technology,caltech,2022,GAOKAO,0.986,"{""gk_total"": 732.0}",synthetic-demo
+California Institute of Technology,caltech,2022,GAOKAO,0.986,"{""gk_total"": 749.0}",synthetic-demo
+California Institute of Technology,caltech,2023,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""sat"": 1600.0, ""toefl"": 120.0}",synthetic-demo
+California Institute of Technology,caltech,2023,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.96, ""sat"": 1600.0, ""toefl"": 120.0}",synthetic-demo
+California Institute of Technology,caltech,2023,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1600.0, ""toefl"": 120.0}",synthetic-demo
+California Institute of Technology,caltech,2023,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.88}",synthetic-demo
+California Institute of Technology,caltech,2023,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.817}",synthetic-demo
+California Institute of Technology,caltech,2023,AL,0.99,"{""al_avg"": 4.92, ""al_subjects"": 5, ""al_top_ratio"": 0.789, ""ielts"": 9.0}",synthetic-demo
+California Institute of Technology,caltech,2023,IB,0.99,"{""ib_total"": 45.0}",synthetic-demo
+California Institute of Technology,caltech,2023,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+California Institute of Technology,caltech,2023,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+California Institute of Technology,caltech,2023,GAOKAO,0.99,"{""gk_total"": 729.0}",synthetic-demo
+California Institute of Technology,caltech,2023,GAOKAO,0.99,"{""gk_total"": 737.0}",synthetic-demo
+California Institute of Technology,caltech,2023,GAOKAO,0.99,"{""gk_total"": 747.0}",synthetic-demo
+California Institute of Technology,caltech,2024,AP,0.99,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.94}",synthetic-demo
+California Institute of Technology,caltech,2024,AP,0.99,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""sat"": 1592.0, ""toefl"": 113.0}",synthetic-demo
+California Institute of Technology,caltech,2024,AP,0.99,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""sat"": 1600.0, ""toefl"": 120.0}",synthetic-demo
+California Institute of Technology,caltech,2024,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.953, ""ielts"": 9.0}",synthetic-demo
+California Institute of Technology,caltech,2024,AL,0.99,"{""al_avg"": 5.0, ""al_subjects"": 5, ""al_top_ratio"": 0.838, ""ielts"": 9.0}",synthetic-demo
+California Institute of Technology,caltech,2024,AL,0.99,"{""al_avg"": 4.97, ""al_subjects"": 5, ""al_top_ratio"": 0.869, ""ielts"": 9.0}",synthetic-demo
+California Institute of Technology,caltech,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+California Institute of Technology,caltech,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+California Institute of Technology,caltech,2024,IB,0.99,"{""ib_total"": 45.0, ""toefl"": 119.0}",synthetic-demo
+California Institute of Technology,caltech,2024,GAOKAO,0.99,"{""gk_total"": 715.0}",synthetic-demo
+California Institute of Technology,caltech,2024,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+California Institute of Technology,caltech,2024,GAOKAO,0.99,"{""gk_total"": 750.0}",synthetic-demo
+Northwestern University,nw,2019,AP,0.507,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""sat"": 1386.0, ""toefl"": 99.0}",synthetic-demo
+Northwestern University,nw,2019,AP,0.507,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.44, ""sat"": 1372.0}",synthetic-demo
+Northwestern University,nw,2019,AP,0.507,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.48, ""toefl"": 110.0}",synthetic-demo
+Northwestern University,nw,2019,AL,0.507,"{""al_avg"": 3.6, ""al_subjects"": 3, ""al_top_ratio"": 0.607}",synthetic-demo
+Northwestern University,nw,2019,AL,0.507,"{""al_avg"": 3.75, ""al_subjects"": 3, ""al_top_ratio"": 0.492, ""ielts"": 7.4}",synthetic-demo
+Northwestern University,nw,2019,AL,0.507,"{""al_avg"": 3.61, ""al_subjects"": 3, ""al_top_ratio"": 0.419, ""ielts"": 7.2}",synthetic-demo
+Northwestern University,nw,2019,IB,0.507,"{""ib_total"": 35.0, ""toefl"": 102.0}",synthetic-demo
+Northwestern University,nw,2019,IB,0.507,"{""ib_total"": 36.0, ""toefl"": 102.0}",synthetic-demo
+Northwestern University,nw,2019,IB,0.507,"{""ib_total"": 36.0, ""toefl"": 102.0}",synthetic-demo
+Northwestern University,nw,2019,GAOKAO,0.507,"{""gk_total"": 581.0}",synthetic-demo
+Northwestern University,nw,2019,GAOKAO,0.507,"{""gk_total"": 565.0}",synthetic-demo
+Northwestern University,nw,2019,GAOKAO,0.507,"{""gk_total"": 546.0}",synthetic-demo
+Northwestern University,nw,2020,AP,0.518,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667}",synthetic-demo
+Northwestern University,nw,2020,AP,0.518,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.47}",synthetic-demo
+Northwestern University,nw,2020,AP,0.518,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.44, ""sat"": 1437.0, ""toefl"": 99.0}",synthetic-demo
+Northwestern University,nw,2020,AL,0.518,"{""al_avg"": 3.69, ""al_subjects"": 3, ""al_top_ratio"": 0.586}",synthetic-demo
+Northwestern University,nw,2020,AL,0.518,"{""al_avg"": 3.85, ""al_subjects"": 3, ""al_top_ratio"": 0.459, ""ielts"": 7.8}",synthetic-demo
+Northwestern University,nw,2020,AL,0.518,"{""al_avg"": 3.66, ""al_subjects"": 3, ""al_top_ratio"": 0.436, ""ielts"": 7.4}",synthetic-demo
+Northwestern University,nw,2020,IB,0.518,"{""ib_total"": 36.0, ""toefl"": 103.0}",synthetic-demo
+Northwestern University,nw,2020,IB,0.518,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+Northwestern University,nw,2020,IB,0.518,"{""ib_total"": 36.0, ""toefl"": 103.0}",synthetic-demo
+Northwestern University,nw,2020,GAOKAO,0.518,"{""gk_total"": 559.0}",synthetic-demo
+Northwestern University,nw,2020,GAOKAO,0.518,"{""gk_total"": 552.0}",synthetic-demo
+Northwestern University,nw,2020,GAOKAO,0.518,"{""gk_total"": 549.0}",synthetic-demo
+Northwestern University,nw,2021,AP,0.529,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""gpa"": 3.5, ""sat"": 1449.0, ""toefl"": 106.0}",synthetic-demo
+Northwestern University,nw,2021,AP,0.529,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.52, ""sat"": 1465.0}",synthetic-demo
+Northwestern University,nw,2021,AP,0.529,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.44, ""sat"": 1431.0}",synthetic-demo
+Northwestern University,nw,2021,AL,0.529,"{""al_avg"": 3.62, ""al_subjects"": 3, ""al_top_ratio"": 0.448, ""ielts"": 7.6}",synthetic-demo
+Northwestern University,nw,2021,AL,0.529,"{""al_avg"": 3.71, ""al_subjects"": 3, ""al_top_ratio"": 0.491, ""ielts"": 7.6}",synthetic-demo
+Northwestern University,nw,2021,AL,0.529,"{""al_avg"": 3.82, ""al_subjects"": 3, ""al_top_ratio"": 0.413}",synthetic-demo
+Northwestern University,nw,2021,IB,0.529,"{""ib_total"": 36.0, ""toefl"": 103.0}",synthetic-demo
+Northwestern University,nw,2021,IB,0.529,"{""ib_total"": 36.0}",synthetic-demo
+Northwestern University,nw,2021,IB,0.529,"{""ib_total"": 35.0, ""toefl"": 103.0}",synthetic-demo
+Northwestern University,nw,2021,GAOKAO,0.529,"{""gk_total"": 579.0}",synthetic-demo
+Northwestern University,nw,2021,GAOKAO,0.529,"{""gk_total"": 544.0}",synthetic-demo
+Northwestern University,nw,2021,GAOKAO,0.529,"{""gk_total"": 527.0}",synthetic-demo
+Northwestern University,nw,2022,AP,0.538,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.46, ""sat"": 1429.0, ""toefl"": 105.0}",synthetic-demo
+Northwestern University,nw,2022,AP,0.538,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.47, ""sat"": 1432.0}",synthetic-demo
+Northwestern University,nw,2022,AP,0.538,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""sat"": 1386.0, ""toefl"": 98.0}",synthetic-demo
+Northwestern University,nw,2022,AL,0.538,"{""al_avg"": 3.8, ""al_subjects"": 3, ""al_top_ratio"": 0.443}",synthetic-demo
+Northwestern University,nw,2022,AL,0.538,"{""al_avg"": 3.46, ""al_subjects"": 3, ""al_top_ratio"": 0.522, ""ielts"": 7.8}",synthetic-demo
+Northwestern University,nw,2022,AL,0.538,"{""al_avg"": 3.98, ""al_subjects"": 3, ""al_top_ratio"": 0.533, ""ielts"": 7.5}",synthetic-demo
+Northwestern University,nw,2022,IB,0.538,"{""ib_total"": 35.0}",synthetic-demo
+Northwestern University,nw,2022,IB,0.538,"{""ib_total"": 35.0}",synthetic-demo
+Northwestern University,nw,2022,IB,0.538,"{""ib_total"": 36.0, ""toefl"": 103.0}",synthetic-demo
+Northwestern University,nw,2022,GAOKAO,0.538,"{""gk_total"": 583.0}",synthetic-demo
+Northwestern University,nw,2022,GAOKAO,0.538,"{""gk_total"": 543.0}",synthetic-demo
+Northwestern University,nw,2022,GAOKAO,0.538,"{""gk_total"": 568.0}",synthetic-demo
+Northwestern University,nw,2023,AP,0.546,"{""ap_avg"": 4.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.45, ""sat"": 1440.0}",synthetic-demo
+Northwestern University,nw,2023,AP,0.546,"{""ap_avg"": 4.2, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.48, ""sat"": 1424.0, ""toefl"": 105.0}",synthetic-demo
+Northwestern University,nw,2023,AP,0.546,"{""ap_avg"": 4.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.25, ""gpa"": 3.49, ""sat"": 1410.0, ""toefl"": 100.0}",synthetic-demo
+Northwestern University,nw,2023,AL,0.546,"{""al_avg"": 3.7, ""al_subjects"": 3, ""al_top_ratio"": 0.45, ""ielts"": 7.7}",synthetic-demo
+Northwestern University,nw,2023,AL,0.546,"{""al_avg"": 3.71, ""al_subjects"": 3, ""al_top_ratio"": 0.396, ""ielts"": 7.6}",synthetic-demo
+Northwestern University,nw,2023,AL,0.546,"{""al_avg"": 3.55, ""al_subjects"": 3, ""al_top_ratio"": 0.677}",synthetic-demo
+Northwestern University,nw,2023,IB,0.546,"{""ib_total"": 35.0}",synthetic-demo
+Northwestern University,nw,2023,IB,0.546,"{""ib_total"": 35.0, ""toefl"": 104.0}",synthetic-demo
+Northwestern University,nw,2023,IB,0.546,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
+Northwestern University,nw,2023,GAOKAO,0.546,"{""gk_total"": 550.0}",synthetic-demo
+Northwestern University,nw,2023,GAOKAO,0.546,"{""gk_total"": 565.0}",synthetic-demo
+Northwestern University,nw,2023,GAOKAO,0.546,"{""gk_total"": 544.0}",synthetic-demo
+Northwestern University,nw,2024,AP,0.55,"{""ap_avg"": 4.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.333, ""gpa"": 3.47, ""toefl"": 110.0}",synthetic-demo
+Northwestern University,nw,2024,AP,0.55,"{""ap_avg"": 4.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.49, ""toefl"": 96.0}",synthetic-demo
+Northwestern University,nw,2024,AP,0.55,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""sat"": 1439.0, ""toefl"": 106.0}",synthetic-demo
+Northwestern University,nw,2024,AL,0.55,"{""al_avg"": 3.77, ""al_subjects"": 3, ""al_top_ratio"": 0.494, ""ielts"": 7.7}",synthetic-demo
+Northwestern University,nw,2024,AL,0.55,"{""al_avg"": 3.75, ""al_subjects"": 3, ""al_top_ratio"": 0.32, ""ielts"": 7.8}",synthetic-demo
+Northwestern University,nw,2024,AL,0.55,"{""al_avg"": 4.05, ""al_subjects"": 3, ""al_top_ratio"": 0.532}",synthetic-demo
+Northwestern University,nw,2024,IB,0.55,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
+Northwestern University,nw,2024,IB,0.55,"{""ib_total"": 37.0, ""toefl"": 104.0}",synthetic-demo
+Northwestern University,nw,2024,IB,0.55,"{""ib_total"": 36.0, ""toefl"": 104.0}",synthetic-demo
+Northwestern University,nw,2024,GAOKAO,0.55,"{""gk_total"": 582.0}",synthetic-demo
+Northwestern University,nw,2024,GAOKAO,0.55,"{""gk_total"": 568.0}",synthetic-demo
+Northwestern University,nw,2024,GAOKAO,0.55,"{""gk_total"": 558.0}",synthetic-demo
+Columbia University,columbia,2019,AP,0.854,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.81, ""toefl"": 120.0}",synthetic-demo
+Columbia University,columbia,2019,AP,0.854,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""sat"": 1578.0, ""toefl"": 120.0}",synthetic-demo
+Columbia University,columbia,2019,AP,0.854,"{""ap_avg"": 4.5, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""gpa"": 3.72, ""toefl"": 115.0}",synthetic-demo
+Columbia University,columbia,2019,AL,0.854,"{""al_avg"": 4.74, ""al_subjects"": 4, ""al_top_ratio"": 0.826, ""ielts"": 8.2}",synthetic-demo
+Columbia University,columbia,2019,AL,0.854,"{""al_avg"": 4.66, ""al_subjects"": 4, ""al_top_ratio"": 0.694}",synthetic-demo
+Columbia University,columbia,2019,AL,0.854,"{""al_avg"": 4.32, ""al_subjects"": 4, ""al_top_ratio"": 0.526, ""ielts"": 8.9}",synthetic-demo
+Columbia University,columbia,2019,IB,0.854,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+Columbia University,columbia,2019,IB,0.854,"{""ib_total"": 43.0, ""toefl"": 114.0}",synthetic-demo
+Columbia University,columbia,2019,IB,0.854,"{""ib_total"": 42.0}",synthetic-demo
+Columbia University,columbia,2019,GAOKAO,0.854,"{""gk_total"": 681.0}",synthetic-demo
+Columbia University,columbia,2019,GAOKAO,0.854,"{""gk_total"": 671.0}",synthetic-demo
+Columbia University,columbia,2019,GAOKAO,0.854,"{""gk_total"": 676.0}",synthetic-demo
+Columbia University,columbia,2020,AP,0.868,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.82, ""sat"": 1600.0}",synthetic-demo
+Columbia University,columbia,2020,AP,0.868,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.83, ""sat"": 1512.0, ""toefl"": 110.0}",synthetic-demo
+Columbia University,columbia,2020,AP,0.868,"{""ap_avg"": 4.75, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.75, ""sat"": 1568.0}",synthetic-demo
+Columbia University,columbia,2020,AL,0.868,"{""al_avg"": 4.75, ""al_subjects"": 4, ""al_top_ratio"": 0.804, ""ielts"": 8.6}",synthetic-demo
+Columbia University,columbia,2020,AL,0.868,"{""al_avg"": 4.72, ""al_subjects"": 4, ""al_top_ratio"": 0.678}",synthetic-demo
+Columbia University,columbia,2020,AL,0.868,"{""al_avg"": 4.72, ""al_subjects"": 4, ""al_top_ratio"": 0.904, ""ielts"": 8.5}",synthetic-demo
+Columbia University,columbia,2020,IB,0.868,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+Columbia University,columbia,2020,IB,0.868,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+Columbia University,columbia,2020,IB,0.868,"{""ib_total"": 42.0}",synthetic-demo
+Columbia University,columbia,2020,GAOKAO,0.868,"{""gk_total"": 717.0}",synthetic-demo
+Columbia University,columbia,2020,GAOKAO,0.868,"{""gk_total"": 679.0}",synthetic-demo
+Columbia University,columbia,2020,GAOKAO,0.868,"{""gk_total"": 697.0}",synthetic-demo
+Columbia University,columbia,2021,AP,0.883,"{""ap_avg"": 4.4, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.4, ""gpa"": 3.78, ""sat"": 1554.0, ""toefl"": 113.0}",synthetic-demo
+Columbia University,columbia,2021,AP,0.883,"{""ap_avg"": 5.0, ""ap_subjects"": 4.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.87, ""sat"": 1523.0, ""toefl"": 113.0}",synthetic-demo
+Columbia University,columbia,2021,AP,0.883,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.84}",synthetic-demo
+Columbia University,columbia,2021,AL,0.883,"{""al_avg"": 4.65, ""al_subjects"": 5, ""al_top_ratio"": 0.843, ""ielts"": 8.5}",synthetic-demo
+Columbia University,columbia,2021,AL,0.883,"{""al_avg"": 4.98, ""al_subjects"": 5, ""al_top_ratio"": 0.83, ""ielts"": 8.8}",synthetic-demo
+Columbia University,columbia,2021,AL,0.883,"{""al_avg"": 4.75, ""al_subjects"": 5, ""al_top_ratio"": 0.737, ""ielts"": 8.8}",synthetic-demo
+Columbia University,columbia,2021,IB,0.883,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+Columbia University,columbia,2021,IB,0.883,"{""ib_total"": 44.0, ""toefl"": 115.0}",synthetic-demo
+Columbia University,columbia,2021,IB,0.883,"{""ib_total"": 43.0, ""toefl"": 115.0}",synthetic-demo
+Columbia University,columbia,2021,GAOKAO,0.883,"{""gk_total"": 701.0}",synthetic-demo
+Columbia University,columbia,2021,GAOKAO,0.883,"{""gk_total"": 705.0}",synthetic-demo
+Columbia University,columbia,2021,GAOKAO,0.883,"{""gk_total"": 695.0}",synthetic-demo
+Columbia University,columbia,2022,AP,0.899,"{""ap_avg"": 5.0, ""ap_subjects"": 6.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.86, ""sat"": 1554.0, ""toefl"": 118.0}",synthetic-demo
+Columbia University,columbia,2022,AP,0.899,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.77, ""sat"": 1579.0, ""toefl"": 118.0}",synthetic-demo
+Columbia University,columbia,2022,AP,0.899,"{""ap_avg"": 5.0, ""ap_subjects"": 5.0, ""ap_top_ratio"": 1.0, ""gpa"": 3.72, ""sat"": 1553.0, ""toefl"": 110.0}",synthetic-demo
+Columbia University,columbia,2022,AL,0.899,"{""al_avg"": 4.69, ""al_subjects"": 5, ""al_top_ratio"": 0.937, ""ielts"": 8.5}",synthetic-demo
+Columbia University,columbia,2022,AL,0.899,"{""al_avg"": 4.78, ""al_subjects"": 5, ""al_top_ratio"": 0.974, ""ielts"": 8.9}",synthetic-demo
+Columbia University,columbia,2022,AL,0.899,"{""al_avg"": 4.65, ""al_subjects"": 5, ""al_top_ratio"": 0.95, ""ielts"": 8.6}",synthetic-demo
+Columbia University,columbia,2022,IB,0.899,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+Columbia University,columbia,2022,IB,0.899,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+Columbia University,columbia,2022,IB,0.899,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+Columbia University,columbia,2022,GAOKAO,0.899,"{""gk_total"": 715.0}",synthetic-demo
+Columbia University,columbia,2022,GAOKAO,0.899,"{""gk_total"": 716.0}",synthetic-demo
+Columbia University,columbia,2022,GAOKAO,0.899,"{""gk_total"": 725.0}",synthetic-demo
+Columbia University,columbia,2023,AP,0.911,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.6, ""gpa"": 3.76, ""sat"": 1550.0, ""toefl"": 118.0}",synthetic-demo
+Columbia University,columbia,2023,AP,0.911,"{""ap_avg"": 4.8, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.84}",synthetic-demo
+Columbia University,columbia,2023,AP,0.911,"{""ap_avg"": 5.0, ""ap_subjects"": 3.0, ""ap_top_ratio"": 1.0}",synthetic-demo
+Columbia University,columbia,2023,AL,0.911,"{""al_avg"": 4.83, ""al_subjects"": 5, ""al_top_ratio"": 0.722, ""ielts"": 8.5}",synthetic-demo
+Columbia University,columbia,2023,AL,0.911,"{""al_avg"": 4.84, ""al_subjects"": 5, ""al_top_ratio"": 0.878}",synthetic-demo
+Columbia University,columbia,2023,AL,0.911,"{""al_avg"": 4.77, ""al_subjects"": 5, ""al_top_ratio"": 0.811, ""ielts"": 9.0}",synthetic-demo
+Columbia University,columbia,2023,IB,0.911,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+Columbia University,columbia,2023,IB,0.911,"{""ib_total"": 44.0, ""toefl"": 116.0}",synthetic-demo
+Columbia University,columbia,2023,IB,0.911,"{""ib_total"": 43.0, ""toefl"": 116.0}",synthetic-demo
+Columbia University,columbia,2023,GAOKAO,0.911,"{""gk_total"": 732.0}",synthetic-demo
+Columbia University,columbia,2023,GAOKAO,0.911,"{""gk_total"": 724.0}",synthetic-demo
+Columbia University,columbia,2023,GAOKAO,0.911,"{""gk_total"": 736.0}",synthetic-demo
+Columbia University,columbia,2024,AP,0.917,"{""ap_avg"": 4.25, ""ap_subjects"": 4.0, ""ap_top_ratio"": 0.5, ""gpa"": 3.75, ""toefl"": 109.0}",synthetic-demo
+Columbia University,columbia,2024,AP,0.917,"{""ap_avg"": 4.6, ""ap_subjects"": 5.0, ""ap_top_ratio"": 0.8, ""gpa"": 3.78, ""sat"": 1564.0}",synthetic-demo
+Columbia University,columbia,2024,AP,0.917,"{""ap_avg"": 4.67, ""ap_subjects"": 3.0, ""ap_top_ratio"": 0.667, ""sat"": 1508.0, ""toefl"": 120.0}",synthetic-demo
+Columbia University,columbia,2024,AL,0.917,"{""al_avg"": 4.89, ""al_subjects"": 5, ""al_top_ratio"": 0.751}",synthetic-demo
+Columbia University,columbia,2024,AL,0.917,"{""al_avg"": 4.79, ""al_subjects"": 5, ""al_top_ratio"": 0.838, ""ielts"": 8.6}",synthetic-demo
+Columbia University,columbia,2024,AL,0.917,"{""al_avg"": 4.68, ""al_subjects"": 5, ""al_top_ratio"": 0.889, ""ielts"": 8.8}",synthetic-demo
+Columbia University,columbia,2024,IB,0.917,"{""ib_total"": 44.0, ""toefl"": 117.0}",synthetic-demo
+Columbia University,columbia,2024,IB,0.917,"{""ib_total"": 43.0, ""toefl"": 117.0}",synthetic-demo
+Columbia University,columbia,2024,IB,0.917,"{""ib_total"": 44.0}",synthetic-demo
+Columbia University,columbia,2024,GAOKAO,0.917,"{""gk_total"": 714.0}",synthetic-demo
+Columbia University,columbia,2024,GAOKAO,0.917,"{""gk_total"": 700.0}",synthetic-demo
+Columbia University,columbia,2024,GAOKAO,0.917,"{""gk_total"": 731.0}",synthetic-demo

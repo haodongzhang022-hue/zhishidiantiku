@@ -1,3 +1,14 @@
 node_modules/
 .DS_Store
 *.log
+
+# 训练产物（模型 JSON）不入库
+score-engine/models/*.json
+score-engine/models/*.meta.json
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# LanceDB / JSON 双库输出目录（运行时生成，不入库）
+score-engine/data_lancedb/
