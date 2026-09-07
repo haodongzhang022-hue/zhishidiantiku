@@ -39,7 +39,6 @@
 | CN-CHEM-RJ-2022 | 国内初中化学 人教版 2022 课标口径（中考） | syllabus+exam | 2022 | 人教版义务教育化学课程标准(2022年版) | 国内化学 | 国内 | 10 题在库（代表口径题） | 架构·开发 | 2026-09-07 |
 | DEV-BASE-GEN-2026 | 开发基础通用知识（工程化/性能/方法论，无单一考纲） | textbook | 2026 | 软件工程/研发通用知识集合 | 开发基础 | 其他 | 12 题在库（扩铺 12） | 架构·开发 | 2026-09-07 |
 | AL-CHEM-EDEXCEL-2024 | A-Level 化学 Edexcel(培生) 2024 | syllabus | 2024 | Edexcel A-Level Chemistry(9CH0) 大纲 | AL化学 | AL | 待铺（通道登记） | 待分工 | 2026-09-07 |
- origin/auto/system-difficulty-5de9
 
 > 首批优先从 **AP 化学** 出，锚定 College Board 官方《AP Chemistry Course and Exam Description》，
 > 见 [AP-Chemistry 范围说明](./AP-Chemistry/README.md)。
