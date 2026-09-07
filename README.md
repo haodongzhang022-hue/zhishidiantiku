@@ -21,6 +21,7 @@
 | papers/README.md | 范围登记表（编号/年份/出处/owner/时间） |
 | papers/AP-Chemistry/ | AP 化学首批铺题范围说明 |
 | scripts/check.mjs | 题目格式校验（CI 门禁，强校验） |
+| scripts/learn.mjs | 🎓 个人学习进度系统（会/不会进度库 + 抽题 + 判定会了） |
 | scripts/__tests__/ | 校验脚本自测用例 |
 | docs/ | 文档索引 |
 | .github/PULL_REQUEST_TEMPLATE.md | PR 模板 |
@@ -54,7 +55,14 @@
 ```bash
 node scripts/check.mjs            # 校验全部题目（全绿再提交）
 node --test scripts/__tests__     # 校验脚本自测（改脚本时跑）
+node scripts/learn.mjs list       # 查看题库知识点
+node scripts/learn.mjs progress   # 查看个人进度（会/不会/未学）
+node scripts/learn.mjs quiz       # 从还没会的知识点里随机刷题
 ```
+
+## 个人学习进度系统
+把题库变成你的"会/不会"进度库：同知识点随机抽 2 道不同题都答对 = 会了，
+随机刷题只从还没会的知识点里出，方便补弱。详见 [docs/学习系统.md](docs/学习系统.md)。
 
 ## 流水线
 [.cnb.yml](.cnb.yml)：push/PR 事件触发 `node scripts/check.mjs` 格式校验 + `node --test scripts/__tests__` 自测。
@@ -63,3 +71,4 @@ node --test scripts/__tests__     # 校验脚本自测（改脚本时跑）
 - 2026-09-03 初始化：README + .cnb.yml + 格式规范 + 示例题。
 - 2026-09-06 升级：锁定 4 类题型、白名单机制化（owner+时间）、范围登记（试卷年份/出处/唯一编号）、校验脚本重构+自测、首批 AP 化学范围落定（目标 3000）。
 - 2026-09-07 体系维度：每道题新增 `体系` 字段（AP/AL/IB/国内/其他），区分并显示所属教育体系；分类/范围均绑定所属体系。
+- 2026-09-07 新增：个人学习进度系统（scripts/learn.mjs）——会/不会进度库、同知识点出2题判定会了、随机只从未会知识点出题。
