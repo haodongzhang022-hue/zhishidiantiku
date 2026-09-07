@@ -1,7 +1,7 @@
 # AP Chemistry · 首批铺题范围说明
 
 > 范围编号：**AP-CHEM-CB-2024**　类型：exam + syllabus
-> 学科：AP化学　首批目标题量：**3000**　owner：待分工　登记：2026-09-06
+> 学科：AP化学　**体系：AP**　首批目标题量：**3000**　owner：架构·开发　登记：2026-09-06
 
 ## 锚定依据（保证"题不歪"）
 以 **College Board 官方《AP Chemistry Course and Exam Description》**（CED）为唯一知识边界。
@@ -10,7 +10,7 @@
 - 不超纲：题目考察点必须落在下表"考纲单元"内。
 - 不背题：优先从**官方 Free-Response / 往年真题卷**出题，题干出处写入 `出处` 字段。
 
-## 考纲单元范围（CED 四大单元）
+## 考纲单元范围（CED 九大单元）
 | 单元 | 主题 | 默认覆盖 |
 |------|------|----------|
 | Unit 1 | Atomic Structure & Properties | 首批优先 |
@@ -24,6 +24,7 @@
 | Unit 9 | Applications of Thermodynamics | 后续 |
 
 > 首批"优先从 AP 化学出"指：优先铺 **Unit 1~4** 基础题，再逐单元外扩。
+> 2026-09-07 已铺 Unit 1~9 各单元基础题（253 题在库），后续持续按需增补。
 
 ## 4 类题型在 AP 化学的落地口径
 - 单选/多选/判断：对标 Section I Multiple Choice（A/B/C/D）。
