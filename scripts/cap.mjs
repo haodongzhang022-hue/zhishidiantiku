@@ -10,15 +10,14 @@
 // 用法：
 //   node scripts/cap.mjs available                列出所有「可用」能力
 //   node scripts/cap.mjs gaps                     列出所有「缺口」能力（应有无缺）
+//   node scripts/cap.mjs gap <能力代码>           查看单项缺口的获取/增强引导
 //   node scripts/cap.mjs find <能力代码或关键字>   查询某能力：状态/来源/入口/缺口引导
-//   node scripts/cap.mjs domains                  按能力域汇总统计（可用数/缺口数）
+//   node scripts/cap.mjs domains                  按能力类型汇总统计（可用数/缺口数）
 //   node scripts/cap.mjs all                      列出全部能力
 import { readFileSync } from 'node:fs';
-import { join, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
 
 const root = process.cwd();
-const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const useColor = !process.argv.includes('--no-color');
 const c = {
@@ -29,6 +28,10 @@ const c = {
   cyan: (s) => (useColor ? `\x1b[36m${s}\x1b[0m` : s),
   bold: (s) => (useColor ? `\x1b[1m${s}\x1b[0m` : s),
 };
+
+function requireExists(p) {
+  try { readFileSync(p); return true; } catch { return false; }
+}
 
 function loadRegistry() {
   const file = join(root, 'capabilities', 'registry.md');
@@ -70,10 +73,6 @@ function loadGaps() {
   return rows;
 }
 
-function requireExists(p) {
-  try { readFileSync(p); return true; } catch { return false; }
-}
-
 function colorStatus(status) {
   if (status === '可用') return c.green(status);
   if (status === '缺口') return c.red(status);
@@ -102,14 +101,17 @@ function renderGap(capCode) {
   const gaps = loadGaps();
   const hit = gaps.find((g) => g.code === capCode);
   if (!hit) return '';
-  // 在 gaps.md 找到对应章节（### G#）到下一个 ### 前的内容
+  // 在 gaps.md 找到对应章节（### G#）到下一个 ### 或 ## 前的内容
   const file = join(root, 'capabilities', 'gaps.md');
   const lines = readFileSync(file, 'utf8').split('\n');
   const start = lines.findIndex((l) => l.trim() === `### ${hit.id}` || l.trim().startsWith(`### ${hit.id}｜`) || l.trim().startsWith(`### ${hit.id} `));
   if (start === -1) return '';
   let buf = [];
   for (let i = start + 1; i < lines.length; i++) {
-    if (lines[i].trim().startsWith('### ')) break;
+    const t = lines[i].trim();
+    if (t.startsWith('### ') || t.startsWith('## ')) break;
+    // 跳过单独的分隔线（--- 或 ***），它是后续二级章节的前置分隔
+    if (/^([-*]{3,})$/.test(t)) continue;
     buf.push(lines[i]);
   }
   return buf.join('\n').trim();
@@ -128,7 +130,7 @@ switch (args[0]) {
   case 'available': {
     const usable = rows.filter((r) => r.status === '可用');
     console.log(c.bold(`可用能力（${usable.length} 项，可自动匹配调用）:`));
-    usable.forEach((r) => { showRow(r); console.log(`   入口: ${c.dim(r.entry || r.source)}`); });
+    usable.forEach((r) => { showRow(r); });
     break;
   }
   case 'gaps': {
@@ -176,7 +178,7 @@ switch (args[0]) {
   case 'domains': {
     const map = new Map();
     rows.forEach((r) => {
-      // 域 = 按 registry.md 分组，这里近似用 type + 分组头；简化为按 缺口/可用 统计
+      // 按 type 字段（跨库调用/本地内置）统计可用/缺口
       const key = r.type;
       const k2 = (map.get(key) || { usable: 0, gap: 0 });
       if (r.status === '可用') k2.usable++;
