@@ -11,6 +11,7 @@ main:
       stages:
         - node scripts/check.mjs
         - node --test scripts/__tests__/check.test.mjs
+        - node --test scripts/__tests__/learn.test.mjs
       runner:
         cpus: 2
 # 云原生开发环境（同文件声明，branch-as-environment）
