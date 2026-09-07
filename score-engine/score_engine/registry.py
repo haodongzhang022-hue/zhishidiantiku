@@ -85,14 +85,23 @@ LANGUAGE_LINK = {"TOEFL": (90, 120), "IELTS": (6.0, 9.0)}
 class AdmissionRecord:
     """单条历史录取样本。
 
+    设计要点：
+    - `school`：学校显示名（可能是真实大学英文名）。
+    - `school_id`：大学唯一 ID（关联 University.id）。
+      **不再把 "QS100" 这类排名桶名当作 school**，排名与大学分离。
+    - `features`：**缺失字段不放入 dict**（等价于 None），
+      由特征向量化时用 mask 标记，而不是 -1 占位。
+
     Attributes
     ----------
-    school: 学校/项目
+    school: 学校显示名（如 "Massachusetts Institute of Technology"）
+    school_id: 大学唯一 ID（如 "mit"），用于关联大学静态档案与排名
     year: 年份
     system: 体系代码（AP/AL/IB/GAOKAO...）
     admitted: 是否录取（label）
-    features: 体系相关分数特征 dict
+    features: 体系相关分数特征 dict（缺失字段不在其中）
     source: 数据出处/备注
+    school_value: 学校统一录取价值 0~1（可附加）
     """
     school: str
     year: int
@@ -100,10 +109,10 @@ class AdmissionRecord:
     admitted: bool
     features: Dict[str, float] = field(default_factory=dict)
     source: str = ""
+    school_id: str = ""     # 关联 University.id（新增）
 
     def to_dict(self):
-        d = asdict(self)
-        return d
+        return asdict(self)
 
 
 def normalize_system(raw: str) -> str:

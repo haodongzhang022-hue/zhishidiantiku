@@ -6,7 +6,10 @@
 2. 用训练好的 **MLP** 将特征向量映射到 0~1 的"统一录取价值"。
 3. "换算" = 在统一价值下做反向近似——给定一个体系的分数，求"同等价值"在另一体系的等价门槛。
 
-也提供轻量、无需训练的历史对齐表方法（可选），供冷启动。
+缺失值处理：
+- 特征 dict 中缺失字段**不在其中**（None 语义），不填 -1。
+- vectorize 时缺失维度填 0（对 sigmoid 中性），且生成 mask 标记。
+- MLP predict 时传 mask，缺失维度的输入贡献被屏蔽。
 """
 from __future__ import annotations
 from typing import Dict, List, Optional, Tuple
@@ -29,14 +32,9 @@ class ScoreConverter:
                      drift: Optional["YearDrift"] = None) -> Dict:
         """识别 + 返回 (system, confidence, features, value, year, drift)。
 
-        参数
-        ----
-        year : 可选。给定申请年份，用年度漂移校准价值（识别逐年变化）。
-        drift: 可选。由历史样本构建的 YearDrift 估计器；None 且给 year 时自动按
-               (system, year) 无法细分则退化为不漂移（由上层传入 drift 更可靠）。
+        缺失特征 → mask=0，不干扰模型判断。
         """
         from . import recognizer, drift as drift_mod
-        # 若给了体系提示，优先
         sys_ = registry.normalize_system(system_hint)
         if sys_ == "OTHER":
             r = recognizer.recognize(text)
@@ -47,20 +45,22 @@ class ScoreConverter:
             r = recognizer.recognize(text)
             feats = r.features or {}
             conf = r.confidence
-        vec = self.feature_fn(feats)
+        # features_to_vector 现在返回 (vec, mask)
+        vec, mask = self.feature_fn(feats)
         if self.model:
-            value = self.model.predict(vec)
+            value = self.model.predict(vec, mask)
         else:
             value = _heuristic_value(feats)
         value = max(0.0, min(1.0, value))
-        # 年度校准：同一年画像换算价值在"更难年份"应更高（需更强才够得着）
+        # 年度校准
         applied_drift = None
         if year is not None and drift is not None:
             value = drift.apply(value, year)
             applied_drift = drift.scale_for(year)
         return {
             "system": sys_, "confidence": conf,
-            "features": feats, "vector": vec, "value": value,
+            "features": feats, "vector": vec, "mask": mask,
+            "value": value,
             "year": year, "drift_scale": applied_drift,
         }
 
@@ -68,11 +68,7 @@ class ScoreConverter:
     def convert(self, text: str, target_systems: Optional[List[str]] = None,
                 system_hint: str = "", year: Optional[int] = None,
                 drift: Optional["YearDrift"] = None) -> Dict:
-        """换算：把输入文本分数映射到各目标体系的"等价门槛区间"。
-
-        新增 year/drift：给定年份时换算结果随年份浮动，用于识别"逐年变化"。
-        返回 { 源信息, 各体系: {等价分数范围, 说明} }
-        """
+        """换算：把输入文本分数映射到各目标体系的"等价门槛区间"。"""
         src = self.value_of_text(text, system_hint, year=year, drift=drift)
         val = src["value"]
         result = {"source": src, "conversions": {}}
@@ -87,9 +83,9 @@ class ScoreConverter:
 
     # ---------- 批量数据入口 ----------
     def value_of_record(self, rec: registry.AdmissionRecord) -> float:
-        vec = models.features_from_record(rec)
+        vec, mask = models.features_from_record(rec)
         if self.model:
-            return self.model.predict(vec)
+            return self.model.predict(vec, mask)
         return _heuristic_value(rec.features)
 
 
@@ -99,8 +95,7 @@ def _equivalent_score_for_value(value: float, target_system: str,
     import copy
     base = dict(src_feats)
     if target_system == "AP":
-        # AP 主要看均分 + 门数。粗略反解
-        need_avg = 3.0 + value * 2.0       # 与训练数据尺度一致
+        need_avg = 3.0 + value * 2.0
         need_n = max(1, int(round(1 + value * 5)))
         return {
             "kind": "AP 均分≈%.1f/5, %d门 AP 课" % (need_avg, need_n),
@@ -109,7 +104,7 @@ def _equivalent_score_for_value(value: float, target_system: str,
             "note": "同校门槛洼地对比口径：AP 单科及门数组合等效换算"
         }
     if target_system == "AL":
-        need_avg = 2.2 + value * 2.8        # 与训练数据尺度一致
+        need_avg = 2.2 + value * 2.8
         need_n = max(1, int(round(1 + value * 4)))
         letter = _al_value_letter(need_avg)
         return {
@@ -119,7 +114,7 @@ def _equivalent_score_for_value(value: float, target_system: str,
             "note": "AL 字母：A*=5, A=4, B=3"
         }
     if target_system == "IB":
-        need_ib = 24 + value * 21.0        # 与训练数据尺度一致
+        need_ib = 24 + value * 21.0
         return {
             "kind": "IB 总分≈%.0f/45" % need_ib,
             "range": "%.0f/45" % need_ib,
@@ -127,7 +122,7 @@ def _equivalent_score_for_value(value: float, target_system: str,
             "note": "IB 需含 HL 科目及 TOK/EE 组合"
         }
     if target_system == "GAOKAO":
-        need_gk = 350 + value * 400.0       # 与训练数据尺度一致
+        need_gk = 350 + value * 400.0
         return {
             "kind": "高考≈%.0f/750" % need_gk,
             "range": "%.0f~%.0f/750" % (max(300, need_gk - 20), min(750, need_gk + 20)),
@@ -135,7 +130,7 @@ def _equivalent_score_for_value(value: float, target_system: str,
             "note": "高考分随省份/文理/位次浮动，粗口径"
         }
     if target_system == "SAT":
-        need_sat = 1200 + value * 400.0    # 与训练数据尺度一致
+        need_sat = 1200 + value * 400.0
         return {
             "kind": "SAT≈%.0f/1600" % need_sat,
             "range": "%.0f/1600" % need_sat,
@@ -168,7 +163,11 @@ def _al_value_letter(avg: float) -> str:
 
 
 def _heuristic_value(feats: Dict[str, float]) -> float:
-    """无模型时的启发式估算（冷启动/兜底）。"""
+    """无模型时的启发式估算（冷启动/兜底）。
+
+    与 models.py 的 mask 一致：feats 中缺失字段不在 dict 里，
+    不当作弱信号。计算时只对存在字段平均。
+    """
     vals = []
     if "ap_avg" in feats:
         vals.append((feats["ap_avg"] - 3) / 2.0)
@@ -187,6 +186,6 @@ def _heuristic_value(feats: Dict[str, float]) -> float:
     if "toefl" in feats:
         vals.append((feats["toefl"] - 60) / 60.0)
     if not vals:
-        return 0.3
+        return 0.3   # 冷启动默认中等价值（无偏）
     v = sum(vals) / len(vals)
     return max(0.0, min(1.0, v))

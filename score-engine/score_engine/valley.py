@@ -17,9 +17,7 @@ import math
 from . import registry, models, converter, nn
 
 
-# 各体系"达成难度的非线性权重"：
-# 该系数越大，同一价值需要的原始投入越多（比如国际课程有实考压力、科目数约束）。
-# 这里纯为演示逻辑，实际应由历史录取数据的命中率训练得出。
+# 各体系"达成难度的非线性权重"
 DIFFICULTY_WEIGHT = {
     "AP": 0.95,     # 科目可多次考、及格线低
     "AL": 1.05,     # 实考压力大、A*要求高
@@ -45,7 +43,6 @@ class ValleyFinder:
             if s == "OTHER":
                 continue
             eq = converter._equivalent_score_for_value(value, s, {})
-            # 竞争成本 = 等效原始分折算标准化（取近似）
             cost = self._competition_cost(value, s)
             rows.append({
                 "system": s,
@@ -60,13 +57,14 @@ class ValleyFinder:
     def find_valley(self, school: str,
                     historical: List[registry.AdmissionRecord],
                     year: Optional[int] = None) -> Dict:
-        """针对某学校（结合其历史样本估算的价值门槛），返回各体系达成度排序，
-        找出"洼地"（最省力的体系路径）。
+        """针对某学校，返回各体系达成度排序，找出"洼地"。
 
-        门槛 = 历史样本里各体系被录取学生特征价值的某种分位（用 NN 或启发式）。
+        学校定位支持两种方式：
+        - `school` 填大学名（如 "Massachusetts Institute of Technology"）或 school_id（如 "mit"）
         """
-        # 过滤该校记录
-        recs = [r for r in historical if r.school == school]
+        # 过滤该校记录（用 school 名或 school_id 匹配）
+        recs = [r for r in historical
+                if r.school == school or r.school_id == school]
         if year:
             recs = [r for r in recs if r.year == year]
         if not recs:
@@ -77,18 +75,18 @@ class ValleyFinder:
         for r in recs:
             if r.admitted:
                 if self.model:
-                    v = self.model.predict(models.features_from_record(r))
+                    v = self.model.predict(*models.features_from_record(r))
                 else:
                     v = converter._heuristic_value(r.features)
                 vals.append(v)
         if not vals:
             vals = [0.6]
-        # 分位数 p = 0.5（中位门槛），可调
         thr = _quantile(sorted(vals), 0.5)
 
         compare = self.compare_systems(thr)
         return {
             "school": school,
+            "school_id": recs[0].school_id if recs else "",
             "year": year,
             "estimated_threshold_value": round(thr, 3),
             "n_admitted": len(vals),
@@ -99,18 +97,13 @@ class ValleyFinder:
 
     def _competition_cost(self, value: float, sys_: str) -> float:
         """把统一价值折算成"达成难度成本"。"""
-        # 基础：不同体系到达该价值的难度系数
         w = DIFFICULTY_WEIGHT.get(sys_, 1.0)
-        # 再叠加原始分数的非线性压力
         base = value * w
         if sys_ == "GAOKAO":
-            # 高考高分段内卷：value>0.8 成本快速上升
             base += max(0.0, (value - 0.8)) * 0.5
         if sys_ == "AL":
-            # A* 段难度陡增
             base += max(0.0, (value - 0.85)) * 0.6
         if sys_ == "IB":
-            # IB 37+ 难度陡增
             base += max(0.0, (value - 0.8)) * 0.8
         return base
 

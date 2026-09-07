@@ -1,44 +1,55 @@
 # 跨体系分数转化引擎 · Cross-System Score Conversion Engine
 
-> 面向 **QS Top 500 / 1000 高校录取门槛**的跨体系（AP / A-Level / IB / 国内高考 等）分数换算、深度学习训练与"低分路径"寻优引擎。
+> 面向 **QS 全球大学录取门槛**的跨体系（AP / A-Level / IB / 国内高考 等）分数换算、
+> 深度学习训练与"低分路径"寻优引擎。
 
-## 背景问题
+## 设计原则（两大核心）
 
-同一个学校（同一录取价值）往往存在多条**不同体系的录取口径**：
-- AP 体系要求：AP 若干门 4~5 分 + GPA + SAT/托福
-- A-Level 体系要求：A\*/A 若干门
-- IB 体系要求：总分 34~42 等
-- 国内高考体系要求：某省一段线以上 / 位次区间
+### ① 大学与排名分离
+QS 排名是**动态属性**（每年变化），大学本身是**静态实体**（名称/国家/学费/建校…）。
+录取门槛跟随大学本身，与排名非同步。
 
-各体系**分值不可直接精确换算**（本质模糊），且逐年浮动。本引擎：
-1. **识别**分数属于哪套体系（score recognition）。
-2. **模糊换算**：基于**历年历史录取数据**跨体系对齐价值，而非拍脑袋换算（data-driven fuzzy conversion）。
-3. **深度学习训练与后训练**：神经网络建模多体系→"统一录取价值"的映射，支持逐年增量后训练与效果跟踪。
-4. **低分路径寻优**：对同一学校/同一价值，找出**相对录取门槛最低**（门槛洼地）的那条体系路径。
+引擎数据模型分两层：
+- `University` —— 大学的固有属性（ID/名称/国家/城市/学费等），稳定不随排名变化。
+- `UniversityRanking` —— (university, source, year) → rank，动态按年记录。
+
+训练样本的 `school` 存**真实大学名**（如 "Massachusetts Institute of Technology"），
+`school_id` 存唯一 ID（如 "mit"），不再用 "QS100" 这种排名桶名伪装成学校。
+
+### ② 缺失信息 ≠ 弱（NaN/mask 机制）
+缺失成绩（如未提供 SAT/托福）**不应被模型当"学生弱"**。
+- 特征 dict 中缺失字段**不在其中**（None 语义），不填 -1。
+- 向量化时缺失维度填 0（对 sigmoid 中性），同时生成 mask 标记。
+- MLP 训练时**缺失维度不参与反向传播**（masked backprop），
+  模型不会学到"缺失=弱"。
+- 非官方/不确定数据可标注 source 标记，不混入高可信训练样本。
 
 ## 快速开始
 
 ```bash
-# 依赖：Python3.8+，无第三方硬依赖（纯标准库实现，numpy 可选加速）
+# 依赖：Python3.8+，无第三方硬依赖（纯标准库实现）
 cd score-engine
 
-# 1) 用内置示例数据做一次端到端演示（识别+换算+训练+洼地寻优）
+# 1) 端到端演示
 python -m score_engine.demo
 
-# 2) 命令行：训练并保存模型
+# 2) 训练并保存模型
 python -m score_engine.cli train --data data/sample_admissions.csv --epochs 200
 
-# 3) 命令行：换算一条分数
-python -m score_engine.cli convert --system AP --score "AP: Calc BC 5, Physics 4, Chem 5" --model models/current.json
+# 3) 换算一条分数
+python -m score_engine.cli convert "AP: Calc BC 5, Physics 4, Chem 5, GPA 3.9"
 
-# 4) 命令行：查找某学校的最"低分路径"
-python -m score_engine.cli find-valley --school "QS100" --model models/current.json
+# 4) 找某所真实大学的低分路径（用 school_id 或全名）
+python -m score_engine.cli find-valley --school "mit"
+python -m score_engine.cli find-valley --school "University of Toronto"
 
-# 5) 年度漂移识别（核心）：同一分数在不同年份换算会变
+# 5) 年度漂移识别
 python -m score_engine.cli drift --data data/sample_admissions.csv "AP: Calc BC 5, Physics 4, Chem 5, GPA 3.9"
-python -m score_engine.cli convert "AP: Calc BC 5, Physics 4, Chem 5, GPA 3.9" --year 2024 --data data/sample_admissions.csv
 
-# 6) 功能达成度核验（issue #8 追评：写脚本测试）
+# 6) 查看大学档案与排名
+python -m score_engine.cli universities --year 2024
+
+# 7) 功能达成度核验
 python3 tests/verify_features.py
 ```
 
@@ -46,21 +57,23 @@ python3 tests/verify_features.py
 | 路径 | 说明 |
 |------|------|
 | `score_engine/` | 核心包 |
-| `score_engine/registry.py` | 体系白名单 / 分数规范识别（AP/A-Level/IB/国内 等） |
-| `score_engine/models.py` | 分数结构体 + 历史录取样本数据模型 |
+| `score_engine/registry.py` | 体系白名单 / 录取记录模型 |
+| `score_engine/university.py` | **大学实体 + 排名分离**（核心架构） |
+| `score_engine/models.py` | 分数结构体 + 特征向量化（mask 缺失） |
 | `score_engine/recognizer.py` | 分数体系**识别**（pattern + heuristic） |
-| `score_engine/converter.py` | **模糊换算**引擎（历史对齐 + 规则 + 神经网络打分） |
-| `score_engine/nn.py` | 轻量**神经网络**（纯 Python + 可选 numpy）回归/训练 |
-| `score_engine/trainer.py` | **训练 / 后训练 / 效果跟踪**（逐年增量 + 元数据） |
-| `score_engine/drift.py` | **年度漂移识别**：从历年样本估计难度水位，让换算随年份变化 |
-| `score_engine/valley.py` | **门槛洼地寻优**（同一价值下找相对低分路径） |
+| `score_engine/converter.py` | **模糊换算**引擎 |
+| `score_engine/nn.py` | 轻量**神经网络**（含 masked backprop） |
+| `score_engine/trainer.py` | **训练 / 后训练 / 效果跟踪** |
+| `score_engine/drift.py` | **年度漂移识别** |
+| `score_engine/valley.py` | **门槛洼地寻优** |
 | `score_engine/cli.py` | 命令行入口 |
 | `score_engine/demo.py` | 端到端演示 |
-| `data/sample_admissions.csv` | 示例历年录取样本 |
+| `data/sample_admissions.csv` | 示例历年录取样本（真实大学） |
 | `models/` | 训练产物输出目录（gitignore） |
 
 ## 概念说明
-- **统一录取价值（admission value）**：把不同体系的学生分数换算到一个 0~1 的"录取强度"标尺上，作为可比锚点。每个学校一个门槛值。
-- **门槛洼地（valley）**：同一学校的多条体系路径中，**换算成本最低 / 相对最容易达成**的那条。
-- **年度漂移（drift）**：门槛不是固定值，会随年份浮动。`YearDrift` 从历年样本估计难度水位，`convert(..., year=Y)` 据此输出当年口径的换算。
-- **功能核验**：`tests/verify_features.py` 逐项验证识别/精度/年度漂移/效果跟踪；`docs/score-engine-extend.md` 给出全球大学 + 学校质量 + LanceDB 多表扩展路线。
+- **统一录取价值（admission value）**：把不同体系的学生分数换算到 0~1 的"录取强度"标尺。
+- **门槛洼地（valley）**：同一所大学的多条体系路径中，换算成本最低/最容易达成的路径。
+- **年度漂移（drift）**：录取门槛随年份浮动，`YearDrift` 从历年样本估计难度水位。
+- **mask 缺失机制**：缺失特征不参与训练，避免"缺失=弱"的误判。
+- **功能核验**：`tests/verify_features.py` 逐项验证全部核心功能。

@@ -5,6 +5,7 @@
 - 使用"历年"历史录取样本，切分 train/valid。
 - 每次 new data 到来，做**增量后训练**（warm start），并评估指标（准确率/AUC/MSE）。
 - 训练元信息记录每次快照（时间、样本量、指标、数据hash），支持**效果跟踪与回滚**。
+- **masked training**：缺失字段不参与反向传播（见 nn.py 说明）。
 """
 from __future__ import annotations
 import hashlib, json, os, time, random
@@ -24,7 +25,6 @@ class Trainer:
     def _split(self, records: List[registry.AdmissionRecord],
                val_ratio: float = 0.15, seed: int = 7):
         rng = random.Random(seed)
-        # 按 year 分组，保证验证集来自较新年份？这里简单 shuffle
         idx = list(range(len(records)))
         rng.shuffle(idx)
         nv = max(1, int(len(records) * val_ratio))
@@ -33,23 +33,29 @@ class Trainer:
         return tr, val
 
     def _dataset(self, records: List[registry.AdmissionRecord]):
-        X = [models.features_from_record(r) for r in records]
+        """返回 (X, y, masks)。X 中缺失维度填 0，masks 标记 0。"""
+        X, masks = [], []
+        for r in records:
+            vec, m = models.features_from_record(r)
+            X.append(vec)
+            masks.append(m)
         # 连续价值回归目标（可达学校档位）
         y = [models.value_of_record(r) for r in records]
-        return X, y
+        return X, y, masks
 
     # ---------- 主训练 ----------
     def train(self, records: List[registry.AdmissionRecord],
               epochs: int = 300, lr: float = 0.5,
               verbose: int = 1, source_tag: str = ""):
         tr, va = self._split(records)
-        Xt, yt = self._dataset(tr)
+        Xt, yt, mt = self._dataset(tr)
         if self.model is None:
             self.model = nn.MLP(input_dim=models.FEATURE_DIM, seed=42, lr=lr)
-        losses = self.model.fit(Xt, yt, epochs=epochs, lr=lr, verbose=verbose)
+        losses = self.model.fit(Xt, yt, epochs=epochs, lr=lr, masks=mt,
+                                verbose=verbose)
         # 验证指标
-        Xv, yv = self._dataset(va)
-        mae, mse, corr = self._metrics(Xv, yv)
+        Xv, yv, mv = self._dataset(va)
+        mae, mse, corr = self._metrics(Xv, yv, mv)
         snap = {
             "ts": time.time(),
             "source_tag": source_tag or "train",
@@ -81,17 +87,19 @@ class Trainer:
                 print("[trainer] 无既有模型，转为全量训练")
             return self.train(new_records, epochs=max(epochs, 200),
                               lr=lr, verbose=verbose, source_tag=source_tag)
-        # 合并新旧
         if old_records:
             all_rec = old_records + new_records
         else:
             all_rec = new_records
-        X, y = self._dataset(all_rec)
-        # warm start：用小学习率
-        losses = self.model.fit(X, y, epochs=epochs, lr=lr, verbose=verbose)
+        X, y, m = self._dataset(all_rec)
+        losses = self.model.fit(X, y, epochs=epochs, lr=lr, masks=m,
+                                verbose=verbose)
         # 效果跟踪
-        Xv, yv = self._dataset(all_rec[-20:]) if len(all_rec) > 20 else (X, y)
-        mae, mse, corr = self._metrics(Xv, yv)
+        if len(all_rec) > 20:
+            Xv, yv, mv = self._dataset(all_rec[-20:])
+        else:
+            Xv, yv, mv = X, y, m
+        mae, mse, corr = self._metrics(Xv, yv, mv)
         snap = {
             "ts": time.time(), "source_tag": source_tag,
             "samples": len(all_rec), "new_samples": len(new_records),
@@ -108,14 +116,15 @@ class Trainer:
         return snap
 
     # ---------- 指标 ----------
-    def _metrics(self, X, y):
+    def _metrics(self, X, y, masks=None):
         if not X:
             return 0, 0, 0.0
-        preds = [self.model.predict(x) for x in X]
+        if masks is None:
+            masks = [[1] * len(x) for x in X]
+        preds = [self.model.predict(x, m) for x, m in zip(X, masks)]
         n = len(y)
         mae = sum(abs(p - t) for p, t in zip(preds, y)) / n
         mse = sum((p - t) ** 2 for p, t in zip(preds, y)) / n
-        # 皮尔逊相关系数（价值排序相关性）
         corr = self._pearson(preds, y)
         return mae, mse, corr
 
@@ -139,7 +148,6 @@ class Trainer:
     def _calc_auc(pos, neg):
         if not pos or not neg:
             return 0.5
-        # 简单用 P(pos > neg) 采样估计
         pairs = 0
         for p, _ in pos:
             for n, _ in neg:
@@ -152,7 +160,7 @@ class Trainer:
     @staticmethod
     def _data_hash(records: List[registry.AdmissionRecord]) -> str:
         raw = "|".join(
-            f"{r.school}|{r.year}|{r.system}|{int(r.admitted)}|{sorted(r.features.items())}"
+            f"{r.school}|{r.school_id}|{r.year}|{r.system}|{int(r.admitted)}|{sorted(r.features.items())}"
             for r in records)
         return hashlib.md5(raw.encode()).hexdigest()[:8]
 
@@ -164,7 +172,6 @@ class Trainer:
         if self.model is None:
             raise ValueError("model 尚未训练")
         self.model.save(p)
-        # 元数据放旁边
         meta_path = p + ".meta.json"
         with open(meta_path, "w") as f:
             json.dump({"history": self.history, "schema": models.FEATURE_KEYS},

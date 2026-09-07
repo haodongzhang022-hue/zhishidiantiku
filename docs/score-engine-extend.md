@@ -1,91 +1,101 @@
 # 分数换算引擎 · 扩展架构与数据建模（Roadmap）
 
-> 本页承接 [score-engine/README.md](../score-engine/README.md) 与 issue #8 追评中的扩展诉求，
-> 把 PR#9 已交付的"跨体系分数换算引擎"向三个方向扩展：
-> **① 全球大学泛化**、**② 学校真实质量鉴定**、**③ LanceDB 数据库化多表管理**。
+> 本页承接 [score-engine/README.md](../score-engine/README.md) 与 issue #8 追评中的扩展诉求。
 
-## 现状与缺口核验结论
+## 已完成（最新状态）
 
-已在 `score-engine/tests/verify_features.py` 固化核验。结论：
-- ✅ 体系识别、模糊换算、深度学习效果、**年度漂移识别（新增）**、逐年效果跟踪 已达成。
-- ❌ **样本仅覆盖 QS 桶名（QS10~QS1000）**，未覆盖真实全球大学。
-- ❌ **排名≠真实质量**：尚无学校规模/师生比/学费/论文/就业等质量维度。
-- ❌ 尚无高/低水平师资、负面指标的转化。
-- ❌ 尚未接入 LanceDB（用户已有）。
+### ✅ 大学与排名分离（核心改进）
+- 新增 `score_engine/university.py`：`University`（静态档案）+ `UniversityRanking`（动态排名）。
+- 训练样本不再使用 "QS10~QS1000" 排名桶名伪装学校，而是引用真实大学。
+- 内置 20 所 QS 世界大学真实档案，含 2019-2024 历年 QS 排名。
+- 大学的静态属性（名称/国家/学费/建校年份等）不随排名变化。
 
-## 架构总览：双库 + 多表
+### ✅ 缺失值 mask 机制（核心改进）
+- 特征 dict 中缺失字段不在其中（None 语义），向量化时填 0.0（sigmoid 中性）。
+- 同时生成 mask 向量标记缺失，MLP 训练时**缺失维度不参与反向传播**。
+- 不再使用 -1 占位缺失（-1 在 0~1 归一化空间中是误导性信号，会被模型学成"缺失=极弱"）。
+- verify_features 确认：缺失 SAT / GPA 不压低学生价值。
 
-把数据拆成两套库，交给 LanceDB / 现有数据库管理，减少人工查询：
+## 仍在路线图
+
+### P0：全球大学扩展
+- 将内置 20 所大学扩展到 QS1000 内的数百所，补充各校历年真实 QS/THE/USNews 排名。
+- 为每所大学接入真实规模/学费/论文等静态字段。
+
+### P0：接入 LanceDB 双库多表
+把数据拆成两套库：
 
 ```
-┌────────────────────────────── 分析库（quality / 分析维度） ─────────────────────────────┐
-│ table: school_profile       学校档案（规模/师生/学费/论文/就业…）                        │
-│ table: school_faculty       师资档案（按水平分层：顶尖师/一般师/欠佳师 + 负面指标）       │
-│ table: school_outcome       成果/声誉（论文产出、就业去向、认证）                         │
-└──────────────────────────────────────────────────────────────────────────────────────────┘
-┌────────────────────────────── 换算库（score / 录取门槛维度）─────────────────────────────┐
-│ table: admission_threshold  按 school × system × year 的录取门槛原始分/统一价值            │
-│ table: system_calendar      各体系年度漂移系数（供 YearDrift / convert(year=) 使用）      │
-└──────────────────────────────────────────────────────────────────────────────────────────┘
+┌─────────────── 分析库（quality / 分析维度） ───────────────┐
+│ table: school_profile       学校档案（规模/师生/学费/论文/就业…）│
+│ table: school_faculty       师资档案（分层含负面）          │
+│ table: school_outcome       成果/声誉（论文/就业/认证）     │
+└────────────────────────────────────────────────────────────┘
+┌─────────────── 换算库（score / 录取门槛维度）───────────────┐
+│ table: admission_threshold  按 school × system × year      │
+│ table: system_calendar      各体系年度漂移系数              │
+└────────────────────────────────────────────────────────────┘
 ```
 
-### 表结构草案（示意）
+### 表结构草案
 
-**school_profile（学校档案 · 质量鉴定，纳入负面也说明）**
+**university（大学档案 · 静态实体）**
 | 字段 | 说明 |
 |------|------|
-| school_id | 全球唯一（如 QS/泰晤士/WikiData 编号） |
-| name_zh / name_en | 中英文名 |
+| id | 全局唯一（如 MIT / stanford） |
+| name_en / name_zh | 中英文名 |
 | country / city | 国家/城市 |
-| uni_rank | 排名来源 + 年份（QS/THE/USNews/软科） |
-| scale_students / scale_faculty | 在校生 / 师资数量 |
-| ratio_student_faculty | 师生比（越低资源越充足） |
-| tuition_intl | 国际生年学费（折算 USD） |
-| endowment | 校产/资金（可选） |
-| papers_yearly / citations | 年论文产出 / 被引（反映真实学术水平） |
-| employment_rate | 就业率（官方或校友抽样） |
-| source / year | 数据出处 / 采集年 |
+| established | 建校年份 |
+| is_public | 公立/私立 |
+| tuition_intl_usd | 国际生年学费 USD |
 
-**school_faculty（师资分层 · 含高低水平与负面）**
+**university_ranking（排名 · 动态）**
 | 字段 | 说明 |
 |------|------|
-| school_id | 学校 |
-| tier_high / tier_mid / tier_low | 顶尖/一般/欠佳师资占比（按奖项/论文/职称分层） |
-| star_count | 高被引/诺奖等顶尖人数 |
-| negative_ratio | 欠佳维度占比（低产出、离职率、师德投诉等负面指标） |
-| note | 负面说明（克制、可回溯） |
+| university_id | 关联大学 |
+| source | QS/THE/USNews/ARWU |
+| year | 年份 |
+| rank | 当年排名 |
 
-**admission_threshold（录取门槛 · 换算库核心，供深度学习训练）**
+**school_profile（质量鉴定，含负面）**
 | 字段 | 说明 |
 |------|------|
-| school_id | 学校 |
-| year | 年份（跨年跟踪关键） |
+| school_id | 大学 |
+| scale_students / scale_faculty | 在校生/师资 |
+| ratio_student_faculty | 师生比 |
+| tuition_intl | 学费 |
+| papers_yearly / citations | 论文/被引 |
+| employment_rate | 就业率 |
+| source / year | 出处/采集年 |
+
+**school_faculty（师资分层含负面）**
+| 字段 | 说明 |
+|------|------|
+| school_id | 大学 |
+| tier_high / tier_mid / tier_low | 师资分层占比 |
+| star_count | 顶尖人数 |
+| negative_ratio | 欠佳指标 |
+| note | 负面说明 |
+
+**admission_threshold（录取门槛 · 换算库核心）**
+| 字段 | 说明 |
+|------|------|
+| school_id | 大学 |
+| year | 年份 |
 | system | AP/AL/IB/GAOKAO… |
-| raw_score | 当年该体系录取门槛原始分画像 |
-| unified_value | 统一价值（0~1），作为 label |
+| raw_score | 当年录取门槛画像 |
+| unified_value | 统一价值 |
 
-**system_calendar（体系年度漂移）**
-| 字段 | 说明 |
-|------|------|
-| year / system / drift_scale | 对应 `YearDrift.scale` 的持久化 |
+### P1：质量维度
+- 新增 `quality.py`：从 school_profile/faculty/outcome 计算"质量指数"。
+- 做"排名 vs 质量"偏差报告（排名高但质量低 = 名不副实）。
 
-## 为什么"排名≠真实水平"要单独做质量维度
-
-用户点破：**QS 排名高 ≠ 培养质量高**。
-把 `school_profile`（规模/学费/论文/就业）和 `school_faculty`（师资高低/负面）
-与 `admission_threshold`（门槛）解耦为独立表后，可以回答三类问题：
-1. **门槛洼地**（低分路径）：同一价值下哪条体系最省力 → `admission_threshold` + valley。
-2. **性价比/质量**：门槛不高的学校是否质量却好 → 交叉 `school_profile` 的门槛与产出。
-3. **风险/负面**：排名高但师生比差 / 欠佳师资占比高的"名不副实"学校 → 负面指标。
-
-## 落地路线（增量，不阻塞现有换算引擎）
-- [ ] P0：把 `make_mock_admissions` 的 QS 桶名替换为真实大学（QS1000 内）并补 country 等，提升泛化。
-- [ ] P0：接入 LanceDB，建上面 4~5 张表；把 `YearDrift`、`admission_threshold` 落库。
-- [ ] P1：新增 `quality.py`，从 school_profile/faculty/outcome 计算"质量指数"（含负面修正）。
-- [ ] P1：把质量指数与排名做**偏差报告**（排名高但质量低 / 排名低但质量好的学校）。
-- [ ] P2：用真实历年录取 CSV 重训 NN，做真实世界校准（替代当前启发式 + 合成校准）。
+### P2：真实数据训练
+- 用真实历年录取 CSV 重训 NN，替代当前启发式 + 合成校准。
 
 ## 与代码的关系
-- `score_engine/drift.py` → 对应 `system_calendar` 表的算法来源。
-- `score_engine/valley.py` → 对应"门槛洼地"查询。
-- 新增 `score_engine/quality.py`、`score_engine/db_lancedb.py` 建议放在本仓库后续 PR。
+- `score_engine/university.py` → 大学/排名 分离数据层
+- `score_engine/drift.py` → 对应 `system_calendar`
+- `score_engine/valley.py` → 对应"门槛洼地"查询
+- `score_engine/models.py` / `nn.py` → masked training 支撑
+- 新增 `quality.py`、`db_lancedb.py` 建议放后续 PR

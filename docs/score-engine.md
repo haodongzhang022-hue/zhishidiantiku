@@ -8,7 +8,9 @@
 2. **统一价值（Unified Value）**：用神经网络把多体系画像回归到一个 0~1 的"可达学校档位"，作为可比锚点。
 3. **模糊换算（Convert）**：给定统一价值反推各体系应达到的分数区间（非精确，供策略参考）。
 4. **训练/后训练（Train/Retrain）**：基于历年录取数据训练，逐年新增数据可做增量 warm-start 后训练。
-5. **门槛洼地（Valley）**：同一学校多条体系路径中，找相对录取门槛最低（最省力）的一条，为申请者提供策略性切入点。
+5. **门槛洼地（Valley）**：同一所真实大学的多条体系路径中，找相对录取门槛最低（最省力）的一条。
+6. **大学与排名分离**：大学档案是静态实体，QS 排名是动态属性（按年份单独记录）。
+7. **mask 缺失机制**：缺失信息（如未提供 SAT）不被当作"弱"——缺失维度不参与训练。
 
 ## 快速使用（详见 score-engine/README.md）
 ```bash
@@ -16,9 +18,11 @@ cd score-engine
 python -m score_engine.demo                                  # 端到端演示
 python -m score_engine.cli train --data data/sample_admissions.csv --epochs 150
 python -m score_engine.cli convert "高考 652 分，省位次 4200"
-python -m score_engine.cli find-valley --school "QS100" --data data/sample_admissions.csv
-python -m score_engine.cli drift --data data/sample_admissions.csv "高考 652 分，省位次 4200"   # 年度漂移
-python -m score_engine.cli convert "高考 652 分" --year 2024 --data data/sample_admissions.csv  # 当年口径
+python -m score_engine.cli find-valley --school "mit"        # 用 school_id 查 MIT
+python -m score_engine.cli find-valley --school "University of Toronto"
+python -m score_engine.cli universities --year 2024          # 查看大学档案与排名
+python -m score_engine.cli drift --data data/sample_admissions.csv "高考 652 分"  # 年度漂移
+python -m score_engine.cli convert "高考 652 分" --year 2024 --data data/sample_admissions.csv
 python3 ../score-engine/tests/verify_features.py      # 功能达成度核验
 ```
 
