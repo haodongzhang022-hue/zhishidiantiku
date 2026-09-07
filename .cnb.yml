@@ -13,6 +13,7 @@ main:
         - node scripts/check.mjs
         - node --test scripts/__tests__/check.test.mjs
         - node --test scripts/__tests__/learn.test.mjs
+        - node --test scripts/__tests__/cap.test.mjs
       runner:
         cpus: 2
     - name: check-score-engine
