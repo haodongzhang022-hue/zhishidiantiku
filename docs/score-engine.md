@@ -13,6 +13,7 @@
 7. **mask 缺失机制**：缺失信息（如未提供 SAT）不被当作"弱"——缺失维度不参与训练。
 8. **LanceDB 双库**：换算库 score_db（大学/排名/门槛/年度）+ 分析库 quality_db（档案/师资含负面/成果）分表管理；无 lancedb 环境自动退化 JSON 存储。
 9. **质量鉴定**：排名 ≠ 真实水平。从分析库聚合规模/师生/论文/就业/师资分层得质量指数，识别"名不副实/高排名低质量"与"被低估/高性价比"价值洼地。
+10. **声明式数据管道**：真实数据入库不靠"人肉单次驱动"，而是用 `pipeline/MANIFEST.json` 声明文件 + `pipeline/rules.py` 规则 + `cli ingest` 复用命令，按规则自动分类落到正确库/表位（防放错），可持续补充真实数据。
 
 ## 快速使用（详见 score-engine/README.md）
 ```bash
@@ -28,6 +29,8 @@ python -m score_engine.cli convert "高考 652 分" --year 2024 --data data/samp
 python -m score_engine.cli db --backend json seed        # LanceDB 双库灌库（json 兜底免装包）
 python -m score_engine.cli quality --year 2024          # 名不副实/被低估 质量报告
 python -m score_engine.cli quality --school eth          # 单校质量档案
+python -m score_engine.cli ingest --backend json --list  # 声明式数据管道：查看数据源声明
+python -m score_engine.cli ingest --backend json         # 把 data_sources 真实数据自动分类落库
 python3 ../score-engine/tests/verify_features.py      # 功能达成度核验
 ```
 

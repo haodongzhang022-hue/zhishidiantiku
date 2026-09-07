@@ -1,0 +1,21 @@
+id,name_en,name_zh,country,city,established,is_public,tuition_intl_usd,note
+mit,Massachusetts Institute of Technology,麻省理工学院,美国,Cambridge MA,1861,False,57986,理工见长/诺贝尔与图灵奖众多
+stanford,Stanford University,斯坦福大学,美国,Stanford CA,1885,False,57693,硅谷近邻/创业与科研并重
+oxford,University of Oxford,牛津大学,英国,Oxford,1096,False,39810,英语世界最古老大学之一
+cambridge,University of Cambridge,剑桥大学,英国,Cambridge,1209,False,39810,书院制/诺贝尔奖众多
+harvard,Harvard University,哈佛大学,美国,Cambridge MA,1636,False,54989,常春藤盟校之首
+eth,ETH Zurich,苏黎世联邦理工学院,瑞士,Zurich,1855,True,1600,欧陆理工名校/公立低学费
+nus,National University of Singapore,新加坡国立大学,新加坡,Singapore,1905,True,17550,亚洲顶尖综合大学
+ucb,University of California Berkeley,加州大学伯克利分校,美国,Berkeley CA,1868,True,44668,公立名校/诺奖众多
+yale,Yale University,耶鲁大学,美国,New Haven CT,1701,False,61500,常春藤盟校/人文社科见长
+ucl,University College London,伦敦大学学院,英国,London,1826,False,38600,伦敦多科性研究大学
+pk,Peking University,北京大学,中国,Beijing,1898,True,6000,中国顶尖综合大学
+thu,Tsinghua University,清华大学,中国,Beijing,1911,True,6000,中国顶尖理工综合大学
+imperial,Imperial College London,帝国理工学院,英国,London,1907,False,42500,理工医见长/罗素集团
+uchicago,University of Chicago,芝加哥大学,美国,Chicago IL,1890,False,61500,诺奖经济/社会科学重镇
+umich,University of Michigan Ann Arbor,密歇根大学安娜堡分校,美国,Ann Arbor MI,1817,True,55400,公立研究型强校
+toronto,University of Toronto,多伦多大学,加拿大,Toronto,1827,True,58000,加拿大顶尖研究大学
+princeton,Princeton University,普林斯顿大学,美国,Princeton NJ,1746,False,56100,常春藤盟校/本科教育顶尖
+caltech,California Institute of Technology,加州理工学院,美国,Pasadena CA,1891,False,56400,小而精理工名校
+nw,Northwestern University,西北大学,美国,Evanston IL,1851,False,62100,美国私立研究型大学
+columbia,Columbia University,哥伦比亚大学,美国,New York NY,1754,False,62100,常春藤盟校/纽约中心

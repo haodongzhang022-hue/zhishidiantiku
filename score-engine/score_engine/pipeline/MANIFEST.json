@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "description": "声明式数据接入声明：每种真实数据源声明『原始文件→字段映射→目标表位→清洗/校验/分类规则→溯源』。管道(ingest)据此自动落库，无需人肉判断放哪张表。补充数据 = 放文件 + 登记一条声明。",
+  "sources": [
+    {
+      "source_id": "univ_static_20",
+      "file": "universities/universities.csv",
+      "format": "csv",
+      "source": "QS/THE公开档案+校官网(2024采集)",
+      "year": 2024,
+      "target": {
+        "db": "score",
+        "table": "university"
+      },
+      "required_fields": [
+        "name_en",
+        "country"
+      ],
+      "field_map": {
+        "id": "id",
+        "name_en": "name_en",
+        "name_zh": "name_zh",
+        "country": "country",
+        "city": "city",
+        "established": "established",
+        "is_public": "is_public",
+        "tuition_intl_usd": "tuition_intl_usd",
+        "note": "note"
+      },
+      "rules": [
+        "drop_if_missing",
+        "strip_strings",
+        "to_int_fields",
+        "to_float_fields",
+        "to_bool_fields",
+        "ensure_id"
+      ],
+      "int_fields": [
+        "established"
+      ],
+      "float_fields": [
+        "tuition_intl_usd"
+      ],
+      "id_field": "id",
+      "id_name_field": "name_en",
+      "provenance": "公开稳定档案；源=QS/THE公开资料+学校官网国际生学费(采集口径2024)",
+      "bool_fields": [
+        "is_public"
+      ]
+    },
+    {
+      "source_id": "qs_rank_2019_2024",
+      "file": "rankings/qs_rankings.csv",
+      "format": "csv",
+      "source": "QS World University Rankings 历史公开",
+      "target": {
+        "db": "score",
+        "table": "university_ranking"
+      },
+      "required_fields": [
+        "university_id",
+        "year",
+        "rank"
+      ],
+      "field_map": {
+        "university_id": "university_id",
+        "source": "source",
+        "year": "year",
+        "rank": "rank"
+      },
+      "rules": [
+        "drop_if_missing",
+        "to_int_fields",
+        "set_band_from_rank"
+      ],
+      "int_fields": [
+        "year",
+        "rank"
+      ],
+      "rank_field": "rank",
+      "provenance": "QS World University Rankings 2019-2024 官方发布历史"
+    }
+  ]
+}

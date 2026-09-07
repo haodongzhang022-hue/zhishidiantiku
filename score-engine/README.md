@@ -37,6 +37,17 @@ QS 排名代表"名气"，不代表真实水平——可能"排名高但质量�
 - **分析库 quality_db**：school_profile / school_faculty / school_outcome
 - 后端优先 LanceDB；环境无 `lancedb` 时退化为**纯标准库 JSON 表**（API 一致，CI 免装包）。
 
+### ⑤ 声明式数据管道（真实数据入库的复用机制）
+不是"每次由人判断这份数据该放哪张表"，而是把**获取规则 + 入库规则**固化成：
+- `pipeline/MANIFEST.json` —— **声明文件**：每个数据源声明"原始文件 → 字段映射 →
+  目标表位 → 清洗/校验/分类规则 → 溯源(source/年份)"，作为入库唯一事实来源；
+- `pipeline/rules.py` —— **规则引擎**：清洗/去重/类型规整/自动分类规则，注册后即可被声明引用；
+- `cli ingest` —— **复用命令**：读声明 + 原始数据 → 自动分类落库 → 质检报告。
+
+数据落到**正确库/表位**由声明文件约束、代码不猜；目标表不属于对应库会直接报错
+（守护"别放错库/表"）。补充数据 = `data_sources/` 放文件 + `MANIFEST.json` 登记一条，
+即可持续复用、越补越准。详见 [`data_sources/README.md`](data_sources/README.md)。
+
 ## 快速开始
 
 ```bash
@@ -73,6 +84,10 @@ python -m score_engine.cli db --backend json query --db score --table university
 # 9) 质量鉴定：名不副实 / 被低估 报告（排名 ≠ 真实水平）
 python -m score_engine.cli quality --year 2024
 python -m score_engine.cli quality --school eth
+
+# 10) 声明式数据管道：把 data_sources 真实数据按 MANIFEST 自动分类落库
+python -m score_engine.cli ingest --backend json --list     # 查看声明一览
+python -m score_engine.cli ingest --backend json            # 落库到默认 data_lancedb
 ```
 
 ## 目录结构
@@ -94,6 +109,8 @@ python -m score_engine.cli quality --school eth
 | `score_engine/demo.py` | 端到端演示 |
 | `scripts/gen_quality_data.py` | 质量示例数据生成（P2 由真实数据替换） |
 | `data/sample_admissions.csv` | 示例历年录取样本（真实大学） |
+| `pipeline/` | **声明式数据管道**：`MANIFEST.json`(声明) + `rules.py`(规则) + `ingest.py`(引擎) |
+| `data_sources/` | **真实数据源目录**：大学档案 / QS 排名等原始数据 + 管理说明 |
 | `models/` | 训练产物输出目录（gitignore） |
 
 ## 概念说明
@@ -104,3 +121,4 @@ python -m score_engine.cli quality --school eth
 - **双库**：score_db（大学/排名/门槛/年度）+ quality_db（档案/师资/成果），LanceDB 或 JSON 兜底。
 - **质量指数**：排名 ≠ 真实水平；离群报告识别"名不副实"与"被低估"。
 - **功能核验**：`tests/verify_features.py` 逐项验证全部核心功能。
+- **声明式数据管道**：`MANIFEST.json` 声明数据源→目标表/字段映射/规则/溯源，`cli ingest` 复用落库，`rules.py` 规则可扩展，持续补充真实数据。

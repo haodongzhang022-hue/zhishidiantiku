@@ -72,6 +72,24 @@ SCORE_TABLES: Dict[str, List[str]] = {
     ],
 }
 
+# ---------------------------------------------------------------------------
+# 各表逻辑主键：upsert 时用于"命中更新而非追加重复"
+# ---------------------------------------------------------------------------
+# - university / university_ranking 等表有明确的自然主键（如 id / university_id+source+year），
+#   重复 ingest 时按主键合并——同主键新数据覆盖旧数据（更新），不同主键追加。
+# - admission_threshold 存多条独立录取样本，无单一逻辑主键 → 不在此表登记，
+#   靠整行内容做字节级幂等去重（完全相同的行不重复写入）。
+TABLE_PRIMARY_KEYS: Dict[str, List[str]] = {
+    # 换算库 score_db
+    "university": ["id"],
+    "university_ranking": ["university_id", "source", "year"],
+    "system_calendar": ["year", "system"],
+    # 分析库 quality_db（每校一条档案）
+    "school_profile": ["university_id"],
+    "school_faculty": ["university_id"],
+    "school_outcome": ["university_id"],
+}
+
 
 def _row_to_record(row: Dict[str, Any], fields: List[str]) -> Dict[str, Any]:
     """按表 schema 白名单规整一行（丢弃未知列，补齐缺省）。"""
@@ -110,18 +128,35 @@ class LanceDBBackend:
         return self._db.open_table(table) if table in self._db.table_names() else None
 
     def upsert(self, table: str, rows: List[Dict[str, Any]], fields: List[str]) -> int:
+        """按逻辑主键合并写入（PK 相同→更新；不同→追加），返回净新增行数。
+
+        LanceDB 无原生按字段 merge 的 upsert，故读出现有数据 → 内存合并 → 整表覆写。
+        小规模表数据下该策略正确可靠；大规模后可换 lancedb 的增量 add + 去重方案。
+        """
         norm = [_row_to_record(r, fields) for r in rows]
         if not norm:
             return 0
-        try:
-            self._db.create_table(table, data=norm, mode="overwrite")
-        except Exception:
-            ds = self._dataset(table)
-            if ds is not None:
-                ds.add(norm)
-            else:
-                self._db.create_table(table, data=norm)
-        return len(norm)
+        existing = self.query(table, fields)
+        pk = TABLE_PRIMARY_KEYS.get(table)
+        if pk:
+            def pk_of(r: Dict[str, Any]) -> str:
+                return json.dumps({k: r.get(k) for k in pk},
+                                  sort_keys=True, ensure_ascii=False)
+            old_pks = {pk_of(r) for r in existing}
+            new_map = {pk_of(r): r for r in norm}
+            keep = [r for r in existing if pk_of(r) not in new_map]
+            merged = keep + list(new_map.values())
+            n_new = sum(1 for r in norm if pk_of(r) not in old_pks)
+        else:
+            def row_key(r: Dict[str, Any]) -> str:
+                return json.dumps(r, sort_keys=True, ensure_ascii=False)
+            old_keys = {row_key(r) for r in existing}
+            new_entries = [r for r in norm if row_key(r) not in old_keys]
+            merged = existing + new_entries
+            n_new = len(new_entries)
+        if merged:
+            self._db.create_table(table, data=merged, mode="overwrite")
+        return n_new
 
     def query(self, table: str, fields: List[str],
               filters: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
@@ -176,18 +211,34 @@ class JsonBackend:
                     self._cache[t] = []
 
     def upsert(self, table: str, rows: List[Dict[str, Any]], fields: List[str]) -> int:
+        """按逻辑主键合并写入（PK 相同→更新替换；不同→追加），返回净新增行数。"""
         norm = [_row_to_record(r, fields) for r in rows]
+        if not norm:
+            return 0
         existing = self._cache.get(table, [])
-        # 简单 upsert：主键全等视为更新（replace），否则追加
-        def key_of(r: Dict[str, Any]) -> str:
-            return json.dumps({k: r.get(k) for k in fields}, sort_keys=True, ensure_ascii=False)
-        new_map = {key_of(r): r for r in norm}
-        keep = [r for r in existing if key_of(r) not in new_map]
-        merged = keep + list(new_map.values())
+        pk = TABLE_PRIMARY_KEYS.get(table)
+        if pk:
+            def pk_of(r: Dict[str, Any]) -> str:
+                return json.dumps({k: r.get(k) for k in pk},
+                                  sort_keys=True, ensure_ascii=False)
+            old_pks = {pk_of(r) for r in existing}
+            new_map = {pk_of(r): r for r in norm}
+            # 未被本轮数据覆盖的旧行保留；命中 PK 的旧行被新数据替换
+            keep = [r for r in existing if pk_of(r) not in new_map]
+            merged = keep + list(new_map.values())
+            n_new = sum(1 for r in norm if pk_of(r) not in old_pks)
+        else:
+            # 无逻辑主键表（如 admission_threshold）：整行字节级幂等去重
+            def row_key(r: Dict[str, Any]) -> str:
+                return json.dumps(r, sort_keys=True, ensure_ascii=False)
+            old_keys = {row_key(r) for r in existing}
+            new_entries = [r for r in norm if row_key(r) not in old_keys]
+            merged = existing + new_entries
+            n_new = len(new_entries)
         self._cache[table] = merged
         with open(self._path(table), "w", encoding="utf-8") as f:
             json.dump(merged, f, ensure_ascii=False, indent=1)
-        return len(norm)
+        return n_new
 
     def query(self, table: str, fields: List[str],
               filters: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:

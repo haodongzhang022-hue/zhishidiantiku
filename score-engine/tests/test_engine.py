@@ -60,7 +60,6 @@ class TestRecognizer(unittest.TestCase):
         self.assertEqual(r.features.get("sat"), 1520.0)
 
 
-
 class TestRegistry(unittest.TestCase):
     def test_normalize(self):
         self.assertEqual(registry.normalize_system("A-Level"), "AL")
@@ -208,10 +207,6 @@ class TestYearDrift(unittest.TestCase):
         self.assertEqual(yd.scale_for(None), 1.0)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class TestLanceDBDualDB(unittest.TestCase):
     """双库数据层：换算库 + 分析库 分表管理（LanceDB 可选，JSON 兜底）。"""
     def setUp(self):
@@ -309,3 +304,147 @@ class TestQualityAnalysis(unittest.TestCase):
         qi_part = qa2.quality_index("mit")
         self.assertGreaterEqual(qi_part, 0.0)
         self.assertLessEqual(qi_part, 1.0)
+
+
+class TestDataPipeline(unittest.TestCase):
+    """声明式数据管道：真实数据按 MANIFEST 自动分类落库 + 表位守护。"""
+    def setUp(self):
+        import tempfile, shutil
+        self.tmp = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.tmp, True)
+
+    def test_manifest_parses_and_describes(self):
+        from score_engine.pipeline import ingest
+        desc = ingest.describe()
+        self.assertIn("univ_static_20", desc)
+        self.assertIn("qs_rank_2019_2024", desc)
+        self.assertIn("university", desc)
+        self.assertIn("university_ranking", desc)
+
+    def test_ingest_lands_real_data_to_correct_tables(self):
+        import os
+        from score_engine import db
+        from score_engine.pipeline import ingest
+        root = os.path.join(self.tmp, "db")
+        dbh = db.ScoreDB(root=root, backend="json")
+        try:
+            report = ingest.run(dbh)
+            # 20 所大学 + 120 条 QS 排名落到换算库正确表位
+            self.assertEqual(dbh.count_score("university"), 20)
+            self.assertEqual(dbh.count_score("university_ranking"), 20 * 6)
+            # 字段落位正确
+            mit = dbh.query_score("university", {"id": "mit"})
+            self.assertEqual(len(mit), 1)
+            self.assertEqual(mit[0]["country"], "美国")
+            self.assertIsInstance(mit[0]["established"], int)
+            self.assertIsInstance(mit[0]["is_public"], bool)
+            # band 自动分类
+            top = dbh.query_score("university_ranking",
+                                  {"university_id": "mit", "rank": 1})
+            self.assertEqual(top[0]["band"], "top10")
+            # 溯源已打上
+            self.assertEqual(report["per_source"][0]["provenance"], "公开稳定档案；源=QS/THE公开资料+学校官网国际生学费(采集口径2024)")
+        finally:
+            dbh.close()
+
+    def test_ingest_guard_rejects_wrong_table(self):
+        # 目标表不属于对应库 → 必须报错（防放错库/表）
+        import os, json
+        from score_engine import db
+        from score_engine.pipeline import ingest
+        # 构造一个声明错位的 manifest：quality 库却指向 university（score 表）
+        mf = os.path.join(self.tmp, "MANIFEST_bad.json")
+        with open(os.path.join(os.path.dirname(ingest.__file__), "MANIFEST.json"),
+                  encoding="utf-8") as f:
+            m = json.load(f)
+        m["sources"] = [{"source_id": "bad", "file": "universities/universities.csv",
+                         "format": "csv", "target": {"db": "quality", "table": "university"},
+                         "field_map": {"id": "id"}, "rules": []}]
+        with open(mf, "w", encoding="utf-8") as f:
+            json.dump(m, f, ensure_ascii=False)
+        root = os.path.join(self.tmp, "db_bad")
+        dbh = db.ScoreDB(root=root, backend="json")
+        try:
+            with self.assertRaises(ValueError):
+                ingest.run(dbh, manifest_path=mf)
+        finally:
+            dbh.close()
+
+    def test_upsert_merges_by_logical_primary_key(self):
+        """P1 修复：upsert 按逻辑主键合并——数据更新命中更新而非追加重复。"""
+        import os
+        from score_engine import db
+        root = os.path.join(self.tmp, "db_pk")
+        dbh = db.ScoreDB(root=root, backend="json")
+        try:
+            # 首次写入
+            n1 = dbh.upsert_score("university", [
+                {"id": "mit", "name_en": "MIT", "note": "v1"}
+            ])
+            n2 = dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2019, "rank": 2}
+            ])
+            self.assertEqual(n1, 1)
+            self.assertEqual(n2, 1)
+            self.assertEqual(dbh.count_score("university"), 1)
+            self.assertEqual(dbh.count_score("university_ranking"), 1)
+
+            # 同主键数据更新 → 应覆盖更新而非追加重复
+            n3 = dbh.upsert_score("university", [
+                {"id": "mit", "name_en": "MIT", "note": "v2"}
+            ])
+            n4 = dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2019, "rank": 99}
+            ])
+            # 净新增 0（主键已存在，为更新）
+            self.assertEqual(n3, 0)
+            self.assertEqual(n4, 0)
+            # 行数不变（未产生重复）
+            self.assertEqual(dbh.count_score("university"), 1)
+            self.assertEqual(dbh.count_score("university_ranking"), 1)
+            # 数据确已更新
+            mit = dbh.query_score("university", {"id": "mit"})
+            self.assertEqual(mit[0]["note"], "v2")
+            rk = dbh.query_score("university_ranking",
+                                 {"university_id": "mit", "source": "QS", "year": 2019})
+            self.assertEqual(rk[0]["rank"], 99)
+
+            # 字节级相同重复 ingest → 净新增 0
+            n5 = dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2019, "rank": 99}
+            ])
+            self.assertEqual(n5, 0)
+            self.assertEqual(dbh.count_score("university_ranking"), 1)
+        finally:
+            dbh.close()
+
+    def test_upsert_new_pk_appends_without_dup(self):
+        """upsert 新增不同主键记录应追加，且同主键已存在的不产生重复。"""
+        import os
+        from score_engine import db
+        root = os.path.join(self.tmp, "db_append")
+        dbh = db.ScoreDB(root=root, backend="json")
+        try:
+            # 先写 mit 2019
+            dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2019, "rank": 2}
+            ])
+            # 新增 mit 2020（不同主键）
+            n = dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2020, "rank": 3}
+            ])
+            self.assertEqual(n, 1)
+            self.assertEqual(dbh.count_score("university_ranking"), 2)
+            # 再混合提交：1 新 + 1 旧 → 净新增 1
+            n2 = dbh.upsert_score("university_ranking", [
+                {"university_id": "mit", "source": "QS", "year": 2019, "rank": 4},   # 已存在→更新
+                {"university_id": "stanford", "source": "QS", "year": 2020, "rank": 5},  # 新
+            ])
+            self.assertEqual(n2, 1)  # 只有 stanford 是新的
+            self.assertEqual(dbh.count_score("university_ranking"), 3)
+        finally:
+            dbh.close()
+
+
+if __name__ == "__main__":
+    unittest.main()
