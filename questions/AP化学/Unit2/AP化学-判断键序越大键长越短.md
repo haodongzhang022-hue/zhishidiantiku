@@ -2,6 +2,7 @@
 - 题目ID：AP-CHEM-CB-2024-TF-0206
 - 难度：简单
 - 分类：AP化学
+- 体系：AP
 - 题型：判断
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy

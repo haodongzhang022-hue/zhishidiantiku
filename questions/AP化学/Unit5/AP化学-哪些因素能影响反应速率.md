@@ -2,6 +2,7 @@
 - 题目ID：AP-CHEM-CB-2024-MN-0500
 - 难度：中等
 - 分类：AP化学
+- 体系：AP
 - 题型：多选
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy

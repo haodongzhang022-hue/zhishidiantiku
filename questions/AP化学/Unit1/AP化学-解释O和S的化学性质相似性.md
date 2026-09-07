@@ -2,6 +2,7 @@
 - 题目ID：AP-CHEM-CB-2024-SA-0103
 - 难度：中等
 - 分类：AP化学
+- 体系：AP
 - 题型：简答
 - 范围：AP-CHEM-CB-2024
 - owner：CodeBuddy

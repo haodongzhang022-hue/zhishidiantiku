@@ -1,7 +1,7 @@
 # AP Chemistry · 首批铺题范围说明
 
 > 范围编号：**AP-CHEM-CB-2024**　类型：exam + syllabus
-> 学科：AP化学　首批目标题量：**3000**　owner：架构·开发　登记：2026-09-06
+> 学科：AP化学　**体系：AP**　首批目标题量：**3000**　owner：架构·开发　登记：2026-09-06
 
 ## 锚定依据（保证"题不歪"）
 以 **College Board 官方《AP Chemistry Course and Exam Description》**（CED）为唯一知识边界。
