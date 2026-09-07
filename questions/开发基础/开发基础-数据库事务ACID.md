@@ -21,4 +21,4 @@ D. 事务执行前后数据库一致性得到保证
 C
 
 ## 解析
-ACID：原子性（Atomicity，B 所述要么全成要么全败）、一致性（Consistency，D）、隔离性（Isolation，A 并发互不干扰）、持久性（Durability，C，事务提交后结果永久保存）。故 D 对应持久性，选 C。理解 ACID 是数据库/后端工程面试与设计基础。源自开发基础通用知识（数据库事务）。
+ACID：原子性（Atomicity，B 所述要么全成要么全败）、一致性（Consistency，D）、隔离性（Isolation，A 并发互不干扰）、持久性（Durability，C，事务提交后结果永久保存）。故 C 对应持久性，选 C。理解 ACID 是数据库/后端工程面试与设计基础。源自开发基础通用知识（数据库事务）。
