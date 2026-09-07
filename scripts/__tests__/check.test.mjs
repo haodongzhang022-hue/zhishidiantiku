@@ -169,3 +169,22 @@ test('录入时间格式错误应 FAIL', () => {
   try { assert.throws(() => run(dir), /录入时间/); }
   finally { clean(dir); }
 });
+
+test('难度口径合法(在体系内)应 PASS', () => {
+  const dir = makeRepo({
+    files: { 'AP化学/x.md': validQ + '\n' }, // 不填难度口径，或填 AP
+  });
+  try { assert.match(run(dir), /\[PASS\]/); }
+  finally { clean(dir); }
+});
+
+test('难度口径非法应给 WARN 建议(不阻塞)', () => {
+  const dir = makeRepo({
+    files: { 'AP化学/x.md': validQ.replace('- 体系：AP\n', '- 体系：AP\n- 难度口径：XX\n') },
+  });
+  try {
+    const out = run(dir); // warning 不阻塞，应正常返回
+    assert.match(out, /\[PASS\]/);
+    assert.match(out, /难度口径 "XX" 不在体系白名单/);
+  } finally { clean(dir); }
+});

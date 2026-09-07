@@ -90,6 +90,7 @@ function parseMeta(text) {
     scope: field(head, '范围'),
     owner: field(head, 'owner'),
     time: field(head, '录入时间'),
+    frame: field(head, '难度口径'),
   };
 }
 
@@ -111,6 +112,11 @@ function check(p) {
   if (meta.diff && !DIFF_ENUM.has(meta.diff)) errors.push(rel + `: 难度 "${meta.diff}" 非法（应为 简单|中等|困难）`);
   if (meta.type && !TYPE_ENUM.has(meta.type)) errors.push(rel + `: 题型 "${meta.type}" 不在白名单（锁定 单选|多选|判断|简答）`);
   if (meta.system && !systems.has(meta.system)) errors.push(rel + `: 体系 "${meta.system}" 不在 CATEGORIES.md 体系白名单（应为 AP|AL|IB|国内|其他）`);
+
+  // 可选字段「难度口径」：若填写，须为体系白名单内的体系（软校验）
+  if (meta.frame && !KNOWN_SYSTEMS.has(meta.frame)) {
+    warnings.push(rel + `: 难度口径 "${meta.frame}" 不在体系白名单（应为 AP|AL|IB|国内|其他）`);
+  }
 
   // 分类白名单 + 体系-分类联动
   if (meta.cat && !cats.has(meta.cat)) {

@@ -34,6 +34,8 @@
 |----------|------|------|------|-----------|------|------|--------|-------|----------|
 | AP-CHEM-CB-2024 | AP 化学 2024 真题卷（Course&Exam Description 考纲锚定） | exam+syllabus | 2024 | [CB 官方大纲 apcentral.collegeboard.org](https://apcentral.collegeboard.org/courses/ap-chemistry) | AP化学 | AP | 253 题在库（目标 3000） | 架构·开发 | 2026-09-06 |
 | AL-CHEM-CIE-2024 | A-Level 化学 CIE(Cambridge) 考纲 2024 | syllabus | 2024 | [CIE 考纲](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels-chemistry-9701/) | AL化学 | AL | 演示（待铺） | 架构·开发 | 2026-09-07 |
+| CN-CHEM-RJ-2024 | 国内·化学 人教版(新课标) 2024 | syllabus | 2024 | 人教版高中化学(课标版/新教材) 大纲 | 国内化学 | 国内 | 待铺（通道登记） | 待分工 | 2026-09-07 |
+| AL-CHEM-EDEXCEL-2024 | A-Level 化学 Edexcel(培生) 2024 | syllabus | 2024 | Edexcel A-Level Chemistry(9CH0) 大纲 | AL化学 | AL | 待铺（通道登记） | 待分工 | 2026-09-07 |
 
 > 首批优先从 **AP 化学** 出，锚定 College Board 官方《AP Chemistry Course and Exam Description》，
 > 见 [AP-Chemistry 范围说明](./AP-Chemistry/README.md)。
