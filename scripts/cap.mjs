@@ -13,6 +13,7 @@
 //   node scripts/cap.mjs gap <能力代码>           查看单项缺口的获取/增强引导
 //   node scripts/cap.mjs find <能力代码或关键字>   查询某能力：状态/来源/入口/缺口引导
 //   node scripts/cap.mjs domains                  按能力类型汇总统计（可用数/缺口数）
+//   node scripts/cap.mjs run <能力代码>             生成「可执行调用语句」：可用→直接出召唤/命令；缺口→出获取引导
 //   node scripts/cap.mjs all                      列出全部能力
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -77,6 +78,26 @@ function colorStatus(status) {
   if (status === '可用') return c.green(status);
   if (status === '缺口') return c.red(status);
   return c.yellow(status);
+}
+
+// 生成「可执行调用语句」：对跨库 NPC 输出完整 @仓库(角色) [触发:角色] 召唤语句；
+// 对本地内置能力直接输出命令；无源则交 gaps 引导。返回 {ok, statement}。
+function runCallable(r, gaps) {
+  if (r.status === '缺口') {
+    const guide = renderGap(r.code);
+    return { ok: false, statement: '', guide };
+  }
+  let entry = (r.entry || r.source || '').trim();
+  // 去掉 entry 里的反引号包裹，便于取字面内容
+  const bare = entry.replace(/^`|`$/g, '');
+  // 跨库 NPC：形如 "@org/repo(角色名)" → 生成标准可触发语句 @org/repo(角色名) [触发:角色名]
+  const at = bare.match(/@([\w\-]+\/[\w\-]+)\(([^)]+)\)/);
+  if (at) {
+    const repo = at[1], role = at[2].trim();
+    return { ok: true, statement: `@${repo}(${role}) [触发:${role}]` };
+  }
+  // 本地命令 / 已含 [触发] 或本身就是可执行命令的 entry
+  return { ok: true, statement: bare, guide: '' };
 }
 
 function showRow(r) {
@@ -150,6 +171,26 @@ switch (args[0]) {
     console.log(renderGap(hit.code) || c.dim('（gaps.md 中暂无展开引导）'));
     break;
   }
+  case 'run': {
+    const kw = args[1];
+    if (!kw) { console.log(c.yellow('用法: node scripts/cap.mjs run <能力代码，如 cap.arch.dev / cap.learn.quiz>')); break; }
+    const hit = rows.find((r) => r.code.toLowerCase() === kw.toLowerCase() || r.name.includes(kw));
+    if (!hit) { console.log(c.yellow(`未登记能力「${kw}」。若应有无缺 → 建议先登记 registry 再 run。`)); break; }
+    const { ok, statement, guide } = runCallable(hit);
+    if (hit.status === '可用') {
+      console.log(c.bold(`${hit.code} · ${hit.name}  [可用]`));
+      if (statement) {
+        console.log(c.green('可执行调用语句:'));
+        console.log('  ' + statement);
+        console.log(c.dim('  跨库 NPC → 复制到 Issue/PR 评论即可召唤执行；本地命令 → 直接运行。'));
+      }
+    } else {
+      console.log(c.bold(`${hit.code} · ${hit.name}  [缺口]`));
+      console.log(c.dim('该能力应有无源，暂不可直接调用。获取/增强引导:'));
+      console.log(guide ? guide.split('\n').map((l) => '  ' + l).join('\n') : c.dim('（见 capabilities/gaps.md）'));
+    }
+    break;
+  }
   case 'find': {
     const kw = args[1];
     if (!kw) { console.log(c.yellow('用法: node scripts/cap.mjs find <能力代码或关键字>')); break; }
@@ -198,7 +239,7 @@ switch (args[0]) {
     rows.forEach((r) => { showRow(r); });
     console.log('');
     console.log(`可用 ${c.green(s.usable)} / 缺口 ${c.red(s.gap)}。`);
-    console.log(c.dim('子命令: available | gaps | gap <code> | find <kw> | domains | all'));
+    console.log(c.dim('子命令: available | gaps | gap <code> | find <kw> | domains | run <code> | all'));
     break;
   }
 }

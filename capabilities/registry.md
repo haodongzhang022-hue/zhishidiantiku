@@ -20,9 +20,9 @@
 
 | 能力代码 | 能力名 | 类型 | 来源库 | 调用入口 | 状态 | owner | 登记时间 |
 |----------|--------|------|--------|----------|------|-------|----------|
-| `cap.mishu.route` | 秘书·接待路由 | 跨库调用 | `zhuanyemishutuan`(接待) | 未知诉求先 @ 秘书·接待 由其判断分流 | 缺口 | 架构·经理 | 2026-09-07 |
-| `cap.mishu.assign` | 秘书·分派编排 | 跨库调用 | `zhuanyemishutuan`(秘书长) | 由接待判定后转派对应秘书/经理/总师 | 缺口 | 架构·经理 | 2026-09-07 |
-| `cap.mishu.session` | 秘书·会话/状态管理 | 跨库调用 | `zhuanyemishutuan`(会话管理) | 跨会话状态保持、上下文续接 | 缺口 | 架构·经理 | 2026-09-07 |
+| `cap.mishu.route` | 秘书·接待路由 | 跨库调用 | `dongdongxiaozu/zhuanyemishutuan` | `@dongdongxiaozu/zhuanyemishutuan(秘书·接待)` 未知诉求先路由由其分流 | 缺口 | 架构·经理 | 2026-09-07 |
+| `cap.mishu.assign` | 秘书·分派编排 | 跨库调用 | `dongdongxiaozu/zhuanyemishutuan` | `@dongdongxiaozu/zhuanyemishutuan(秘书长)` 接待后分派编排 | 缺口 | 架构·经理 | 2026-09-07 |
+| `cap.mishu.session` | 秘书·会话/状态管理 | 跨库调用 | `dongdongxiaozu/zhuanyemishutuan` | `@dongdongxiaozu/zhuanyemishutuan(会话管理)` 跨会话状态续接 | 缺口 | 架构·经理 | 2026-09-07 |
 
 > **登记说明**：秘书团能力域存在（CNB NPC 生态），但当前本仓库未见秘书团可被唤醒来分派的实例，
 > 属"应有无源/未接入" → 记为 **缺口**，引导见 [gaps.md](gaps.md)。
@@ -34,13 +34,13 @@
 
 | 能力代码 | 能力名 | 类型 | 来源库 | 调用入口 | 状态 | owner | 登记时间 |
 |----------|--------|------|--------|----------|------|-------|----------|
-| `cap.arch.total` | 架构·总师（设计定稿） | 跨库调用 | `dongjiagoushi/(架构·总师)` | `@dongjiagoushi(架构·总师)` 召唤 | 可用 | 架构·总师 | 2026-09-06 |
-| `cap.arch.manager` | 架构·经理（分工调度） | 跨库调用 | `dongjiagoushi/(架构·经理)` | `@dongjiagoushi(架构·经理)` 召唤 | 可用 | 架构·经理 | 2026-09-06 |
-| `cap.arch.dev` | 架构·开发（铺题/实现） | 跨库调用 | `dongjiagoushi/(架构·开发)` | `@dongjiagoushi(架构·开发)` 召唤 | 可用 | 架构·开发 | 2026-09-06 |
-| `cap.arch.review` | 架构·评审（代码/文档评审） | 跨库调用 | `dongjiagoushi/(架构·评审)` | `@dongjiagoushi(架构·评审)` 召唤 | 可用 | 架构·评审 | 2026-09-06 |
-| `cap.arch.test` | 架构·测试（门禁验证） | 跨库调用 | `dongjiagoushi/(架构·测试)` | `@dongjiagoushi(架构·测试)` 召唤 | 可用 | 架构·测试 | 2026-09-06 |
-| `cap.arch.align` | 架构·对齐（编号/对账） | 跨库调用 | `dongjiagoushi/(架构·对齐)` | `@dongjiagoushi(架构·对齐)` 召唤 | 可用 | 架构·对齐 | 2026-09-06 |
-| `cap.arch.sentinel` | 架构·监控哨兵（进度监督） | 跨库调用 | `dongjiagoushi/(架构·监控哨兵)` | `@dongjiagoushi(架构·监控哨兵)` 召唤 | 可用 | 架构·监控哨兵 | 2026-09-06 |
+| `cap.arch.total` | 架构·总师（设计定稿） | 跨库调用 | `dongdongxiaozu/dongjiagoushi` | `@dongdongxiaozu/dongjiagoushi(架构·总师)` 召唤 | 可用 | 架构·总师 | 2026-09-06 |
+| `cap.arch.manager` | 架构·经理（分工调度） | 跨库调用 | `dongdongxiaozu/dongjiagoushi` | `@dongdongxiaozu/dongjiagoushi(架构·经理)` 召唤 | 可用 | 架构·经理 | 2026-09-06 |
+| `cap.arch.dev` | 架构·开发（铺题/实现） | 跨库调用 | `dongdongxiaozu/dongjiagoushi` | `@dongdongxiaozu/dongjiagoushi(架构·开发)` 召唤 | 可用 | 架构·开发 | 2026-09-06 |
+| `cap.arch.review` | 架构·评审（代码/文档评审） | 跨库调用 | `dongdongxiaozu/dongjiagoushi` | `@dongdongxiaozu/dongjiagoushi(架构·评审)` 召唤 | 可用 | 架构·评审 | 2026-09-06 |
+| `cap.arch.test` | 架构·测试（门禁验证） | 跨库调用 | `dongdongxiaozu/dongjiagoushi` | `@dongdongxiaozu/dongjiagoushi(架构·测试)` 召唤 | 可用 | 架构·测试 | 2026-09-06 |
+| `cap.arch.align` | 架构·对齐（编号/对账） | 跨库调用 | `dongdongxiaozu/dongjiagoushi` | `@dongdongxiaozu/dongjiagoushi(架构·对齐)` 召唤 | 可用 | 架构·对齐 | 2026-09-06 |
+| `cap.arch.sentinel` | 架构·监控哨兵（进度监督） | 跨库调用 | `dongdongxiaozu/dongjiagoushi` | `@dongdongxiaozu/dongjiagoushi(架构·监控哨兵)` 召唤 | 可用 | 架构·监控哨兵 | 2026-09-06 |
 
 ### C. 评分 / 换算（跨体系分数换算引擎）
 
@@ -83,7 +83,7 @@
 
 | 能力代码 | 能力名 | 类型 | 来源库 | 调用入口 | 状态 | owner | 登记时间 |
 |----------|--------|------|--------|----------|------|-------|----------|
-| `cap.graph.layer` | 14层知识图谱（L0~L13） | 跨库调用 | 架构库（蓝图待落） | 蓝图（架构库 `dongjiagoushi`）定义，未落代码 | 缺口 | 架构·总师 | 2026-09-06 |
+| `cap.graph.layer` | 14层知识图谱（L0~L13） | 跨库调用 | 架构库（蓝图待落） | 蓝图（架构库 `dongdongxiaozu/dongjiagoushi`）定义，未落代码 | 缺口 | 架构·总师 | 2026-09-06 |
 | `cap.graph.vector` | LanceDB 向量检索 | 跨库调用 | 待接入 | 待 G4(LanceDB) 与 embedding 选型后接入 | 缺口 | 架构·总师 | 2026-09-06 |
 | `cap.graph.func` | 函数+向量层间跳转 | 跨库调用 | 架构库（蓝图待落） | 待图谱与向量库就绪后实现 relations 表 | 缺口 | 架构·总师 | 2026-09-06 |
 
@@ -94,3 +94,4 @@
 |------|------|------|--------|
 | 2026-09-07 | 新建 | 首次建立跨库能力注册与索引机制，登记 分派/协作/评分/学习/校验/图谱 六类能力 + 缺口 | CodeBuddy |
 | 2026-09-07 | 修复 | 图谱缺口 type 语义统一（缺口→跨库调用）、蓝图引用标注跨库来源 | CodeBuddy |
+| 2026-09-08 | 修复 | 跨库能力「来源库」统一为完整仓库路径、调用入口补齐组织前缀（与交接卡触发格式对齐），消除照抄唤不醒风险；能力域增加可执行调用说明 | CodeBuddy |
